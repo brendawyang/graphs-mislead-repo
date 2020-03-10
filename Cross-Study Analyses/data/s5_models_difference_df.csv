@@ -1,0 +1,331 @@
+participantID,field,subject_condition,control,truncated,difference,graphliteracy_sum_rating,dem_ed,dem_gender,dem_age
+s51001,Quantitative,no warning,4.35,5.15,0.8000000000000007,45,7,male,27
+s51002,Quantitative,warning,4.15,4.15,0,47,8,male,28
+s51003,Quantitative,no warning,3.7,4.4,0.7000000000000002,51,7,male,27
+s51004,Quantitative,warning,4.45,4.15,-0.2999999999999998,47,7,male,30
+s51005,Quantitative,warning,3.95,3.6,-0.3500000000000001,47,8,male,32
+s51006,Quantitative,no warning,3.65,3.9,0.25,39,8,female,28
+s51007,Quantitative,no warning,4.6,5.05,0.4500000000000002,46,8,male,25
+s51008,Quantitative,warning,3.7,3.6,-0.10000000000000009,55,7,female,24
+s51009,Quantitative,no warning,3,3.2,0.20000000000000018,33,7,female,23
+s51010,Quantitative,warning,3.3,2.5,-0.7999999999999998,42,8,female,27
+s51011,Quantitative,warning,4.2,4.7,0.5,43,7,male,24
+s51012,Quantitative,no warning,3.1,4.55,1.4499999999999997,40,8,female,28
+s51013,Quantitative,warning,4.85,5.65,0.8000000000000007,50,7,female,30
+s51014,Quantitative,warning,3.1,3.45,0.3500000000000001,49,7,female,NA
+s51015,Quantitative,no warning,3.7,4.2,0.5,48,7,female,32
+s51016,Quantitative,no warning,3.85,3.65,-0.20000000000000018,45,6,male,30
+s51017,Quantitative,warning,4.6,5.2,0.6000000000000005,50,8,male,26
+s51018,Quantitative,no warning,3.85,4.5,0.6499999999999999,44,7,female,39
+s51019,Quantitative,no warning,4.2,5.1,0.8999999999999995,59,7,female,28
+s51020,Quantitative,warning,3.75,3.3,-0.4500000000000002,50,7,female,26
+s51021,Quantitative,warning,3.95,4.4,0.4500000000000002,51,8,female,26
+s51022,Quantitative,no warning,4.2,4.75,0.5499999999999998,36,7,female,25
+s51023,Quantitative,warning,4.35,4.75,0.40000000000000036,52,6,female,24
+s51024,Quantitative,warning,4.85,4.6,-0.25,42,8,male,39
+s51025,Quantitative,warning,3.3,2.8,-0.5,47,7,female,32
+s51026,Quantitative,no warning,2.75,2.8,0.04999999999999982,55,7,female,29
+s51027,Quantitative,no warning,3.9,5.35,1.4499999999999997,60,8,female,24
+s51028,Quantitative,warning,3.85,4.45,0.6000000000000001,36,7,female,26
+s51029,Quantitative,warning,4.05,4.45,0.40000000000000036,36,6,male,24
+s51030,Quantitative,no warning,3.35,3.75,0.3999999999999999,47,6,non-binary,24
+s51031,Quantitative,no warning,3.65,4.35,0.6999999999999997,55,8,male,27
+s51032,Quantitative,warning,3.95,3.95,0,52,7,female,28
+s51033,Quantitative,no warning,3.5,4.25,0.75,40,7,female,25
+s51034,Quantitative,warning,3.25,4,0.75,44,7,female,25
+s51035,Quantitative,no warning,4.05,5.35,1.2999999999999998,49,7,female,25
+s51036,Quantitative,warning,3.75,3.4,-0.3500000000000001,46,8,female,25
+s51037,Quantitative,no warning,2.8,3.2,0.40000000000000036,48,8,male,27
+s51038,Quantitative,no warning,3.45,3.95,0.5,43,7,female,23
+s51039,Quantitative,warning,3.75,4.15,0.40000000000000036,51,6,female,22
+s51040,Quantitative,warning,3.35,2.8,-0.5500000000000003,39,6,male,24
+s51041,Quantitative,no warning,3.7,4.75,1.0499999999999998,50,6,male,23
+s51042,Quantitative,warning,3.65,4.05,0.3999999999999999,60,8,male,23
+s51043,Quantitative,no warning,3.65,4.3,0.6499999999999999,41,7,female,27
+s51044,Quantitative,no warning,4.35,4.35,0,41,8,male,27
+s51045,Quantitative,no warning,5.8,6.6,0.7999999999999998,51,8,female,25
+s51046,Quantitative,warning,3.6,3.65,0.04999999999999982,48,8,female,26
+s51047,Quantitative,warning,4.4,4.05,-0.35000000000000053,32,8,female,24
+s51048,Quantitative,warning,2.75,2.7,-0.04999999999999982,56,7,male,28
+s51049,Quantitative,no warning,3.3,3.4,0.10000000000000009,47,7,male,27
+s51050,Quantitative,warning,2.9,3.15,0.25,49,7,male,30
+s51051,Quantitative,no warning,3.4,3.7,0.30000000000000027,46,8,male,29
+s51052,Quantitative,warning,4.35,5.45,1.1000000000000005,51,8,male,28
+s51053,Quantitative,warning,4.05,4.65,0.6000000000000005,40,8,female,24
+s51054,Quantitative,no warning,5.35,6.9,1.5500000000000007,56,7,female,22
+s51055,Quantitative,no warning,3.45,3.7,0.25,45,8,male,26
+s51056,Quantitative,no warning,3.25,3.65,0.3999999999999999,39,7,female,23
+s51057,Quantitative,no warning,3.05,3.95,0.9000000000000004,31,8,male,27
+s51058,Quantitative,warning,3.4,4,0.6000000000000001,55,7,male,26
+s51059,Quantitative,warning,3.65,4.3,0.6499999999999999,55,8,female,28
+s51060,Quantitative,warning,3.9,4.4,0.5000000000000004,51,7,male,26
+s51061,Quantitative,no warning,3.2,4.65,1.4500000000000002,53,8,female,24
+s51062,Quantitative,no warning,3.2,4.15,0.9500000000000002,40,6,female,24
+s51063,Quantitative,warning,3.2,4.35,1.1499999999999995,49,8,male,35
+s51064,Quantitative,no warning,3.35,4.2,0.8500000000000001,50,8,male,34
+s51065,Quantitative,no warning,4,3.9,-0.10000000000000009,55,8,male,37
+s51066,Quantitative,warning,3.75,3.85,0.10000000000000009,51,7,female,28
+s51067,Quantitative,no warning,4.15,4.4,0.25,46,8,male,28
+s51068,Quantitative,no warning,3.05,3.7,0.6500000000000004,48,8,female,27
+s51069,Quantitative,warning,3.55,3.3,-0.25,60,7,male,24
+s51070,Quantitative,no warning,3.2,3.8,0.5999999999999996,40,7,male,26
+s51071,Quantitative,warning,3.3,3.85,0.5500000000000003,48,7,female,28
+s51072,Quantitative,no warning,3.6923076923076925,4.333333333333333,0.6410256410256405,42,8,non-binary,24
+s51073,Quantitative,no warning,2.85,2.7,-0.1499999999999999,50,7,female,35
+s51074,Quantitative,warning,4.7,4.35,-0.35000000000000053,41,7,female,24
+s51075,Quantitative,warning,2.4,3.2,0.8000000000000003,49,8,female,23
+s51076,Quantitative,no warning,3.75,4,0.25,54,8,female,26
+s51077,Quantitative,warning,3.2,3.25,0.04999999999999982,44,7,female,25
+s51078,Quantitative,no warning,3.35,4.3,0.9499999999999997,53,7,female,24
+s51079,Quantitative,warning,2.95,3.1,0.1499999999999999,39,8,female,26
+s51080,Quantitative,no warning,3.5,4.05,0.5499999999999998,42,7,male,23
+s51081,Quantitative,warning,3.6,3.75,0.1499999999999999,40,7,female,24
+s51082,Quantitative,no warning,3.6315789473684212,4.5,0.8684210526315788,28,8,male,27
+s51083,Quantitative,no warning,4.5,4.6,0.09999999999999964,55,8,male,25
+s51084,Quantitative,no warning,4.05,3.85,-0.19999999999999973,38,8,male,28
+s51085,Quantitative,warning,3.65,3.65,0,53,8,male,24
+s51086,Quantitative,no warning,3.25,3.65,0.3999999999999999,30,8,male,31
+s51087,Quantitative,warning,2.95,3.45,0.5,36,8,male,28
+s51088,Quantitative,no warning,3.55,4.2,0.6500000000000004,57,7,male,26
+s51089,Quantitative,warning,3.55,3.85,0.30000000000000027,45,8,male,28
+s51090,Quantitative,no warning,4.65,5.85,1.1999999999999993,44,8,female,24
+s51091,Quantitative,warning,2.65,3.8,1.15,42,8,female,26
+s51092,Quantitative,no warning,4.25,5.05,0.7999999999999998,50,8,male,27
+s51093,Quantitative,no warning,3.85,4.65,0.8000000000000003,50,7,female,24
+s51094,Quantitative,warning,2.85,3.1,0.25,44,7,female,23
+s51095,Quantitative,warning,3.6,4.2,0.6000000000000001,43,7,female,28
+s51096,Quantitative,no warning,3.6,3.85,0.25,50,8,male,33
+s51097,Quantitative,warning,3.6,3.5,-0.10000000000000009,45,7,female,28
+s51098,Quantitative,no warning,3.55,4.8,1.25,38,8,male,24
+s51099,Quantitative,warning,3.3,3.1,-0.19999999999999973,38,7,male,24
+s51100,Quantitative,no warning,3.5,3.7,0.20000000000000018,44,7,male,31
+s51101,Quantitative,warning,3.1,3.65,0.5499999999999998,56,7,male,30
+s51102,Quantitative,warning,3.8,4.35,0.5499999999999998,49,7,male,23
+s51103,Quantitative,no warning,3.6,3.75,0.1499999999999999,44,7,female,28
+s51104,Quantitative,no warning,3.6,4.15,0.5500000000000003,46,8,female,28
+s51105,Quantitative,no warning,3.9,3.65,-0.25,44,8,female,27
+s51106,Quantitative,warning,3.35,3.65,0.2999999999999998,36,7,male,24
+s51107,Quantitative,warning,2.85,3.05,0.19999999999999973,32,7,female,26
+s51108,Quantitative,warning,4.55,5,0.4500000000000002,43,8,female,32
+s51109,Quantitative,no warning,3,3.4,0.3999999999999999,50,8,female,29
+s51110,Quantitative,warning,3.2,4.35,1.1499999999999995,54,7,female,24
+s51111,Quantitative,no warning,4.1,3.55,-0.5499999999999998,43,8,female,26
+s51112,Quantitative,warning,3.45,4.1,0.6499999999999995,48,8,female,26
+s51113,Quantitative,no warning,3.7,4.5,0.7999999999999998,54,8,female,26
+s51114,Quantitative,no warning,3.25,3.75,0.5,42,8,male,32
+s51115,Quantitative,warning,3.75,4.2,0.4500000000000002,37,8,male,23
+s51116,Quantitative,no warning,3.2,4.4,1.2000000000000002,48,7,male,27
+s51117,Quantitative,warning,3.85,4.75,0.8999999999999999,48,8,female,25
+s51118,Quantitative,no warning,4.1,4,-0.09999999999999964,20,8,male,27
+s51119,Quantitative,warning,3.75,3.65,-0.10000000000000009,38,6,male,24
+s51120,Quantitative,no warning,2.75,3.15,0.3999999999999999,31,7,female,24
+s51121,Quantitative,warning,3.75,3.75,0,53,8,female,26
+s51122,Quantitative,warning,3.95,3.85,-0.10000000000000009,36,7,female,26
+s51123,Quantitative,warning,3.6842105263157894,4.7,1.0157894736842108,60,8,male,28
+s51124,Quantitative,no warning,3.9,4.3,0.3999999999999999,38,8,male,34
+s51125,Quantitative,warning,3.6,4.65,1.0500000000000003,54,8,male,28
+s51126,Quantitative,no warning,3.05,3.45,0.40000000000000036,48,7,male,25
+s51127,Quantitative,warning,3.6,3.2,-0.3999999999999999,51,7,female,31
+s51128,Quantitative,no warning,3.2,4.4,1.2000000000000002,49,8,male,27
+s51129,Quantitative,warning,3.9,4.35,0.44999999999999973,46,7,male,29
+s51130,Quantitative,no warning,3.35,4.7,1.35,51,7,female,24
+s51131,Quantitative,no warning,3.5,3.55,0.04999999999999982,48,7,female,25
+s51132,Quantitative,warning,3.65,3.65,0,51,8,male,41
+s51133,Quantitative,no warning,3.15,5,1.85,58,8,male,22
+s51134,Quantitative,no warning,3.65,4.25,0.6000000000000001,38,8,female,27
+s51135,Quantitative,warning,3.5,4.3,0.7999999999999998,39,8,male,33
+s51136,Quantitative,warning,3.7,4.45,0.75,40,7,female,27
+s51137,Quantitative,no warning,5.25,5.5,0.25,55,8,female,25
+s51138,Quantitative,warning,4.4,4.9,0.5,46,8,female,25
+s51139,Quantitative,warning,3.65,3.95,0.30000000000000027,42,6,male,21
+s51140,Quantitative,no warning,3.6,3.55,-0.050000000000000266,45,6,male,25
+s51141,Quantitative,warning,4.55,3.8,-0.75,47,8,female,28
+s51142,Quantitative,warning,3.6,3.55,-0.050000000000000266,51,8,male,28
+s51143,Quantitative,warning,3.45,3.55,0.09999999999999964,40,6,female,22
+s51144,Quantitative,no warning,3.85,5.15,1.3000000000000003,44,8,female,26
+s51145,Quantitative,warning,3.35,3.35,0,46,6,male,24
+s51146,Quantitative,no warning,4.4,4.5,0.09999999999999964,52,8,male,24
+s51147,Quantitative,no warning,3.85,3.95,0.10000000000000009,48,7,male,23
+s51148,Quantitative,no warning,4.1,4.7,0.6000000000000005,52,7,female,23
+s51149,Quantitative,no warning,4.2,4.15,-0.04999999999999982,44,8,male,26
+s51150,Quantitative,warning,3.95,4.15,0.20000000000000018,40,7,male,27
+s51151,Quantitative,warning,3.7,3.85,0.1499999999999999,34,7,male,31
+s51152,Quantitative,no warning,4.35,4,-0.34999999999999964,49,7,male,22
+s51153,Quantitative,no warning,3.45,4.55,1.0999999999999996,50,8,male,34
+s51154,Quantitative,warning,3.3,3.35,0.050000000000000266,59,7,male,23
+s51155,Quantitative,warning,4.15,4.7,0.5499999999999998,38,6,male,24
+s51156,Quantitative,no warning,4.2,4.5,0.2999999999999998,48,8,female,35
+s51157,Quantitative,warning,4.85,4.7,-0.14999999999999947,48,8,male,27
+s51158,Quantitative,warning,3.75,3.45,-0.2999999999999998,31,8,female,31
+s51159,Quantitative,no warning,3.9,3.3,-0.6000000000000001,35,8,female,25
+s51160,Quantitative,warning,4.1,4.25,0.15000000000000036,40,7,male,24
+s51161,Quantitative,warning,4.4,4.5,0.09999999999999964,46,7,male,25
+s51162,Quantitative,no warning,3.4,3.65,0.25,44,7,female,25
+s51163,Quantitative,warning,4.35,4.7,0.35000000000000053,46,8,male,31
+s51164,Quantitative,warning,3.85,3.35,-0.5,34,7,male,28
+s51165,Quantitative,no warning,3.75,3.9,0.1499999999999999,52,8,male,35
+s51166,Humanities,no warning,3.7,5.25,1.5499999999999998,32,8,female,29
+s51167,Humanities,warning,3.6,3.75,0.1499999999999999,24,7,female,25
+s51168,Humanities,no warning,3.65,3.75,0.10000000000000009,47,7,female,24
+s51169,Humanities,warning,3.75,3.9,0.1499999999999999,39,8,male,30
+s51170,Humanities,no warning,4.05,4.85,0.7999999999999998,33,8,male,38
+s51171,Humanities,warning,3.3,3.15,-0.1499999999999999,33,7,non-binary,29
+s51172,Humanities,no warning,5.6,4.9,-0.6999999999999993,31,8,male,31
+s51173,Humanities,warning,3.3,4.15,0.8500000000000005,29,8,male,26
+s51174,Humanities,no warning,3,4.25,1.25,43,7,female,NA
+s51175,Humanities,no warning,4.15,5.45,1.2999999999999998,47,8,male,33
+s51176,Humanities,warning,4,4.2,0.20000000000000018,49,8,male,28
+s51177,Humanities,no warning,4.3,4.3,0,33,8,male,28
+s51178,Humanities,warning,3.6,4.2,0.6000000000000001,39,8,female,27
+s51179,Humanities,no warning,4.2,3.95,-0.25,34,7,male,26
+s51180,Humanities,no warning,4.8,4.9,0.10000000000000053,45,8,female,27
+s51181,Humanities,warning,3.55,4.65,1.1000000000000005,36,8,male,29
+s51182,Humanities,no warning,3.35,4.65,1.3000000000000003,44,8,female,33
+s51183,Humanities,no warning,5.15,5.5,0.34999999999999964,30,7,female,29
+s51184,Humanities,no warning,4.5,4.35,-0.15000000000000036,50,8,female,28
+s51185,Humanities,warning,3.2,3.95,0.75,33,7,male,24
+s51186,Humanities,warning,3.5,3.85,0.3500000000000001,35,8,male,25
+s51187,Humanities,no warning,4,4.95,0.9500000000000002,40,8,female,29
+s51188,Humanities,warning,3.2,4,0.7999999999999998,28,8,female,28
+s51189,Humanities,no warning,4.35,5.25,0.9000000000000004,39,7,male,26
+s51190,Humanities,no warning,4.05,4.05,0,49,7,female,29
+s51191,Humanities,no warning,3.4,3.35,-0.04999999999999982,39,8,male,28
+s51192,Humanities,warning,3.1,2.95,-0.1499999999999999,43,8,male,30
+s51193,Humanities,no warning,3.5,3.9,0.3999999999999999,49,8,male,27
+s51194,Humanities,warning,3.55,3,-0.5499999999999998,35,8,female,30
+s51195,Humanities,no warning,4.15,5.3,1.1499999999999995,51,8,male,30
+s51196,Humanities,warning,4.05,4,-0.04999999999999982,49,8,male,32
+s51197,Humanities,no warning,3.4,3.4,0,47,7,female,29
+s51198,Humanities,no warning,4.1,4.65,0.5500000000000007,22,7,male,26
+s51199,Humanities,warning,2.3,2.2,-0.09999999999999964,34,8,female,25
+s51200,Humanities,no warning,4.4,6.1,1.6999999999999993,56,8,male,30
+s51201,Humanities,no warning,4.3,4.65,0.35000000000000053,30,8,male,36
+s51202,Humanities,warning,2.75,3.4,0.6499999999999999,33,7,female,28
+s51203,Humanities,warning,3.4,3.8,0.3999999999999999,47,7,female,25
+s51204,Humanities,no warning,3.35,4.15,0.8000000000000003,46,8,male,31
+s51205,Humanities,no warning,3.5,4,0.5,48,8,male,29
+s51206,Humanities,no warning,4.15,3.4,-0.7500000000000004,43,8,female,28
+s51207,Humanities,warning,3.55,4.55,1,30,8,female,30
+s51208,Humanities,no warning,4.25,5.7,1.4500000000000002,51,7,male,30
+s51209,Humanities,no warning,2.9,3.6,0.7000000000000002,38,7,female,28
+s51210,Humanities,no warning,4.05,4.25,0.20000000000000018,32,7,female,23
+s51211,Humanities,warning,4.35,4.55,0.20000000000000018,39,8,male,33
+s51212,Humanities,warning,3.95,4.45,0.5,30,7,female,30
+s51213,Humanities,no warning,3.6,4.9,1.3000000000000003,52,8,female,35
+s51214,Humanities,warning,3.7,4,0.2999999999999998,23,8,female,33
+s51215,Humanities,warning,3.85,4,0.1499999999999999,46,8,male,46
+s51216,Humanities,no warning,3.5,4,0.5,37,7,female,25
+s51217,Humanities,no warning,3.8,4.85,1.0499999999999998,45,8,male,31
+s51218,Humanities,warning,3.6,4.25,0.6499999999999999,38,8,female,30
+s51219,Humanities,no warning,3.45,4.55,1.0999999999999996,29,8,female,30
+s51220,Humanities,no warning,3,3.1,0.10000000000000009,35,2,male,29
+s51221,Humanities,warning,3.75,3.45,-0.2999999999999998,28,7,female,26
+s51222,Humanities,warning,4,4.5,0.5,43,8,female,36
+s51223,Humanities,no warning,3.95,4.5,0.5499999999999998,43,8,female,36
+s51224,Humanities,warning,3.5,3.95,0.4500000000000002,32,7,female,32
+s51225,Humanities,no warning,4,5.5,1.5,57,8,male,26
+s51226,Humanities,warning,3.8,3.55,-0.25,38,7,female,30
+s51227,Humanities,no warning,4,3.7,-0.2999999999999998,34,7,female,28
+s51228,Humanities,warning,3.65,4.4,0.7500000000000004,37,6,male,22
+s51229,Humanities,no warning,3.4,3.6,0.20000000000000018,35,8,female,27
+s51230,Humanities,warning,4.2,4.2,0,37,6,male,24
+s51231,Humanities,no warning,3.85,4.65,0.8000000000000003,31,8,female,36
+s51232,Humanities,warning,3.35,4.65,1.3000000000000003,42,8,female,31
+s51233,Humanities,no warning,5.1,5.9,0.8000000000000007,44,8,female,30
+s51234,Humanities,warning,3.6,5.05,1.4499999999999997,44,8,female,32
+s51235,Humanities,no warning,3.9,4.4,0.5000000000000004,35,8,female,39
+s51236,Humanities,no warning,3,4.4,1.4000000000000004,35,8,female,27
+s51237,Humanities,no warning,4.15,4.8,0.6499999999999995,23,8,female,25
+s51238,Humanities,no warning,3.2,5.4,2.2,49,7,female,25
+s51239,Humanities,warning,4,4,0,41,7,male,32
+s51240,Humanities,no warning,3.65,4.85,1.1999999999999997,46,8,female,32
+s51241,Humanities,warning,3.45,4,0.5499999999999998,43,7,female,23
+s51242,Humanities,no warning,3.55,3.95,0.40000000000000036,42,8,female,24
+s51243,Humanities,warning,4.35,3.95,-0.39999999999999947,29,8,female,25
+s51244,Humanities,no warning,4.5,4.95,0.4500000000000002,25,8,female,33
+s51245,Humanities,warning,3.1,4.2,1.1,43,7,female,27
+s51246,Humanities,warning,3.6,3.75,0.1499999999999999,18,8,female,31
+s51247,Humanities,no warning,4.6,4,-0.5999999999999996,31,8,male,34
+s51248,Humanities,warning,3.65,3.75,0.10000000000000009,26,8,male,NA
+s51249,Humanities,no warning,3.75,5.15,1.4000000000000004,30,8,female,28
+s51250,Humanities,warning,4.15,4.35,0.1999999999999993,32,7,female,25
+s51251,Humanities,warning,4.45,4.25,-0.20000000000000018,26,8,female,27
+s51252,Humanities,warning,3.25,3.5,0.25,26,7,female,26
+s51253,Humanities,warning,4.2,4.55,0.34999999999999964,34,8,female,32
+s51254,Humanities,no warning,3.2,3.7,0.5,41,7,female,27
+s51255,Humanities,no warning,4,4.7,0.7000000000000002,41,7,male,23
+s51256,Humanities,warning,2.85,3,0.1499999999999999,43,7,female,22
+s51257,Humanities,no warning,3.5,4.1,0.5999999999999996,45,8,female,31
+s51258,Humanities,warning,3.45,4,0.5499999999999998,50,8,female,47
+s51259,Humanities,warning,3.5,3,-0.5,35,7,female,26
+s51260,Humanities,warning,4.55,5,0.4500000000000002,40,7,female,26
+s51261,Humanities,no warning,3.15,2.95,-0.19999999999999973,33,7,female,24
+s51262,Humanities,warning,4.45,2.65,-1.8000000000000003,51,8,female,27
+s51263,Humanities,no warning,3.5,5.05,1.5499999999999998,39,8,female,36
+s51264,Humanities,no warning,4.1,4.45,0.35000000000000053,33,8,female,25
+s51265,Humanities,warning,2.588235294117647,3.4375,0.8492647058823528,NA,8,female,31
+s51266,Humanities,warning,3.4,4.7,1.3000000000000003,44,7,female,22
+s51267,Humanities,no warning,2.9,3.45,0.5500000000000003,41,8,female,26
+s51268,Humanities,no warning,4.25,5.15,0.9000000000000004,29,7,female,26
+s51269,Humanities,no warning,5.2,5.95,0.75,54,8,female,27
+s51270,Humanities,warning,3.6,3.75,0.1499999999999999,49,8,female,48
+s51271,Humanities,no warning,3.65,3.8,0.1499999999999999,46,8,female,27
+s51272,Humanities,warning,4.1,3.5,-0.5999999999999996,34,8,female,31
+s51273,Humanities,warning,2.7,2.9,0.19999999999999973,36,8,male,27
+s51274,Humanities,no warning,4.35,5.55,1.2000000000000002,29,8,non-binary,31
+s51275,Humanities,no warning,3.7,4.05,0.34999999999999964,42,6,female,23
+s51276,Humanities,no warning,3.9,5.8,1.9,41,8,male,34
+s51277,Humanities,warning,3.65,2.45,-1.1999999999999997,24,7,female,24
+s51278,Humanities,warning,3.35,3.5,0.1499999999999999,43,7,female,28
+s51279,Humanities,no warning,3.05,3.6,0.5500000000000003,40,8,female,25
+s51280,Humanities,warning,3.2,3.35,0.1499999999999999,37,7,male,23
+s51281,Humanities,no warning,3.15,3.4,0.25,52,8,male,26
+s51282,Humanities,warning,3.55,4.1,0.5499999999999998,25,7,male,36
+s51283,Humanities,no warning,3.15,3.55,0.3999999999999999,31,7,female,24
+s51284,Humanities,warning,3.35,4.35,0.9999999999999996,39,7,non-binary,24
+s51285,Humanities,warning,3.2,3.1,-0.10000000000000009,42,8,male,28
+s51286,Humanities,no warning,3.8,5.1,1.2999999999999998,21,7,female,29
+s51287,Humanities,no warning,3.95,4.75,0.7999999999999998,32,7,female,28
+s51288,Humanities,no warning,4.3,5.2,0.9000000000000004,36,8,non-binary,NA
+s51289,Humanities,warning,3.75,4.15,0.40000000000000036,27,8,female,30
+s51290,Humanities,warning,4.2,3.8,-0.40000000000000036,38,7,female,30
+s51291,Humanities,warning,4.05,4.4,0.35000000000000053,47,8,male,28
+s51292,Humanities,no warning,3.8,4.55,0.75,41,8,female,25
+s51293,Humanities,no warning,3.8,4,0.20000000000000018,32,8,female,27
+s51294,Humanities,warning,3.65,4.1,0.44999999999999973,45,7,female,28
+s51295,Humanities,warning,5.2,5.95,0.75,28,7,female,29
+s51296,Humanities,warning,3.6,3.8,0.19999999999999973,40,8,male,27
+s51297,Humanities,no warning,4.9,5.55,0.6499999999999995,18,8,male,27
+s51298,Humanities,no warning,3.7,4.2,0.5,37,8,male,35
+s51299,Humanities,warning,3.35,4.05,0.6999999999999997,38,7,female,22
+s51300,Humanities,no warning,3.7142857142857144,5.052631578947368,1.3383458646616537,40,8,female,34
+s51301,Humanities,warning,4.05,5.55,1.5,46,8,male,32
+s51302,Humanities,no warning,4.65,5.65,1,53,8,male,36
+s51303,Humanities,warning,3.9,4.05,0.1499999999999999,42,7,female,39
+s51304,Humanities,warning,3.1,2.95,-0.1499999999999999,32,4,female,23
+s51305,Humanities,no warning,4.2,5.3,1.0999999999999996,36,8,male,30
+s51306,Humanities,warning,3.65,4.05,0.3999999999999999,43,8,female,30
+s51307,Humanities,no warning,3.45,5.7,2.25,30,8,female,29
+s51308,Humanities,warning,3.75,3.8,0.04999999999999982,35,8,female,26
+s51309,Humanities,warning,4.15,4.6,0.4499999999999993,44,8,female,27
+s51310,Humanities,no warning,3.95,4.55,0.5999999999999996,38,8,female,27
+s51311,Humanities,warning,3.4,3.5,0.10000000000000009,34,8,male,24
+s51312,Humanities,no warning,3.9,3.55,-0.3500000000000001,27,8,female,34
+s51313,Humanities,no warning,4.8,5.8,1,45,8,female,24
+s51314,Humanities,warning,3.25,4.05,0.7999999999999998,41,8,female,28
+s51315,Humanities,warning,3.35,4,0.6499999999999999,29,8,female,29
+s51316,Humanities,no warning,3.35,5.25,1.9,27,7,female,26
+s51317,Humanities,warning,4.05,4.5,0.4500000000000002,45,8,male,26
+s51318,Humanities,warning,2.85,2.85,0,42,7,non-binary,24
+s51319,Humanities,no warning,4.55,6.2,1.6500000000000004,42,8,male,26
+s51320,Humanities,no warning,3.55,4.8,1.25,15,8,female,28
+s51321,Humanities,warning,3.7,4.35,0.6499999999999995,29,8,female,30
+s51322,Humanities,warning,3.2,2.95,-0.25,22,8,female,33
+s51323,Humanities,no warning,4.15,4.55,0.39999999999999947,42,8,female,35
+s51324,Humanities,warning,3,2.9,-0.10000000000000009,37,8,female,35
+s51325,Humanities,warning,3.4,3.35,-0.04999999999999982,41,8,male,31
+s51326,Humanities,no warning,3.35,4.35,0.9999999999999996,44,7,female,27
+s51327,Humanities,no warning,4.4,5.1,0.6999999999999993,44,8,female,32
+s51328,Humanities,warning,2.6,2.7,0.10000000000000009,16,8,female,30
+s51329,Humanities,warning,3.55,3.45,-0.09999999999999964,39,8,female,34
+s51330,Humanities,no warning,4.1,3.75,-0.34999999999999964,37,6,female,26

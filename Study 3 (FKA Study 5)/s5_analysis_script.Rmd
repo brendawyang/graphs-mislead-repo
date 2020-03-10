@@ -96,7 +96,7 @@ timing_df <- read_csv("data/clean/s5_timing_df.csv")
 
 ### Exclusions
 
-You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 97) to TRUE. The next time you run all the code, these participants will be excluded. 
+You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 102) to TRUE. The next time you run all the code, these participants will be excluded. 
 
 ```{r}
 Exclude_Exercise_Check <- FALSE
@@ -178,9 +178,9 @@ nrow(rating_df)
 
 ```
 
+# Create data frames that will be used throughout
 
 ```{r addtional data frames, eval = TRUE}
-#Create data frames that will be used throughout
 
 #Calculate subject means by condition 
 ##(mean rating for truncated and mean rating for non-truncated graphs)
@@ -223,7 +223,12 @@ trimmed_timing_df <- timing_df %>%
 
 ```
 
+```{r}
 
+# export `models_difference_df` for cross-experimental analysis
+# write_csv(models_difference_df, path = "s5_models_difference_df.csv")
+
+```
 
 --------------
 

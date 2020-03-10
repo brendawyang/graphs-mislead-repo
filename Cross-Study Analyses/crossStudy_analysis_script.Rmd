@@ -1,0 +1,153 @@
+---
+title: "Data Analysis for Studies 1 - 3 (FKA Studies 3 - 5)"
+output: 
+  html_document:
+    df_print: paged
+    toc: true
+    toc_depth: 4
+    toc_float: FALSE
+---
+
+
+# Cross-Study Introduction
+
+This Markdown documents the process to analyze studies 1 - 3 (FKA Studies 3- 5). It was created on 3/10/2020 by BWY. We will refer to studies by their original names here; in other words, we will use "Study 3" and not "Study 1."
+
+This HTML was last knitted on: `r Sys.time()`
+
+# Set Up
+
+## Packages and Libraries
+
+You must run this section before you can run any other chunks.
+
+```{r packages, echo = FALSE}
+#Make sure all packages are installed
+
+list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "shiny", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+```
+
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+#turn off scientific notation
+options(scipen=999)
+```
+
+
+```{r libraries}
+#Load all libraries
+library(readr)
+library(tidyr)
+library(dplyr)
+library(magrittr)
+library(effsize)
+library(lme4) # for mixed effects models
+library(lmerTest)
+library(kableExtra)
+library(knitr)#kable
+library(pwr)
+
+##Raincloud Plot Libraries
+source("../R_rainclouds.R")
+library(cowplot)
+library(ggthemes)
+library(ggplot2)
+
+```
+
+
+```{r raincloud plot}
+#raincloud plot theme
+raincloud_theme <- theme(
+  text = element_text(size = 10),
+  axis.title.x = element_text(size = 16),
+  axis.title.y = element_text(size = 16, margin = margin(r = 20)),
+  axis.text = element_text(size = 14),
+  legend.title=element_blank(),
+  legend.text=element_text(size=16),
+  legend.position = "right",
+  plot.title = element_text(lineheight=.8, face="bold", size = 16),
+  panel.border = element_blank(),
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.grid.major.y = element_line(colour = 'light gray', size=0.5, linetype='solid'),
+  axis.line = element_blank(), 
+  axis.ticks.y = element_blank())
+```
+
+## Data Import
+
+NOTE: manually changed `participantid` to `participantID` in s4
+
+```{r data import}
+
+s3_models_difference_df <- read_csv("data/s3_models_difference_df.csv")
+s4_models_difference_df <- read_csv("data/s4_models_difference_df.csv")
+s5_models_difference_df <- read_csv("data/s5_models_difference_df.csv")
+
+```
+
+```{r import notice_df}
+
+# merge
+models_difference_df <- full_join(s3_models_difference_df, s4_models_difference_df)
+models_difference_df <- full_join(models_difference_df, s5_models_difference_df)
+
+nrow(models_difference_df) # 727
+
+
+```
+
+# Graph literacy analysis
+
+## Main Effect
+
+Graph literacy somewhat the size of the truncation effect: higher graph literacy -> slightly larger (~ .1 point increase in truncation effect for 10 points graph literacy)
+
+```{r graphliteracy model}
+
+graphliteracymodel <- lmer(difference ~ graphliteracy_sum_rating + (1 | participantID), models_difference_df)
+summary_graphliteracymodel <- summary(graphliteracymodel)
+summary_graphliteracymodel
+
+```
+
+
+Truncation effect is mean rating for truncated graphs - mean rating for control graphs. 
+
+```{r}
+
+ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference))+
+  geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("graph literacy score")+
+  ggtitle("Studies 3 - 5 Graph Literacy")+
+  theme_minimal() +
+  raincloud_theme +
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+# ggsave('crossStudy_graphliteracy.png', plot = last_plot(), width = 6, height = 4)
+
+```
+
+### Interaction with warning
+
+Graph literacy does not significantly predict the size of the truncation effect when you add in warning condition. 
+
+```{r graph literacy and subject condition}
+# graph literacy and subject condition 
+
+model_literacy_warning<- lm(difference ~ graphliteracy_sum_rating * subject_condition, models_difference_df)
+
+##Model
+summary_model_literacy_warning <- summary(model_literacy_warning)
+
+summary_model_literacy_warning
+```
+
+
