@@ -123,13 +123,16 @@ Truncation effect is mean rating for truncated graphs - mean rating for control 
 
 ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference))+
   geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
-  geom_jitter(alpha = 0.7)+
+  geom_jitter(alpha = 0.5, fill = NA)+
   ylab("truncation effect")+
   xlab("graph literacy score")+
   ggtitle("Studies 3 - 5 Graph Literacy")+
-  theme_minimal() +
+  # theme_minimal() +
   raincloud_theme +
-  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+  theme(
+    axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'),
+    panel.background = element_rect(fill = "white")
+    )
 
 # ggsave('crossStudy_graphliteracy.png', plot = last_plot(), width = 6, height = 4)
 
