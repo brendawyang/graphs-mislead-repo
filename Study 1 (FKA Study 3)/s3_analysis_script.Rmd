@@ -13,7 +13,7 @@ output:
 
 This Markdown documents the process to analyze the data for Study 3 which looked at the difference between those who received and those who did not receive a warning at the beginning of the study. 
 
-Data was collected on July 19, 2018 by using Amazon's Mechanical Turk for ditribution and Qualtrics as a survey platform. 
+Data was collected on July 19, 2018 by using Amazon's Mechanical Turk for distribution and Qualtrics as a survey platform. 
 
 This HTML was last knitted on: `r Sys.time()`
 
@@ -94,7 +94,7 @@ timing_df <- read_csv("data/clean/s3_timing_df.csv")
 
 ### Exclusions
 
-You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 97) to TRUE. The next time you run all the code, these participants will be excluded. 
+You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 100) to TRUE. The next time you run all the code, these participants will be excluded. 
 
 ```{r}
 Exclude_Exercise_Check <- FALSE
@@ -116,9 +116,9 @@ if(Exclude_Exercise_Check == TRUE){demographic_df <- demographic_df %>%
 
 For this report, **`r if(Exclude_Exercise_Check == FALSE){paste("no")} else{paste(participants_excluded$n)}`** participants are being excluded from analysis. 
 
+# Create data frames that will be used throughout
 
 ```{r addtional data frames, eval = TRUE}
-#Create data frames that will be used throughout
 
 #Calculate subject means by condition 
 ##(mean rating for truncated and mean rating for non-truncated graphs)
@@ -161,11 +161,17 @@ trimmed_timing_df <- timing_df %>%
 
 ```
 
+```{r}
+
+# export `models_difference_df` for cross-experimental analysis
+write_csv(models_difference_df, path = "s3_models_difference_df.csv")
+
+```
 
 
 --------------
 
-## Methods
+# Methods
 
 ### Participants
 
@@ -290,8 +296,8 @@ ggplot(subject_mean_df, aes(x = subject_condition, y = subject_mean_rating, fill
   guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
   ggtitle("Figure 5")
 
-ggsave('../figures/figure5.png', plot = last_plot(), width = 8, height = 5)
-ggsave('../figures/figure5.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
+# ggsave('../figures/figure5.png', plot = last_plot(), width = 8, height = 5)
+# ggsave('../figures/figure5.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
 ```
 
 
@@ -496,7 +502,6 @@ The experiment took participants an average of M~duration~ = `r text_spec(round(
 
 ##### Main Effect
 
-
 ```{r graphliteracy model}
 graphliteracymodel <- lm(difference ~ graphliteracy_sum_rating, models_difference_df)
 summary_graphliteracymodel <- summary(graphliteracymodel)
@@ -515,7 +520,7 @@ ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference))+
   raincloud_theme+
   theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
 
-ggsave('../figures/figureSI3_graphliteracy.png', plot = last_plot(), width = 6, height = 4)
+# ggsave('../figures/figureSI3_graphliteracy.png', plot = last_plot(), width = 6, height = 4)
 ```
 
 ##### Including item as a random effect
@@ -563,7 +568,7 @@ ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference, c
   scale_colour_brewer(type = "div", palette = "Dark2")+
   scale_fill_brewer(type = "div", palette = "Dark2")
 
-ggsave('../figures/figureSI3_graphliteracy_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
+# ggsave('../figures/figureSI3_graphliteracy_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
 ```
 
 #### Education (Supplemental Information)
@@ -591,7 +596,7 @@ ggplot(models_difference_df, aes(x = dem_ed, y = difference))+
   raincloud_theme+
   theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
 
-ggsave('../figures/figureSI3_education.png', plot = last_plot(), width = 6, height = 4)
+# ggsave('../figures/figureSI3_education.png', plot = last_plot(), width = 6, height = 4)
 ```
 
 ##### Interaction with warning
@@ -622,7 +627,7 @@ ggplot(models_difference_df, aes(x = dem_ed, y = difference, color = subject_con
   scale_colour_brewer(type = "div", palette = "Dark2")+
   scale_fill_brewer(type = "div", palette = "Dark2")
 
-ggsave('../figures/figureSI3_eductaton_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
+# ggsave('../figures/figureSI3_eductaton_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
 ```
 
 
@@ -659,7 +664,7 @@ ggplot(models_difference_df, aes(x = dem_age, y = difference))+
   raincloud_theme+
   theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
 
-ggsave('../figures/figureSI3_age.png', plot = last_plot(), width = 6, height = 4)
+# ggsave('../figures/figureSI3_age.png', plot = last_plot(), width = 6, height = 4)
 ```
 
 ##### Interaction with warning
@@ -686,7 +691,7 @@ ggplot(models_difference_df, aes(x = dem_age, y = difference, color = subject_co
   scale_colour_brewer(type = "div", palette = "Dark2")+
   scale_fill_brewer(type = "div", palette = "Dark2")
 
-ggsave('../figures/figureSI3_age_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
+# ggsave('../figures/figureSI3_age_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
 ```
 
 
@@ -730,7 +735,7 @@ ggplot(rating_df, aes(x = subject_condition, y = rating, group = subject_conditi
   facet_wrap(~as.factor(question))+
   scale_colour_brewer(palette = "Dark2", direction=-1)
 
-ggsave("../figures/figureSI3_item_analysis.png", device = "png", width = 16, height = 8, plot = last_plot(),scale = 1)
+# ggsave("../figures/figureSI3_item_analysis.png", device = "png", width = 16, height = 8, plot = last_plot(),scale = 1)
 ```
 
 ```{r}
@@ -759,7 +764,7 @@ ggplot(rating_df, aes(x = graph_condition, y = rating, group = subject_condition
   facet_wrap(~as.factor(question))+
   scale_colour_brewer(palette = "Dark2", direction=-1)
 
-ggsave("../figures/figureSI3_item_analysis_warning.png", device = "png", width = 16, height = 8, plot = last_plot(),scale = 1)
+# ggsave("../figures/figureSI3_item_analysis_warning.png", device = "png", width = 16, height = 8, plot = last_plot(),scale = 1)
 ```
 
 #### Timing (Supplemental Information)
