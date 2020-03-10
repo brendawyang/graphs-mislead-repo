@@ -1,0 +1,4761 @@
+participantID,subject_condition,graph_condition,group,question,rating,check,order
+s31001,no warning,truncated,B,1,4,NA,17
+s31001,no warning,control,B,10,2,NA,2
+s31001,no warning,truncated,B,11,4,NA,36
+s31001,no warning,control,B,12,5,NA,10
+s31001,no warning,truncated,B,13,6,NA,32
+s31001,no warning,control,B,14,7,NA,7
+s31001,no warning,truncated,B,15,6,NA,31
+s31001,no warning,control,B,16,4,NA,13
+s31001,no warning,truncated,B,17,2,NA,5
+s31001,no warning,control,B,18,2,NA,27
+s31001,no warning,truncated,B,19,6,NA,20
+s31001,no warning,control,B,2,6,NA,1
+s31001,no warning,control,B,20,4,NA,14
+s31001,no warning,truncated,B,21,3,NA,11
+s31001,no warning,control,B,22,2,NA,4
+s31001,no warning,truncated,B,23,7,NA,24
+s31001,no warning,control,B,24,2,NA,8
+s31001,no warning,truncated,B,25,7,NA,6
+s31001,no warning,control,B,26,4,NA,28
+s31001,no warning,truncated,B,27,3,NA,3
+s31001,no warning,control,B,28,3,NA,34
+s31001,no warning,truncated,B,29,7,NA,18
+s31001,no warning,truncated,B,3,3,NA,38
+s31001,no warning,control,B,30,2,NA,33
+s31001,no warning,truncated,B,31,5,NA,35
+s31001,no warning,control,B,32,5,NA,30
+s31001,no warning,truncated,B,33,5,NA,22
+s31001,no warning,control,B,34,3,NA,23
+s31001,no warning,truncated,B,35,7,NA,12
+s31001,no warning,control,B,36,2,NA,15
+s31001,no warning,truncated,B,37,3,NA,21
+s31001,no warning,control,B,38,6,NA,29
+s31001,no warning,truncated,B,39,2,NA,19
+s31001,no warning,control,B,4,5,NA,9
+s31001,no warning,control,B,40,2,NA,26
+s31001,no warning,truncated,B,5,6,NA,25
+s31001,no warning,control,B,6,2,NA,39
+s31001,no warning,truncated,B,7,7,NA,40
+s31001,no warning,control,B,8,2,NA,37
+s31001,no warning,truncated,B,9,7,NA,16
+s31002,no warning,control,A,1,6,NA,8
+s31002,no warning,truncated,A,10,5,NA,18
+s31002,no warning,control,A,11,6,NA,6
+s31002,no warning,truncated,A,12,6,NA,14
+s31002,no warning,control,A,13,6,NA,2
+s31002,no warning,truncated,A,14,3,NA,16
+s31002,no warning,control,A,15,6,NA,10
+s31002,no warning,truncated,A,16,4,NA,22
+s31002,no warning,control,A,17,4,NA,17
+s31002,no warning,truncated,A,18,6,NA,9
+s31002,no warning,control,A,19,6,NA,37
+s31002,no warning,truncated,A,2,4,NA,27
+s31002,no warning,truncated,A,20,4,NA,32
+s31002,no warning,control,A,21,5,NA,35
+s31002,no warning,truncated,A,22,5,NA,26
+s31002,no warning,control,A,23,5,NA,28
+s31002,no warning,truncated,A,24,6,NA,38
+s31002,no warning,control,A,25,6,NA,3
+s31002,no warning,truncated,A,26,5,NA,24
+s31002,no warning,control,A,27,5,NA,15
+s31002,no warning,truncated,A,28,4,NA,25
+s31002,no warning,control,A,29,6,NA,1
+s31002,no warning,control,A,3,5,NA,23
+s31002,no warning,truncated,A,30,5,NA,34
+s31002,no warning,control,A,31,6,NA,5
+s31002,no warning,truncated,A,32,5,NA,29
+s31002,no warning,control,A,33,5,NA,36
+s31002,no warning,truncated,A,34,6,NA,19
+s31002,no warning,control,A,35,5,NA,40
+s31002,no warning,truncated,A,36,6,NA,7
+s31002,no warning,control,A,37,6,NA,21
+s31002,no warning,truncated,A,38,6,NA,12
+s31002,no warning,control,A,39,5,NA,33
+s31002,no warning,truncated,A,4,6,NA,4
+s31002,no warning,truncated,A,40,5,NA,31
+s31002,no warning,control,A,5,4,NA,20
+s31002,no warning,truncated,A,6,5,NA,30
+s31002,no warning,control,A,7,6,NA,39
+s31002,no warning,truncated,A,8,6,NA,13
+s31002,no warning,control,A,9,6,NA,11
+s31003,no warning,control,A,1,3,NA,20
+s31003,no warning,truncated,A,10,3,NA,12
+s31003,no warning,control,A,11,3,NA,28
+s31003,no warning,truncated,A,12,6,NA,18
+s31003,no warning,control,A,13,5,NA,4
+s31003,no warning,truncated,A,14,6,NA,34
+s31003,no warning,control,A,15,4,NA,8
+s31003,no warning,truncated,A,16,5,NA,26
+s31003,no warning,control,A,17,2,NA,40
+s31003,no warning,truncated,A,18,2,NA,1
+s31003,no warning,control,A,19,5,NA,30
+s31003,no warning,truncated,A,2,5,NA,19
+s31003,no warning,truncated,A,20,5,NA,24
+s31003,no warning,control,A,21,2,NA,6
+s31003,no warning,truncated,A,22,2,NA,7
+s31003,no warning,control,A,23,6,NA,15
+s31003,no warning,truncated,A,24,2,NA,22
+s31003,no warning,control,A,25,6,NA,31
+s31003,no warning,truncated,A,26,5,NA,25
+s31003,no warning,control,A,27,1,NA,38
+s31003,no warning,truncated,A,28,6,NA,23
+s31003,no warning,control,A,29,5,NA,29
+s31003,no warning,control,A,3,2,NA,17
+s31003,no warning,truncated,A,30,3,NA,2
+s31003,no warning,control,A,31,4,NA,33
+s31003,no warning,truncated,A,32,6,NA,21
+s31003,no warning,control,A,33,2,NA,3
+s31003,no warning,truncated,A,34,4,NA,32
+s31003,no warning,control,A,35,4,NA,11
+s31003,no warning,truncated,A,36,4,NA,5
+s31003,no warning,control,A,37,2,NA,39
+s31003,no warning,truncated,A,38,7,NA,16
+s31003,no warning,control,A,39,1,NA,37
+s31003,no warning,truncated,A,4,6,NA,9
+s31003,no warning,truncated,A,40,3,NA,35
+s31003,no warning,control,A,5,3,NA,36
+s31003,no warning,truncated,A,6,5,NA,14
+s31003,no warning,control,A,7,5,NA,13
+s31003,no warning,truncated,A,8,4,NA,10
+s31003,no warning,control,A,9,3,NA,27
+s31004,warning,control,A,1,3,right,4
+s31004,warning,truncated,A,10,2,right,8
+s31004,warning,control,A,11,2,right,27
+s31004,warning,truncated,A,12,6,right,16
+s31004,warning,control,A,13,5,right,11
+s31004,warning,truncated,A,14,3,right,18
+s31004,warning,control,A,15,5,right,39
+s31004,warning,truncated,A,16,2,right,1
+s31004,warning,control,A,17,1,right,26
+s31004,warning,truncated,A,18,2,right,35
+s31004,warning,control,A,19,3,right,32
+s31004,warning,truncated,A,2,3,right,28
+s31004,warning,truncated,A,20,2,right,31
+s31004,warning,control,A,21,2,right,15
+s31004,warning,truncated,A,22,2,right,17
+s31004,warning,control,A,23,6,right,34
+s31004,warning,truncated,A,24,2,right,24
+s31004,warning,control,A,25,4,right,37
+s31004,warning,truncated,A,26,2,right,21
+s31004,warning,control,A,27,2,right,2
+s31004,warning,truncated,A,28,3,right,22
+s31004,warning,control,A,29,4,right,6
+s31004,warning,control,A,3,1,right,14
+s31004,warning,truncated,A,30,2,right,38
+s31004,warning,control,A,31,4,right,13
+s31004,warning,truncated,A,32,3,right,36
+s31004,warning,control,A,33,2,right,33
+s31004,warning,truncated,A,34,2,right,3
+s31004,warning,control,A,35,3,right,40
+s31004,warning,truncated,A,36,2,right,30
+s31004,warning,control,A,37,2,right,29
+s31004,warning,truncated,A,38,3,right,23
+s31004,warning,control,A,39,1,right,10
+s31004,warning,truncated,A,4,3,right,20
+s31004,warning,truncated,A,40,2,right,9
+s31004,warning,control,A,5,4,right,19
+s31004,warning,truncated,A,6,2,right,7
+s31004,warning,control,A,7,4,right,12
+s31004,warning,truncated,A,8,2,right,25
+s31004,warning,control,A,9,3,right,5
+s31005,warning,truncated,B,1,6,right,39
+s31005,warning,control,B,10,2,right,14
+s31005,warning,truncated,B,11,6,right,38
+s31005,warning,control,B,12,6,right,25
+s31005,warning,truncated,B,13,7,right,7
+s31005,warning,control,B,14,7,right,24
+s31005,warning,truncated,B,15,7,right,30
+s31005,warning,control,B,16,6,right,37
+s31005,warning,truncated,B,17,3,right,3
+s31005,warning,control,B,18,2,right,15
+s31005,warning,truncated,B,19,7,right,17
+s31005,warning,control,B,2,5,right,13
+s31005,warning,control,B,20,5,right,27
+s31005,warning,truncated,B,21,6,right,29
+s31005,warning,control,B,22,3,right,4
+s31005,warning,truncated,B,23,7,right,40
+s31005,warning,control,B,24,3,right,9
+s31005,warning,truncated,B,25,7,right,21
+s31005,warning,control,B,26,5,right,33
+s31005,warning,truncated,B,27,5,right,36
+s31005,warning,control,B,28,5,right,10
+s31005,warning,truncated,B,29,7,right,26
+s31005,warning,truncated,B,3,5,right,5
+s31005,warning,control,B,30,3,right,2
+s31005,warning,truncated,B,31,7,right,34
+s31005,warning,control,B,32,7,right,12
+s31005,warning,truncated,B,33,5,right,18
+s31005,warning,control,B,34,5,right,28
+s31005,warning,truncated,B,35,7,right,20
+s31005,warning,control,B,36,4,right,31
+s31005,warning,truncated,B,37,4,right,23
+s31005,warning,control,B,38,6,right,8
+s31005,warning,truncated,B,39,2,right,16
+s31005,warning,control,B,4,6,right,6
+s31005,warning,control,B,40,2,right,32
+s31005,warning,truncated,B,5,7,right,22
+s31005,warning,control,B,6,4,right,35
+s31005,warning,truncated,B,7,4,right,1
+s31005,warning,control,B,8,3,right,11
+s31005,warning,truncated,B,9,6,right,19
+s31006,no warning,truncated,B,1,4,NA,15
+s31006,no warning,control,B,10,2,NA,19
+s31006,no warning,truncated,B,11,4,NA,14
+s31006,no warning,control,B,12,4,NA,6
+s31006,no warning,truncated,B,13,7,NA,26
+s31006,no warning,control,B,14,7,NA,7
+s31006,no warning,truncated,B,15,7,NA,12
+s31006,no warning,control,B,16,5,NA,5
+s31006,no warning,truncated,B,17,2,NA,29
+s31006,no warning,control,B,18,2,NA,21
+s31006,no warning,truncated,B,19,7,NA,28
+s31006,no warning,control,B,2,1,NA,20
+s31006,no warning,control,B,20,5,NA,10
+s31006,no warning,truncated,B,21,2,NA,27
+s31006,no warning,control,B,22,2,NA,4
+s31006,no warning,truncated,B,23,7,NA,11
+s31006,no warning,control,B,24,2,NA,13
+s31006,no warning,truncated,B,25,7,NA,18
+s31006,no warning,control,B,26,4,NA,24
+s31006,no warning,truncated,B,27,3,NA,9
+s31006,no warning,control,B,28,4,NA,25
+s31006,no warning,truncated,B,29,7,NA,40
+s31006,no warning,truncated,B,3,3,NA,22
+s31006,no warning,control,B,30,2,NA,8
+s31006,no warning,truncated,B,31,6,NA,38
+s31006,no warning,control,B,32,7,NA,32
+s31006,no warning,truncated,B,33,6,NA,39
+s31006,no warning,control,B,34,2,NA,23
+s31006,no warning,truncated,B,35,6,NA,36
+s31006,no warning,control,B,36,2,NA,33
+s31006,no warning,truncated,B,37,4,NA,1
+s31006,no warning,control,B,38,7,NA,34
+s31006,no warning,truncated,B,39,2,NA,17
+s31006,no warning,control,B,4,4,NA,16
+s31006,no warning,control,B,40,2,NA,2
+s31006,no warning,truncated,B,5,6,NA,37
+s31006,no warning,control,B,6,3,NA,35
+s31006,no warning,truncated,B,7,7,NA,31
+s31006,no warning,control,B,8,2,NA,3
+s31006,no warning,truncated,B,9,5,NA,30
+s31007,no warning,control,A,1,4,NA,1
+s31007,no warning,truncated,A,10,3,NA,5
+s31007,no warning,control,A,11,4,NA,25
+s31007,no warning,truncated,A,12,7,NA,14
+s31007,no warning,control,A,13,7,NA,10
+s31007,no warning,truncated,A,14,7,NA,32
+s31007,no warning,control,A,15,6,NA,40
+s31007,no warning,truncated,A,16,7,NA,28
+s31007,no warning,control,A,17,2,NA,7
+s31007,no warning,truncated,A,18,4,NA,19
+s31007,no warning,control,A,19,6,NA,20
+s31007,no warning,truncated,A,2,7,NA,38
+s31007,no warning,truncated,A,20,7,NA,17
+s31007,no warning,control,A,21,2,NA,37
+s31007,no warning,truncated,A,22,4,NA,16
+s31007,no warning,control,A,23,7,NA,39
+s31007,no warning,truncated,A,24,3,NA,8
+s31007,no warning,control,A,25,7,NA,29
+s31007,no warning,truncated,A,26,7,NA,31
+s31007,no warning,control,A,27,2,NA,12
+s31007,no warning,truncated,A,28,7,NA,26
+s31007,no warning,control,A,29,7,NA,35
+s31007,no warning,control,A,3,2,NA,9
+s31007,no warning,truncated,A,30,4,NA,15
+s31007,no warning,control,A,31,5,NA,4
+s31007,no warning,truncated,A,32,7,NA,24
+s31007,no warning,control,A,33,3,NA,27
+s31007,no warning,truncated,A,34,7,NA,6
+s31007,no warning,control,A,35,4,NA,3
+s31007,no warning,truncated,A,36,4,NA,30
+s31007,no warning,control,A,37,4,NA,21
+s31007,no warning,truncated,A,38,7,NA,13
+s31007,no warning,control,A,39,1,NA,34
+s31007,no warning,truncated,A,4,7,NA,22
+s31007,no warning,truncated,A,40,5,NA,18
+s31007,no warning,control,A,5,7,NA,33
+s31007,no warning,truncated,A,6,4,NA,23
+s31007,no warning,control,A,7,6,NA,2
+s31007,no warning,truncated,A,8,7,NA,36
+s31007,no warning,control,A,9,4,NA,11
+s31008,no warning,truncated,B,1,4,NA,32
+s31008,no warning,control,B,10,2,NA,34
+s31008,no warning,truncated,B,11,4,NA,8
+s31008,no warning,control,B,12,5,NA,7
+s31008,no warning,truncated,B,13,7,NA,38
+s31008,no warning,control,B,14,5,NA,21
+s31008,no warning,truncated,B,15,6,NA,24
+s31008,no warning,control,B,16,4,NA,26
+s31008,no warning,truncated,B,17,3,NA,30
+s31008,no warning,control,B,18,3,NA,13
+s31008,no warning,truncated,B,19,6,NA,23
+s31008,no warning,control,B,2,4,NA,37
+s31008,no warning,control,B,20,5,NA,28
+s31008,no warning,truncated,B,21,3,NA,33
+s31008,no warning,control,B,22,3,NA,6
+s31008,no warning,truncated,B,23,7,NA,22
+s31008,no warning,control,B,24,3,NA,18
+s31008,no warning,truncated,B,25,7,NA,1
+s31008,no warning,control,B,26,4,NA,17
+s31008,no warning,truncated,B,27,4,NA,25
+s31008,no warning,control,B,28,5,NA,12
+s31008,no warning,truncated,B,29,6,NA,27
+s31008,no warning,truncated,B,3,4,NA,16
+s31008,no warning,control,B,30,4,NA,2
+s31008,no warning,truncated,B,31,4,NA,15
+s31008,no warning,control,B,32,6,NA,11
+s31008,no warning,truncated,B,33,6,NA,4
+s31008,no warning,control,B,34,3,NA,14
+s31008,no warning,truncated,B,35,6,NA,19
+s31008,no warning,control,B,36,3,NA,36
+s31008,no warning,truncated,B,37,4,NA,35
+s31008,no warning,control,B,38,6,NA,20
+s31008,no warning,truncated,B,39,2,NA,29
+s31008,no warning,control,B,4,5,NA,3
+s31008,no warning,control,B,40,3,NA,40
+s31008,no warning,truncated,B,5,5,NA,39
+s31008,no warning,control,B,6,3,NA,31
+s31008,no warning,truncated,B,7,5,NA,9
+s31008,no warning,control,B,8,3,NA,10
+s31008,no warning,truncated,B,9,5,NA,5
+s31009,no warning,truncated,B,1,5,NA,15
+s31009,no warning,control,B,10,2,NA,2
+s31009,no warning,truncated,B,11,5,NA,35
+s31009,no warning,control,B,12,3,NA,3
+s31009,no warning,truncated,B,13,6,NA,16
+s31009,no warning,control,B,14,3,NA,38
+s31009,no warning,truncated,B,15,5,NA,17
+s31009,no warning,control,B,16,4,NA,7
+s31009,no warning,truncated,B,17,6,NA,13
+s31009,no warning,control,B,18,2,NA,32
+s31009,no warning,truncated,B,19,5,NA,28
+s31009,no warning,control,B,2,4,NA,39
+s31009,no warning,control,B,20,5,NA,22
+s31009,no warning,truncated,B,21,5,NA,34
+s31009,no warning,control,B,22,4,NA,24
+s31009,no warning,truncated,B,23,5,NA,40
+s31009,no warning,control,B,24,5,NA,5
+s31009,no warning,truncated,B,25,7,NA,6
+s31009,no warning,control,B,26,4,NA,27
+s31009,no warning,truncated,B,27,3,NA,29
+s31009,no warning,control,B,28,4,NA,33
+s31009,no warning,truncated,B,29,6,NA,14
+s31009,no warning,truncated,B,3,4,NA,26
+s31009,no warning,control,B,30,4,NA,30
+s31009,no warning,truncated,B,31,5,NA,36
+s31009,no warning,control,B,32,5,NA,12
+s31009,no warning,truncated,B,33,5,NA,4
+s31009,no warning,control,B,34,2,NA,9
+s31009,no warning,truncated,B,35,4,NA,21
+s31009,no warning,control,B,36,2,NA,10
+s31009,no warning,truncated,B,37,4,NA,1
+s31009,no warning,control,B,38,5,NA,11
+s31009,no warning,truncated,B,39,1,NA,31
+s31009,no warning,control,B,4,4,NA,37
+s31009,no warning,control,B,40,2,NA,18
+s31009,no warning,truncated,B,5,4,NA,19
+s31009,no warning,control,B,6,4,NA,8
+s31009,no warning,truncated,B,7,6,NA,20
+s31009,no warning,control,B,8,2,NA,23
+s31009,no warning,truncated,B,9,4,NA,25
+s31010,warning,control,A,1,3,right,13
+s31010,warning,truncated,A,10,2,right,36
+s31010,warning,control,A,11,3,right,19
+s31010,warning,truncated,A,12,4,right,16
+s31010,warning,control,A,13,4,right,17
+s31010,warning,truncated,A,14,5,right,10
+s31010,warning,control,A,15,7,right,7
+s31010,warning,truncated,A,16,2,right,32
+s31010,warning,control,A,17,2,right,3
+s31010,warning,truncated,A,18,2,right,27
+s31010,warning,control,A,19,3,right,8
+s31010,warning,truncated,A,2,3,right,9
+s31010,warning,truncated,A,20,4,right,28
+s31010,warning,control,A,21,3,right,30
+s31010,warning,truncated,A,22,2,right,33
+s31010,warning,control,A,23,5,right,15
+s31010,warning,truncated,A,24,3,right,37
+s31010,warning,control,A,25,4,right,34
+s31010,warning,truncated,A,26,4,right,25
+s31010,warning,control,A,27,3,right,38
+s31010,warning,truncated,A,28,3,right,6
+s31010,warning,control,A,29,5,right,24
+s31010,warning,control,A,3,1,right,20
+s31010,warning,truncated,A,30,2,right,40
+s31010,warning,control,A,31,4,right,12
+s31010,warning,truncated,A,32,4,right,26
+s31010,warning,control,A,33,3,right,4
+s31010,warning,truncated,A,34,3,right,22
+s31010,warning,control,A,35,4,right,5
+s31010,warning,truncated,A,36,3,right,1
+s31010,warning,control,A,37,2,right,14
+s31010,warning,truncated,A,38,4,right,23
+s31010,warning,control,A,39,1,right,29
+s31010,warning,truncated,A,4,4,right,21
+s31010,warning,truncated,A,40,2,right,18
+s31010,warning,control,A,5,5,right,35
+s31010,warning,truncated,A,6,2,right,2
+s31010,warning,control,A,7,3,right,11
+s31010,warning,truncated,A,8,2,right,39
+s31010,warning,control,A,9,4,right,31
+s31011,warning,control,A,1,4,wrong,34
+s31011,warning,truncated,A,10,5,wrong,23
+s31011,warning,control,A,11,4,wrong,39
+s31011,warning,truncated,A,12,5,wrong,28
+s31011,warning,control,A,13,5,wrong,1
+s31011,warning,truncated,A,14,5,wrong,40
+s31011,warning,control,A,15,6,wrong,5
+s31011,warning,truncated,A,16,6,wrong,8
+s31011,warning,control,A,17,5,wrong,26
+s31011,warning,truncated,A,18,4,wrong,12
+s31011,warning,control,A,19,4,wrong,33
+s31011,warning,truncated,A,2,5,wrong,38
+s31011,warning,truncated,A,20,4,wrong,24
+s31011,warning,control,A,21,3,wrong,9
+s31011,warning,truncated,A,22,4,wrong,29
+s31011,warning,control,A,23,5,wrong,22
+s31011,warning,truncated,A,24,4,wrong,35
+s31011,warning,control,A,25,5,wrong,25
+s31011,warning,truncated,A,26,5,wrong,30
+s31011,warning,control,A,27,4,wrong,21
+s31011,warning,truncated,A,28,4,wrong,13
+s31011,warning,control,A,29,5,wrong,17
+s31011,warning,control,A,3,5,wrong,2
+s31011,warning,truncated,A,30,5,wrong,6
+s31011,warning,control,A,31,5,wrong,20
+s31011,warning,truncated,A,32,4,wrong,19
+s31011,warning,control,A,33,4,wrong,32
+s31011,warning,truncated,A,34,4,wrong,18
+s31011,warning,control,A,35,4,wrong,37
+s31011,warning,truncated,A,36,4,wrong,10
+s31011,warning,control,A,37,4,wrong,3
+s31011,warning,truncated,A,38,5,wrong,31
+s31011,warning,control,A,39,4,wrong,11
+s31011,warning,truncated,A,4,4,wrong,36
+s31011,warning,truncated,A,40,5,wrong,27
+s31011,warning,control,A,5,4,wrong,14
+s31011,warning,truncated,A,6,5,wrong,4
+s31011,warning,control,A,7,5,wrong,7
+s31011,warning,truncated,A,8,4,wrong,15
+s31011,warning,control,A,9,4,wrong,16
+s31012,no warning,truncated,B,1,5,NA,5
+s31012,no warning,control,B,10,4,NA,33
+s31012,no warning,truncated,B,11,5,NA,1
+s31012,no warning,control,B,12,4,NA,2
+s31012,no warning,truncated,B,13,6,NA,26
+s31012,no warning,control,B,14,5,NA,4
+s31012,no warning,truncated,B,15,6,NA,39
+s31012,no warning,control,B,16,4,NA,23
+s31012,no warning,truncated,B,17,5,NA,34
+s31012,no warning,control,B,18,2,NA,36
+s31012,no warning,truncated,B,19,4,NA,24
+s31012,no warning,control,B,20,4,NA,40
+s31012,no warning,truncated,B,21,4,NA,18
+s31012,no warning,control,B,22,4,NA,30
+s31012,no warning,truncated,B,23,4,NA,31
+s31012,no warning,control,B,24,3,NA,38
+s31012,no warning,truncated,B,25,5,NA,10
+s31012,no warning,control,B,26,4,NA,32
+s31012,no warning,truncated,B,27,4,NA,7
+s31012,no warning,control,B,28,3,NA,16
+s31012,no warning,truncated,B,29,4,NA,15
+s31012,no warning,truncated,B,3,4,NA,13
+s31012,no warning,control,B,30,3,NA,9
+s31012,no warning,truncated,B,31,4,NA,37
+s31012,no warning,control,B,32,4,NA,20
+s31012,no warning,truncated,B,33,4,NA,19
+s31012,no warning,control,B,34,2,NA,17
+s31012,no warning,truncated,B,35,3,NA,29
+s31012,no warning,control,B,36,4,NA,27
+s31012,no warning,truncated,B,37,4,NA,14
+s31012,no warning,control,B,38,6,NA,3
+s31012,no warning,truncated,B,39,2,NA,25
+s31012,no warning,control,B,4,4,NA,35
+s31012,no warning,control,B,40,5,NA,28
+s31012,no warning,truncated,B,5,4,NA,6
+s31012,no warning,control,B,6,4,NA,22
+s31012,no warning,truncated,B,7,4,NA,21
+s31012,no warning,control,B,8,4,NA,11
+s31012,no warning,control,B,8,4,NA,12
+s31012,no warning,truncated,B,9,5,NA,8
+s31013,warning,truncated,B,1,2,right,26
+s31013,warning,control,B,10,2,right,2
+s31013,warning,truncated,B,11,3,right,8
+s31013,warning,control,B,12,4,right,17
+s31013,warning,truncated,B,13,5,right,6
+s31013,warning,control,B,14,6,right,36
+s31013,warning,truncated,B,15,6,right,19
+s31013,warning,control,B,16,2,right,4
+s31013,warning,truncated,B,17,2,right,14
+s31013,warning,control,B,18,2,right,32
+s31013,warning,truncated,B,19,5,right,34
+s31013,warning,control,B,2,4,right,15
+s31013,warning,control,B,20,2,right,35
+s31013,warning,truncated,B,21,2,right,38
+s31013,warning,control,B,22,2,right,22
+s31013,warning,truncated,B,23,6,right,24
+s31013,warning,control,B,24,2,right,16
+s31013,warning,truncated,B,25,3,right,25
+s31013,warning,control,B,26,3,right,23
+s31013,warning,truncated,B,27,2,right,18
+s31013,warning,control,B,28,2,right,30
+s31013,warning,truncated,B,29,6,right,3
+s31013,warning,truncated,B,3,2,right,29
+s31013,warning,control,B,30,2,right,11
+s31013,warning,truncated,B,31,5,right,1
+s31013,warning,control,B,32,6,right,39
+s31013,warning,truncated,B,33,4,right,5
+s31013,warning,control,B,34,4,right,13
+s31013,warning,truncated,B,35,3,right,31
+s31013,warning,control,B,36,2,right,20
+s31013,warning,truncated,B,37,2,right,9
+s31013,warning,control,B,38,4,right,12
+s31013,warning,truncated,B,39,2,right,28
+s31013,warning,control,B,4,3,right,7
+s31013,warning,control,B,40,2,right,40
+s31013,warning,truncated,B,5,3,right,10
+s31013,warning,control,B,6,3,right,21
+s31013,warning,truncated,B,7,3,right,27
+s31013,warning,control,B,8,3,right,37
+s31013,warning,truncated,B,9,2,right,33
+s31014,no warning,truncated,B,1,4,NA,35
+s31014,no warning,control,B,10,2,NA,9
+s31014,no warning,truncated,B,11,4,NA,3
+s31014,no warning,control,B,12,4,NA,36
+s31014,no warning,truncated,B,13,7,NA,24
+s31014,no warning,control,B,14,7,NA,21
+s31014,no warning,truncated,B,15,7,NA,33
+s31014,no warning,control,B,16,4,NA,25
+s31014,no warning,truncated,B,17,4,NA,15
+s31014,no warning,control,B,18,1,NA,22
+s31014,no warning,truncated,B,19,4,NA,29
+s31014,no warning,control,B,2,3,NA,37
+s31014,no warning,control,B,20,4,NA,32
+s31014,no warning,truncated,B,21,2,NA,2
+s31014,no warning,control,B,22,2,NA,26
+s31014,no warning,truncated,B,23,7,NA,13
+s31014,no warning,control,B,24,2,NA,18
+s31014,no warning,truncated,B,25,7,NA,34
+s31014,no warning,control,B,26,5,NA,14
+s31014,no warning,truncated,B,27,3,NA,7
+s31014,no warning,control,B,28,3,NA,39
+s31014,no warning,truncated,B,29,7,NA,19
+s31014,no warning,truncated,B,3,5,NA,6
+s31014,no warning,control,B,30,3,NA,12
+s31014,no warning,truncated,B,31,6,NA,31
+s31014,no warning,control,B,32,7,NA,28
+s31014,no warning,truncated,B,33,5,NA,40
+s31014,no warning,control,B,34,3,NA,5
+s31014,no warning,truncated,B,35,7,NA,8
+s31014,no warning,control,B,36,3,NA,20
+s31014,no warning,truncated,B,37,5,NA,1
+s31014,no warning,control,B,38,7,NA,10
+s31014,no warning,truncated,B,39,1,NA,38
+s31014,no warning,control,B,4,6,NA,27
+s31014,no warning,control,B,40,3,NA,4
+s31014,no warning,truncated,B,5,6,NA,11
+s31014,no warning,control,B,6,2,NA,30
+s31014,no warning,truncated,B,7,7,NA,16
+s31014,no warning,control,B,8,3,NA,23
+s31014,no warning,truncated,B,9,6,NA,17
+s31015,no warning,truncated,B,1,5,NA,8
+s31015,no warning,control,B,10,3,NA,32
+s31015,no warning,truncated,B,11,6,NA,40
+s31015,no warning,control,B,12,5,NA,17
+s31015,no warning,truncated,B,13,5,NA,31
+s31015,no warning,control,B,14,7,NA,38
+s31015,no warning,truncated,B,15,7,NA,15
+s31015,no warning,control,B,16,7,NA,39
+s31015,no warning,truncated,B,17,2,NA,35
+s31015,no warning,control,B,18,5,NA,6
+s31015,no warning,truncated,B,19,7,NA,33
+s31015,no warning,control,B,2,4,NA,9
+s31015,no warning,control,B,20,5,NA,18
+s31015,no warning,truncated,B,21,3,NA,19
+s31015,no warning,control,B,22,3,NA,13
+s31015,no warning,truncated,B,23,5,NA,2
+s31015,no warning,control,B,24,6,NA,3
+s31015,no warning,truncated,B,25,3,NA,14
+s31015,no warning,control,B,26,5,NA,4
+s31015,no warning,truncated,B,27,3,NA,12
+s31015,no warning,control,B,28,5,NA,20
+s31015,no warning,truncated,B,29,7,NA,25
+s31015,no warning,truncated,B,3,2,NA,37
+s31015,no warning,control,B,30,3,NA,34
+s31015,no warning,truncated,B,31,6,NA,24
+s31015,no warning,control,B,32,6,NA,21
+s31015,no warning,truncated,B,33,7,NA,26
+s31015,no warning,control,B,34,5,NA,27
+s31015,no warning,truncated,B,35,5,NA,7
+s31015,no warning,control,B,36,3,NA,11
+s31015,no warning,truncated,B,37,5,NA,28
+s31015,no warning,control,B,38,5,NA,23
+s31015,no warning,truncated,B,39,3,NA,36
+s31015,no warning,control,B,4,5,NA,30
+s31015,no warning,control,B,40,3,NA,22
+s31015,no warning,truncated,B,5,6,NA,10
+s31015,no warning,control,B,6,4,NA,16
+s31015,no warning,truncated,B,7,5,NA,5
+s31015,no warning,control,B,8,6,NA,1
+s31015,no warning,truncated,B,9,5,NA,29
+s31016,no warning,control,A,1,2,NA,3
+s31016,no warning,truncated,A,10,2,NA,15
+s31016,no warning,control,A,11,3,NA,36
+s31016,no warning,truncated,A,12,7,NA,16
+s31016,no warning,control,A,13,5,NA,10
+s31016,no warning,truncated,A,14,7,NA,37
+s31016,no warning,control,A,15,5,NA,8
+s31016,no warning,truncated,A,16,4,NA,17
+s31016,no warning,control,A,17,2,NA,7
+s31016,no warning,truncated,A,18,3,NA,11
+s31016,no warning,control,A,19,5,NA,29
+s31016,no warning,truncated,A,2,4,NA,20
+s31016,no warning,truncated,A,20,4,NA,26
+s31016,no warning,control,A,21,2,NA,34
+s31016,no warning,truncated,A,22,3,NA,39
+s31016,no warning,control,A,23,7,NA,31
+s31016,no warning,truncated,A,24,2,NA,2
+s31016,no warning,control,A,25,4,NA,21
+s31016,no warning,truncated,A,26,7,NA,1
+s31016,no warning,control,A,27,2,NA,4
+s31016,no warning,truncated,A,28,5,NA,24
+s31016,no warning,control,A,29,5,NA,9
+s31016,no warning,control,A,3,2,NA,35
+s31016,no warning,truncated,A,30,3,NA,13
+s31016,no warning,control,A,31,2,NA,19
+s31016,no warning,truncated,A,32,7,NA,32
+s31016,no warning,control,A,33,2,NA,33
+s31016,no warning,truncated,A,34,3,NA,30
+s31016,no warning,control,A,35,3,NA,6
+s31016,no warning,truncated,A,36,4,NA,12
+s31016,no warning,control,A,37,3,NA,18
+s31016,no warning,truncated,A,38,7,NA,27
+s31016,no warning,control,A,39,1,NA,5
+s31016,no warning,truncated,A,4,4,NA,38
+s31016,no warning,truncated,A,40,3,NA,23
+s31016,no warning,control,A,5,3,NA,25
+s31016,no warning,truncated,A,6,4,NA,40
+s31016,no warning,control,A,7,3,NA,22
+s31016,no warning,truncated,A,8,4,NA,14
+s31016,no warning,control,A,9,3,NA,28
+s31017,warning,control,A,1,4,wrong,32
+s31017,warning,truncated,A,10,4,wrong,35
+s31017,warning,control,A,11,2,wrong,26
+s31017,warning,truncated,A,12,6,wrong,21
+s31017,warning,control,A,13,6,wrong,28
+s31017,warning,truncated,A,14,6,wrong,24
+s31017,warning,control,A,15,6,wrong,33
+s31017,warning,truncated,A,16,3,wrong,18
+s31017,warning,control,A,17,2,wrong,22
+s31017,warning,truncated,A,18,3,wrong,19
+s31017,warning,control,A,19,5,wrong,13
+s31017,warning,truncated,A,2,5,wrong,29
+s31017,warning,truncated,A,20,4,wrong,2
+s31017,warning,control,A,21,3,wrong,31
+s31017,warning,truncated,A,22,3,wrong,5
+s31017,warning,control,A,23,6,wrong,39
+s31017,warning,truncated,A,24,2,wrong,3
+s31017,warning,control,A,25,5,wrong,40
+s31017,warning,truncated,A,26,6,wrong,14
+s31017,warning,control,A,27,1,wrong,15
+s31017,warning,truncated,A,28,6,wrong,30
+s31017,warning,control,A,29,6,wrong,27
+s31017,warning,control,A,3,2,wrong,9
+s31017,warning,truncated,A,30,5,wrong,8
+s31017,warning,control,A,31,4,wrong,16
+s31017,warning,truncated,A,32,7,wrong,20
+s31017,warning,control,A,33,3,wrong,38
+s31017,warning,truncated,A,34,5,wrong,25
+s31017,warning,control,A,35,3,wrong,34
+s31017,warning,truncated,A,36,2,wrong,4
+s31017,warning,control,A,37,2,wrong,12
+s31017,warning,truncated,A,38,6,wrong,17
+s31017,warning,control,A,39,1,wrong,37
+s31017,warning,truncated,A,4,6,wrong,7
+s31017,warning,truncated,A,40,3,wrong,36
+s31017,warning,control,A,5,5,wrong,23
+s31017,warning,truncated,A,6,5,wrong,11
+s31017,warning,control,A,7,5,wrong,1
+s31017,warning,truncated,A,8,5,wrong,6
+s31017,warning,control,A,9,5,wrong,10
+s31018,no warning,truncated,B,1,3,NA,38
+s31018,no warning,control,B,10,3,NA,29
+s31018,no warning,truncated,B,11,4,NA,28
+s31018,no warning,control,B,12,1,NA,3
+s31018,no warning,truncated,B,13,3,NA,40
+s31018,no warning,control,B,14,3,NA,36
+s31018,no warning,truncated,B,15,4,NA,1
+s31018,no warning,control,B,16,4,NA,11
+s31018,no warning,truncated,B,17,6,NA,8
+s31018,no warning,control,B,18,1,NA,22
+s31018,no warning,truncated,B,19,4,NA,14
+s31018,no warning,control,B,2,4,NA,9
+s31018,no warning,control,B,20,4,NA,21
+s31018,no warning,truncated,B,21,4,NA,35
+s31018,no warning,control,B,22,3,NA,26
+s31018,no warning,truncated,B,23,5,NA,23
+s31018,no warning,control,B,24,3,NA,34
+s31018,no warning,truncated,B,25,5,NA,15
+s31018,no warning,control,B,26,4,NA,6
+s31018,no warning,truncated,B,27,4,NA,16
+s31018,no warning,control,B,28,5,NA,5
+s31018,no warning,truncated,B,29,5,NA,19
+s31018,no warning,truncated,B,3,2,NA,31
+s31018,no warning,control,B,30,3,NA,30
+s31018,no warning,truncated,B,31,4,NA,24
+s31018,no warning,control,B,32,3,NA,37
+s31018,no warning,truncated,B,33,3,NA,39
+s31018,no warning,control,B,34,5,NA,17
+s31018,no warning,truncated,B,35,4,NA,18
+s31018,no warning,control,B,36,4,NA,7
+s31018,no warning,truncated,B,37,4,NA,12
+s31018,no warning,control,B,38,3,NA,27
+s31018,no warning,truncated,B,39,5,NA,20
+s31018,no warning,control,B,4,4,NA,32
+s31018,no warning,control,B,40,3,NA,25
+s31018,no warning,truncated,B,5,6,NA,13
+s31018,no warning,control,B,6,4,NA,33
+s31018,no warning,truncated,B,7,3,NA,2
+s31018,no warning,control,B,8,5,NA,10
+s31018,no warning,truncated,B,9,4,NA,4
+s31019,warning,truncated,B,1,4,right,28
+s31019,warning,control,B,10,2,right,1
+s31019,warning,truncated,B,11,4,right,11
+s31019,warning,control,B,12,4,right,16
+s31019,warning,truncated,B,13,7,right,6
+s31019,warning,control,B,14,6,right,7
+s31019,warning,truncated,B,15,7,right,12
+s31019,warning,control,B,16,4,right,9
+s31019,warning,truncated,B,17,2,right,22
+s31019,warning,control,B,18,2,right,18
+s31019,warning,truncated,B,19,5,right,39
+s31019,warning,control,B,2,4,right,33
+s31019,warning,control,B,20,4,right,27
+s31019,warning,truncated,B,21,2,right,31
+s31019,warning,control,B,22,2,right,37
+s31019,warning,truncated,B,23,7,right,19
+s31019,warning,control,B,24,2,right,35
+s31019,warning,truncated,B,25,7,right,26
+s31019,warning,control,B,26,4,right,25
+s31019,warning,truncated,B,27,3,right,8
+s31019,warning,control,B,28,4,right,14
+s31019,warning,truncated,B,29,7,right,21
+s31019,warning,truncated,B,3,3,right,34
+s31019,warning,control,B,30,2,right,4
+s31019,warning,truncated,B,31,5,right,10
+s31019,warning,control,B,32,5,right,32
+s31019,warning,truncated,B,33,5,right,13
+s31019,warning,control,B,34,2,right,40
+s31019,warning,truncated,B,35,7,right,29
+s31019,warning,control,B,36,2,right,23
+s31019,warning,truncated,B,37,4,right,20
+s31019,warning,control,B,38,7,right,36
+s31019,warning,truncated,B,39,2,right,24
+s31019,warning,control,B,4,4,right,2
+s31019,warning,control,B,40,2,right,30
+s31019,warning,truncated,B,5,6,right,5
+s31019,warning,control,B,6,2,right,38
+s31019,warning,truncated,B,7,7,right,3
+s31019,warning,control,B,8,2,right,17
+s31019,warning,truncated,B,9,5,right,15
+s31020,warning,control,A,1,2,right,25
+s31020,warning,truncated,A,10,3,right,31
+s31020,warning,control,A,11,2,right,34
+s31020,warning,truncated,A,12,3,right,13
+s31020,warning,control,A,13,5,right,12
+s31020,warning,truncated,A,14,6,right,39
+s31020,warning,control,A,15,6,right,36
+s31020,warning,truncated,A,16,3,right,20
+s31020,warning,control,A,17,2,right,30
+s31020,warning,truncated,A,18,2,right,40
+s31020,warning,control,A,19,4,right,29
+s31020,warning,truncated,A,2,4,right,2
+s31020,warning,truncated,A,20,5,right,28
+s31020,warning,control,A,21,2,right,38
+s31020,warning,truncated,A,22,2,right,22
+s31020,warning,control,A,23,6,right,24
+s31020,warning,truncated,A,24,2,right,23
+s31020,warning,control,A,25,3,right,17
+s31020,warning,truncated,A,26,3,right,11
+s31020,warning,control,A,27,2,right,9
+s31020,warning,truncated,A,28,2,right,4
+s31020,warning,control,A,29,5,right,3
+s31020,warning,control,A,3,2,right,7
+s31020,warning,truncated,A,30,3,right,14
+s31020,warning,control,A,31,5,right,26
+s31020,warning,truncated,A,32,5,right,6
+s31020,warning,control,A,33,3,right,18
+s31020,warning,truncated,A,34,4,right,21
+s31020,warning,control,A,35,2,right,37
+s31020,warning,truncated,A,36,2,right,33
+s31020,warning,control,A,37,3,right,35
+s31020,warning,truncated,A,38,7,right,16
+s31020,warning,control,A,39,1,right,32
+s31020,warning,truncated,A,4,7,right,10
+s31020,warning,truncated,A,40,3,right,1
+s31020,warning,control,A,5,3,right,15
+s31020,warning,truncated,A,6,3,right,19
+s31020,warning,control,A,7,3,right,5
+s31020,warning,truncated,A,8,4,right,27
+s31020,warning,control,A,9,4,right,8
+s31021,no warning,truncated,B,1,5,NA,18
+s31021,no warning,control,B,10,2,NA,27
+s31021,no warning,truncated,B,11,5,NA,29
+s31021,no warning,control,B,12,6,NA,32
+s31021,no warning,truncated,B,13,7,NA,10
+s31021,no warning,control,B,14,7,NA,28
+s31021,no warning,truncated,B,15,7,NA,12
+s31021,no warning,control,B,16,3,NA,26
+s31021,no warning,truncated,B,17,2,NA,37
+s31021,no warning,control,B,18,2,NA,1
+s31021,no warning,truncated,B,19,7,NA,35
+s31021,no warning,control,B,2,4,NA,21
+s31021,no warning,control,B,20,4,NA,8
+s31021,no warning,truncated,B,21,2,NA,23
+s31021,no warning,control,B,22,2,NA,34
+s31021,no warning,truncated,B,23,7,NA,22
+s31021,no warning,control,B,24,2,NA,30
+s31021,no warning,truncated,B,25,7,NA,16
+s31021,no warning,control,B,26,5,NA,38
+s31021,no warning,truncated,B,27,3,NA,15
+s31021,no warning,control,B,28,4,NA,3
+s31021,no warning,truncated,B,29,7,NA,2
+s31021,no warning,truncated,B,3,4,NA,25
+s31021,no warning,control,B,30,3,NA,17
+s31021,no warning,truncated,B,31,7,NA,24
+s31021,no warning,control,B,32,7,NA,40
+s31021,no warning,truncated,B,33,7,NA,7
+s31021,no warning,control,B,34,4,NA,14
+s31021,no warning,truncated,B,35,7,NA,6
+s31021,no warning,control,B,36,2,NA,19
+s31021,no warning,truncated,B,37,2,NA,39
+s31021,no warning,control,B,38,5,NA,31
+s31021,no warning,truncated,B,39,2,NA,20
+s31021,no warning,control,B,4,6,NA,36
+s31021,no warning,control,B,40,2,NA,11
+s31021,no warning,truncated,B,5,6,NA,33
+s31021,no warning,control,B,6,3,NA,9
+s31021,no warning,truncated,B,7,5,NA,4
+s31021,no warning,control,B,8,2,NA,5
+s31021,no warning,truncated,B,9,6,NA,13
+s31022,no warning,control,A,1,2,NA,1
+s31022,no warning,truncated,A,10,1,NA,38
+s31022,no warning,control,A,11,1,NA,37
+s31022,no warning,truncated,A,12,2,NA,31
+s31022,no warning,control,A,13,4,NA,5
+s31022,no warning,truncated,A,14,2,NA,30
+s31022,no warning,control,A,15,3,NA,3
+s31022,no warning,truncated,A,16,3,NA,7
+s31022,no warning,control,A,17,1,NA,17
+s31022,no warning,truncated,A,18,1,NA,21
+s31022,no warning,control,A,19,2,NA,24
+s31022,no warning,truncated,A,2,3,NA,15
+s31022,no warning,truncated,A,20,3,NA,11
+s31022,no warning,control,A,21,1,NA,19
+s31022,no warning,truncated,A,22,1,NA,36
+s31022,no warning,control,A,23,5,NA,34
+s31022,no warning,truncated,A,24,1,NA,13
+s31022,no warning,control,A,25,5,NA,10
+s31022,no warning,truncated,A,26,2,NA,35
+s31022,no warning,control,A,27,1,NA,29
+s31022,no warning,truncated,A,28,3,NA,2
+s31022,no warning,control,A,29,4,NA,40
+s31022,no warning,control,A,3,1,NA,33
+s31022,no warning,truncated,A,30,1,NA,16
+s31022,no warning,control,A,31,3,NA,12
+s31022,no warning,truncated,A,32,2,NA,20
+s31022,no warning,control,A,33,1,NA,8
+s31022,no warning,truncated,A,34,1,NA,23
+s31022,no warning,control,A,35,2,NA,18
+s31022,no warning,truncated,A,36,1,NA,32
+s31022,no warning,control,A,37,1,NA,22
+s31022,no warning,truncated,A,38,7,NA,27
+s31022,no warning,control,A,39,1,NA,9
+s31022,no warning,truncated,A,4,2,NA,39
+s31022,no warning,truncated,A,40,1,NA,4
+s31022,no warning,control,A,5,4,NA,25
+s31022,no warning,truncated,A,6,1,NA,26
+s31022,no warning,control,A,7,2,NA,28
+s31022,no warning,truncated,A,8,1,NA,14
+s31022,no warning,control,A,9,2,NA,6
+s31023,no warning,truncated,B,1,5,NA,3
+s31023,no warning,control,B,10,2,NA,26
+s31023,no warning,truncated,B,11,6,NA,38
+s31023,no warning,control,B,12,5,NA,18
+s31023,no warning,truncated,B,13,6,NA,20
+s31023,no warning,control,B,14,7,NA,36
+s31023,no warning,truncated,B,15,7,NA,35
+s31023,no warning,control,B,16,4,NA,13
+s31023,no warning,truncated,B,17,2,NA,27
+s31023,no warning,control,B,18,3,NA,16
+s31023,no warning,truncated,B,19,5,NA,8
+s31023,no warning,control,B,2,6,NA,28
+s31023,no warning,control,B,20,5,NA,11
+s31023,no warning,truncated,B,21,4,NA,39
+s31023,no warning,control,B,22,2,NA,32
+s31023,no warning,truncated,B,23,7,NA,12
+s31023,no warning,control,B,24,2,NA,25
+s31023,no warning,truncated,B,25,6,NA,37
+s31023,no warning,control,B,26,5,NA,15
+s31023,no warning,truncated,B,27,2,NA,34
+s31023,no warning,control,B,28,5,NA,17
+s31023,no warning,truncated,B,29,7,NA,22
+s31023,no warning,truncated,B,3,4,NA,19
+s31023,no warning,control,B,30,3,NA,31
+s31023,no warning,truncated,B,31,6,NA,6
+s31023,no warning,control,B,32,7,NA,14
+s31023,no warning,truncated,B,33,6,NA,4
+s31023,no warning,control,B,34,3,NA,24
+s31023,no warning,truncated,B,35,7,NA,2
+s31023,no warning,control,B,36,2,NA,30
+s31023,no warning,truncated,B,37,4,NA,9
+s31023,no warning,control,B,38,6,NA,40
+s31023,no warning,truncated,B,39,3,NA,5
+s31023,no warning,control,B,4,5,NA,21
+s31023,no warning,control,B,40,3,NA,10
+s31023,no warning,truncated,B,5,7,NA,23
+s31023,no warning,control,B,6,4,NA,33
+s31023,no warning,truncated,B,7,5,NA,7
+s31023,no warning,control,B,8,3,NA,29
+s31023,no warning,truncated,B,9,6,NA,1
+s31024,no warning,truncated,B,1,4,NA,29
+s31024,no warning,control,B,10,1,NA,16
+s31024,no warning,truncated,B,11,5,NA,6
+s31024,no warning,control,B,12,6,NA,35
+s31024,no warning,truncated,B,13,7,NA,15
+s31024,no warning,control,B,14,7,NA,9
+s31024,no warning,truncated,B,15,7,NA,4
+s31024,no warning,control,B,16,6,NA,13
+s31024,no warning,truncated,B,17,3,NA,12
+s31024,no warning,control,B,18,1,NA,33
+s31024,no warning,truncated,B,19,7,NA,25
+s31024,no warning,control,B,2,4,NA,38
+s31024,no warning,control,B,20,6,NA,20
+s31024,no warning,truncated,B,21,4,NA,10
+s31024,no warning,control,B,22,2,NA,11
+s31024,no warning,truncated,B,23,7,NA,8
+s31024,no warning,control,B,24,2,NA,18
+s31024,no warning,truncated,B,25,7,NA,23
+s31024,no warning,control,B,26,4,NA,5
+s31024,no warning,truncated,B,27,3,NA,14
+s31024,no warning,control,B,28,4,NA,1
+s31024,no warning,truncated,B,29,7,NA,17
+s31024,no warning,truncated,B,3,3,NA,22
+s31024,no warning,control,B,30,2,NA,34
+s31024,no warning,truncated,B,31,6,NA,31
+s31024,no warning,control,B,32,7,NA,40
+s31024,no warning,truncated,B,33,7,NA,37
+s31024,no warning,control,B,34,3,NA,26
+s31024,no warning,truncated,B,35,7,NA,3
+s31024,no warning,control,B,36,2,NA,30
+s31024,no warning,truncated,B,37,5,NA,2
+s31024,no warning,control,B,38,6,NA,19
+s31024,no warning,truncated,B,39,1,NA,24
+s31024,no warning,control,B,4,4,NA,27
+s31024,no warning,control,B,40,2,NA,36
+s31024,no warning,truncated,B,5,6,NA,28
+s31024,no warning,control,B,6,2,NA,21
+s31024,no warning,truncated,B,7,7,NA,39
+s31024,no warning,control,B,8,3,NA,7
+s31024,no warning,truncated,B,9,7,NA,32
+s31025,warning,truncated,B,1,4,wrong,28
+s31025,warning,control,B,10,2,wrong,40
+s31025,warning,truncated,B,11,4,wrong,16
+s31025,warning,control,B,12,5,wrong,15
+s31025,warning,truncated,B,13,7,wrong,33
+s31025,warning,control,B,14,7,wrong,21
+s31025,warning,truncated,B,15,7,wrong,17
+s31025,warning,control,B,16,4,wrong,25
+s31025,warning,truncated,B,17,2,wrong,8
+s31025,warning,control,B,18,2,wrong,2
+s31025,warning,truncated,B,19,7,wrong,19
+s31025,warning,control,B,2,4,wrong,7
+s31025,warning,control,B,20,4,wrong,9
+s31025,warning,truncated,B,21,3,wrong,20
+s31025,warning,control,B,22,2,wrong,26
+s31025,warning,truncated,B,23,7,wrong,4
+s31025,warning,control,B,24,2,wrong,31
+s31025,warning,truncated,B,25,7,wrong,34
+s31025,warning,control,B,26,4,wrong,12
+s31025,warning,truncated,B,27,4,wrong,3
+s31025,warning,control,B,28,5,wrong,1
+s31025,warning,truncated,B,29,7,wrong,32
+s31025,warning,truncated,B,3,4,wrong,14
+s31025,warning,control,B,30,2,wrong,22
+s31025,warning,truncated,B,31,4,wrong,38
+s31025,warning,control,B,32,7,wrong,11
+s31025,warning,truncated,B,33,4,wrong,39
+s31025,warning,control,B,34,2,wrong,23
+s31025,warning,truncated,B,35,7,wrong,10
+s31025,warning,control,B,36,2,wrong,18
+s31025,warning,truncated,B,37,4,wrong,29
+s31025,warning,control,B,38,5,wrong,5
+s31025,warning,truncated,B,39,1,wrong,37
+s31025,warning,control,B,4,5,wrong,30
+s31025,warning,control,B,40,3,wrong,24
+s31025,warning,truncated,B,5,7,wrong,6
+s31025,warning,control,B,6,2,wrong,27
+s31025,warning,truncated,B,7,7,wrong,35
+s31025,warning,control,B,8,2,wrong,13
+s31025,warning,truncated,B,9,5,wrong,36
+s31026,warning,control,A,1,3,right,32
+s31026,warning,truncated,A,10,1,right,2
+s31026,warning,control,A,11,2,right,30
+s31026,warning,truncated,A,12,5,right,35
+s31026,warning,control,A,13,7,right,39
+s31026,warning,truncated,A,14,2,right,22
+s31026,warning,control,A,15,5,right,25
+s31026,warning,truncated,A,16,1,right,29
+s31026,warning,control,A,17,2,right,27
+s31026,warning,truncated,A,18,2,right,14
+s31026,warning,control,A,19,4,right,17
+s31026,warning,truncated,A,2,3,right,10
+s31026,warning,truncated,A,20,2,right,40
+s31026,warning,control,A,21,1,right,37
+s31026,warning,truncated,A,22,2,right,6
+s31026,warning,control,A,23,4,right,31
+s31026,warning,truncated,A,24,1,right,36
+s31026,warning,control,A,25,3,right,19
+s31026,warning,truncated,A,26,4,right,26
+s31026,warning,control,A,27,1,right,34
+s31026,warning,truncated,A,28,2,right,16
+s31026,warning,control,A,29,5,right,33
+s31026,warning,control,A,3,1,right,11
+s31026,warning,truncated,A,30,2,right,12
+s31026,warning,control,A,31,5,right,4
+s31026,warning,truncated,A,32,6,right,13
+s31026,warning,control,A,33,3,right,18
+s31026,warning,truncated,A,34,3,right,15
+s31026,warning,control,A,35,4,right,5
+s31026,warning,truncated,A,36,2,right,23
+s31026,warning,control,A,37,1,right,21
+s31026,warning,truncated,A,38,4,right,3
+s31026,warning,control,A,39,1,right,20
+s31026,warning,truncated,A,4,4,right,9
+s31026,warning,truncated,A,40,1,right,38
+s31026,warning,control,A,5,6,right,7
+s31026,warning,truncated,A,6,4,right,24
+s31026,warning,control,A,7,3,right,28
+s31026,warning,truncated,A,8,2,right,1
+s31026,warning,control,A,9,5,right,8
+s31027,no warning,truncated,B,1,4,NA,32
+s31027,no warning,control,B,10,3,NA,1
+s31027,no warning,truncated,B,11,4,NA,16
+s31027,no warning,control,B,12,5,NA,13
+s31027,no warning,truncated,B,13,6,NA,11
+s31027,no warning,control,B,14,6,NA,10
+s31027,no warning,truncated,B,15,6,NA,12
+s31027,no warning,control,B,16,5,NA,27
+s31027,no warning,truncated,B,17,5,NA,3
+s31027,no warning,control,B,18,2,NA,36
+s31027,no warning,truncated,B,19,6,NA,19
+s31027,no warning,control,B,2,4,NA,37
+s31027,no warning,control,B,20,4,NA,18
+s31027,no warning,truncated,B,21,3,NA,40
+s31027,no warning,control,B,22,3,NA,23
+s31027,no warning,truncated,B,23,7,NA,22
+s31027,no warning,control,B,24,4,NA,14
+s31027,no warning,truncated,B,25,6,NA,30
+s31027,no warning,control,B,26,5,NA,4
+s31027,no warning,truncated,B,27,3,NA,33
+s31027,no warning,control,B,28,5,NA,21
+s31027,no warning,truncated,B,29,7,NA,28
+s31027,no warning,truncated,B,3,3,NA,25
+s31027,no warning,control,B,30,5,NA,26
+s31027,no warning,truncated,B,31,6,NA,35
+s31027,no warning,control,B,32,5,NA,39
+s31027,no warning,truncated,B,33,6,NA,5
+s31027,no warning,control,B,34,4,NA,20
+s31027,no warning,truncated,B,35,6,NA,7
+s31027,no warning,control,B,36,3,NA,9
+s31027,no warning,truncated,B,37,4,NA,38
+s31027,no warning,control,B,38,6,NA,29
+s31027,no warning,truncated,B,39,2,NA,17
+s31027,no warning,control,B,4,5,NA,6
+s31027,no warning,control,B,40,3,NA,34
+s31027,no warning,truncated,B,5,6,NA,15
+s31027,no warning,control,B,6,5,NA,31
+s31027,no warning,truncated,B,7,7,NA,8
+s31027,no warning,control,B,8,5,NA,2
+s31027,no warning,truncated,B,9,5,NA,24
+s31028,warning,control,A,1,2,right,27
+s31028,warning,truncated,A,10,2,right,35
+s31028,warning,control,A,11,2,right,11
+s31028,warning,truncated,A,12,4,right,18
+s31028,warning,control,A,13,3,right,40
+s31028,warning,truncated,A,14,5,right,33
+s31028,warning,control,A,15,5,right,30
+s31028,warning,truncated,A,16,2,right,17
+s31028,warning,control,A,17,2,right,10
+s31028,warning,truncated,A,18,3,right,20
+s31028,warning,control,A,19,4,right,38
+s31028,warning,truncated,A,2,6,right,36
+s31028,warning,truncated,A,20,3,right,34
+s31028,warning,control,A,21,2,right,28
+s31028,warning,truncated,A,22,2,right,23
+s31028,warning,control,A,23,6,right,15
+s31028,warning,truncated,A,24,2,right,16
+s31028,warning,control,A,25,4,right,24
+s31028,warning,truncated,A,26,4,right,5
+s31028,warning,control,A,27,2,right,4
+s31028,warning,truncated,A,28,4,right,7
+s31028,warning,control,A,29,5,right,13
+s31028,warning,control,A,3,2,right,22
+s31028,warning,truncated,A,30,2,right,9
+s31028,warning,control,A,31,4,right,12
+s31028,warning,truncated,A,32,7,right,26
+s31028,warning,control,A,33,2,right,8
+s31028,warning,truncated,A,34,3,right,37
+s31028,warning,control,A,35,3,right,19
+s31028,warning,truncated,A,36,2,right,21
+s31028,warning,control,A,37,3,right,6
+s31028,warning,truncated,A,38,4,right,39
+s31028,warning,control,A,39,1,right,31
+s31028,warning,truncated,A,4,5,right,2
+s31028,warning,truncated,A,40,2,right,1
+s31028,warning,control,A,5,3,right,32
+s31028,warning,truncated,A,6,3,right,14
+s31028,warning,control,A,7,4,right,3
+s31028,warning,truncated,A,8,2,right,29
+s31028,warning,control,A,9,3,right,25
+s31029,no warning,control,A,1,3,NA,26
+s31029,no warning,truncated,A,10,3,NA,29
+s31029,no warning,control,A,11,3,NA,4
+s31029,no warning,truncated,A,12,7,NA,21
+s31029,no warning,control,A,13,5,NA,27
+s31029,no warning,truncated,A,14,6,NA,38
+s31029,no warning,control,A,15,4,NA,39
+s31029,no warning,truncated,A,16,7,NA,36
+s31029,no warning,control,A,17,2,NA,18
+s31029,no warning,truncated,A,18,3,NA,13
+s31029,no warning,control,A,19,4,NA,30
+s31029,no warning,truncated,A,2,5,NA,31
+s31029,no warning,truncated,A,20,6,NA,22
+s31029,no warning,control,A,21,2,NA,35
+s31029,no warning,truncated,A,22,3,NA,20
+s31029,no warning,control,A,23,4,NA,2
+s31029,no warning,truncated,A,24,2,NA,14
+s31029,no warning,control,A,25,5,NA,16
+s31029,no warning,truncated,A,26,6,NA,15
+s31029,no warning,control,A,27,1,NA,8
+s31029,no warning,truncated,A,28,5,NA,6
+s31029,no warning,control,A,29,6,NA,19
+s31029,no warning,control,A,3,2,NA,34
+s31029,no warning,truncated,A,30,4,NA,32
+s31029,no warning,control,A,31,5,NA,1
+s31029,no warning,truncated,A,32,7,NA,33
+s31029,no warning,control,A,33,2,NA,9
+s31029,no warning,truncated,A,34,4,NA,12
+s31029,no warning,control,A,35,4,NA,7
+s31029,no warning,truncated,A,36,4,NA,28
+s31029,no warning,control,A,37,2,NA,3
+s31029,no warning,truncated,A,38,7,NA,25
+s31029,no warning,control,A,39,1,NA,37
+s31029,no warning,truncated,A,4,6,NA,24
+s31029,no warning,truncated,A,40,2,NA,10
+s31029,no warning,control,A,5,5,NA,17
+s31029,no warning,truncated,A,6,4,NA,5
+s31029,no warning,control,A,7,4,NA,23
+s31029,no warning,truncated,A,8,5,NA,40
+s31029,no warning,control,A,9,3,NA,11
+s31030,warning,control,A,1,2,right,2
+s31030,warning,truncated,A,10,3,right,3
+s31030,warning,control,A,11,3,right,40
+s31030,warning,truncated,A,12,7,right,21
+s31030,warning,control,A,13,4,right,15
+s31030,warning,truncated,A,14,6,right,36
+s31030,warning,control,A,15,6,right,33
+s31030,warning,truncated,A,16,4,right,29
+s31030,warning,control,A,17,2,right,10
+s31030,warning,truncated,A,18,3,right,16
+s31030,warning,control,A,19,4,right,1
+s31030,warning,truncated,A,2,6,right,9
+s31030,warning,truncated,A,20,4,right,26
+s31030,warning,control,A,21,2,right,14
+s31030,warning,truncated,A,22,3,right,8
+s31030,warning,control,A,23,5,right,35
+s31030,warning,truncated,A,24,2,right,24
+s31030,warning,control,A,25,5,right,12
+s31030,warning,truncated,A,26,6,right,6
+s31030,warning,control,A,27,2,right,7
+s31030,warning,truncated,A,28,3,right,39
+s31030,warning,control,A,29,7,right,13
+s31030,warning,control,A,3,2,right,20
+s31030,warning,truncated,A,30,3,right,34
+s31030,warning,control,A,31,4,right,4
+s31030,warning,truncated,A,32,7,right,31
+s31030,warning,control,A,33,3,right,38
+s31030,warning,truncated,A,34,4,right,22
+s31030,warning,control,A,35,3,right,30
+s31030,warning,truncated,A,36,3,right,28
+s31030,warning,control,A,37,2,right,11
+s31030,warning,truncated,A,38,7,right,23
+s31030,warning,control,A,39,1,right,25
+s31030,warning,truncated,A,4,4,right,32
+s31030,warning,truncated,A,40,2,right,27
+s31030,warning,control,A,5,5,right,37
+s31030,warning,truncated,A,6,4,right,18
+s31030,warning,control,A,7,4,right,17
+s31030,warning,truncated,A,8,3,right,5
+s31030,warning,control,A,9,3,right,19
+s31031,warning,truncated,B,1,4,wrong,19
+s31031,warning,control,B,10,1,wrong,22
+s31031,warning,truncated,B,11,3,wrong,24
+s31031,warning,control,B,12,4,wrong,2
+s31031,warning,truncated,B,13,7,wrong,8
+s31031,warning,control,B,14,7,wrong,18
+s31031,warning,truncated,B,15,7,wrong,33
+s31031,warning,control,B,16,2,wrong,35
+s31031,warning,truncated,B,17,2,wrong,9
+s31031,warning,control,B,18,1,wrong,31
+s31031,warning,truncated,B,19,5,wrong,13
+s31031,warning,control,B,2,4,wrong,11
+s31031,warning,control,B,20,4,wrong,32
+s31031,warning,truncated,B,21,2,wrong,38
+s31031,warning,control,B,22,3,wrong,3
+s31031,warning,truncated,B,23,7,wrong,10
+s31031,warning,control,B,24,2,wrong,25
+s31031,warning,truncated,B,25,6,wrong,12
+s31031,warning,control,B,26,4,wrong,6
+s31031,warning,truncated,B,27,2,wrong,20
+s31031,warning,control,B,28,3,wrong,14
+s31031,warning,truncated,B,29,5,wrong,36
+s31031,warning,truncated,B,3,2,wrong,28
+s31031,warning,control,B,30,2,wrong,26
+s31031,warning,truncated,B,31,6,wrong,40
+s31031,warning,control,B,32,6,wrong,17
+s31031,warning,truncated,B,33,5,wrong,39
+s31031,warning,control,B,34,2,wrong,30
+s31031,warning,truncated,B,35,4,wrong,37
+s31031,warning,control,B,36,2,wrong,34
+s31031,warning,truncated,B,37,4,wrong,27
+s31031,warning,control,B,38,7,wrong,5
+s31031,warning,truncated,B,39,1,wrong,23
+s31031,warning,control,B,4,4,wrong,21
+s31031,warning,control,B,40,5,wrong,4
+s31031,warning,truncated,B,5,7,wrong,15
+s31031,warning,control,B,6,3,wrong,7
+s31031,warning,truncated,B,7,6,wrong,29
+s31031,warning,control,B,8,3,wrong,16
+s31031,warning,truncated,B,9,6,wrong,1
+s31032,warning,truncated,B,1,4,right,12
+s31032,warning,control,B,10,1,right,3
+s31032,warning,truncated,B,11,4,right,17
+s31032,warning,control,B,12,7,right,1
+s31032,warning,truncated,B,13,7,right,8
+s31032,warning,control,B,14,7,right,2
+s31032,warning,truncated,B,15,7,right,31
+s31032,warning,control,B,16,4,right,27
+s31032,warning,truncated,B,17,1,right,39
+s31032,warning,control,B,18,1,right,20
+s31032,warning,truncated,B,19,7,right,10
+s31032,warning,control,B,2,4,right,9
+s31032,warning,control,B,20,4,right,5
+s31032,warning,truncated,B,21,7,right,4
+s31032,warning,control,B,22,1,right,37
+s31032,warning,truncated,B,23,7,right,26
+s31032,warning,control,B,24,1,right,19
+s31032,warning,truncated,B,25,7,right,24
+s31032,warning,control,B,26,4,right,16
+s31032,warning,truncated,B,27,3,right,23
+s31032,warning,control,B,28,4,right,21
+s31032,warning,truncated,B,29,7,right,11
+s31032,warning,truncated,B,3,4,right,6
+s31032,warning,control,B,30,1,right,40
+s31032,warning,truncated,B,31,4,right,25
+s31032,warning,control,B,32,4,right,35
+s31032,warning,truncated,B,33,4,right,28
+s31032,warning,control,B,34,2,right,18
+s31032,warning,truncated,B,35,7,right,29
+s31032,warning,control,B,36,2,right,14
+s31032,warning,truncated,B,37,3,right,33
+s31032,warning,control,B,38,7,right,22
+s31032,warning,truncated,B,39,1,right,13
+s31032,warning,control,B,4,4,right,36
+s31032,warning,control,B,40,1,right,34
+s31032,warning,truncated,B,5,4,right,38
+s31032,warning,control,B,6,2,right,30
+s31032,warning,truncated,B,7,7,right,7
+s31032,warning,control,B,8,1,right,15
+s31032,warning,truncated,B,9,4,right,32
+s31033,warning,truncated,B,1,3,right,13
+s31033,warning,control,B,10,2,right,29
+s31033,warning,truncated,B,11,3,right,34
+s31033,warning,control,B,12,7,right,25
+s31033,warning,truncated,B,13,3,right,39
+s31033,warning,control,B,14,4,right,3
+s31033,warning,truncated,B,15,6,right,22
+s31033,warning,control,B,16,2,right,14
+s31033,warning,truncated,B,17,3,right,24
+s31033,warning,control,B,18,2,right,18
+s31033,warning,truncated,B,19,3,right,17
+s31033,warning,control,B,2,5,right,9
+s31033,warning,control,B,20,2,right,32
+s31033,warning,truncated,B,21,2,right,15
+s31033,warning,control,B,22,3,right,37
+s31033,warning,truncated,B,23,4,right,40
+s31033,warning,control,B,24,4,right,26
+s31033,warning,truncated,B,25,2,right,6
+s31033,warning,control,B,26,4,right,36
+s31033,warning,truncated,B,27,2,right,28
+s31033,warning,control,B,28,2,right,1
+s31033,warning,truncated,B,29,6,right,35
+s31033,warning,truncated,B,3,2,right,20
+s31033,warning,control,B,30,2,right,8
+s31033,warning,truncated,B,31,5,right,30
+s31033,warning,control,B,32,3,right,7
+s31033,warning,truncated,B,33,3,right,5
+s31033,warning,control,B,34,3,right,33
+s31033,warning,truncated,B,35,2,right,2
+s31033,warning,control,B,36,2,right,12
+s31033,warning,truncated,B,37,2,right,11
+s31033,warning,control,B,38,3,right,16
+s31033,warning,truncated,B,39,2,right,31
+s31033,warning,control,B,4,3,right,19
+s31033,warning,control,B,40,2,right,38
+s31033,warning,truncated,B,5,6,right,4
+s31033,warning,control,B,6,3,right,27
+s31033,warning,truncated,B,7,3,right,10
+s31033,warning,control,B,8,2,right,23
+s31033,warning,truncated,B,9,2,right,21
+s31034,no warning,control,A,1,6,NA,38
+s31034,no warning,truncated,A,10,6,NA,14
+s31034,no warning,control,A,11,7,NA,5
+s31034,no warning,truncated,A,12,6,NA,8
+s31034,no warning,control,A,13,5,NA,32
+s31034,no warning,truncated,A,14,6,NA,9
+s31034,no warning,control,A,15,5,NA,29
+s31034,no warning,truncated,A,16,6,NA,25
+s31034,no warning,control,A,17,6,NA,37
+s31034,no warning,truncated,A,18,5,NA,23
+s31034,no warning,control,A,19,6,NA,35
+s31034,no warning,truncated,A,2,5,NA,33
+s31034,no warning,truncated,A,20,4,NA,4
+s31034,no warning,control,A,21,5,NA,3
+s31034,no warning,truncated,A,22,6,NA,6
+s31034,no warning,control,A,23,5,NA,36
+s31034,no warning,truncated,A,24,6,NA,10
+s31034,no warning,control,A,25,6,NA,12
+s31034,no warning,truncated,A,26,5,NA,18
+s31034,no warning,control,A,27,6,NA,17
+s31034,no warning,truncated,A,28,6,NA,34
+s31034,no warning,control,A,29,6,NA,7
+s31034,no warning,control,A,3,6,NA,19
+s31034,no warning,truncated,A,30,6,NA,21
+s31034,no warning,control,A,31,6,NA,1
+s31034,no warning,truncated,A,32,5,NA,24
+s31034,no warning,control,A,33,6,NA,28
+s31034,no warning,truncated,A,34,6,NA,2
+s31034,no warning,control,A,35,5,NA,27
+s31034,no warning,truncated,A,36,6,NA,11
+s31034,no warning,control,A,37,6,NA,39
+s31034,no warning,truncated,A,38,5,NA,26
+s31034,no warning,control,A,39,6,NA,22
+s31034,no warning,truncated,A,4,4,NA,31
+s31034,no warning,truncated,A,40,6,NA,13
+s31034,no warning,control,A,5,6,NA,30
+s31034,no warning,truncated,A,6,4,NA,20
+s31034,no warning,control,A,7,6,NA,40
+s31034,no warning,truncated,A,8,6,NA,16
+s31034,no warning,control,A,9,6,NA,15
+s31035,no warning,control,A,1,3,NA,8
+s31035,no warning,truncated,A,10,3,NA,27
+s31035,no warning,control,A,11,3,NA,31
+s31035,no warning,truncated,A,12,6,NA,37
+s31035,no warning,control,A,13,6,NA,18
+s31035,no warning,truncated,A,14,7,NA,2
+s31035,no warning,control,A,15,5,NA,20
+s31035,no warning,truncated,A,16,7,NA,35
+s31035,no warning,control,A,17,2,NA,23
+s31035,no warning,truncated,A,18,3,NA,15
+s31035,no warning,control,A,19,6,NA,38
+s31035,no warning,truncated,A,2,7,NA,3
+s31035,no warning,truncated,A,20,5,NA,32
+s31035,no warning,control,A,21,3,NA,9
+s31035,no warning,truncated,A,22,2,NA,39
+s31035,no warning,control,A,23,7,NA,13
+s31035,no warning,truncated,A,24,2,NA,19
+s31035,no warning,control,A,25,6,NA,25
+s31035,no warning,truncated,A,26,6,NA,33
+s31035,no warning,control,A,27,2,NA,34
+s31035,no warning,truncated,A,28,7,NA,5
+s31035,no warning,control,A,29,6,NA,28
+s31035,no warning,control,A,3,2,NA,24
+s31035,no warning,truncated,A,30,3,NA,40
+s31035,no warning,control,A,31,4,NA,7
+s31035,no warning,truncated,A,32,7,NA,6
+s31035,no warning,control,A,33,3,NA,12
+s31035,no warning,truncated,A,34,5,NA,10
+s31035,no warning,control,A,35,4,NA,4
+s31035,no warning,truncated,A,36,4,NA,11
+s31035,no warning,control,A,37,3,NA,1
+s31035,no warning,truncated,A,38,7,NA,17
+s31035,no warning,control,A,39,2,NA,36
+s31035,no warning,truncated,A,4,5,NA,29
+s31035,no warning,truncated,A,40,5,NA,14
+s31035,no warning,control,A,5,4,NA,16
+s31035,no warning,truncated,A,6,4,NA,30
+s31035,no warning,control,A,7,5,NA,21
+s31035,no warning,truncated,A,8,4,NA,26
+s31035,no warning,control,A,9,4,NA,22
+s31036,warning,control,A,1,3,right,16
+s31036,warning,truncated,A,10,2,right,4
+s31036,warning,control,A,11,2,right,12
+s31036,warning,truncated,A,12,7,right,36
+s31036,warning,control,A,13,4,right,29
+s31036,warning,truncated,A,14,7,right,27
+s31036,warning,control,A,15,5,right,2
+s31036,warning,truncated,A,16,7,right,37
+s31036,warning,control,A,17,7,right,8
+s31036,warning,truncated,A,18,1,right,22
+s31036,warning,control,A,19,2,right,19
+s31036,warning,truncated,A,2,4,right,31
+s31036,warning,truncated,A,20,7,right,5
+s31036,warning,control,A,21,1,right,35
+s31036,warning,truncated,A,22,3,right,40
+s31036,warning,control,A,23,7,right,34
+s31036,warning,truncated,A,24,2,right,39
+s31036,warning,control,A,25,7,right,20
+s31036,warning,truncated,A,26,7,right,9
+s31036,warning,control,A,27,2,right,11
+s31036,warning,truncated,A,28,7,right,26
+s31036,warning,control,A,29,7,right,7
+s31036,warning,control,A,3,1,right,15
+s31036,warning,truncated,A,30,2,right,32
+s31036,warning,control,A,31,4,right,3
+s31036,warning,truncated,A,32,7,right,30
+s31036,warning,control,A,33,4,right,10
+s31036,warning,truncated,A,34,4,right,6
+s31036,warning,control,A,35,2,right,33
+s31036,warning,truncated,A,36,3,right,24
+s31036,warning,control,A,37,3,right,14
+s31036,warning,truncated,A,38,7,right,25
+s31036,warning,control,A,39,1,right,38
+s31036,warning,truncated,A,4,4,right,13
+s31036,warning,truncated,A,40,4,right,1
+s31036,warning,control,A,5,4,right,23
+s31036,warning,truncated,A,6,7,right,18
+s31036,warning,control,A,7,4,right,17
+s31036,warning,truncated,A,8,3,right,21
+s31036,warning,control,A,9,2,right,28
+s31037,warning,control,A,1,3,right,32
+s31037,warning,truncated,A,10,2,right,19
+s31037,warning,control,A,11,3,right,13
+s31037,warning,truncated,A,12,6,right,39
+s31037,warning,control,A,13,6,right,30
+s31037,warning,truncated,A,14,3,right,20
+s31037,warning,control,A,15,5,right,24
+s31037,warning,truncated,A,16,2,right,23
+s31037,warning,control,A,17,2,right,3
+s31037,warning,truncated,A,18,3,right,2
+s31037,warning,control,A,19,4,right,6
+s31037,warning,truncated,A,2,4,right,35
+s31037,warning,truncated,A,20,2,right,8
+s31037,warning,control,A,21,2,right,18
+s31037,warning,truncated,A,22,2,right,25
+s31037,warning,control,A,23,7,right,7
+s31037,warning,truncated,A,24,2,right,10
+s31037,warning,control,A,25,6,right,27
+s31037,warning,truncated,A,26,4,right,14
+s31037,warning,control,A,27,2,right,1
+s31037,warning,truncated,A,28,4,right,29
+s31037,warning,control,A,29,6,right,21
+s31037,warning,control,A,3,2,right,5
+s31037,warning,truncated,A,30,2,right,40
+s31037,warning,control,A,31,4,right,17
+s31037,warning,truncated,A,32,5,right,34
+s31037,warning,control,A,33,3,right,9
+s31037,warning,truncated,A,34,3,right,37
+s31037,warning,control,A,35,4,right,22
+s31037,warning,truncated,A,36,2,right,12
+s31037,warning,control,A,37,3,right,28
+s31037,warning,truncated,A,38,4,right,33
+s31037,warning,control,A,39,1,right,31
+s31037,warning,truncated,A,4,5,right,15
+s31037,warning,truncated,A,40,2,right,11
+s31037,warning,control,A,5,5,right,26
+s31037,warning,truncated,A,6,4,right,38
+s31037,warning,control,A,7,3,right,16
+s31037,warning,truncated,A,8,6,right,4
+s31037,warning,control,A,9,3,right,36
+s31038,warning,truncated,B,1,4,right,1
+s31038,warning,control,B,10,4,right,21
+s31038,warning,truncated,B,11,2,right,36
+s31038,warning,control,B,12,4,right,14
+s31038,warning,truncated,B,13,5,right,23
+s31038,warning,control,B,14,5,right,37
+s31038,warning,truncated,B,15,1,right,32
+s31038,warning,control,B,16,2,right,17
+s31038,warning,truncated,B,17,5,right,11
+s31038,warning,control,B,18,4,right,16
+s31038,warning,truncated,B,19,3,right,24
+s31038,warning,control,B,2,2,right,39
+s31038,warning,control,B,20,5,right,31
+s31038,warning,truncated,B,21,2,right,26
+s31038,warning,control,B,22,3,right,19
+s31038,warning,truncated,B,23,3,right,10
+s31038,warning,control,B,24,3,right,2
+s31038,warning,truncated,B,25,3,right,38
+s31038,warning,control,B,26,4,right,12
+s31038,warning,truncated,B,27,5,right,5
+s31038,warning,control,B,28,5,right,3
+s31038,warning,truncated,B,29,4,right,25
+s31038,warning,truncated,B,3,3,right,33
+s31038,warning,control,B,30,3,right,34
+s31038,warning,truncated,B,31,4,right,7
+s31038,warning,control,B,32,4,right,9
+s31038,warning,truncated,B,33,4,right,29
+s31038,warning,control,B,34,4,right,40
+s31038,warning,truncated,B,35,3,right,28
+s31038,warning,control,B,36,3,right,18
+s31038,warning,truncated,B,37,4,right,35
+s31038,warning,control,B,38,3,right,30
+s31038,warning,truncated,B,39,5,right,8
+s31038,warning,control,B,4,3,right,4
+s31038,warning,control,B,40,5,right,6
+s31038,warning,truncated,B,5,2,right,20
+s31038,warning,control,B,6,5,right,27
+s31038,warning,truncated,B,7,3,right,22
+s31038,warning,control,B,8,3,right,13
+s31038,warning,truncated,B,9,1,right,15
+s31039,warning,control,A,1,7,right,30
+s31039,warning,truncated,A,10,6,right,33
+s31039,warning,control,A,11,6,right,14
+s31039,warning,truncated,A,12,7,right,24
+s31039,warning,control,A,13,7,right,6
+s31039,warning,truncated,A,14,7,right,39
+s31039,warning,control,A,15,5,right,23
+s31039,warning,truncated,A,16,5,right,25
+s31039,warning,control,A,17,7,right,37
+s31039,warning,truncated,A,18,6,right,16
+s31039,warning,control,A,19,6,right,35
+s31039,warning,truncated,A,2,7,right,15
+s31039,warning,truncated,A,20,7,right,3
+s31039,warning,control,A,21,5,right,5
+s31039,warning,truncated,A,22,7,right,17
+s31039,warning,control,A,23,6,right,18
+s31039,warning,truncated,A,24,5,right,2
+s31039,warning,control,A,25,7,right,26
+s31039,warning,truncated,A,26,6,right,9
+s31039,warning,control,A,27,7,right,22
+s31039,warning,truncated,A,28,5,right,29
+s31039,warning,control,A,29,6,right,21
+s31039,warning,control,A,3,7,right,36
+s31039,warning,truncated,A,30,5,right,7
+s31039,warning,control,A,31,6,right,10
+s31039,warning,truncated,A,32,7,right,34
+s31039,warning,control,A,33,6,right,40
+s31039,warning,truncated,A,34,6,right,12
+s31039,warning,control,A,35,6,right,27
+s31039,warning,truncated,A,36,7,right,20
+s31039,warning,control,A,37,7,right,13
+s31039,warning,truncated,A,38,6,right,31
+s31039,warning,control,A,39,6,right,19
+s31039,warning,truncated,A,4,7,right,28
+s31039,warning,truncated,A,40,7,right,4
+s31039,warning,control,A,5,6,right,32
+s31039,warning,truncated,A,6,7,right,8
+s31039,warning,control,A,7,6,right,38
+s31039,warning,truncated,A,8,7,right,11
+s31039,warning,control,A,9,6,right,1
+s31040,warning,control,A,1,4,right,19
+s31040,warning,truncated,A,10,3,right,28
+s31040,warning,control,A,11,4,right,38
+s31040,warning,truncated,A,12,3,right,30
+s31040,warning,control,A,13,4,right,3
+s31040,warning,truncated,A,14,4,right,33
+s31040,warning,control,A,15,4,right,4
+s31040,warning,truncated,A,16,4,right,20
+s31040,warning,control,A,17,3,right,17
+s31040,warning,truncated,A,18,2,right,27
+s31040,warning,control,A,19,4,right,6
+s31040,warning,truncated,A,2,3,right,18
+s31040,warning,truncated,A,20,3,right,36
+s31040,warning,control,A,21,4,right,35
+s31040,warning,truncated,A,22,3,right,23
+s31040,warning,control,A,23,4,right,40
+s31040,warning,truncated,A,24,4,right,16
+s31040,warning,control,A,25,4,right,32
+s31040,warning,truncated,A,26,3,right,31
+s31040,warning,control,A,27,3,right,29
+s31040,warning,truncated,A,28,4,right,1
+s31040,warning,control,A,29,4,right,8
+s31040,warning,control,A,3,2,right,15
+s31040,warning,truncated,A,30,4,right,12
+s31040,warning,control,A,31,4,right,39
+s31040,warning,truncated,A,32,6,right,7
+s31040,warning,control,A,33,2,right,22
+s31040,warning,truncated,A,34,3,right,34
+s31040,warning,control,A,35,3,right,21
+s31040,warning,truncated,A,36,3,right,25
+s31040,warning,control,A,37,3,right,9
+s31040,warning,truncated,A,38,3,right,37
+s31040,warning,control,A,39,2,right,5
+s31040,warning,truncated,A,4,5,right,10
+s31040,warning,truncated,A,40,3,right,11
+s31040,warning,control,A,5,3,right,24
+s31040,warning,truncated,A,6,3,right,13
+s31040,warning,control,A,7,3,right,14
+s31040,warning,truncated,A,8,3,right,26
+s31040,warning,control,A,9,4,right,2
+s31041,warning,truncated,B,1,5,right,1
+s31041,warning,control,B,10,2,right,26
+s31041,warning,truncated,B,11,5,right,20
+s31041,warning,control,B,12,4,right,24
+s31041,warning,truncated,B,13,6,right,19
+s31041,warning,control,B,14,7,right,21
+s31041,warning,truncated,B,15,6,right,8
+s31041,warning,control,B,16,2,right,18
+s31041,warning,truncated,B,17,3,right,17
+s31041,warning,control,B,18,2,right,14
+s31041,warning,truncated,B,19,6,right,25
+s31041,warning,control,B,2,4,right,29
+s31041,warning,control,B,20,5,right,37
+s31041,warning,truncated,B,21,3,right,27
+s31041,warning,control,B,22,3,right,32
+s31041,warning,truncated,B,23,6,right,10
+s31041,warning,control,B,24,3,right,13
+s31041,warning,truncated,B,25,6,right,34
+s31041,warning,control,B,26,4,right,16
+s31041,warning,truncated,B,27,3,right,5
+s31041,warning,control,B,28,4,right,33
+s31041,warning,truncated,B,29,6,right,40
+s31041,warning,truncated,B,3,3,right,30
+s31041,warning,control,B,30,3,right,39
+s31041,warning,truncated,B,31,6,right,11
+s31041,warning,control,B,32,6,right,15
+s31041,warning,truncated,B,33,3,right,23
+s31041,warning,control,B,34,2,right,12
+s31041,warning,truncated,B,35,4,right,36
+s31041,warning,control,B,36,2,right,35
+s31041,warning,truncated,B,37,3,right,9
+s31041,warning,control,B,38,3,right,6
+s31041,warning,truncated,B,39,2,right,38
+s31041,warning,control,B,4,4,right,22
+s31041,warning,control,B,40,3,right,7
+s31041,warning,truncated,B,5,6,right,4
+s31041,warning,control,B,6,3,right,3
+s31041,warning,truncated,B,7,7,right,28
+s31041,warning,control,B,8,3,right,31
+s31041,warning,truncated,B,9,5,right,2
+s31042,warning,control,A,1,2,right,27
+s31042,warning,truncated,A,10,1,right,37
+s31042,warning,control,A,11,3,right,2
+s31042,warning,truncated,A,12,4,right,39
+s31042,warning,control,A,13,7,right,34
+s31042,warning,truncated,A,14,5,right,19
+s31042,warning,control,A,15,4,right,24
+s31042,warning,truncated,A,16,2,right,14
+s31042,warning,control,A,17,1,right,11
+s31042,warning,truncated,A,18,2,right,1
+s31042,warning,control,A,19,4,right,9
+s31042,warning,truncated,A,2,4,right,15
+s31042,warning,truncated,A,20,4,right,4
+s31042,warning,control,A,21,2,right,29
+s31042,warning,truncated,A,22,2,right,23
+s31042,warning,control,A,23,7,right,28
+s31042,warning,truncated,A,24,1,right,36
+s31042,warning,control,A,25,5,right,16
+s31042,warning,truncated,A,26,3,right,5
+s31042,warning,control,A,27,1,right,25
+s31042,warning,truncated,A,28,2,right,33
+s31042,warning,control,A,29,7,right,21
+s31042,warning,control,A,3,2,right,30
+s31042,warning,truncated,A,30,2,right,35
+s31042,warning,control,A,31,3,right,22
+s31042,warning,truncated,A,32,5,right,7
+s31042,warning,control,A,33,2,right,8
+s31042,warning,truncated,A,34,2,right,10
+s31042,warning,control,A,35,2,right,12
+s31042,warning,truncated,A,36,2,right,6
+s31042,warning,control,A,37,2,right,40
+s31042,warning,truncated,A,38,2,right,3
+s31042,warning,control,A,39,1,right,38
+s31042,warning,truncated,A,4,5,right,18
+s31042,warning,truncated,A,40,2,right,20
+s31042,warning,control,A,5,4,right,31
+s31042,warning,truncated,A,6,4,right,17
+s31042,warning,control,A,7,3,right,32
+s31042,warning,truncated,A,8,2,right,26
+s31042,warning,control,A,9,2,right,13
+s31043,warning,truncated,B,1,4,right,34
+s31043,warning,control,B,10,2,right,5
+s31043,warning,truncated,B,11,4,right,18
+s31043,warning,control,B,12,4,right,11
+s31043,warning,truncated,B,13,7,right,32
+s31043,warning,control,B,14,7,right,1
+s31043,warning,truncated,B,15,7,right,3
+s31043,warning,control,B,16,2,right,26
+s31043,warning,truncated,B,17,3,right,12
+s31043,warning,control,B,18,2,right,23
+s31043,warning,truncated,B,19,5,right,7
+s31043,warning,control,B,2,4,right,4
+s31043,warning,control,B,20,4,right,6
+s31043,warning,truncated,B,21,2,right,38
+s31043,warning,control,B,22,3,right,33
+s31043,warning,truncated,B,23,7,right,20
+s31043,warning,control,B,24,3,right,35
+s31043,warning,truncated,B,25,7,right,39
+s31043,warning,control,B,26,4,right,28
+s31043,warning,truncated,B,27,3,right,29
+s31043,warning,control,B,28,3,right,21
+s31043,warning,truncated,B,29,5,right,27
+s31043,warning,truncated,B,3,4,right,31
+s31043,warning,control,B,30,2,right,16
+s31043,warning,truncated,B,31,7,right,10
+s31043,warning,control,B,32,6,right,14
+s31043,warning,truncated,B,33,5,right,15
+s31043,warning,control,B,34,4,right,8
+s31043,warning,truncated,B,35,6,right,40
+s31043,warning,control,B,36,3,right,17
+s31043,warning,truncated,B,37,4,right,30
+s31043,warning,control,B,38,7,right,25
+s31043,warning,truncated,B,39,2,right,2
+s31043,warning,control,B,4,6,right,22
+s31043,warning,control,B,40,3,right,24
+s31043,warning,truncated,B,5,7,right,9
+s31043,warning,control,B,6,4,right,37
+s31043,warning,truncated,B,7,7,right,36
+s31043,warning,control,B,8,3,right,13
+s31043,warning,truncated,B,9,5,right,19
+s31044,no warning,control,A,1,3,NA,22
+s31044,no warning,truncated,A,10,3,NA,39
+s31044,no warning,control,A,11,5,NA,28
+s31044,no warning,truncated,A,12,7,NA,29
+s31044,no warning,control,A,13,6,NA,8
+s31044,no warning,truncated,A,14,7,NA,26
+s31044,no warning,control,A,15,5,NA,18
+s31044,no warning,truncated,A,16,2,NA,5
+s31044,no warning,control,A,17,3,NA,4
+s31044,no warning,truncated,A,18,3,NA,19
+s31044,no warning,control,A,19,6,NA,11
+s31044,no warning,truncated,A,2,6,NA,7
+s31044,no warning,truncated,A,20,6,NA,13
+s31044,no warning,control,A,21,2,NA,34
+s31044,no warning,truncated,A,22,3,NA,9
+s31044,no warning,control,A,23,7,NA,12
+s31044,no warning,truncated,A,24,2,NA,3
+s31044,no warning,control,A,25,6,NA,24
+s31044,no warning,truncated,A,26,6,NA,17
+s31044,no warning,control,A,27,1,NA,40
+s31044,no warning,truncated,A,28,5,NA,30
+s31044,no warning,control,A,29,7,NA,20
+s31044,no warning,control,A,3,1,NA,31
+s31044,no warning,truncated,A,30,5,NA,15
+s31044,no warning,control,A,31,5,NA,27
+s31044,no warning,truncated,A,32,7,NA,25
+s31044,no warning,control,A,33,3,NA,6
+s31044,no warning,truncated,A,34,4,NA,38
+s31044,no warning,control,A,35,4,NA,32
+s31044,no warning,truncated,A,36,4,NA,2
+s31044,no warning,control,A,37,2,NA,36
+s31044,no warning,truncated,A,38,6,NA,1
+s31044,no warning,control,A,39,1,NA,10
+s31044,no warning,truncated,A,4,6,NA,16
+s31044,no warning,truncated,A,40,5,NA,21
+s31044,no warning,control,A,5,4,NA,23
+s31044,no warning,truncated,A,6,3,NA,37
+s31044,no warning,control,A,7,5,NA,14
+s31044,no warning,truncated,A,8,3,NA,35
+s31044,no warning,control,A,9,3,NA,33
+s31045,no warning,truncated,B,1,4,NA,21
+s31045,no warning,control,B,10,2,NA,33
+s31045,no warning,truncated,B,11,6,NA,10
+s31045,no warning,control,B,12,3,NA,38
+s31045,no warning,truncated,B,13,7,NA,15
+s31045,no warning,control,B,14,7,NA,6
+s31045,no warning,truncated,B,15,5,NA,39
+s31045,no warning,control,B,16,3,NA,23
+s31045,no warning,truncated,B,17,3,NA,27
+s31045,no warning,control,B,18,6,NA,9
+s31045,no warning,truncated,B,19,6,NA,29
+s31045,no warning,control,B,2,7,NA,2
+s31045,no warning,control,B,20,4,NA,12
+s31045,no warning,truncated,B,21,7,NA,11
+s31045,no warning,control,B,22,5,NA,40
+s31045,no warning,truncated,B,23,5,NA,14
+s31045,no warning,control,B,24,5,NA,16
+s31045,no warning,truncated,B,25,6,NA,34
+s31045,no warning,control,B,26,4,NA,17
+s31045,no warning,truncated,B,27,2,NA,13
+s31045,no warning,control,B,28,4,NA,1
+s31045,no warning,truncated,B,29,6,NA,28
+s31045,no warning,truncated,B,3,2,NA,36
+s31045,no warning,control,B,30,4,NA,22
+s31045,no warning,truncated,B,31,4,NA,32
+s31045,no warning,control,B,32,5,NA,20
+s31045,no warning,truncated,B,33,5,NA,24
+s31045,no warning,control,B,34,2,NA,31
+s31045,no warning,truncated,B,35,6,NA,5
+s31045,no warning,control,B,36,5,NA,26
+s31045,no warning,truncated,B,37,5,NA,3
+s31045,no warning,control,B,38,4,NA,30
+s31045,no warning,truncated,B,39,2,NA,19
+s31045,no warning,control,B,4,3,NA,18
+s31045,no warning,control,B,40,2,NA,35
+s31045,no warning,truncated,B,5,4,NA,37
+s31045,no warning,control,B,6,7,NA,7
+s31045,no warning,truncated,B,7,3,NA,8
+s31045,no warning,control,B,8,3,NA,25
+s31045,no warning,truncated,B,9,5,NA,4
+s31046,no warning,truncated,B,1,2,NA,10
+s31046,no warning,control,B,10,1,NA,19
+s31046,no warning,truncated,B,11,4,NA,13
+s31046,no warning,control,B,12,4,NA,11
+s31046,no warning,truncated,B,13,5,NA,15
+s31046,no warning,control,B,14,7,NA,16
+s31046,no warning,truncated,B,15,5,NA,34
+s31046,no warning,control,B,16,4,NA,30
+s31046,no warning,truncated,B,17,1,NA,26
+s31046,no warning,control,B,18,1,NA,40
+s31046,no warning,truncated,B,19,4,NA,9
+s31046,no warning,control,B,2,4,NA,17
+s31046,no warning,control,B,20,5,NA,2
+s31046,no warning,truncated,B,21,2,NA,14
+s31046,no warning,control,B,22,1,NA,24
+s31046,no warning,truncated,B,23,7,NA,28
+s31046,no warning,control,B,24,1,NA,25
+s31046,no warning,truncated,B,25,7,NA,5
+s31046,no warning,control,B,26,4,NA,4
+s31046,no warning,truncated,B,27,2,NA,36
+s31046,no warning,control,B,28,2,NA,21
+s31046,no warning,truncated,B,29,7,NA,3
+s31046,no warning,truncated,B,3,2,NA,18
+s31046,no warning,control,B,30,2,NA,32
+s31046,no warning,truncated,B,31,4,NA,31
+s31046,no warning,control,B,32,7,NA,12
+s31046,no warning,truncated,B,33,3,NA,29
+s31046,no warning,control,B,34,2,NA,33
+s31046,no warning,truncated,B,35,4,NA,35
+s31046,no warning,control,B,36,1,NA,39
+s31046,no warning,truncated,B,37,4,NA,8
+s31046,no warning,control,B,38,6,NA,7
+s31046,no warning,truncated,B,39,1,NA,38
+s31046,no warning,control,B,4,7,NA,1
+s31046,no warning,control,B,40,2,NA,20
+s31046,no warning,truncated,B,5,3,NA,27
+s31046,no warning,control,B,6,3,NA,6
+s31046,no warning,truncated,B,7,4,NA,37
+s31046,no warning,control,B,8,2,NA,23
+s31046,no warning,truncated,B,9,3,NA,22
+s31047,warning,control,A,1,4,right,36
+s31047,warning,truncated,A,10,5,right,39
+s31047,warning,control,A,11,4,right,37
+s31047,warning,truncated,A,12,6,right,8
+s31047,warning,control,A,13,6,right,25
+s31047,warning,truncated,A,14,6,right,7
+s31047,warning,control,A,15,6,right,33
+s31047,warning,truncated,A,16,6,right,34
+s31047,warning,control,A,17,4,right,38
+s31047,warning,truncated,A,18,3,right,28
+s31047,warning,control,A,19,6,right,4
+s31047,warning,truncated,A,2,5,right,31
+s31047,warning,truncated,A,20,5,right,32
+s31047,warning,control,A,21,5,right,11
+s31047,warning,truncated,A,22,4,right,18
+s31047,warning,control,A,23,6,right,23
+s31047,warning,truncated,A,24,4,right,3
+s31047,warning,control,A,25,6,right,19
+s31047,warning,truncated,A,26,5,right,2
+s31047,warning,control,A,27,4,right,1
+s31047,warning,truncated,A,28,6,right,13
+s31047,warning,control,A,29,6,right,16
+s31047,warning,control,A,3,4,right,24
+s31047,warning,truncated,A,30,4,right,10
+s31047,warning,control,A,31,5,right,22
+s31047,warning,truncated,A,32,7,right,27
+s31047,warning,control,A,33,4,right,21
+s31047,warning,truncated,A,34,5,right,12
+s31047,warning,control,A,35,4,right,20
+s31047,warning,truncated,A,36,4,right,29
+s31047,warning,control,A,37,4,right,6
+s31047,warning,truncated,A,38,6,right,9
+s31047,warning,control,A,39,3,right,30
+s31047,warning,truncated,A,4,5,right,40
+s31047,warning,truncated,A,40,5,right,17
+s31047,warning,control,A,5,5,right,5
+s31047,warning,truncated,A,6,4,right,35
+s31047,warning,control,A,7,6,right,15
+s31047,warning,truncated,A,8,4,right,26
+s31047,warning,control,A,9,4,right,14
+s31048,no warning,truncated,B,1,6,NA,21
+s31048,no warning,control,B,10,5,NA,10
+s31048,no warning,truncated,B,11,5,NA,19
+s31048,no warning,control,B,12,5,NA,18
+s31048,no warning,truncated,B,13,6,NA,5
+s31048,no warning,control,B,14,5,NA,12
+s31048,no warning,truncated,B,15,5,NA,38
+s31048,no warning,control,B,16,5,NA,33
+s31048,no warning,truncated,B,17,5,NA,17
+s31048,no warning,control,B,18,2,NA,36
+s31048,no warning,truncated,B,19,5,NA,22
+s31048,no warning,control,B,2,5,NA,29
+s31048,no warning,control,B,20,6,NA,25
+s31048,no warning,truncated,B,21,5,NA,32
+s31048,no warning,control,B,22,5,NA,16
+s31048,no warning,truncated,B,23,6,NA,2
+s31048,no warning,control,B,24,5,NA,37
+s31048,no warning,truncated,B,25,5,NA,8
+s31048,no warning,control,B,26,6,NA,3
+s31048,no warning,truncated,B,27,5,NA,35
+s31048,no warning,control,B,28,6,NA,6
+s31048,no warning,truncated,B,29,5,NA,28
+s31048,no warning,truncated,B,3,5,NA,9
+s31048,no warning,control,B,30,5,NA,31
+s31048,no warning,truncated,B,31,5,NA,20
+s31048,no warning,control,B,32,5,NA,15
+s31048,no warning,truncated,B,33,5,NA,24
+s31048,no warning,control,B,34,6,NA,11
+s31048,no warning,truncated,B,35,5,NA,30
+s31048,no warning,control,B,36,5,NA,13
+s31048,no warning,truncated,B,37,5,NA,27
+s31048,no warning,control,B,38,5,NA,26
+s31048,no warning,truncated,B,39,5,NA,1
+s31048,no warning,control,B,4,6,NA,23
+s31048,no warning,control,B,40,4,NA,40
+s31048,no warning,truncated,B,5,6,NA,7
+s31048,no warning,control,B,6,5,NA,39
+s31048,no warning,truncated,B,7,6,NA,4
+s31048,no warning,control,B,8,5,NA,34
+s31048,no warning,truncated,B,9,5,NA,14
+s31049,warning,truncated,B,1,5,right,34
+s31049,warning,control,B,10,1,right,21
+s31049,warning,truncated,B,11,4,right,4
+s31049,warning,control,B,12,4,right,11
+s31049,warning,truncated,B,13,6,right,17
+s31049,warning,control,B,14,7,right,9
+s31049,warning,truncated,B,15,7,right,7
+s31049,warning,control,B,16,5,right,25
+s31049,warning,truncated,B,17,3,right,12
+s31049,warning,control,B,18,1,right,15
+s31049,warning,truncated,B,19,7,right,23
+s31049,warning,control,B,2,4,right,1
+s31049,warning,control,B,20,4,right,36
+s31049,warning,truncated,B,21,3,right,26
+s31049,warning,control,B,22,3,right,5
+s31049,warning,truncated,B,23,7,right,8
+s31049,warning,control,B,24,2,right,32
+s31049,warning,truncated,B,25,7,right,27
+s31049,warning,control,B,26,3,right,6
+s31049,warning,truncated,B,27,2,right,18
+s31049,warning,control,B,28,4,right,35
+s31049,warning,truncated,B,29,7,right,3
+s31049,warning,truncated,B,3,3,right,24
+s31049,warning,control,B,30,5,right,37
+s31049,warning,truncated,B,31,4,right,31
+s31049,warning,control,B,32,7,right,16
+s31049,warning,truncated,B,33,7,right,14
+s31049,warning,control,B,34,2,right,38
+s31049,warning,truncated,B,35,7,right,33
+s31049,warning,control,B,36,2,right,29
+s31049,warning,truncated,B,37,6,right,20
+s31049,warning,control,B,38,4,right,13
+s31049,warning,truncated,B,39,1,right,10
+s31049,warning,control,B,4,5,right,2
+s31049,warning,control,B,40,2,right,39
+s31049,warning,truncated,B,5,6,right,28
+s31049,warning,control,B,6,2,right,40
+s31049,warning,truncated,B,7,7,right,22
+s31049,warning,control,B,8,2,right,30
+s31049,warning,truncated,B,9,5,right,19
+s31050,no warning,control,A,1,5,NA,35
+s31050,no warning,truncated,A,10,3,NA,15
+s31050,no warning,control,A,11,4,NA,31
+s31050,no warning,truncated,A,12,7,NA,25
+s31050,no warning,control,A,13,5,NA,4
+s31050,no warning,truncated,A,14,6,NA,9
+s31050,no warning,control,A,15,5,NA,23
+s31050,no warning,truncated,A,16,7,NA,5
+s31050,no warning,control,A,17,6,NA,6
+s31050,no warning,truncated,A,18,3,NA,39
+s31050,no warning,control,A,19,3,NA,17
+s31050,no warning,truncated,A,2,6,NA,3
+s31050,no warning,truncated,A,20,6,NA,30
+s31050,no warning,control,A,21,3,NA,38
+s31050,no warning,truncated,A,22,2,NA,33
+s31050,no warning,control,A,23,7,NA,8
+s31050,no warning,truncated,A,24,2,NA,18
+s31050,no warning,control,A,25,4,NA,34
+s31050,no warning,truncated,A,26,6,NA,32
+s31050,no warning,control,A,27,2,NA,12
+s31050,no warning,truncated,A,28,5,NA,22
+s31050,no warning,control,A,29,5,NA,20
+s31050,no warning,control,A,3,4,NA,37
+s31050,no warning,truncated,A,30,5,NA,14
+s31050,no warning,control,A,31,5,NA,26
+s31050,no warning,truncated,A,32,7,NA,27
+s31050,no warning,control,A,33,4,NA,29
+s31050,no warning,truncated,A,34,4,NA,40
+s31050,no warning,control,A,35,3,NA,10
+s31050,no warning,truncated,A,36,3,NA,36
+s31050,no warning,control,A,37,6,NA,1
+s31050,no warning,truncated,A,38,7,NA,2
+s31050,no warning,control,A,39,1,NA,7
+s31050,no warning,truncated,A,4,6,NA,24
+s31050,no warning,truncated,A,40,4,NA,13
+s31050,no warning,control,A,5,4,NA,21
+s31050,no warning,truncated,A,6,5,NA,16
+s31050,no warning,control,A,7,4,NA,19
+s31050,no warning,truncated,A,8,5,NA,11
+s31050,no warning,control,A,9,3,NA,28
+s31051,warning,control,A,1,2,right,35
+s31051,warning,truncated,A,10,2,right,31
+s31051,warning,control,A,11,2,right,21
+s31051,warning,truncated,A,12,4,right,38
+s31051,warning,control,A,13,5,right,39
+s31051,warning,truncated,A,14,3,right,34
+s31051,warning,control,A,15,4,right,10
+s31051,warning,truncated,A,16,2,right,16
+s31051,warning,control,A,17,3,right,7
+s31051,warning,truncated,A,18,2,right,2
+s31051,warning,control,A,19,3,right,15
+s31051,warning,truncated,A,2,3,right,27
+s31051,warning,truncated,A,20,4,right,14
+s31051,warning,control,A,21,2,right,29
+s31051,warning,truncated,A,22,2,right,3
+s31051,warning,control,A,23,5,right,5
+s31051,warning,truncated,A,24,2,right,18
+s31051,warning,control,A,25,4,right,11
+s31051,warning,truncated,A,26,3,right,20
+s31051,warning,control,A,27,2,right,6
+s31051,warning,truncated,A,28,3,right,8
+s31051,warning,control,A,29,5,right,33
+s31051,warning,control,A,3,2,right,13
+s31051,warning,truncated,A,30,2,right,4
+s31051,warning,control,A,31,4,right,28
+s31051,warning,truncated,A,32,5,right,37
+s31051,warning,control,A,33,3,right,23
+s31051,warning,truncated,A,34,2,right,40
+s31051,warning,control,A,35,3,right,25
+s31051,warning,truncated,A,36,2,right,36
+s31051,warning,control,A,37,2,right,32
+s31051,warning,truncated,A,38,4,right,19
+s31051,warning,control,A,39,1,right,24
+s31051,warning,truncated,A,4,4,right,17
+s31051,warning,truncated,A,40,2,right,26
+s31051,warning,control,A,5,3,right,12
+s31051,warning,truncated,A,6,3,right,30
+s31051,warning,control,A,7,3,right,1
+s31051,warning,truncated,A,8,2,right,9
+s31051,warning,control,A,9,2,right,22
+s31052,no warning,truncated,B,1,7,NA,15
+s31052,no warning,control,B,10,5,NA,28
+s31052,no warning,truncated,B,11,7,NA,3
+s31052,no warning,control,B,12,6,NA,26
+s31052,no warning,truncated,B,13,7,NA,34
+s31052,no warning,control,B,14,7,NA,38
+s31052,no warning,truncated,B,15,7,NA,32
+s31052,no warning,control,B,16,7,NA,24
+s31052,no warning,truncated,B,17,7,NA,37
+s31052,no warning,control,B,18,6,NA,12
+s31052,no warning,truncated,B,19,5,NA,40
+s31052,no warning,control,B,2,6,NA,31
+s31052,no warning,control,B,20,6,NA,10
+s31052,no warning,truncated,B,21,7,NA,33
+s31052,no warning,control,B,22,5,NA,20
+s31052,no warning,truncated,B,23,7,NA,6
+s31052,no warning,control,B,24,6,NA,36
+s31052,no warning,truncated,B,25,7,NA,13
+s31052,no warning,control,B,26,6,NA,7
+s31052,no warning,truncated,B,27,6,NA,29
+s31052,no warning,control,B,28,6,NA,35
+s31052,no warning,truncated,B,29,7,NA,5
+s31052,no warning,truncated,B,3,6,NA,8
+s31052,no warning,control,B,30,6,NA,25
+s31052,no warning,truncated,B,31,7,NA,17
+s31052,no warning,control,B,32,7,NA,1
+s31052,no warning,truncated,B,33,7,NA,14
+s31052,no warning,control,B,34,6,NA,30
+s31052,no warning,truncated,B,35,7,NA,23
+s31052,no warning,control,B,36,6,NA,11
+s31052,no warning,truncated,B,37,6,NA,22
+s31052,no warning,control,B,38,7,NA,16
+s31052,no warning,truncated,B,39,4,NA,27
+s31052,no warning,control,B,4,7,NA,4
+s31052,no warning,control,B,40,6,NA,19
+s31052,no warning,truncated,B,5,7,NA,18
+s31052,no warning,control,B,6,6,NA,39
+s31052,no warning,truncated,B,7,7,NA,9
+s31052,no warning,control,B,8,5,NA,21
+s31052,no warning,truncated,B,9,7,NA,2
+s31053,warning,control,A,1,3,right,32
+s31053,warning,truncated,A,10,3,right,24
+s31053,warning,control,A,11,4,right,10
+s31053,warning,truncated,A,12,4,right,7
+s31053,warning,control,A,13,5,right,39
+s31053,warning,truncated,A,14,5,right,9
+s31053,warning,control,A,15,6,right,16
+s31053,warning,truncated,A,16,4,right,26
+s31053,warning,control,A,17,3,right,5
+s31053,warning,truncated,A,18,3,right,38
+s31053,warning,control,A,19,4,right,36
+s31053,warning,truncated,A,2,4,right,34
+s31053,warning,truncated,A,20,4,right,13
+s31053,warning,control,A,21,3,right,40
+s31053,warning,truncated,A,22,4,right,11
+s31053,warning,control,A,23,7,right,20
+s31053,warning,truncated,A,24,2,right,23
+s31053,warning,control,A,25,6,right,29
+s31053,warning,truncated,A,26,4,right,21
+s31053,warning,control,A,27,1,right,30
+s31053,warning,truncated,A,28,7,right,6
+s31053,warning,control,A,29,6,right,35
+s31053,warning,control,A,3,1,right,25
+s31053,warning,truncated,A,30,3,right,27
+s31053,warning,control,A,31,5,right,33
+s31053,warning,truncated,A,32,7,right,31
+s31053,warning,control,A,33,4,right,17
+s31053,warning,truncated,A,34,3,right,18
+s31053,warning,control,A,35,4,right,28
+s31053,warning,truncated,A,36,4,right,8
+s31053,warning,control,A,37,2,right,22
+s31053,warning,truncated,A,38,6,right,19
+s31053,warning,control,A,39,1,right,1
+s31053,warning,truncated,A,4,7,right,37
+s31053,warning,truncated,A,40,2,right,14
+s31053,warning,control,A,5,6,right,3
+s31053,warning,truncated,A,6,2,right,12
+s31053,warning,control,A,7,4,right,4
+s31053,warning,truncated,A,8,4,right,2
+s31053,warning,control,A,9,4,right,15
+s31054,no warning,truncated,B,1,4,NA,26
+s31054,no warning,control,B,10,1,NA,32
+s31054,no warning,truncated,B,11,3,NA,5
+s31054,no warning,control,B,12,4,NA,33
+s31054,no warning,truncated,B,13,7,NA,22
+s31054,no warning,control,B,14,6,NA,17
+s31054,no warning,truncated,B,15,7,NA,31
+s31054,no warning,control,B,16,5,NA,16
+s31054,no warning,truncated,B,17,2,NA,7
+s31054,no warning,control,B,18,1,NA,18
+s31054,no warning,truncated,B,19,7,NA,3
+s31054,no warning,control,B,2,4,NA,12
+s31054,no warning,control,B,20,3,NA,2
+s31054,no warning,truncated,B,21,2,NA,30
+s31054,no warning,control,B,22,2,NA,20
+s31054,no warning,truncated,B,23,7,NA,25
+s31054,no warning,control,B,24,1,NA,10
+s31054,no warning,truncated,B,25,6,NA,28
+s31054,no warning,control,B,26,3,NA,6
+s31054,no warning,truncated,B,27,2,NA,36
+s31054,no warning,control,B,28,3,NA,37
+s31054,no warning,truncated,B,29,7,NA,35
+s31054,no warning,truncated,B,3,3,NA,39
+s31054,no warning,control,B,30,2,NA,29
+s31054,no warning,truncated,B,31,5,NA,4
+s31054,no warning,control,B,32,6,NA,9
+s31054,no warning,truncated,B,33,6,NA,15
+s31054,no warning,control,B,34,3,NA,27
+s31054,no warning,truncated,B,35,6,NA,14
+s31054,no warning,control,B,36,2,NA,24
+s31054,no warning,truncated,B,37,3,NA,8
+s31054,no warning,control,B,38,6,NA,1
+s31054,no warning,truncated,B,39,1,NA,19
+s31054,no warning,control,B,4,4,NA,40
+s31054,no warning,control,B,40,2,NA,23
+s31054,no warning,truncated,B,5,5,NA,21
+s31054,no warning,control,B,6,2,NA,11
+s31054,no warning,truncated,B,7,7,NA,13
+s31054,no warning,control,B,8,2,NA,34
+s31054,no warning,truncated,B,9,4,NA,38
+s31055,no warning,truncated,B,1,3,NA,39
+s31055,no warning,control,B,10,2,NA,14
+s31055,no warning,truncated,B,11,4,NA,19
+s31055,no warning,control,B,12,4,NA,5
+s31055,no warning,truncated,B,13,7,NA,11
+s31055,no warning,control,B,14,6,NA,10
+s31055,no warning,truncated,B,15,7,NA,30
+s31055,no warning,control,B,16,4,NA,13
+s31055,no warning,truncated,B,17,2,NA,31
+s31055,no warning,control,B,18,2,NA,12
+s31055,no warning,truncated,B,19,7,NA,20
+s31055,no warning,control,B,2,3,NA,40
+s31055,no warning,control,B,20,3,NA,35
+s31055,no warning,truncated,B,21,7,NA,28
+s31055,no warning,control,B,22,2,NA,38
+s31055,no warning,truncated,B,23,7,NA,1
+s31055,no warning,control,B,24,2,NA,15
+s31055,no warning,truncated,B,25,6,NA,2
+s31055,no warning,control,B,26,3,NA,34
+s31055,no warning,truncated,B,27,3,NA,9
+s31055,no warning,control,B,28,5,NA,32
+s31055,no warning,truncated,B,29,7,NA,36
+s31055,no warning,truncated,B,3,2,NA,37
+s31055,no warning,control,B,30,3,NA,16
+s31055,no warning,truncated,B,31,7,NA,3
+s31055,no warning,control,B,32,6,NA,33
+s31055,no warning,truncated,B,33,5,NA,18
+s31055,no warning,control,B,34,3,NA,7
+s31055,no warning,truncated,B,35,7,NA,17
+s31055,no warning,control,B,36,2,NA,29
+s31055,no warning,truncated,B,37,4,NA,4
+s31055,no warning,control,B,38,5,NA,6
+s31055,no warning,truncated,B,39,2,NA,22
+s31055,no warning,control,B,4,4,NA,25
+s31055,no warning,control,B,40,2,NA,23
+s31055,no warning,truncated,B,5,7,NA,27
+s31055,no warning,control,B,6,3,NA,21
+s31055,no warning,truncated,B,7,7,NA,26
+s31055,no warning,control,B,8,3,NA,24
+s31055,no warning,truncated,B,9,7,NA,8
+s31056,no warning,control,A,1,6,NA,1
+s31056,no warning,truncated,A,10,6,NA,15
+s31056,no warning,control,A,11,7,NA,35
+s31056,no warning,truncated,A,12,6,NA,38
+s31056,no warning,control,A,13,6,NA,23
+s31056,no warning,truncated,A,14,6,NA,34
+s31056,no warning,control,A,15,5,NA,19
+s31056,no warning,truncated,A,16,6,NA,9
+s31056,no warning,control,A,17,6,NA,29
+s31056,no warning,truncated,A,18,6,NA,20
+s31056,no warning,control,A,19,6,NA,25
+s31056,no warning,truncated,A,2,6,NA,18
+s31056,no warning,truncated,A,20,6,NA,5
+s31056,no warning,control,A,21,6,NA,2
+s31056,no warning,truncated,A,22,6,NA,4
+s31056,no warning,control,A,23,5,NA,28
+s31056,no warning,truncated,A,24,6,NA,40
+s31056,no warning,control,A,25,6,NA,30
+s31056,no warning,truncated,A,26,6,NA,10
+s31056,no warning,control,A,27,6,NA,26
+s31056,no warning,truncated,A,28,6,NA,3
+s31056,no warning,control,A,29,6,NA,31
+s31056,no warning,control,A,3,6,NA,12
+s31056,no warning,truncated,A,30,6,NA,6
+s31056,no warning,control,A,31,6,NA,33
+s31056,no warning,truncated,A,32,6,NA,32
+s31056,no warning,control,A,33,6,NA,36
+s31056,no warning,truncated,A,34,6,NA,39
+s31056,no warning,control,A,35,6,NA,27
+s31056,no warning,truncated,A,36,5,NA,24
+s31056,no warning,control,A,37,6,NA,22
+s31056,no warning,truncated,A,38,6,NA,16
+s31056,no warning,control,A,39,6,NA,37
+s31056,no warning,truncated,A,4,6,NA,13
+s31056,no warning,truncated,A,40,6,NA,8
+s31056,no warning,control,A,5,6,NA,7
+s31056,no warning,truncated,A,6,6,NA,17
+s31056,no warning,control,A,7,6,NA,14
+s31056,no warning,truncated,A,8,6,NA,11
+s31056,no warning,control,A,9,6,NA,21
+s31057,warning,truncated,B,1,3,right,9
+s31057,warning,control,B,10,2,right,33
+s31057,warning,truncated,B,11,4,right,3
+s31057,warning,control,B,12,5,right,6
+s31057,warning,truncated,B,13,7,right,8
+s31057,warning,control,B,14,6,right,30
+s31057,warning,truncated,B,15,6,right,16
+s31057,warning,control,B,16,4,right,10
+s31057,warning,truncated,B,17,2,right,24
+s31057,warning,control,B,18,1,right,34
+s31057,warning,truncated,B,19,4,right,35
+s31057,warning,control,B,2,5,right,39
+s31057,warning,control,B,20,4,right,26
+s31057,warning,truncated,B,21,2,right,22
+s31057,warning,control,B,22,2,right,15
+s31057,warning,truncated,B,23,6,right,18
+s31057,warning,control,B,24,2,right,7
+s31057,warning,truncated,B,25,4,right,12
+s31057,warning,control,B,26,4,right,31
+s31057,warning,truncated,B,27,4,right,40
+s31057,warning,control,B,28,4,right,4
+s31057,warning,truncated,B,29,6,right,17
+s31057,warning,truncated,B,3,2,right,28
+s31057,warning,control,B,30,3,right,13
+s31057,warning,truncated,B,31,4,right,38
+s31057,warning,control,B,32,5,right,29
+s31057,warning,truncated,B,33,4,right,14
+s31057,warning,control,B,34,3,right,21
+s31057,warning,truncated,B,35,4,right,37
+s31057,warning,control,B,36,2,right,27
+s31057,warning,truncated,B,37,2,right,19
+s31057,warning,control,B,38,4,right,1
+s31057,warning,truncated,B,39,2,right,36
+s31057,warning,control,B,4,3,right,2
+s31057,warning,control,B,40,3,right,20
+s31057,warning,truncated,B,5,4,right,23
+s31057,warning,control,B,6,3,right,25
+s31057,warning,truncated,B,7,5,right,5
+s31057,warning,control,B,8,2,right,11
+s31057,warning,truncated,B,9,3,right,32
+s31058,warning,control,A,1,2,right,9
+s31058,warning,truncated,A,10,2,right,18
+s31058,warning,control,A,11,2,right,40
+s31058,warning,truncated,A,12,5,right,6
+s31058,warning,control,A,13,5,right,35
+s31058,warning,truncated,A,14,6,right,8
+s31058,warning,control,A,15,5,right,26
+s31058,warning,truncated,A,16,6,right,33
+s31058,warning,control,A,17,2,right,34
+s31058,warning,truncated,A,18,2,right,31
+s31058,warning,control,A,19,4,right,16
+s31058,warning,truncated,A,2,4,right,38
+s31058,warning,truncated,A,20,5,right,1
+s31058,warning,control,A,21,2,right,27
+s31058,warning,truncated,A,22,2,right,10
+s31058,warning,control,A,23,7,right,28
+s31058,warning,truncated,A,24,2,right,22
+s31058,warning,control,A,25,6,right,4
+s31058,warning,truncated,A,26,5,right,19
+s31058,warning,control,A,27,1,right,23
+s31058,warning,truncated,A,28,4,right,12
+s31058,warning,control,A,29,6,right,37
+s31058,warning,control,A,3,1,right,29
+s31058,warning,truncated,A,30,3,right,25
+s31058,warning,control,A,31,5,right,7
+s31058,warning,truncated,A,32,6,right,15
+s31058,warning,control,A,33,2,right,13
+s31058,warning,truncated,A,34,3,right,24
+s31058,warning,control,A,35,3,right,20
+s31058,warning,truncated,A,36,3,right,3
+s31058,warning,control,A,37,2,right,32
+s31058,warning,truncated,A,38,6,right,39
+s31058,warning,control,A,39,1,right,17
+s31058,warning,truncated,A,4,5,right,36
+s31058,warning,truncated,A,40,2,right,11
+s31058,warning,control,A,5,7,right,5
+s31058,warning,truncated,A,6,3,right,30
+s31058,warning,control,A,7,3,right,21
+s31058,warning,truncated,A,8,2,right,2
+s31058,warning,control,A,9,2,right,14
+s31059,no warning,control,A,1,4,NA,29
+s31059,no warning,truncated,A,10,6,NA,18
+s31059,no warning,control,A,11,5,NA,27
+s31059,no warning,truncated,A,12,5,NA,17
+s31059,no warning,control,A,13,5,NA,38
+s31059,no warning,truncated,A,14,7,NA,2
+s31059,no warning,control,A,15,7,NA,9
+s31059,no warning,truncated,A,16,5,NA,33
+s31059,no warning,control,A,17,3,NA,4
+s31059,no warning,truncated,A,18,2,NA,35
+s31059,no warning,control,A,19,7,NA,31
+s31059,no warning,truncated,A,2,5,NA,30
+s31059,no warning,truncated,A,20,5,NA,32
+s31059,no warning,control,A,21,3,NA,23
+s31059,no warning,truncated,A,22,5,NA,34
+s31059,no warning,control,A,23,7,NA,26
+s31059,no warning,truncated,A,24,2,NA,40
+s31059,no warning,control,A,25,5,NA,19
+s31059,no warning,truncated,A,26,2,NA,16
+s31059,no warning,control,A,27,2,NA,6
+s31059,no warning,truncated,A,28,6,NA,10
+s31059,no warning,control,A,29,7,NA,12
+s31059,no warning,control,A,3,5,NA,11
+s31059,no warning,truncated,A,30,5,NA,1
+s31059,no warning,control,A,31,7,NA,3
+s31059,no warning,truncated,A,32,4,NA,36
+s31059,no warning,control,A,33,3,NA,14
+s31059,no warning,truncated,A,34,7,NA,5
+s31059,no warning,control,A,35,7,NA,24
+s31059,no warning,truncated,A,36,5,NA,15
+s31059,no warning,control,A,37,6,NA,39
+s31059,no warning,truncated,A,38,5,NA,25
+s31059,no warning,control,A,39,3,NA,22
+s31059,no warning,truncated,A,4,4,NA,20
+s31059,no warning,truncated,A,40,3,NA,37
+s31059,no warning,control,A,5,4,NA,8
+s31059,no warning,truncated,A,6,4,NA,21
+s31059,no warning,control,A,7,7,NA,13
+s31059,no warning,truncated,A,8,2,NA,7
+s31059,no warning,control,A,9,2,NA,28
+s31060,no warning,truncated,B,1,6,NA,34
+s31060,no warning,control,B,10,2,NA,28
+s31060,no warning,truncated,B,11,2,NA,16
+s31060,no warning,control,B,12,3,NA,21
+s31060,no warning,truncated,B,13,7,NA,12
+s31060,no warning,control,B,14,7,NA,36
+s31060,no warning,truncated,B,15,7,NA,23
+s31060,no warning,control,B,16,7,NA,35
+s31060,no warning,truncated,B,17,3,NA,3
+s31060,no warning,control,B,18,2,NA,30
+s31060,no warning,truncated,B,19,7,NA,5
+s31060,no warning,control,B,2,3,NA,13
+s31060,no warning,control,B,20,4,NA,31
+s31060,no warning,truncated,B,21,2,NA,29
+s31060,no warning,control,B,22,3,NA,2
+s31060,no warning,truncated,B,23,7,NA,38
+s31060,no warning,control,B,24,4,NA,40
+s31060,no warning,truncated,B,25,7,NA,9
+s31060,no warning,control,B,26,4,NA,8
+s31060,no warning,truncated,B,27,2,NA,19
+s31060,no warning,control,B,28,5,NA,37
+s31060,no warning,truncated,B,29,7,NA,17
+s31060,no warning,truncated,B,3,4,NA,6
+s31060,no warning,control,B,30,2,NA,22
+s31060,no warning,truncated,B,31,3,NA,14
+s31060,no warning,control,B,32,7,NA,20
+s31060,no warning,truncated,B,33,7,NA,1
+s31060,no warning,control,B,34,3,NA,11
+s31060,no warning,truncated,B,35,7,NA,26
+s31060,no warning,control,B,36,2,NA,24
+s31060,no warning,truncated,B,37,4,NA,25
+s31060,no warning,control,B,38,6,NA,7
+s31060,no warning,truncated,B,39,1,NA,10
+s31060,no warning,control,B,4,7,NA,4
+s31060,no warning,control,B,40,2,NA,18
+s31060,no warning,truncated,B,5,4,NA,39
+s31060,no warning,control,B,6,3,NA,15
+s31060,no warning,truncated,B,7,7,NA,32
+s31060,no warning,control,B,8,2,NA,27
+s31060,no warning,truncated,B,9,4,NA,33
+s31061,warning,control,A,1,3,wrong,24
+s31061,warning,truncated,A,10,3,wrong,27
+s31061,warning,control,A,11,4,wrong,37
+s31061,warning,truncated,A,12,5,wrong,11
+s31061,warning,control,A,13,5,wrong,15
+s31061,warning,truncated,A,14,6,wrong,10
+s31061,warning,control,A,15,4,wrong,21
+s31061,warning,truncated,A,16,7,wrong,5
+s31061,warning,control,A,17,2,wrong,20
+s31061,warning,truncated,A,18,5,wrong,35
+s31061,warning,control,A,19,4,wrong,23
+s31061,warning,truncated,A,2,4,wrong,30
+s31061,warning,truncated,A,20,6,wrong,18
+s31061,warning,control,A,21,2,wrong,19
+s31061,warning,truncated,A,22,3,wrong,25
+s31061,warning,control,A,23,6,wrong,34
+s31061,warning,truncated,A,24,3,wrong,9
+s31061,warning,control,A,25,5,wrong,38
+s31061,warning,truncated,A,26,6,wrong,7
+s31061,warning,control,A,27,2,wrong,1
+s31061,warning,truncated,A,28,5,wrong,33
+s31061,warning,control,A,29,6,wrong,12
+s31061,warning,control,A,3,3,wrong,28
+s31061,warning,truncated,A,30,5,wrong,36
+s31061,warning,control,A,31,4,wrong,16
+s31061,warning,truncated,A,32,5,wrong,32
+s31061,warning,control,A,33,5,wrong,6
+s31061,warning,truncated,A,34,6,wrong,8
+s31061,warning,control,A,35,5,wrong,13
+s31061,warning,truncated,A,36,5,wrong,17
+s31061,warning,control,A,37,3,wrong,2
+s31061,warning,truncated,A,38,5,wrong,29
+s31061,warning,control,A,39,1,wrong,40
+s31061,warning,truncated,A,4,5,wrong,22
+s31061,warning,truncated,A,40,4,wrong,26
+s31061,warning,control,A,5,4,wrong,39
+s31061,warning,truncated,A,6,4,wrong,4
+s31061,warning,control,A,7,5,wrong,14
+s31061,warning,truncated,A,8,4,wrong,31
+s31061,warning,control,A,9,4,wrong,3
+s31062,no warning,truncated,B,1,6,NA,34
+s31062,no warning,control,B,10,4,NA,3
+s31062,no warning,truncated,B,11,7,NA,21
+s31062,no warning,control,B,12,6,NA,27
+s31062,no warning,truncated,B,13,6,NA,10
+s31062,no warning,control,B,14,6,NA,16
+s31062,no warning,truncated,B,15,6,NA,9
+s31062,no warning,control,B,16,5,NA,37
+s31062,no warning,truncated,B,17,6,NA,30
+s31062,no warning,control,B,18,5,NA,29
+s31062,no warning,truncated,B,19,6,NA,8
+s31062,no warning,control,B,2,6,NA,38
+s31062,no warning,control,B,20,6,NA,12
+s31062,no warning,truncated,B,21,4,NA,18
+s31062,no warning,control,B,22,5,NA,13
+s31062,no warning,truncated,B,23,5,NA,33
+s31062,no warning,control,B,24,5,NA,11
+s31062,no warning,truncated,B,25,7,NA,25
+s31062,no warning,control,B,26,6,NA,31
+s31062,no warning,truncated,B,27,6,NA,32
+s31062,no warning,control,B,28,4,NA,39
+s31062,no warning,truncated,B,29,6,NA,24
+s31062,no warning,truncated,B,3,5,NA,17
+s31062,no warning,control,B,30,6,NA,23
+s31062,no warning,truncated,B,31,5,NA,40
+s31062,no warning,control,B,32,7,NA,19
+s31062,no warning,truncated,B,33,5,NA,22
+s31062,no warning,control,B,34,5,NA,2
+s31062,no warning,truncated,B,35,6,NA,7
+s31062,no warning,control,B,36,6,NA,14
+s31062,no warning,truncated,B,37,6,NA,5
+s31062,no warning,control,B,38,6,NA,4
+s31062,no warning,truncated,B,39,6,NA,36
+s31062,no warning,control,B,4,5,NA,15
+s31062,no warning,control,B,40,6,NA,28
+s31062,no warning,truncated,B,5,5,NA,26
+s31062,no warning,control,B,6,7,NA,1
+s31062,no warning,truncated,B,7,5,NA,6
+s31062,no warning,control,B,8,5,NA,35
+s31062,no warning,truncated,B,9,5,NA,20
+s31063,warning,truncated,B,1,5,wrong,23
+s31063,warning,control,B,10,5,wrong,14
+s31063,warning,truncated,B,11,7,wrong,25
+s31063,warning,control,B,12,5,wrong,39
+s31063,warning,truncated,B,13,5,wrong,35
+s31063,warning,control,B,14,5,wrong,18
+s31063,warning,truncated,B,15,5,wrong,9
+s31063,warning,control,B,16,5,wrong,28
+s31063,warning,truncated,B,17,6,wrong,24
+s31063,warning,control,B,18,5,wrong,6
+s31063,warning,truncated,B,19,6,wrong,15
+s31063,warning,control,B,2,6,wrong,17
+s31063,warning,control,B,20,5,wrong,16
+s31063,warning,truncated,B,21,5,wrong,30
+s31063,warning,control,B,22,6,wrong,38
+s31063,warning,truncated,B,23,6,wrong,33
+s31063,warning,control,B,24,6,wrong,27
+s31063,warning,truncated,B,25,5,wrong,3
+s31063,warning,control,B,26,6,wrong,7
+s31063,warning,truncated,B,27,6,wrong,13
+s31063,warning,control,B,28,6,wrong,37
+s31063,warning,truncated,B,29,6,wrong,29
+s31063,warning,truncated,B,3,6,wrong,36
+s31063,warning,control,B,30,7,wrong,2
+s31063,warning,truncated,B,31,5,wrong,10
+s31063,warning,control,B,32,6,wrong,20
+s31063,warning,truncated,B,33,6,wrong,4
+s31063,warning,control,B,34,5,wrong,26
+s31063,warning,truncated,B,35,6,wrong,1
+s31063,warning,control,B,36,6,wrong,19
+s31063,warning,truncated,B,37,7,wrong,8
+s31063,warning,control,B,38,5,wrong,21
+s31063,warning,truncated,B,39,7,wrong,40
+s31063,warning,control,B,4,6,wrong,22
+s31063,warning,control,B,40,5,wrong,12
+s31063,warning,truncated,B,5,5,wrong,34
+s31063,warning,control,B,6,6,wrong,5
+s31063,warning,truncated,B,7,6,wrong,31
+s31063,warning,control,B,8,7,wrong,32
+s31063,warning,truncated,B,9,6,wrong,11
+s31064,no warning,control,A,1,5,NA,13
+s31064,no warning,truncated,A,10,5,NA,5
+s31064,no warning,control,A,11,4,NA,2
+s31064,no warning,truncated,A,12,4,NA,20
+s31064,no warning,control,A,13,4,NA,38
+s31064,no warning,truncated,A,14,4,NA,1
+s31064,no warning,control,A,15,3,NA,39
+s31064,no warning,truncated,A,16,4,NA,7
+s31064,no warning,control,A,17,4,NA,14
+s31064,no warning,truncated,A,18,4,NA,35
+s31064,no warning,control,A,19,5,NA,3
+s31064,no warning,truncated,A,2,4,NA,16
+s31064,no warning,truncated,A,20,5,NA,28
+s31064,no warning,control,A,21,4,NA,6
+s31064,no warning,truncated,A,22,5,NA,24
+s31064,no warning,control,A,23,5,NA,4
+s31064,no warning,truncated,A,24,5,NA,8
+s31064,no warning,control,A,25,5,NA,33
+s31064,no warning,truncated,A,26,4,NA,18
+s31064,no warning,control,A,27,4,NA,27
+s31064,no warning,truncated,A,28,4,NA,34
+s31064,no warning,control,A,29,5,NA,9
+s31064,no warning,control,A,3,4,NA,10
+s31064,no warning,truncated,A,30,5,NA,23
+s31064,no warning,control,A,31,4,NA,29
+s31064,no warning,truncated,A,32,5,NA,32
+s31064,no warning,control,A,33,4,NA,12
+s31064,no warning,truncated,A,34,5,NA,15
+s31064,no warning,control,A,35,4,NA,17
+s31064,no warning,truncated,A,36,4,NA,11
+s31064,no warning,control,A,37,4,NA,21
+s31064,no warning,truncated,A,38,4,NA,26
+s31064,no warning,control,A,39,3,NA,37
+s31064,no warning,truncated,A,4,4,NA,30
+s31064,no warning,truncated,A,40,4,NA,25
+s31064,no warning,control,A,5,4,NA,40
+s31064,no warning,truncated,A,6,3,NA,31
+s31064,no warning,control,A,7,5,NA,22
+s31064,no warning,truncated,A,8,4,NA,19
+s31064,no warning,control,A,9,4,NA,36
+s31065,warning,truncated,B,1,5,right,25
+s31065,warning,control,B,10,1,right,6
+s31065,warning,truncated,B,11,5,right,17
+s31065,warning,control,B,12,4,right,24
+s31065,warning,truncated,B,13,7,right,3
+s31065,warning,control,B,14,6,right,39
+s31065,warning,truncated,B,15,7,right,4
+s31065,warning,control,B,16,5,right,40
+s31065,warning,truncated,B,17,2,right,31
+s31065,warning,control,B,18,1,right,19
+s31065,warning,truncated,B,19,7,right,35
+s31065,warning,control,B,2,4,right,20
+s31065,warning,control,B,20,4,right,23
+s31065,warning,truncated,B,21,4,right,14
+s31065,warning,control,B,22,2,right,10
+s31065,warning,truncated,B,23,7,right,36
+s31065,warning,control,B,24,2,right,2
+s31065,warning,truncated,B,25,7,right,15
+s31065,warning,control,B,26,4,right,38
+s31065,warning,truncated,B,27,4,right,21
+s31065,warning,control,B,28,4,right,5
+s31065,warning,truncated,B,29,7,right,9
+s31065,warning,truncated,B,3,4,right,27
+s31065,warning,control,B,30,2,right,22
+s31065,warning,truncated,B,31,5,right,11
+s31065,warning,control,B,32,7,right,7
+s31065,warning,truncated,B,33,5,right,37
+s31065,warning,control,B,34,2,right,33
+s31065,warning,truncated,B,35,5,right,29
+s31065,warning,truncated,B,35,5,right,28
+s31065,warning,control,B,36,3,right,1
+s31065,warning,truncated,B,37,3,right,34
+s31065,warning,truncated,B,39,1,right,30
+s31065,warning,control,B,4,4,right,16
+s31065,warning,control,B,40,4,right,12
+s31065,warning,truncated,B,5,7,right,18
+s31065,warning,control,B,6,4,right,26
+s31065,warning,truncated,B,7,7,right,8
+s31065,warning,control,B,8,4,right,13
+s31065,warning,truncated,B,9,5,right,32
+s31066,no warning,truncated,B,1,6,NA,14
+s31066,no warning,control,B,10,7,NA,13
+s31066,no warning,truncated,B,11,7,NA,33
+s31066,no warning,control,B,12,6,NA,1
+s31066,no warning,truncated,B,13,7,NA,38
+s31066,no warning,control,B,14,7,NA,11
+s31066,no warning,truncated,B,15,5,NA,36
+s31066,no warning,control,B,16,5,NA,19
+s31066,no warning,truncated,B,17,5,NA,12
+s31066,no warning,control,B,18,6,NA,28
+s31066,no warning,truncated,B,19,6,NA,37
+s31066,no warning,control,B,2,6,NA,35
+s31066,no warning,control,B,20,6,NA,40
+s31066,no warning,truncated,B,21,6,NA,23
+s31066,no warning,control,B,22,6,NA,16
+s31066,no warning,truncated,B,23,6,NA,2
+s31066,no warning,control,B,24,5,NA,39
+s31066,no warning,truncated,B,25,5,NA,6
+s31066,no warning,control,B,26,5,NA,24
+s31066,no warning,truncated,B,27,7,NA,30
+s31066,no warning,control,B,28,6,NA,5
+s31066,no warning,truncated,B,29,7,NA,4
+s31066,no warning,truncated,B,3,5,NA,17
+s31066,no warning,control,B,30,6,NA,21
+s31066,no warning,truncated,B,31,5,NA,3
+s31066,no warning,control,B,32,7,NA,22
+s31066,no warning,truncated,B,33,6,NA,18
+s31066,no warning,control,B,34,7,NA,8
+s31066,no warning,truncated,B,35,5,NA,32
+s31066,no warning,control,B,36,6,NA,31
+s31066,no warning,truncated,B,37,5,NA,9
+s31066,no warning,control,B,38,7,NA,15
+s31066,no warning,truncated,B,39,5,NA,29
+s31066,no warning,control,B,4,6,NA,34
+s31066,no warning,control,B,40,6,NA,7
+s31066,no warning,truncated,B,5,6,NA,10
+s31066,no warning,control,B,6,7,NA,26
+s31066,no warning,truncated,B,7,6,NA,25
+s31066,no warning,control,B,8,6,NA,27
+s31066,no warning,truncated,B,9,7,NA,20
+s31067,warning,truncated,B,1,6,right,18
+s31067,warning,control,B,10,4,right,20
+s31067,warning,truncated,B,11,6,right,26
+s31067,warning,control,B,12,6,right,40
+s31067,warning,truncated,B,13,7,right,36
+s31067,warning,control,B,14,7,right,29
+s31067,warning,truncated,B,15,7,right,34
+s31067,warning,control,B,16,6,right,35
+s31067,warning,truncated,B,17,2,right,15
+s31067,warning,control,B,18,2,right,4
+s31067,warning,truncated,B,19,6,right,5
+s31067,warning,control,B,2,6,right,23
+s31067,warning,control,B,20,5,right,16
+s31067,warning,truncated,B,21,4,right,39
+s31067,warning,control,B,22,2,right,11
+s31067,warning,truncated,B,23,7,right,21
+s31067,warning,control,B,24,2,right,27
+s31067,warning,truncated,B,25,5,right,2
+s31067,warning,control,B,26,6,right,25
+s31067,warning,truncated,B,27,5,right,13
+s31067,warning,control,B,28,5,right,17
+s31067,warning,truncated,B,29,7,right,38
+s31067,warning,truncated,B,3,5,right,14
+s31067,warning,control,B,30,4,right,19
+s31067,warning,truncated,B,31,7,right,37
+s31067,warning,control,B,32,7,right,30
+s31067,warning,truncated,B,33,5,right,8
+s31067,warning,control,B,34,4,right,28
+s31067,warning,truncated,B,35,7,right,22
+s31067,warning,control,B,36,3,right,12
+s31067,warning,truncated,B,37,4,right,3
+s31067,warning,control,B,38,5,right,6
+s31067,warning,truncated,B,39,2,right,1
+s31067,warning,control,B,4,5,right,32
+s31067,warning,control,B,40,4,right,31
+s31067,warning,truncated,B,5,6,right,9
+s31067,warning,control,B,6,3,right,7
+s31067,warning,truncated,B,7,4,right,10
+s31067,warning,control,B,8,5,right,24
+s31067,warning,truncated,B,9,7,right,33
+s31068,warning,control,A,1,6,wrong,29
+s31068,warning,truncated,A,10,6,wrong,1
+s31068,warning,control,A,11,6,wrong,13
+s31068,warning,truncated,A,12,7,wrong,22
+s31068,warning,control,A,13,7,wrong,20
+s31068,warning,truncated,A,14,6,wrong,25
+s31068,warning,control,A,15,7,wrong,36
+s31068,warning,truncated,A,16,7,wrong,26
+s31068,warning,control,A,17,6,wrong,24
+s31068,warning,truncated,A,18,6,wrong,5
+s31068,warning,control,A,19,6,wrong,31
+s31068,warning,truncated,A,2,6,wrong,32
+s31068,warning,truncated,A,20,6,wrong,8
+s31068,warning,control,A,21,7,wrong,10
+s31068,warning,truncated,A,22,7,wrong,9
+s31068,warning,control,A,23,7,wrong,39
+s31068,warning,truncated,A,24,7,wrong,37
+s31068,warning,control,A,25,7,wrong,11
+s31068,warning,truncated,A,26,7,wrong,12
+s31068,warning,control,A,27,6,wrong,40
+s31068,warning,truncated,A,28,7,wrong,35
+s31068,warning,control,A,29,6,wrong,7
+s31068,warning,control,A,3,6,wrong,6
+s31068,warning,truncated,A,30,7,wrong,18
+s31068,warning,control,A,31,7,wrong,14
+s31068,warning,truncated,A,32,6,wrong,38
+s31068,warning,control,A,33,5,wrong,27
+s31068,warning,truncated,A,34,5,wrong,23
+s31068,warning,control,A,35,6,wrong,28
+s31068,warning,truncated,A,36,7,wrong,17
+s31068,warning,control,A,37,7,wrong,21
+s31068,warning,truncated,A,38,7,wrong,33
+s31068,warning,control,A,39,6,wrong,30
+s31068,warning,truncated,A,4,6,wrong,4
+s31068,warning,truncated,A,40,7,wrong,16
+s31068,warning,control,A,5,6,wrong,34
+s31068,warning,truncated,A,6,7,wrong,15
+s31068,warning,control,A,7,5,wrong,2
+s31068,warning,truncated,A,8,6,wrong,19
+s31068,warning,control,A,9,6,wrong,3
+s31069,no warning,control,A,1,4,NA,36
+s31069,no warning,truncated,A,10,5,NA,28
+s31069,no warning,control,A,11,5,NA,22
+s31069,no warning,truncated,A,12,7,NA,32
+s31069,no warning,control,A,13,7,NA,15
+s31069,no warning,truncated,A,14,7,NA,21
+s31069,no warning,control,A,15,7,NA,9
+s31069,no warning,truncated,A,16,7,NA,27
+s31069,no warning,control,A,17,4,NA,24
+s31069,no warning,truncated,A,18,6,NA,5
+s31069,no warning,control,A,19,5,NA,34
+s31069,no warning,truncated,A,2,7,NA,29
+s31069,no warning,truncated,A,20,7,NA,12
+s31069,no warning,control,A,21,4,NA,7
+s31069,no warning,truncated,A,22,4,NA,35
+s31069,no warning,control,A,23,7,NA,4
+s31069,no warning,truncated,A,24,7,NA,8
+s31069,no warning,control,A,25,7,NA,26
+s31069,no warning,truncated,A,26,7,NA,38
+s31069,no warning,control,A,27,4,NA,1
+s31069,no warning,truncated,A,28,7,NA,17
+s31069,no warning,control,A,29,7,NA,39
+s31069,no warning,control,A,3,4,NA,2
+s31069,no warning,truncated,A,30,7,NA,16
+s31069,no warning,control,A,31,7,NA,3
+s31069,no warning,truncated,A,32,7,NA,37
+s31069,no warning,control,A,33,5,NA,25
+s31069,no warning,truncated,A,34,7,NA,23
+s31069,no warning,control,A,35,5,NA,20
+s31069,no warning,truncated,A,36,5,NA,31
+s31069,no warning,control,A,37,4,NA,19
+s31069,no warning,truncated,A,38,7,NA,18
+s31069,no warning,control,A,39,1,NA,10
+s31069,no warning,truncated,A,4,7,NA,14
+s31069,no warning,truncated,A,40,7,NA,13
+s31069,no warning,control,A,5,7,NA,33
+s31069,no warning,truncated,A,6,5,NA,30
+s31069,no warning,control,A,7,7,NA,11
+s31069,no warning,truncated,A,8,7,NA,6
+s31069,no warning,control,A,9,4,NA,40
+s31070,warning,control,A,1,3,right,1
+s31070,warning,truncated,A,10,2,right,9
+s31070,warning,control,A,11,2,right,30
+s31070,warning,truncated,A,12,5,right,27
+s31070,warning,control,A,13,6,right,5
+s31070,warning,truncated,A,14,5,right,36
+s31070,warning,control,A,15,3,right,17
+s31070,warning,truncated,A,16,2,right,28
+s31070,warning,control,A,17,2,right,29
+s31070,warning,truncated,A,18,2,right,13
+s31070,warning,control,A,19,4,right,14
+s31070,warning,truncated,A,2,4,right,7
+s31070,warning,truncated,A,20,4,right,10
+s31070,warning,control,A,21,2,right,31
+s31070,warning,truncated,A,22,2,right,26
+s31070,warning,control,A,23,5,right,23
+s31070,warning,truncated,A,24,4,right,22
+s31070,warning,control,A,25,5,right,3
+s31070,warning,truncated,A,26,3,right,37
+s31070,warning,control,A,27,1,right,21
+s31070,warning,truncated,A,28,2,right,20
+s31070,warning,control,A,29,4,right,34
+s31070,warning,control,A,3,1,right,33
+s31070,warning,truncated,A,30,2,right,11
+s31070,warning,control,A,31,3,right,35
+s31070,warning,truncated,A,32,6,right,16
+s31070,warning,control,A,33,2,right,38
+s31070,warning,truncated,A,34,2,right,19
+s31070,warning,control,A,35,2,right,32
+s31070,warning,truncated,A,36,3,right,24
+s31070,warning,control,A,37,2,right,25
+s31070,warning,truncated,A,38,7,right,6
+s31070,warning,control,A,39,1,right,4
+s31070,warning,truncated,A,4,4,right,18
+s31070,warning,truncated,A,40,2,right,40
+s31070,warning,control,A,5,4,right,2
+s31070,warning,truncated,A,6,3,right,39
+s31070,warning,control,A,7,3,right,8
+s31070,warning,truncated,A,8,2,right,15
+s31070,warning,control,A,9,3,right,12
+s31071,warning,control,A,1,2,right,12
+s31071,warning,truncated,A,10,2,right,18
+s31071,warning,control,A,11,4,right,27
+s31071,warning,truncated,A,12,7,right,21
+s31071,warning,control,A,13,6,right,6
+s31071,warning,truncated,A,14,4,right,16
+s31071,warning,control,A,15,6,right,9
+s31071,warning,truncated,A,16,2,right,11
+s31071,warning,control,A,17,3,right,4
+s31071,warning,truncated,A,18,2,right,40
+s31071,warning,control,A,19,3,right,23
+s31071,warning,truncated,A,2,6,right,32
+s31071,warning,truncated,A,20,5,right,31
+s31071,warning,control,A,21,2,right,3
+s31071,warning,truncated,A,22,4,right,38
+s31071,warning,control,A,23,5,right,15
+s31071,warning,truncated,A,24,3,right,35
+s31071,warning,control,A,25,5,right,26
+s31071,warning,truncated,A,26,6,right,5
+s31071,warning,control,A,27,2,right,28
+s31071,warning,truncated,A,28,7,right,36
+s31071,warning,control,A,29,7,right,37
+s31071,warning,control,A,3,2,right,10
+s31071,warning,truncated,A,30,4,right,30
+s31071,warning,control,A,31,5,right,8
+s31071,warning,truncated,A,32,7,right,17
+s31071,warning,control,A,33,3,right,39
+s31071,warning,truncated,A,34,5,right,34
+s31071,warning,control,A,35,4,right,29
+s31071,warning,truncated,A,36,3,right,7
+s31071,warning,control,A,37,2,right,2
+s31071,warning,truncated,A,38,7,right,24
+s31071,warning,control,A,39,1,right,22
+s31071,warning,truncated,A,4,5,right,13
+s31071,warning,truncated,A,40,2,right,19
+s31071,warning,control,A,5,6,right,20
+s31071,warning,truncated,A,6,4,right,14
+s31071,warning,control,A,7,3,right,25
+s31071,warning,truncated,A,8,4,right,33
+s31071,warning,control,A,9,3,right,1
+s31072,no warning,truncated,B,1,3,NA,11
+s31072,no warning,control,B,10,2,NA,10
+s31072,no warning,truncated,B,11,4,NA,15
+s31072,no warning,control,B,12,4,NA,8
+s31072,no warning,truncated,B,13,4,NA,22
+s31072,no warning,control,B,14,7,NA,38
+s31072,no warning,truncated,B,15,6,NA,3
+s31072,no warning,control,B,16,4,NA,14
+s31072,no warning,truncated,B,17,3,NA,21
+s31072,no warning,control,B,18,1,NA,35
+s31072,no warning,truncated,B,19,4,NA,33
+s31072,no warning,control,B,2,4,NA,19
+s31072,no warning,control,B,20,3,NA,27
+s31072,no warning,truncated,B,21,2,NA,36
+s31072,no warning,control,B,22,3,NA,17
+s31072,no warning,truncated,B,23,4,NA,34
+s31072,no warning,control,B,24,2,NA,23
+s31072,no warning,truncated,B,25,5,NA,40
+s31072,no warning,control,B,26,2,NA,4
+s31072,no warning,truncated,B,27,2,NA,5
+s31072,no warning,control,B,28,4,NA,28
+s31072,no warning,truncated,B,29,5,NA,7
+s31072,no warning,truncated,B,3,3,NA,32
+s31072,no warning,control,B,30,2,NA,18
+s31072,no warning,truncated,B,31,4,NA,30
+s31072,no warning,control,B,32,7,NA,37
+s31072,no warning,truncated,B,33,5,NA,31
+s31072,no warning,control,B,34,3,NA,24
+s31072,no warning,truncated,B,35,4,NA,20
+s31072,no warning,control,B,36,2,NA,13
+s31072,no warning,truncated,B,37,2,NA,2
+s31072,no warning,control,B,38,4,NA,16
+s31072,no warning,truncated,B,39,2,NA,39
+s31072,no warning,control,B,4,4,NA,25
+s31072,no warning,control,B,40,2,NA,9
+s31072,no warning,truncated,B,5,3,NA,6
+s31072,no warning,control,B,6,2,NA,1
+s31072,no warning,truncated,B,7,3,NA,29
+s31072,no warning,control,B,8,3,NA,12
+s31072,no warning,truncated,B,9,4,NA,26
+s31073,warning,truncated,B,1,2,wrong,4
+s31073,warning,control,B,10,4,wrong,33
+s31073,warning,truncated,B,11,4,wrong,39
+s31073,warning,control,B,12,6,wrong,15
+s31073,warning,truncated,B,13,2,wrong,11
+s31073,warning,control,B,14,7,wrong,10
+s31073,warning,truncated,B,15,6,wrong,34
+s31073,warning,control,B,16,6,wrong,5
+s31073,warning,truncated,B,17,4,wrong,25
+s31073,warning,control,B,18,1,wrong,30
+s31073,warning,truncated,B,19,3,wrong,6
+s31073,warning,control,B,2,4,wrong,35
+s31073,warning,control,B,20,5,wrong,3
+s31073,warning,truncated,B,21,3,wrong,36
+s31073,warning,control,B,22,4,wrong,29
+s31073,warning,truncated,B,23,4,wrong,8
+s31073,warning,control,B,24,3,wrong,28
+s31073,warning,truncated,B,25,7,wrong,13
+s31073,warning,control,B,26,3,wrong,1
+s31073,warning,truncated,B,27,6,wrong,22
+s31073,warning,control,B,28,5,wrong,19
+s31073,warning,truncated,B,29,6,wrong,9
+s31073,warning,truncated,B,3,4,wrong,37
+s31073,warning,control,B,30,4,wrong,23
+s31073,warning,truncated,B,31,5,wrong,21
+s31073,warning,control,B,32,4,wrong,14
+s31073,warning,truncated,B,33,6,wrong,12
+s31073,warning,control,B,34,6,wrong,18
+s31073,warning,truncated,B,35,6,wrong,7
+s31073,warning,control,B,36,1,wrong,31
+s31073,warning,truncated,B,37,3,wrong,20
+s31073,warning,control,B,38,2,wrong,16
+s31073,warning,truncated,B,39,7,wrong,17
+s31073,warning,control,B,4,2,wrong,24
+s31073,warning,control,B,40,1,wrong,27
+s31073,warning,truncated,B,5,4,wrong,26
+s31073,warning,control,B,6,3,wrong,40
+s31073,warning,truncated,B,7,7,wrong,32
+s31073,warning,control,B,8,3,wrong,38
+s31073,warning,truncated,B,9,6,wrong,2
+s31074,warning,control,A,1,2,right,1
+s31074,warning,truncated,A,10,2,right,15
+s31074,warning,control,A,11,4,right,6
+s31074,warning,truncated,A,12,5,right,36
+s31074,warning,control,A,13,5,right,38
+s31074,warning,truncated,A,14,5,right,21
+s31074,warning,control,A,15,6,right,26
+s31074,warning,truncated,A,16,2,right,23
+s31074,warning,control,A,17,2,right,8
+s31074,warning,truncated,A,18,2,right,28
+s31074,warning,control,A,19,5,right,5
+s31074,warning,truncated,A,2,5,right,24
+s31074,warning,truncated,A,20,4,right,14
+s31074,warning,control,A,21,2,right,33
+s31074,warning,truncated,A,22,2,right,11
+s31074,warning,control,A,23,6,right,19
+s31074,warning,truncated,A,24,3,right,32
+s31074,warning,control,A,25,5,right,16
+s31074,warning,truncated,A,26,5,right,17
+s31074,warning,control,A,27,2,right,39
+s31074,warning,truncated,A,28,6,right,27
+s31074,warning,control,A,29,6,right,20
+s31074,warning,control,A,3,2,right,30
+s31074,warning,truncated,A,30,4,right,7
+s31074,warning,control,A,31,5,right,25
+s31074,warning,truncated,A,32,5,right,9
+s31074,warning,control,A,33,3,right,37
+s31074,warning,truncated,A,34,4,right,2
+s31074,warning,control,A,35,5,right,35
+s31074,warning,truncated,A,36,2,right,12
+s31074,warning,control,A,37,2,right,3
+s31074,warning,truncated,A,38,6,right,4
+s31074,warning,control,A,39,1,right,40
+s31074,warning,truncated,A,4,5,right,34
+s31074,warning,truncated,A,40,2,right,10
+s31074,warning,control,A,5,3,right,31
+s31074,warning,truncated,A,6,4,right,22
+s31074,warning,control,A,7,3,right,13
+s31074,warning,truncated,A,8,6,right,18
+s31074,warning,control,A,9,5,right,29
+s31075,warning,truncated,B,1,6,wrong,23
+s31075,warning,control,B,10,1,wrong,26
+s31075,warning,truncated,B,11,5,wrong,36
+s31075,warning,control,B,12,7,wrong,19
+s31075,warning,truncated,B,13,7,wrong,17
+s31075,warning,control,B,14,7,wrong,20
+s31075,warning,truncated,B,15,7,wrong,18
+s31075,warning,control,B,16,7,wrong,6
+s31075,warning,truncated,B,17,4,wrong,28
+s31075,warning,control,B,18,1,wrong,7
+s31075,warning,truncated,B,19,7,wrong,10
+s31075,warning,control,B,2,7,wrong,38
+s31075,warning,control,B,20,6,wrong,34
+s31075,warning,truncated,B,21,4,wrong,40
+s31075,warning,control,B,22,4,wrong,21
+s31075,warning,truncated,B,23,7,wrong,2
+s31075,warning,control,B,24,3,wrong,27
+s31075,warning,truncated,B,25,7,wrong,15
+s31075,warning,control,B,26,4,wrong,11
+s31075,warning,truncated,B,27,4,wrong,16
+s31075,warning,control,B,28,7,wrong,24
+s31075,warning,truncated,B,29,7,wrong,31
+s31075,warning,truncated,B,3,5,wrong,37
+s31075,warning,control,B,30,5,wrong,13
+s31075,warning,truncated,B,31,7,wrong,8
+s31075,warning,control,B,32,7,wrong,29
+s31075,warning,truncated,B,33,7,wrong,39
+s31075,warning,control,B,34,4,wrong,14
+s31075,warning,truncated,B,35,7,wrong,25
+s31075,warning,control,B,36,4,wrong,4
+s31075,warning,truncated,B,37,4,wrong,30
+s31075,warning,control,B,38,7,wrong,35
+s31075,warning,truncated,B,39,4,wrong,1
+s31075,warning,control,B,4,7,wrong,33
+s31075,warning,control,B,40,4,wrong,32
+s31075,warning,truncated,B,5,7,wrong,12
+s31075,warning,control,B,6,4,wrong,22
+s31075,warning,truncated,B,7,7,wrong,5
+s31075,warning,control,B,8,4,wrong,9
+s31075,warning,truncated,B,9,7,wrong,3
+s31076,warning,truncated,B,1,3,right,6
+s31076,warning,control,B,10,2,right,18
+s31076,warning,truncated,B,11,5,right,9
+s31076,warning,control,B,12,4,right,38
+s31076,warning,truncated,B,13,5,right,15
+s31076,warning,control,B,14,6,right,7
+s31076,warning,truncated,B,15,4,right,8
+s31076,warning,control,B,16,3,right,1
+s31076,warning,truncated,B,17,2,right,3
+s31076,warning,control,B,18,2,right,40
+s31076,warning,truncated,B,19,4,right,31
+s31076,warning,control,B,2,3,right,36
+s31076,warning,control,B,20,3,right,26
+s31076,warning,truncated,B,21,3,right,22
+s31076,warning,control,B,22,3,right,20
+s31076,warning,truncated,B,23,6,right,23
+s31076,warning,control,B,24,2,right,11
+s31076,warning,truncated,B,25,5,right,4
+s31076,warning,control,B,26,4,right,35
+s31076,warning,truncated,B,27,2,right,16
+s31076,warning,control,B,28,4,right,28
+s31076,warning,truncated,B,29,5,right,5
+s31076,warning,truncated,B,3,2,right,29
+s31076,warning,control,B,30,2,right,17
+s31076,warning,truncated,B,31,4,right,39
+s31076,warning,control,B,32,6,right,33
+s31076,warning,truncated,B,33,3,right,34
+s31076,warning,control,B,34,3,right,24
+s31076,warning,truncated,B,35,4,right,32
+s31076,warning,control,B,36,2,right,12
+s31076,warning,truncated,B,37,3,right,30
+s31076,warning,control,B,38,6,right,21
+s31076,warning,truncated,B,39,1,right,10
+s31076,warning,control,B,4,4,right,25
+s31076,warning,control,B,40,2,right,2
+s31076,warning,truncated,B,5,4,right,14
+s31076,warning,control,B,6,3,right,37
+s31076,warning,truncated,B,7,5,right,19
+s31076,warning,control,B,8,3,right,13
+s31076,warning,truncated,B,9,3,right,27
+s31077,warning,control,A,1,5,right,9
+s31077,warning,truncated,A,10,6,right,4
+s31077,warning,control,A,11,4,right,22
+s31077,warning,truncated,A,12,5,right,10
+s31077,warning,control,A,13,7,right,6
+s31077,warning,truncated,A,14,4,right,27
+s31077,warning,control,A,15,4,right,32
+s31077,warning,truncated,A,16,5,right,34
+s31077,warning,control,A,17,4,right,21
+s31077,warning,truncated,A,18,4,right,20
+s31077,warning,control,A,19,4,right,13
+s31077,warning,truncated,A,2,6,right,3
+s31077,warning,truncated,A,20,4,right,23
+s31077,warning,control,A,21,5,right,40
+s31077,warning,truncated,A,22,4,right,19
+s31077,warning,control,A,23,6,right,7
+s31077,warning,truncated,A,24,4,right,29
+s31077,warning,control,A,25,4,right,33
+s31077,warning,truncated,A,26,5,right,37
+s31077,warning,control,A,27,4,right,17
+s31077,warning,truncated,A,28,6,right,1
+s31077,warning,control,A,29,4,right,16
+s31077,warning,control,A,3,5,right,39
+s31077,warning,truncated,A,30,5,right,35
+s31077,warning,control,A,31,6,right,2
+s31077,warning,truncated,A,32,3,right,11
+s31077,warning,control,A,33,5,right,31
+s31077,warning,truncated,A,34,4,right,36
+s31077,warning,control,A,35,4,right,24
+s31077,warning,truncated,A,36,3,right,30
+s31077,warning,control,A,37,4,right,25
+s31077,warning,truncated,A,38,2,right,18
+s31077,warning,control,A,39,3,right,12
+s31077,warning,truncated,A,4,4,right,14
+s31077,warning,truncated,A,40,6,right,5
+s31077,warning,control,A,5,7,right,8
+s31077,warning,truncated,A,6,3,right,15
+s31077,warning,control,A,7,4,right,28
+s31077,warning,truncated,A,8,5,right,38
+s31077,warning,control,A,9,4,right,26
+s31078,warning,truncated,B,1,2,right,13
+s31078,warning,control,B,10,1,right,29
+s31078,warning,truncated,B,11,2,right,26
+s31078,warning,control,B,12,3,right,37
+s31078,warning,truncated,B,13,5,right,10
+s31078,warning,control,B,14,5,right,4
+s31078,warning,truncated,B,15,3,right,28
+s31078,warning,control,B,16,4,right,9
+s31078,warning,truncated,B,17,3,right,23
+s31078,warning,control,B,18,1,right,39
+s31078,warning,truncated,B,19,3,right,15
+s31078,warning,control,B,2,2,right,40
+s31078,warning,control,B,20,3,right,5
+s31078,warning,truncated,B,21,2,right,14
+s31078,warning,control,B,22,2,right,11
+s31078,warning,truncated,B,23,5,right,20
+s31078,warning,control,B,24,4,right,34
+s31078,warning,truncated,B,25,4,right,32
+s31078,warning,control,B,26,3,right,38
+s31078,warning,truncated,B,27,2,right,18
+s31078,warning,control,B,28,2,right,16
+s31078,warning,truncated,B,29,4,right,7
+s31078,warning,truncated,B,3,3,right,12
+s31078,warning,control,B,30,2,right,27
+s31078,warning,truncated,B,31,3,right,35
+s31078,warning,control,B,32,4,right,33
+s31078,warning,truncated,B,33,4,right,3
+s31078,warning,control,B,34,3,right,31
+s31078,warning,truncated,B,35,4,right,36
+s31078,warning,control,B,36,2,right,21
+s31078,warning,truncated,B,37,2,right,6
+s31078,warning,control,B,38,5,right,25
+s31078,warning,truncated,B,39,1,right,19
+s31078,warning,control,B,4,4,right,17
+s31078,warning,control,B,40,3,right,2
+s31078,warning,truncated,B,5,4,right,1
+s31078,warning,control,B,6,2,right,24
+s31078,warning,truncated,B,7,3,right,30
+s31078,warning,control,B,8,2,right,8
+s31078,warning,truncated,B,9,3,right,22
+s31079,no warning,control,A,1,5,NA,18
+s31079,no warning,truncated,A,10,6,NA,25
+s31079,no warning,control,A,11,5,NA,16
+s31079,no warning,truncated,A,12,5,NA,6
+s31079,no warning,control,A,13,7,NA,30
+s31079,no warning,truncated,A,14,4,NA,19
+s31079,no warning,control,A,15,7,NA,36
+s31079,no warning,truncated,A,16,7,NA,3
+s31079,no warning,control,A,17,6,NA,26
+s31079,no warning,truncated,A,18,6,NA,34
+s31079,no warning,control,A,19,5,NA,17
+s31079,no warning,truncated,A,2,6,NA,11
+s31079,no warning,truncated,A,20,6,NA,21
+s31079,no warning,control,A,21,5,NA,1
+s31079,no warning,truncated,A,22,3,NA,7
+s31079,no warning,control,A,23,7,NA,32
+s31079,no warning,truncated,A,24,4,NA,15
+s31079,no warning,control,A,25,5,NA,22
+s31079,no warning,truncated,A,26,3,NA,23
+s31079,no warning,control,A,27,6,NA,9
+s31079,no warning,truncated,A,28,6,NA,10
+s31079,no warning,control,A,29,7,NA,5
+s31079,no warning,control,A,3,4,NA,8
+s31079,no warning,truncated,A,30,6,NA,14
+s31079,no warning,control,A,31,6,NA,24
+s31079,no warning,truncated,A,32,7,NA,28
+s31079,no warning,control,A,33,6,NA,2
+s31079,no warning,truncated,A,34,7,NA,27
+s31079,no warning,control,A,35,3,NA,31
+s31079,no warning,truncated,A,36,5,NA,33
+s31079,no warning,control,A,37,4,NA,13
+s31079,no warning,truncated,A,38,5,NA,20
+s31079,no warning,control,A,39,4,NA,37
+s31079,no warning,truncated,A,4,5,NA,35
+s31079,no warning,truncated,A,40,5,NA,40
+s31079,no warning,control,A,5,4,NA,4
+s31079,no warning,truncated,A,6,3,NA,38
+s31079,no warning,control,A,7,5,NA,39
+s31079,no warning,truncated,A,8,4,NA,29
+s31079,no warning,control,A,9,5,NA,12
+s31080,warning,control,A,1,2,right,9
+s31080,warning,truncated,A,10,2,right,29
+s31080,warning,control,A,11,2,right,5
+s31080,warning,truncated,A,12,3,right,12
+s31080,warning,control,A,13,6,right,17
+s31080,warning,truncated,A,14,6,right,6
+s31080,warning,control,A,15,5,right,15
+s31080,warning,truncated,A,16,4,right,37
+s31080,warning,control,A,17,2,right,33
+s31080,warning,truncated,A,18,2,right,2
+s31080,warning,control,A,19,4,right,14
+s31080,warning,truncated,A,2,6,right,4
+s31080,warning,truncated,A,20,5,right,20
+s31080,warning,control,A,21,2,right,30
+s31080,warning,truncated,A,22,3,right,36
+s31080,warning,control,A,23,6,right,34
+s31080,warning,truncated,A,24,2,right,16
+s31080,warning,control,A,25,4,right,35
+s31080,warning,truncated,A,26,4,right,38
+s31080,warning,control,A,27,1,right,28
+s31080,warning,truncated,A,28,4,right,22
+s31080,warning,control,A,29,7,right,11
+s31080,warning,control,A,3,2,right,7
+s31080,warning,truncated,A,30,3,right,1
+s31080,warning,control,A,31,3,right,40
+s31080,warning,truncated,A,32,7,right,8
+s31080,warning,control,A,33,2,right,23
+s31080,warning,truncated,A,34,3,right,24
+s31080,warning,control,A,35,3,right,19
+s31080,warning,truncated,A,36,3,right,25
+s31080,warning,control,A,37,2,right,18
+s31080,warning,truncated,A,38,7,right,27
+s31080,warning,control,A,39,1,right,32
+s31080,warning,truncated,A,4,6,right,3
+s31080,warning,truncated,A,40,2,right,21
+s31080,warning,control,A,5,4,right,26
+s31080,warning,truncated,A,6,3,right,39
+s31080,warning,control,A,7,3,right,31
+s31080,warning,truncated,A,8,3,right,10
+s31080,warning,control,A,9,2,right,13
+s31081,warning,control,A,1,3,right,11
+s31081,warning,truncated,A,10,3,right,5
+s31081,warning,control,A,11,3,right,30
+s31081,warning,truncated,A,12,6,right,12
+s31081,warning,control,A,13,5,right,7
+s31081,warning,truncated,A,14,4,right,27
+s31081,warning,control,A,15,5,right,35
+s31081,warning,truncated,A,16,3,right,36
+s31081,warning,control,A,17,2,right,1
+s31081,warning,truncated,A,18,2,right,33
+s31081,warning,control,A,19,5,right,9
+s31081,warning,truncated,A,2,5,right,31
+s31081,warning,truncated,A,20,3,right,40
+s31081,warning,control,A,21,2,right,25
+s31081,warning,truncated,A,22,2,right,18
+s31081,warning,control,A,23,7,right,34
+s31081,warning,truncated,A,24,2,right,39
+s31081,warning,control,A,25,4,right,38
+s31081,warning,truncated,A,26,4,right,4
+s31081,warning,control,A,27,2,right,22
+s31081,warning,truncated,A,28,3,right,19
+s31081,warning,control,A,29,7,right,3
+s31081,warning,control,A,3,2,right,6
+s31081,warning,truncated,A,30,3,right,13
+s31081,warning,control,A,31,5,right,21
+s31081,warning,truncated,A,32,6,right,17
+s31081,warning,control,A,33,4,right,10
+s31081,warning,truncated,A,34,4,right,26
+s31081,warning,control,A,35,5,right,23
+s31081,warning,truncated,A,36,5,right,28
+s31081,warning,control,A,37,2,right,24
+s31081,warning,truncated,A,38,7,right,29
+s31081,warning,control,A,39,1,right,37
+s31081,warning,truncated,A,4,5,right,15
+s31081,warning,truncated,A,40,3,right,8
+s31081,warning,control,A,5,3,right,20
+s31081,warning,truncated,A,6,3,right,32
+s31081,warning,control,A,7,4,right,14
+s31081,warning,truncated,A,8,2,right,2
+s31081,warning,control,A,9,3,right,16
+s31082,no warning,truncated,B,1,3,NA,18
+s31082,no warning,control,B,10,1,NA,31
+s31082,no warning,truncated,B,11,5,NA,8
+s31082,no warning,control,B,12,4,NA,28
+s31082,no warning,truncated,B,13,6,NA,20
+s31082,no warning,control,B,14,4,NA,13
+s31082,no warning,truncated,B,15,5,NA,16
+s31082,no warning,control,B,16,2,NA,34
+s31082,no warning,truncated,B,17,2,NA,11
+s31082,no warning,control,B,18,1,NA,21
+s31082,no warning,truncated,B,19,4,NA,33
+s31082,no warning,control,B,2,4,NA,27
+s31082,no warning,control,B,20,4,NA,10
+s31082,no warning,truncated,B,21,2,NA,24
+s31082,no warning,control,B,22,1,NA,38
+s31082,no warning,truncated,B,23,3,NA,9
+s31082,no warning,control,B,24,1,NA,12
+s31082,no warning,truncated,B,25,3,NA,39
+s31082,no warning,control,B,26,4,NA,25
+s31082,no warning,truncated,B,27,2,NA,22
+s31082,no warning,control,B,28,2,NA,36
+s31082,no warning,truncated,B,29,7,NA,4
+s31082,no warning,truncated,B,3,2,NA,37
+s31082,no warning,control,B,30,2,NA,7
+s31082,no warning,truncated,B,31,5,NA,26
+s31082,no warning,control,B,32,7,NA,17
+s31082,no warning,truncated,B,33,7,NA,2
+s31082,no warning,control,B,34,1,NA,30
+s31082,no warning,truncated,B,35,7,NA,5
+s31082,no warning,control,B,36,2,NA,3
+s31082,no warning,truncated,B,37,6,NA,6
+s31082,no warning,control,B,38,2,NA,15
+s31082,no warning,truncated,B,39,1,NA,40
+s31082,no warning,control,B,4,3,NA,14
+s31082,no warning,control,B,40,3,NA,23
+s31082,no warning,truncated,B,5,3,NA,35
+s31082,no warning,control,B,6,4,NA,29
+s31082,no warning,truncated,B,7,4,NA,32
+s31082,no warning,control,B,8,2,NA,19
+s31082,no warning,truncated,B,9,6,NA,1
+s31083,warning,control,A,1,2,wrong,15
+s31083,warning,truncated,A,10,3,wrong,18
+s31083,warning,control,A,11,2,wrong,25
+s31083,warning,truncated,A,12,7,wrong,2
+s31083,warning,control,A,13,4,wrong,12
+s31083,warning,truncated,A,14,7,wrong,30
+s31083,warning,control,A,15,7,wrong,21
+s31083,warning,truncated,A,16,7,wrong,9
+s31083,warning,control,A,17,1,wrong,32
+s31083,warning,truncated,A,18,4,wrong,33
+s31083,warning,control,A,19,4,wrong,27
+s31083,warning,truncated,A,2,7,wrong,8
+s31083,warning,truncated,A,20,6,wrong,1
+s31083,warning,control,A,21,3,wrong,13
+s31083,warning,truncated,A,22,3,wrong,7
+s31083,warning,control,A,23,6,wrong,40
+s31083,warning,truncated,A,24,1,wrong,39
+s31083,warning,control,A,25,4,wrong,29
+s31083,warning,truncated,A,26,6,wrong,35
+s31083,warning,control,A,27,2,wrong,22
+s31083,warning,truncated,A,28,7,wrong,5
+s31083,warning,control,A,29,7,wrong,6
+s31083,warning,control,A,3,2,wrong,17
+s31083,warning,truncated,A,30,3,wrong,37
+s31083,warning,control,A,31,5,wrong,4
+s31083,warning,truncated,A,32,7,wrong,10
+s31083,warning,control,A,33,1,wrong,16
+s31083,warning,truncated,A,34,5,wrong,20
+s31083,warning,control,A,35,4,wrong,24
+s31083,warning,truncated,A,36,4,wrong,14
+s31083,warning,control,A,37,3,wrong,11
+s31083,warning,truncated,A,38,7,wrong,38
+s31083,warning,control,A,39,1,wrong,3
+s31083,warning,truncated,A,4,6,wrong,34
+s31083,warning,truncated,A,40,4,wrong,28
+s31083,warning,control,A,5,5,wrong,36
+s31083,warning,truncated,A,6,4,wrong,23
+s31083,warning,control,A,7,4,wrong,26
+s31083,warning,truncated,A,8,4,wrong,19
+s31083,warning,control,A,9,4,wrong,31
+s31084,warning,truncated,B,1,3,right,4
+s31084,warning,control,B,10,1,right,9
+s31084,warning,truncated,B,11,4,right,3
+s31084,warning,control,B,12,6,right,16
+s31084,warning,truncated,B,13,5,right,22
+s31084,warning,control,B,14,7,right,34
+s31084,warning,truncated,B,15,6,right,25
+s31084,warning,control,B,16,1,right,6
+s31084,warning,truncated,B,17,3,right,27
+s31084,warning,control,B,18,1,right,26
+s31084,warning,truncated,B,19,4,right,19
+s31084,warning,control,B,2,5,right,24
+s31084,warning,control,B,20,5,right,28
+s31084,warning,truncated,B,21,3,right,37
+s31084,warning,control,B,22,2,right,15
+s31084,warning,truncated,B,23,7,right,35
+s31084,warning,control,B,24,2,right,8
+s31084,warning,truncated,B,25,6,right,31
+s31084,warning,control,B,26,4,right,1
+s31084,warning,truncated,B,27,3,right,36
+s31084,warning,control,B,28,4,right,12
+s31084,warning,truncated,B,29,6,right,32
+s31084,warning,truncated,B,3,3,right,33
+s31084,warning,control,B,30,2,right,14
+s31084,warning,truncated,B,31,4,right,39
+s31084,warning,control,B,32,7,right,11
+s31084,warning,truncated,B,33,5,right,30
+s31084,warning,control,B,34,3,right,10
+s31084,warning,truncated,B,35,4,right,5
+s31084,warning,control,B,36,1,right,13
+s31084,warning,truncated,B,37,3,right,29
+s31084,warning,control,B,38,5,right,21
+s31084,warning,truncated,B,39,1,right,38
+s31084,warning,control,B,4,5,right,17
+s31084,warning,control,B,40,3,right,23
+s31084,warning,truncated,B,5,4,right,20
+s31084,warning,control,B,6,3,right,40
+s31084,warning,truncated,B,7,5,right,7
+s31084,warning,control,B,8,3,right,2
+s31084,warning,truncated,B,9,4,right,18
+s31085,warning,control,A,1,3,right,32
+s31085,warning,truncated,A,10,4,right,11
+s31085,warning,control,A,11,3,right,3
+s31085,warning,truncated,A,12,6,right,30
+s31085,warning,control,A,13,7,right,8
+s31085,warning,truncated,A,14,7,right,2
+s31085,warning,control,A,15,7,right,5
+s31085,warning,truncated,A,16,7,right,26
+s31085,warning,control,A,17,2,right,17
+s31085,warning,truncated,A,18,3,right,38
+s31085,warning,control,A,19,4,right,13
+s31085,warning,truncated,A,2,5,right,27
+s31085,warning,truncated,A,20,5,right,22
+s31085,warning,control,A,21,2,right,28
+s31085,warning,truncated,A,22,3,right,14
+s31085,warning,control,A,23,7,right,21
+s31085,warning,truncated,A,24,3,right,23
+s31085,warning,control,A,25,4,right,12
+s31085,warning,truncated,A,26,5,right,29
+s31085,warning,control,A,27,2,right,20
+s31085,warning,truncated,A,28,6,right,10
+s31085,warning,control,A,29,6,right,24
+s31085,warning,control,A,3,2,right,7
+s31085,warning,truncated,A,30,4,right,37
+s31085,warning,control,A,31,4,right,36
+s31085,warning,truncated,A,32,7,right,25
+s31085,warning,control,A,33,3,right,39
+s31085,warning,truncated,A,34,7,right,18
+s31085,warning,control,A,35,7,right,16
+s31085,warning,truncated,A,36,4,right,31
+s31085,warning,control,A,37,4,right,4
+s31085,warning,truncated,A,38,7,right,35
+s31085,warning,control,A,39,1,right,15
+s31085,warning,truncated,A,4,5,right,34
+s31085,warning,truncated,A,40,4,right,9
+s31085,warning,control,A,5,5,right,1
+s31085,warning,truncated,A,6,4,right,6
+s31085,warning,control,A,7,5,right,40
+s31085,warning,truncated,A,8,4,right,33
+s31085,warning,control,A,9,3,right,19
+s31086,no warning,truncated,B,1,4,NA,16
+s31086,no warning,control,B,10,2,NA,19
+s31086,no warning,truncated,B,11,2,NA,38
+s31086,no warning,control,B,12,4,NA,18
+s31086,no warning,truncated,B,13,7,NA,36
+s31086,no warning,control,B,14,5,NA,25
+s31086,no warning,truncated,B,15,7,NA,7
+s31086,no warning,control,B,16,4,NA,23
+s31086,no warning,truncated,B,17,3,NA,1
+s31086,no warning,control,B,18,1,NA,40
+s31086,no warning,truncated,B,19,7,NA,15
+s31086,no warning,control,B,2,4,NA,32
+s31086,no warning,control,B,20,4,NA,35
+s31086,no warning,truncated,B,21,2,NA,20
+s31086,no warning,control,B,22,2,NA,8
+s31086,no warning,truncated,B,23,7,NA,3
+s31086,no warning,control,B,24,2,NA,28
+s31086,no warning,truncated,B,25,7,NA,11
+s31086,no warning,control,B,26,2,NA,34
+s31086,no warning,truncated,B,27,2,NA,24
+s31086,no warning,control,B,28,3,NA,13
+s31086,no warning,truncated,B,29,7,NA,17
+s31086,no warning,truncated,B,3,2,NA,29
+s31086,no warning,control,B,30,2,NA,30
+s31086,no warning,truncated,B,31,4,NA,2
+s31086,no warning,control,B,32,5,NA,31
+s31086,no warning,truncated,B,33,4,NA,22
+s31086,no warning,control,B,34,3,NA,14
+s31086,no warning,truncated,B,35,7,NA,37
+s31086,no warning,control,B,36,1,NA,6
+s31086,no warning,truncated,B,37,4,NA,5
+s31086,no warning,control,B,38,7,NA,9
+s31086,no warning,truncated,B,39,2,NA,4
+s31086,no warning,control,B,4,4,NA,39
+s31086,no warning,control,B,40,2,NA,21
+s31086,no warning,truncated,B,5,4,NA,27
+s31086,no warning,control,B,6,2,NA,10
+s31086,no warning,truncated,B,7,7,NA,26
+s31086,no warning,control,B,8,2,NA,33
+s31086,no warning,truncated,B,9,4,NA,12
+s31087,warning,control,A,1,3,right,38
+s31087,warning,truncated,A,10,1,right,14
+s31087,warning,control,A,11,3,right,19
+s31087,warning,truncated,A,12,3,right,7
+s31087,warning,control,A,13,3,right,27
+s31087,warning,truncated,A,14,4,right,20
+s31087,warning,control,A,15,7,right,30
+s31087,warning,truncated,A,16,4,right,22
+s31087,warning,control,A,17,3,right,31
+s31087,warning,truncated,A,18,2,right,17
+s31087,warning,control,A,19,6,right,23
+s31087,warning,truncated,A,2,3,right,3
+s31087,warning,truncated,A,20,4,right,29
+s31087,warning,control,A,21,3,right,33
+s31087,warning,truncated,A,22,2,right,6
+s31087,warning,control,A,23,7,right,35
+s31087,warning,truncated,A,24,2,right,16
+s31087,warning,control,A,25,6,right,4
+s31087,warning,truncated,A,26,4,right,18
+s31087,warning,control,A,27,2,right,26
+s31087,warning,truncated,A,28,3,right,40
+s31087,warning,control,A,29,7,right,36
+s31087,warning,control,A,3,2,right,13
+s31087,warning,truncated,A,30,2,right,9
+s31087,warning,control,A,31,6,right,1
+s31087,warning,truncated,A,32,5,right,12
+s31087,warning,control,A,33,4,right,24
+s31087,warning,truncated,A,34,3,right,21
+s31087,warning,control,A,35,5,right,32
+s31087,warning,truncated,A,36,2,right,5
+s31087,warning,control,A,37,2,right,11
+s31087,warning,truncated,A,38,5,right,34
+s31087,warning,control,A,39,1,right,37
+s31087,warning,truncated,A,4,5,right,28
+s31087,warning,truncated,A,40,2,right,15
+s31087,warning,control,A,5,5,right,39
+s31087,warning,truncated,A,6,4,right,25
+s31087,warning,control,A,7,4,right,2
+s31087,warning,truncated,A,8,3,right,10
+s31087,warning,control,A,9,4,right,8
+s31088,no warning,truncated,B,1,5,NA,16
+s31088,no warning,control,B,10,1,NA,19
+s31088,no warning,truncated,B,11,5,NA,9
+s31088,no warning,control,B,12,6,NA,15
+s31088,no warning,truncated,B,13,7,NA,29
+s31088,no warning,control,B,14,6,NA,33
+s31088,no warning,truncated,B,15,7,NA,36
+s31088,no warning,control,B,16,5,NA,27
+s31088,no warning,truncated,B,17,2,NA,38
+s31088,no warning,control,B,18,1,NA,5
+s31088,no warning,truncated,B,19,7,NA,24
+s31088,no warning,control,B,2,1,NA,26
+s31088,no warning,control,B,20,4,NA,1
+s31088,no warning,truncated,B,21,3,NA,22
+s31088,no warning,control,B,22,2,NA,6
+s31088,no warning,truncated,B,23,7,NA,21
+s31088,no warning,control,B,24,2,NA,7
+s31088,no warning,truncated,B,25,7,NA,31
+s31088,no warning,control,B,26,4,NA,13
+s31088,no warning,truncated,B,27,2,NA,39
+s31088,no warning,control,B,28,4,NA,25
+s31088,no warning,truncated,B,29,7,NA,10
+s31088,no warning,truncated,B,3,2,NA,34
+s31088,no warning,control,B,30,2,NA,40
+s31088,no warning,truncated,B,31,6,NA,32
+s31088,no warning,control,B,32,7,NA,12
+s31088,no warning,truncated,B,33,6,NA,18
+s31088,no warning,control,B,34,3,NA,8
+s31088,no warning,truncated,B,35,7,NA,35
+s31088,no warning,control,B,36,2,NA,17
+s31088,no warning,truncated,B,37,4,NA,3
+s31088,no warning,control,B,38,6,NA,4
+s31088,no warning,truncated,B,39,1,NA,23
+s31088,no warning,control,B,4,6,NA,11
+s31088,no warning,control,B,40,2,NA,30
+s31088,no warning,truncated,B,5,7,NA,28
+s31088,no warning,control,B,6,3,NA,2
+s31088,no warning,truncated,B,7,7,NA,14
+s31088,no warning,control,B,8,2,NA,20
+s31088,no warning,truncated,B,9,5,NA,37
+s31089,warning,truncated,B,1,2,right,36
+s31089,warning,control,B,10,2,right,39
+s31089,warning,truncated,B,11,3,right,10
+s31089,warning,control,B,12,5,right,17
+s31089,warning,truncated,B,13,4,right,11
+s31089,warning,control,B,14,6,right,33
+s31089,warning,truncated,B,15,6,right,28
+s31089,warning,control,B,16,2,right,12
+s31089,warning,truncated,B,17,2,right,15
+s31089,warning,control,B,18,1,right,22
+s31089,warning,truncated,B,19,5,right,40
+s31089,warning,control,B,2,3,right,32
+s31089,warning,control,B,20,4,right,19
+s31089,warning,truncated,B,21,2,right,23
+s31089,warning,control,B,22,2,right,34
+s31089,warning,truncated,B,23,7,right,35
+s31089,warning,control,B,24,2,right,18
+s31089,warning,truncated,B,25,5,right,6
+s31089,warning,control,B,26,4,right,4
+s31089,warning,truncated,B,27,2,right,5
+s31089,warning,control,B,28,2,right,9
+s31089,warning,truncated,B,29,6,right,13
+s31089,warning,truncated,B,3,2,right,2
+s31089,warning,control,B,30,3,right,24
+s31089,warning,truncated,B,31,4,right,1
+s31089,warning,control,B,32,5,right,14
+s31089,warning,truncated,B,33,4,right,37
+s31089,warning,control,B,34,3,right,20
+s31089,warning,truncated,B,35,2,right,3
+s31089,warning,control,B,36,2,right,16
+s31089,warning,truncated,B,37,3,right,29
+s31089,warning,control,B,38,6,right,26
+s31089,warning,truncated,B,39,2,right,8
+s31089,warning,control,B,4,5,right,25
+s31089,warning,control,B,40,2,right,27
+s31089,warning,truncated,B,5,4,right,21
+s31089,warning,control,B,6,3,right,7
+s31089,warning,truncated,B,7,5,right,30
+s31089,warning,control,B,8,3,right,38
+s31089,warning,truncated,B,9,4,right,31
+s31090,no warning,control,A,1,6,NA,34
+s31090,no warning,truncated,A,10,3,NA,21
+s31090,no warning,control,A,11,2,NA,15
+s31090,no warning,truncated,A,12,4,NA,37
+s31090,no warning,control,A,13,4,NA,23
+s31090,no warning,truncated,A,14,7,NA,20
+s31090,no warning,control,A,15,5,NA,1
+s31090,no warning,truncated,A,16,7,NA,25
+s31090,no warning,control,A,17,5,NA,7
+s31090,no warning,truncated,A,18,6,NA,4
+s31090,no warning,control,A,19,6,NA,17
+s31090,no warning,truncated,A,2,1,NA,22
+s31090,no warning,truncated,A,20,4,NA,13
+s31090,no warning,control,A,21,6,NA,24
+s31090,no warning,truncated,A,22,3,NA,30
+s31090,no warning,control,A,23,6,NA,2
+s31090,no warning,truncated,A,24,5,NA,39
+s31090,no warning,control,A,25,7,NA,35
+s31090,no warning,truncated,A,26,5,NA,11
+s31090,no warning,control,A,27,6,NA,9
+s31090,no warning,truncated,A,28,2,NA,29
+s31090,no warning,control,A,29,6,NA,3
+s31090,no warning,control,A,3,5,NA,6
+s31090,no warning,truncated,A,30,6,NA,31
+s31090,no warning,control,A,31,1,NA,16
+s31090,no warning,truncated,A,32,6,NA,19
+s31090,no warning,control,A,33,1,NA,14
+s31090,no warning,truncated,A,34,6,NA,18
+s31090,no warning,control,A,35,1,NA,33
+s31090,no warning,truncated,A,36,7,NA,32
+s31090,no warning,control,A,37,5,NA,8
+s31090,no warning,truncated,A,38,3,NA,38
+s31090,no warning,control,A,39,6,NA,10
+s31090,no warning,truncated,A,4,5,NA,5
+s31090,no warning,truncated,A,40,1,NA,36
+s31090,no warning,control,A,5,5,NA,26
+s31090,no warning,truncated,A,6,4,NA,28
+s31090,no warning,control,A,7,6,NA,40
+s31090,no warning,truncated,A,8,1,NA,27
+s31090,no warning,control,A,9,6,NA,12
+s31091,no warning,control,A,1,4,NA,37
+s31091,no warning,truncated,A,10,3,NA,21
+s31091,no warning,control,A,11,3,NA,30
+s31091,no warning,truncated,A,12,7,NA,32
+s31091,no warning,control,A,13,5,NA,34
+s31091,no warning,truncated,A,14,7,NA,8
+s31091,no warning,control,A,15,5,NA,31
+s31091,no warning,truncated,A,16,4,NA,35
+s31091,no warning,control,A,17,3,NA,25
+s31091,no warning,truncated,A,18,2,NA,27
+s31091,no warning,control,A,19,5,NA,20
+s31091,no warning,truncated,A,2,4,NA,16
+s31091,no warning,truncated,A,20,4,NA,19
+s31091,no warning,control,A,21,2,NA,12
+s31091,no warning,truncated,A,22,3,NA,40
+s31091,no warning,control,A,23,6,NA,39
+s31091,no warning,truncated,A,24,3,NA,2
+s31091,no warning,control,A,25,6,NA,11
+s31091,no warning,truncated,A,26,4,NA,33
+s31091,no warning,control,A,27,4,NA,1
+s31091,no warning,truncated,A,28,6,NA,18
+s31091,no warning,control,A,29,7,NA,17
+s31091,no warning,control,A,3,1,NA,3
+s31091,no warning,truncated,A,30,5,NA,6
+s31091,no warning,control,A,31,5,NA,22
+s31091,no warning,truncated,A,32,7,NA,4
+s31091,no warning,control,A,33,3,NA,10
+s31091,no warning,truncated,A,34,7,NA,7
+s31091,no warning,control,A,35,3,NA,23
+s31091,no warning,truncated,A,36,3,NA,26
+s31091,no warning,control,A,37,3,NA,15
+s31091,no warning,truncated,A,38,7,NA,9
+s31091,no warning,control,A,39,1,NA,5
+s31091,no warning,truncated,A,4,6,NA,14
+s31091,no warning,truncated,A,40,3,NA,36
+s31091,no warning,control,A,5,4,NA,13
+s31091,no warning,truncated,A,6,4,NA,38
+s31091,no warning,control,A,7,4,NA,28
+s31091,no warning,truncated,A,8,4,NA,29
+s31091,no warning,control,A,9,4,NA,24
+s31092,warning,truncated,B,1,5,right,13
+s31092,warning,control,B,10,3,right,6
+s31092,warning,truncated,B,11,4,right,14
+s31092,warning,control,B,12,5,right,34
+s31092,warning,truncated,B,13,5,right,31
+s31092,warning,control,B,14,5,right,40
+s31092,warning,truncated,B,15,5,right,4
+s31092,warning,control,B,16,2,right,36
+s31092,warning,truncated,B,17,5,right,38
+s31092,warning,control,B,18,2,right,26
+s31092,warning,truncated,B,19,3,right,1
+s31092,warning,control,B,2,5,right,16
+s31092,warning,control,B,20,4,right,39
+s31092,warning,truncated,B,21,3,right,28
+s31092,warning,control,B,22,5,right,24
+s31092,warning,truncated,B,23,5,right,8
+s31092,warning,control,B,24,4,right,15
+s31092,warning,truncated,B,25,4,right,23
+s31092,warning,control,B,26,3,right,21
+s31092,warning,truncated,B,27,3,right,20
+s31092,warning,control,B,28,3,right,7
+s31092,warning,truncated,B,29,7,right,35
+s31092,warning,truncated,B,3,5,right,19
+s31092,warning,control,B,30,5,right,12
+s31092,warning,truncated,B,31,5,right,29
+s31092,warning,control,B,32,4,right,18
+s31092,warning,truncated,B,33,5,right,9
+s31092,warning,control,B,34,3,right,2
+s31092,warning,truncated,B,35,5,right,37
+s31092,warning,control,B,36,5,right,17
+s31092,warning,truncated,B,37,3,right,3
+s31092,warning,control,B,38,3,right,11
+s31092,warning,truncated,B,39,3,right,22
+s31092,warning,control,B,4,4,right,33
+s31092,warning,control,B,40,3,right,27
+s31092,warning,truncated,B,5,5,right,30
+s31092,warning,control,B,6,5,right,10
+s31092,warning,truncated,B,7,3,right,5
+s31092,warning,control,B,8,5,right,25
+s31092,warning,truncated,B,9,4,right,32
+s31093,warning,truncated,B,1,4,right,1
+s31093,warning,control,B,10,2,right,25
+s31093,warning,truncated,B,11,4,right,26
+s31093,warning,control,B,12,4,right,40
+s31093,warning,truncated,B,13,7,right,39
+s31093,warning,control,B,14,5,right,11
+s31093,warning,truncated,B,15,7,right,13
+s31093,warning,control,B,16,4,right,28
+s31093,warning,truncated,B,17,6,right,33
+s31093,warning,control,B,18,2,right,23
+s31093,warning,truncated,B,19,7,right,29
+s31093,warning,control,B,2,4,right,16
+s31093,warning,control,B,20,6,right,6
+s31093,warning,truncated,B,21,4,right,34
+s31093,warning,control,B,22,2,right,36
+s31093,warning,truncated,B,23,6,right,38
+s31093,warning,control,B,24,2,right,37
+s31093,warning,truncated,B,25,7,right,15
+s31093,warning,control,B,26,5,right,21
+s31093,warning,truncated,B,27,2,right,17
+s31093,warning,control,B,28,4,right,22
+s31093,warning,truncated,B,29,7,right,14
+s31093,warning,truncated,B,3,4,right,5
+s31093,warning,control,B,30,2,right,19
+s31093,warning,truncated,B,31,6,right,12
+s31093,warning,control,B,32,6,right,27
+s31093,warning,truncated,B,33,5,right,18
+s31093,warning,control,B,34,2,right,31
+s31093,warning,truncated,B,35,6,right,32
+s31093,warning,control,B,36,2,right,3
+s31093,warning,truncated,B,37,4,right,30
+s31093,warning,control,B,38,2,right,9
+s31093,warning,truncated,B,39,2,right,20
+s31093,warning,control,B,4,4,right,8
+s31093,warning,control,B,40,2,right,7
+s31093,warning,truncated,B,5,6,right,4
+s31093,warning,control,B,6,4,right,2
+s31093,warning,truncated,B,7,7,right,24
+s31093,warning,control,B,8,2,right,35
+s31093,warning,truncated,B,9,5,right,10
+s31094,no warning,truncated,B,1,4,NA,29
+s31094,no warning,control,B,10,2,NA,34
+s31094,no warning,truncated,B,11,4,NA,18
+s31094,no warning,control,B,12,5,NA,30
+s31094,no warning,truncated,B,13,7,NA,15
+s31094,no warning,control,B,14,6,NA,33
+s31094,no warning,truncated,B,15,7,NA,36
+s31094,no warning,control,B,16,4,NA,25
+s31094,no warning,truncated,B,17,3,NA,4
+s31094,no warning,control,B,18,2,NA,7
+s31094,no warning,truncated,B,19,7,NA,17
+s31094,no warning,control,B,2,4,NA,21
+s31094,no warning,control,B,20,4,NA,9
+s31094,no warning,truncated,B,21,3,NA,27
+s31094,no warning,control,B,22,3,NA,20
+s31094,no warning,truncated,B,23,7,NA,32
+s31094,no warning,control,B,24,3,NA,12
+s31094,no warning,truncated,B,25,7,NA,40
+s31094,no warning,control,B,26,5,NA,16
+s31094,no warning,truncated,B,27,3,NA,23
+s31094,no warning,control,B,28,5,NA,5
+s31094,no warning,truncated,B,29,7,NA,10
+s31094,no warning,truncated,B,3,4,NA,14
+s31094,no warning,control,B,30,3,NA,13
+s31094,no warning,truncated,B,31,5,NA,26
+s31094,no warning,control,B,32,7,NA,39
+s31094,no warning,truncated,B,33,4,NA,24
+s31094,no warning,control,B,34,3,NA,37
+s31094,no warning,truncated,B,35,5,NA,28
+s31094,no warning,control,B,36,3,NA,31
+s31094,no warning,truncated,B,37,4,NA,19
+s31094,no warning,control,B,38,6,NA,22
+s31094,no warning,truncated,B,39,2,NA,8
+s31094,no warning,control,B,4,4,NA,6
+s31094,no warning,control,B,40,3,NA,35
+s31094,no warning,truncated,B,5,5,NA,1
+s31094,no warning,control,B,6,4,NA,3
+s31094,no warning,truncated,B,7,7,NA,38
+s31094,no warning,control,B,8,3,NA,2
+s31094,no warning,truncated,B,9,5,NA,11
+s31095,no warning,control,A,1,2,NA,23
+s31095,no warning,truncated,A,10,4,NA,40
+s31095,no warning,control,A,11,3,NA,29
+s31095,no warning,truncated,A,12,7,NA,4
+s31095,no warning,control,A,13,6,NA,31
+s31095,no warning,truncated,A,14,7,NA,16
+s31095,no warning,control,A,15,6,NA,5
+s31095,no warning,truncated,A,16,7,NA,38
+s31095,no warning,control,A,17,2,NA,35
+s31095,no warning,truncated,A,18,2,NA,20
+s31095,no warning,control,A,19,5,NA,10
+s31095,no warning,truncated,A,2,6,NA,7
+s31095,no warning,truncated,A,20,5,NA,27
+s31095,no warning,control,A,21,2,NA,11
+s31095,no warning,truncated,A,22,2,NA,6
+s31095,no warning,control,A,23,7,NA,22
+s31095,no warning,truncated,A,24,2,NA,26
+s31095,no warning,control,A,25,6,NA,17
+s31095,no warning,truncated,A,26,6,NA,15
+s31095,no warning,control,A,27,2,NA,2
+s31095,no warning,truncated,A,28,7,NA,14
+s31095,no warning,control,A,29,5,NA,34
+s31095,no warning,control,A,3,2,NA,32
+s31095,no warning,truncated,A,30,3,NA,33
+s31095,no warning,control,A,31,3,NA,19
+s31095,no warning,truncated,A,32,7,NA,39
+s31095,no warning,control,A,33,5,NA,9
+s31095,no warning,truncated,A,34,5,NA,30
+s31095,no warning,control,A,35,3,NA,12
+s31095,no warning,truncated,A,36,3,NA,13
+s31095,no warning,control,A,37,2,NA,18
+s31095,no warning,truncated,A,38,7,NA,25
+s31095,no warning,control,A,39,1,NA,37
+s31095,no warning,truncated,A,4,6,NA,1
+s31095,no warning,truncated,A,40,4,NA,28
+s31095,no warning,control,A,5,4,NA,3
+s31095,no warning,truncated,A,6,4,NA,8
+s31095,no warning,control,A,7,4,NA,21
+s31095,no warning,truncated,A,8,4,NA,36
+s31095,no warning,control,A,9,2,NA,24
+s31096,warning,control,A,1,3,right,16
+s31096,warning,truncated,A,10,1,right,21
+s31096,warning,control,A,11,2,right,36
+s31096,warning,truncated,A,12,7,right,13
+s31096,warning,control,A,13,5,right,12
+s31096,warning,truncated,A,14,3,right,28
+s31096,warning,control,A,15,4,right,40
+s31096,warning,truncated,A,16,1,right,5
+s31096,warning,control,A,17,1,right,11
+s31096,warning,truncated,A,18,2,right,20
+s31096,warning,control,A,19,6,right,25
+s31096,warning,truncated,A,2,5,right,7
+s31096,warning,truncated,A,20,1,right,38
+s31096,warning,control,A,21,1,right,14
+s31096,warning,truncated,A,22,2,right,19
+s31096,warning,control,A,23,4,right,34
+s31096,warning,truncated,A,24,2,right,37
+s31096,warning,control,A,25,5,right,10
+s31096,warning,truncated,A,26,7,right,26
+s31096,warning,control,A,27,1,right,23
+s31096,warning,truncated,A,28,7,right,39
+s31096,warning,control,A,29,7,right,3
+s31096,warning,control,A,3,1,right,22
+s31096,warning,truncated,A,30,4,right,15
+s31096,warning,control,A,31,4,right,29
+s31096,warning,truncated,A,32,7,right,27
+s31096,warning,control,A,33,3,right,1
+s31096,warning,truncated,A,34,4,right,24
+s31096,warning,control,A,35,5,right,2
+s31096,warning,truncated,A,36,1,right,33
+s31096,warning,control,A,37,2,right,30
+s31096,warning,truncated,A,38,2,right,17
+s31096,warning,control,A,39,1,right,35
+s31096,warning,truncated,A,4,7,right,18
+s31096,warning,truncated,A,40,4,right,4
+s31096,warning,control,A,5,2,right,31
+s31096,warning,truncated,A,6,3,right,6
+s31096,warning,control,A,7,2,right,8
+s31096,warning,truncated,A,8,4,right,9
+s31096,warning,control,A,9,5,right,32
+s31097,warning,control,A,1,3,right,7
+s31097,warning,truncated,A,10,4,right,25
+s31097,warning,control,A,11,2,right,26
+s31097,warning,truncated,A,12,6,right,14
+s31097,warning,control,A,13,7,right,17
+s31097,warning,truncated,A,14,7,right,37
+s31097,warning,control,A,15,7,right,4
+s31097,warning,truncated,A,16,7,right,24
+s31097,warning,control,A,17,7,right,2
+s31097,warning,truncated,A,18,3,right,29
+s31097,warning,control,A,19,7,right,16
+s31097,warning,truncated,A,2,5,right,40
+s31097,warning,truncated,A,20,4,right,27
+s31097,warning,control,A,21,3,right,15
+s31097,warning,truncated,A,22,3,right,11
+s31097,warning,control,A,23,7,right,10
+s31097,warning,truncated,A,24,7,right,19
+s31097,warning,control,A,25,7,right,36
+s31097,warning,truncated,A,26,7,right,34
+s31097,warning,control,A,27,4,right,30
+s31097,warning,truncated,A,28,7,right,6
+s31097,warning,control,A,29,7,right,39
+s31097,warning,control,A,3,1,right,8
+s31097,warning,truncated,A,30,4,right,33
+s31097,warning,control,A,31,3,right,9
+s31097,warning,truncated,A,32,7,right,31
+s31097,warning,control,A,33,4,right,12
+s31097,warning,truncated,A,34,5,right,28
+s31097,warning,control,A,35,6,right,3
+s31097,warning,truncated,A,36,4,right,18
+s31097,warning,control,A,37,4,right,5
+s31097,warning,truncated,A,38,7,right,23
+s31097,warning,control,A,39,1,right,35
+s31097,warning,truncated,A,4,7,right,21
+s31097,warning,truncated,A,40,6,right,22
+s31097,warning,control,A,5,6,right,1
+s31097,warning,truncated,A,6,6,right,32
+s31097,warning,control,A,7,7,right,13
+s31097,warning,truncated,A,8,4,right,20
+s31097,warning,control,A,9,3,right,38
+s31098,warning,control,A,1,2,right,16
+s31098,warning,truncated,A,10,4,right,8
+s31098,warning,control,A,11,1,right,7
+s31098,warning,truncated,A,12,2,right,39
+s31098,warning,control,A,13,6,right,28
+s31098,warning,truncated,A,14,1,right,36
+s31098,warning,control,A,15,2,right,10
+s31098,warning,truncated,A,16,6,right,3
+s31098,warning,control,A,17,6,right,25
+s31098,warning,truncated,A,18,7,right,31
+s31098,warning,control,A,19,7,right,17
+s31098,warning,truncated,A,2,2,right,18
+s31098,warning,truncated,A,20,4,right,5
+s31098,warning,control,A,21,1,right,34
+s31098,warning,truncated,A,22,6,right,6
+s31098,warning,control,A,23,6,right,40
+s31098,warning,truncated,A,24,5,right,2
+s31098,warning,control,A,25,4,right,15
+s31098,warning,truncated,A,26,2,right,35
+s31098,warning,control,A,27,7,right,12
+s31098,warning,truncated,A,28,6,right,26
+s31098,warning,control,A,29,2,right,9
+s31098,warning,control,A,3,2,right,21
+s31098,warning,truncated,A,30,6,right,14
+s31098,warning,control,A,31,6,right,29
+s31098,warning,truncated,A,32,6,right,1
+s31098,warning,control,A,33,5,right,4
+s31098,warning,truncated,A,34,3,right,38
+s31098,warning,control,A,35,1,right,20
+s31098,warning,truncated,A,36,4,right,11
+s31098,warning,control,A,37,5,right,30
+s31098,warning,truncated,A,38,6,right,33
+s31098,warning,control,A,39,4,right,19
+s31098,warning,truncated,A,4,6,right,23
+s31098,warning,truncated,A,40,7,right,24
+s31098,warning,control,A,5,5,right,32
+s31098,warning,truncated,A,6,2,right,13
+s31098,warning,control,A,7,1,right,22
+s31098,warning,truncated,A,8,7,right,37
+s31098,warning,control,A,9,6,right,27
+s31099,no warning,truncated,B,1,3,NA,14
+s31099,no warning,control,B,10,2,NA,17
+s31099,no warning,truncated,B,11,3,NA,16
+s31099,no warning,control,B,12,4,NA,13
+s31099,no warning,truncated,B,13,7,NA,23
+s31099,no warning,control,B,14,6,NA,31
+s31099,no warning,truncated,B,15,6,NA,9
+s31099,no warning,control,B,16,4,NA,15
+s31099,no warning,truncated,B,17,2,NA,8
+s31099,no warning,control,B,18,2,NA,30
+s31099,no warning,truncated,B,19,6,NA,11
+s31099,no warning,control,B,2,3,NA,7
+s31099,no warning,control,B,20,3,NA,22
+s31099,no warning,truncated,B,21,2,NA,40
+s31099,no warning,control,B,22,2,NA,39
+s31099,no warning,truncated,B,23,7,NA,3
+s31099,no warning,control,B,24,2,NA,10
+s31099,no warning,truncated,B,25,7,NA,2
+s31099,no warning,control,B,26,3,NA,19
+s31099,no warning,truncated,B,27,2,NA,25
+s31099,no warning,control,B,28,3,NA,12
+s31099,no warning,truncated,B,29,7,NA,20
+s31099,no warning,truncated,B,3,3,NA,36
+s31099,no warning,control,B,30,2,NA,33
+s31099,no warning,truncated,B,31,6,NA,1
+s31099,no warning,control,B,32,7,NA,34
+s31099,no warning,truncated,B,33,5,NA,4
+s31099,no warning,control,B,34,2,NA,18
+s31099,no warning,truncated,B,35,6,NA,35
+s31099,no warning,control,B,36,2,NA,37
+s31099,no warning,truncated,B,37,3,NA,6
+s31099,no warning,control,B,38,5,NA,28
+s31099,no warning,truncated,B,39,2,NA,38
+s31099,no warning,control,B,4,3,NA,26
+s31099,no warning,control,B,40,2,NA,29
+s31099,no warning,truncated,B,5,5,NA,32
+s31099,no warning,control,B,6,2,NA,24
+s31099,no warning,truncated,B,7,7,NA,21
+s31099,no warning,control,B,8,2,NA,27
+s31099,no warning,truncated,B,9,4,NA,5
+s31100,warning,truncated,B,1,3,right,17
+s31100,warning,control,B,10,1,right,19
+s31100,warning,truncated,B,11,7,right,3
+s31100,warning,control,B,12,4,right,27
+s31100,warning,truncated,B,13,7,right,33
+s31100,warning,control,B,14,7,right,20
+s31100,warning,truncated,B,15,7,right,13
+s31100,warning,control,B,16,4,right,9
+s31100,warning,truncated,B,17,7,right,23
+s31100,warning,control,B,18,1,right,24
+s31100,warning,truncated,B,19,7,right,31
+s31100,warning,control,B,2,3,right,30
+s31100,warning,control,B,20,4,right,16
+s31100,warning,truncated,B,21,1,right,18
+s31100,warning,control,B,22,1,right,5
+s31100,warning,truncated,B,23,7,right,12
+s31100,warning,control,B,24,1,right,25
+s31100,warning,truncated,B,25,7,right,29
+s31100,warning,control,B,26,2,right,35
+s31100,warning,truncated,B,27,2,right,10
+s31100,warning,control,B,28,4,right,1
+s31100,warning,truncated,B,29,7,right,21
+s31100,warning,truncated,B,3,2,right,32
+s31100,warning,control,B,30,1,right,36
+s31100,warning,truncated,B,31,7,right,14
+s31100,warning,control,B,32,7,right,8
+s31100,warning,truncated,B,33,4,right,37
+s31100,warning,control,B,34,2,right,2
+s31100,warning,truncated,B,35,7,right,11
+s31100,warning,control,B,36,1,right,6
+s31100,warning,truncated,B,37,4,right,7
+s31100,warning,control,B,38,4,right,26
+s31100,warning,truncated,B,39,1,right,38
+s31100,warning,control,B,4,3,right,40
+s31100,warning,control,B,40,1,right,28
+s31100,warning,truncated,B,5,7,right,4
+s31100,warning,control,B,6,4,right,39
+s31100,warning,truncated,B,7,7,right,34
+s31100,warning,control,B,8,2,right,22
+s31100,warning,truncated,B,9,7,right,15
+s31101,warning,truncated,B,1,6,right,9
+s31101,warning,control,B,10,5,right,14
+s31101,warning,truncated,B,11,5,right,22
+s31101,warning,control,B,12,5,right,3
+s31101,warning,truncated,B,13,5,right,4
+s31101,warning,control,B,14,5,right,16
+s31101,warning,truncated,B,15,6,right,7
+s31101,warning,control,B,16,6,right,6
+s31101,warning,truncated,B,17,6,right,21
+s31101,warning,control,B,18,3,right,29
+s31101,warning,truncated,B,19,6,right,39
+s31101,warning,control,B,2,7,right,38
+s31101,warning,control,B,20,4,right,15
+s31101,warning,truncated,B,21,6,right,10
+s31101,warning,control,B,22,5,right,12
+s31101,warning,truncated,B,23,5,right,13
+s31101,warning,control,B,24,6,right,34
+s31101,warning,truncated,B,25,4,right,32
+s31101,warning,control,B,26,3,right,23
+s31101,warning,truncated,B,27,7,right,26
+s31101,warning,control,B,28,5,right,18
+s31101,warning,truncated,B,29,4,right,27
+s31101,warning,truncated,B,3,5,right,20
+s31101,warning,control,B,30,3,right,30
+s31101,warning,truncated,B,31,1,right,40
+s31101,warning,control,B,32,1,right,37
+s31101,warning,truncated,B,33,3,right,36
+s31101,warning,control,B,34,4,right,33
+s31101,warning,truncated,B,35,6,right,35
+s31101,warning,control,B,36,3,right,24
+s31101,warning,truncated,B,37,7,right,25
+s31101,warning,control,B,38,5,right,19
+s31101,warning,truncated,B,39,6,right,5
+s31101,warning,control,B,4,3,right,31
+s31101,warning,control,B,40,6,right,11
+s31101,warning,truncated,B,5,4,right,8
+s31101,warning,control,B,6,5,right,1
+s31101,warning,truncated,B,7,2,right,28
+s31101,warning,control,B,8,6,right,2
+s31101,warning,truncated,B,9,5,right,17
+s31102,warning,control,A,1,3,right,29
+s31102,warning,truncated,A,10,1,right,19
+s31102,warning,control,A,11,2,right,34
+s31102,warning,truncated,A,12,5,right,30
+s31102,warning,control,A,13,5,right,26
+s31102,warning,truncated,A,14,4,right,25
+s31102,warning,control,A,15,5,right,1
+s31102,warning,truncated,A,16,1,right,20
+s31102,warning,control,A,17,1,right,28
+s31102,warning,truncated,A,18,1,right,35
+s31102,warning,control,A,19,3,right,36
+s31102,warning,truncated,A,2,4,right,2
+s31102,warning,truncated,A,20,3,right,12
+s31102,warning,control,A,21,2,right,6
+s31102,warning,truncated,A,22,2,right,27
+s31102,warning,control,A,23,6,right,10
+s31102,warning,truncated,A,24,2,right,31
+s31102,warning,control,A,25,4,right,8
+s31102,warning,truncated,A,26,4,right,39
+s31102,warning,control,A,27,1,right,22
+s31102,warning,truncated,A,28,3,right,24
+s31102,warning,control,A,29,6,right,3
+s31102,warning,control,A,3,2,right,16
+s31102,warning,truncated,A,30,2,right,40
+s31102,warning,control,A,31,4,right,38
+s31102,warning,truncated,A,32,5,right,21
+s31102,warning,control,A,33,3,right,37
+s31102,warning,truncated,A,34,2,right,9
+s31102,warning,control,A,35,1,right,33
+s31102,warning,truncated,A,36,1,right,17
+s31102,warning,control,A,37,2,right,11
+s31102,warning,truncated,A,38,6,right,7
+s31102,warning,control,A,39,1,right,13
+s31102,warning,truncated,A,4,4,right,32
+s31102,warning,truncated,A,40,2,right,15
+s31102,warning,control,A,5,5,right,14
+s31102,warning,truncated,A,6,3,right,23
+s31102,warning,control,A,7,4,right,4
+s31102,warning,truncated,A,8,2,right,18
+s31102,warning,control,A,9,3,right,5
+s31103,warning,control,A,1,5,right,11
+s31103,warning,truncated,A,10,3,right,15
+s31103,warning,control,A,11,3,right,12
+s31103,warning,truncated,A,12,7,right,1
+s31103,warning,control,A,13,4,right,33
+s31103,warning,truncated,A,14,5,right,23
+s31103,warning,control,A,15,4,right,21
+s31103,warning,truncated,A,16,6,right,39
+s31103,warning,control,A,17,1,right,30
+s31103,warning,truncated,A,18,2,right,36
+s31103,warning,control,A,19,3,right,35
+s31103,warning,truncated,A,2,5,right,6
+s31103,warning,truncated,A,20,3,right,22
+s31103,warning,control,A,21,2,right,20
+s31103,warning,truncated,A,22,2,right,32
+s31103,warning,control,A,23,4,right,40
+s31103,warning,truncated,A,24,2,right,4
+s31103,warning,control,A,25,5,right,34
+s31103,warning,truncated,A,26,6,right,14
+s31103,warning,control,A,27,1,right,9
+s31103,warning,truncated,A,28,5,right,10
+s31103,warning,control,A,29,6,right,25
+s31103,warning,control,A,3,2,right,3
+s31103,warning,truncated,A,30,2,right,31
+s31103,warning,control,A,31,4,right,16
+s31103,warning,truncated,A,32,7,right,7
+s31103,warning,control,A,33,3,right,29
+s31103,warning,truncated,A,34,4,right,24
+s31103,warning,control,A,35,3,right,26
+s31103,warning,truncated,A,36,3,right,38
+s31103,warning,control,A,37,2,right,37
+s31103,warning,truncated,A,38,6,right,27
+s31103,warning,control,A,39,1,right,18
+s31103,warning,truncated,A,4,4,right,17
+s31103,warning,truncated,A,40,3,right,19
+s31103,warning,control,A,5,3,right,28
+s31103,warning,truncated,A,6,4,right,2
+s31103,warning,control,A,7,3,right,13
+s31103,warning,truncated,A,8,5,right,5
+s31103,warning,control,A,9,4,right,8
+s31104,warning,control,A,1,3,right,9
+s31104,warning,truncated,A,10,3,right,2
+s31104,warning,control,A,11,3,right,18
+s31104,warning,truncated,A,12,5,right,31
+s31104,warning,control,A,13,6,right,27
+s31104,warning,truncated,A,14,5,right,30
+s31104,warning,control,A,15,5,right,26
+s31104,warning,truncated,A,16,4,right,17
+s31104,warning,control,A,17,2,right,10
+s31104,warning,truncated,A,18,2,right,32
+s31104,warning,control,A,19,5,right,22
+s31104,warning,truncated,A,2,4,right,38
+s31104,warning,truncated,A,20,4,right,5
+s31104,warning,control,A,21,2,right,11
+s31104,warning,truncated,A,22,2,right,37
+s31104,warning,control,A,23,7,right,4
+s31104,warning,truncated,A,24,2,right,36
+s31104,warning,control,A,25,6,right,23
+s31104,warning,truncated,A,26,4,right,35
+s31104,warning,control,A,27,1,right,33
+s31104,warning,truncated,A,28,3,right,25
+s31104,warning,control,A,29,6,right,20
+s31104,warning,control,A,3,2,right,1
+s31104,warning,truncated,A,30,3,right,39
+s31104,warning,control,A,31,4,right,29
+s31104,warning,truncated,A,32,6,right,40
+s31104,warning,control,A,33,3,right,12
+s31104,warning,truncated,A,34,3,right,34
+s31104,warning,control,A,35,3,right,19
+s31104,warning,truncated,A,36,3,right,21
+s31104,warning,control,A,37,3,right,15
+s31104,warning,truncated,A,38,7,right,14
+s31104,warning,control,A,39,1,right,13
+s31104,warning,truncated,A,4,6,right,8
+s31104,warning,truncated,A,40,3,right,7
+s31104,warning,control,A,5,6,right,3
+s31104,warning,truncated,A,6,4,right,24
+s31104,warning,control,A,7,4,right,16
+s31104,warning,truncated,A,8,2,right,6
+s31104,warning,control,A,9,3,right,28
+s31105,no warning,control,A,1,2,NA,6
+s31105,no warning,truncated,A,10,2,NA,20
+s31105,no warning,control,A,11,3,NA,39
+s31105,no warning,truncated,A,12,7,NA,37
+s31105,no warning,control,A,13,7,NA,13
+s31105,no warning,truncated,A,14,7,NA,27
+s31105,no warning,control,A,15,6,NA,29
+s31105,no warning,truncated,A,16,3,NA,1
+s31105,no warning,control,A,17,2,NA,31
+s31105,no warning,truncated,A,18,3,NA,28
+s31105,no warning,control,A,19,4,NA,25
+s31105,no warning,truncated,A,2,6,NA,35
+s31105,no warning,truncated,A,20,6,NA,30
+s31105,no warning,control,A,21,2,NA,10
+s31105,no warning,truncated,A,22,3,NA,17
+s31105,no warning,control,A,23,6,NA,5
+s31105,no warning,truncated,A,24,2,NA,11
+s31105,no warning,control,A,25,6,NA,26
+s31105,no warning,truncated,A,26,4,NA,4
+s31105,no warning,control,A,27,1,NA,16
+s31105,no warning,truncated,A,28,6,NA,9
+s31105,no warning,control,A,29,7,NA,8
+s31105,no warning,control,A,3,2,NA,21
+s31105,no warning,truncated,A,30,3,NA,18
+s31105,no warning,control,A,31,3,NA,36
+s31105,no warning,truncated,A,32,7,NA,32
+s31105,no warning,control,A,33,3,NA,7
+s31105,no warning,truncated,A,34,5,NA,34
+s31105,no warning,control,A,35,3,NA,23
+s31105,no warning,truncated,A,36,4,NA,40
+s31105,no warning,control,A,37,2,NA,22
+s31105,no warning,truncated,A,38,6,NA,2
+s31105,no warning,control,A,39,1,NA,19
+s31105,no warning,truncated,A,4,7,NA,33
+s31105,no warning,truncated,A,40,2,NA,15
+s31105,no warning,control,A,5,4,NA,12
+s31105,no warning,truncated,A,6,3,NA,3
+s31105,no warning,control,A,7,4,NA,38
+s31105,no warning,truncated,A,8,5,NA,14
+s31105,no warning,control,A,9,4,NA,24
+s31106,warning,truncated,B,1,2,right,38
+s31106,warning,control,B,10,2,right,13
+s31106,warning,truncated,B,11,3,right,37
+s31106,warning,control,B,12,5,right,14
+s31106,warning,truncated,B,13,6,right,19
+s31106,warning,control,B,14,7,right,9
+s31106,warning,truncated,B,15,6,right,20
+s31106,warning,control,B,16,2,right,39
+s31106,warning,truncated,B,17,2,right,24
+s31106,warning,control,B,18,2,right,34
+s31106,warning,truncated,B,19,6,right,7
+s31106,warning,control,B,2,3,right,30
+s31106,warning,control,B,20,4,right,8
+s31106,warning,truncated,B,21,2,right,27
+s31106,warning,control,B,22,2,right,16
+s31106,warning,truncated,B,23,6,right,32
+s31106,warning,control,B,24,2,right,11
+s31106,warning,truncated,B,25,6,right,18
+s31106,warning,control,B,26,4,right,23
+s31106,warning,truncated,B,27,2,right,21
+s31106,warning,control,B,28,4,right,22
+s31106,warning,truncated,B,29,5,right,31
+s31106,warning,truncated,B,3,3,right,28
+s31106,warning,control,B,30,3,right,1
+s31106,warning,truncated,B,31,5,right,29
+s31106,warning,control,B,32,6,right,35
+s31106,warning,truncated,B,33,4,right,2
+s31106,warning,control,B,34,3,right,25
+s31106,warning,truncated,B,35,6,right,17
+s31106,warning,control,B,36,2,right,6
+s31106,warning,truncated,B,37,3,right,26
+s31106,warning,control,B,38,6,right,15
+s31106,warning,truncated,B,39,2,right,33
+s31106,warning,control,B,4,4,right,36
+s31106,warning,control,B,40,3,right,3
+s31106,warning,truncated,B,5,6,right,10
+s31106,warning,control,B,6,4,right,12
+s31106,warning,truncated,B,7,5,right,4
+s31106,warning,control,B,8,2,right,40
+s31106,warning,truncated,B,9,2,right,5
+s31107,warning,control,A,1,4,right,11
+s31107,warning,truncated,A,10,3,right,6
+s31107,warning,control,A,11,4,right,20
+s31107,warning,truncated,A,12,6,right,22
+s31107,warning,control,A,13,6,right,27
+s31107,warning,truncated,A,14,7,right,12
+s31107,warning,control,A,15,6,right,28
+s31107,warning,truncated,A,16,7,right,16
+s31107,warning,control,A,17,2,right,7
+s31107,warning,truncated,A,18,3,right,26
+s31107,warning,control,A,19,5,right,17
+s31107,warning,truncated,A,2,5,right,1
+s31107,warning,truncated,A,20,5,right,3
+s31107,warning,control,A,21,3,right,37
+s31107,warning,truncated,A,22,3,right,36
+s31107,warning,control,A,23,6,right,25
+s31107,warning,truncated,A,24,2,right,8
+s31107,warning,control,A,25,5,right,38
+s31107,warning,truncated,A,26,6,right,2
+s31107,warning,control,A,27,2,right,31
+s31107,warning,truncated,A,28,4,right,33
+s31107,warning,control,A,29,6,right,39
+s31107,warning,control,A,3,2,right,9
+s31107,warning,truncated,A,30,4,right,18
+s31107,warning,control,A,31,4,right,19
+s31107,warning,truncated,A,32,7,right,21
+s31107,warning,control,A,33,6,right,40
+s31107,warning,truncated,A,34,4,right,4
+s31107,warning,control,A,35,4,right,14
+s31107,warning,truncated,A,36,5,right,15
+s31107,warning,control,A,37,3,right,13
+s31107,warning,truncated,A,38,6,right,34
+s31107,warning,control,A,39,1,right,35
+s31107,warning,truncated,A,4,6,right,24
+s31107,warning,truncated,A,40,5,right,10
+s31107,warning,control,A,5,4,right,5
+s31107,warning,truncated,A,6,4,right,32
+s31107,warning,control,A,7,4,right,23
+s31107,warning,truncated,A,8,4,right,30
+s31107,warning,control,A,9,4,right,29
+s31108,warning,truncated,B,1,2,right,8
+s31108,warning,control,B,10,3,right,11
+s31108,warning,truncated,B,11,4,right,40
+s31108,warning,control,B,12,5,right,3
+s31108,warning,truncated,B,13,4,right,14
+s31108,warning,control,B,14,6,right,2
+s31108,warning,truncated,B,15,5,right,30
+s31108,warning,control,B,16,2,right,25
+s31108,warning,truncated,B,17,2,right,10
+s31108,warning,control,B,18,3,right,17
+s31108,warning,truncated,B,19,6,right,7
+s31108,warning,control,B,2,4,right,9
+s31108,warning,control,B,20,3,right,33
+s31108,warning,truncated,B,21,2,right,22
+s31108,warning,control,B,22,3,right,15
+s31108,warning,truncated,B,23,6,right,5
+s31108,warning,control,B,24,4,right,21
+s31108,warning,truncated,B,25,6,right,4
+s31108,warning,control,B,26,4,right,19
+s31108,warning,truncated,B,27,2,right,26
+s31108,warning,control,B,28,4,right,18
+s31108,warning,truncated,B,29,6,right,6
+s31108,warning,truncated,B,3,4,right,13
+s31108,warning,control,B,30,3,right,39
+s31108,warning,truncated,B,31,4,right,24
+s31108,warning,control,B,32,6,right,23
+s31108,warning,truncated,B,33,4,right,36
+s31108,warning,control,B,34,3,right,32
+s31108,warning,truncated,B,35,3,right,34
+s31108,warning,control,B,36,2,right,31
+s31108,warning,truncated,B,37,2,right,37
+s31108,warning,control,B,38,3,right,29
+s31108,warning,truncated,B,39,3,right,12
+s31108,warning,control,B,4,4,right,38
+s31108,warning,control,B,40,2,right,35
+s31108,warning,truncated,B,5,3,right,27
+s31108,warning,control,B,6,3,right,28
+s31108,warning,truncated,B,7,6,right,1
+s31108,warning,control,B,8,2,right,16
+s31108,warning,truncated,B,9,3,right,20
+s31109,no warning,truncated,B,1,5,NA,13
+s31109,no warning,control,B,10,1,NA,31
+s31109,no warning,truncated,B,11,4,NA,4
+s31109,no warning,control,B,12,5,NA,16
+s31109,no warning,truncated,B,13,7,NA,36
+s31109,no warning,control,B,14,6,NA,25
+s31109,no warning,truncated,B,15,7,NA,19
+s31109,no warning,control,B,16,6,NA,1
+s31109,no warning,truncated,B,17,1,NA,37
+s31109,no warning,control,B,18,1,NA,27
+s31109,no warning,truncated,B,19,7,NA,7
+s31109,no warning,control,B,2,2,NA,24
+s31109,no warning,control,B,20,3,NA,22
+s31109,no warning,truncated,B,21,1,NA,34
+s31109,no warning,control,B,22,1,NA,30
+s31109,no warning,truncated,B,23,7,NA,33
+s31109,no warning,control,B,24,1,NA,11
+s31109,no warning,truncated,B,25,7,NA,2
+s31109,no warning,control,B,26,4,NA,15
+s31109,no warning,truncated,B,27,2,NA,10
+s31109,no warning,control,B,28,3,NA,26
+s31109,no warning,truncated,B,29,7,NA,20
+s31109,no warning,truncated,B,3,3,NA,8
+s31109,no warning,control,B,30,1,NA,38
+s31109,no warning,truncated,B,31,7,NA,14
+s31109,no warning,control,B,32,6,NA,6
+s31109,no warning,truncated,B,33,6,NA,21
+s31109,no warning,control,B,34,2,NA,39
+s31109,no warning,truncated,B,35,6,NA,28
+s31109,no warning,control,B,36,1,NA,17
+s31109,no warning,truncated,B,37,4,NA,12
+s31109,no warning,control,B,38,7,NA,23
+s31109,no warning,truncated,B,39,1,NA,40
+s31109,no warning,control,B,4,4,NA,9
+s31109,no warning,control,B,40,2,NA,32
+s31109,no warning,truncated,B,5,7,NA,29
+s31109,no warning,control,B,6,2,NA,5
+s31109,no warning,truncated,B,7,7,NA,35
+s31109,no warning,control,B,8,2,NA,18
+s31109,no warning,truncated,B,9,5,NA,3
+s31110,warning,control,A,1,5,right,26
+s31110,warning,truncated,A,10,4,right,5
+s31110,warning,control,A,11,4,right,3
+s31110,warning,truncated,A,12,7,right,36
+s31110,warning,control,A,13,7,right,19
+s31110,warning,truncated,A,14,7,right,24
+s31110,warning,control,A,15,4,right,22
+s31110,warning,truncated,A,16,7,right,16
+s31110,warning,control,A,17,2,right,21
+s31110,warning,truncated,A,18,3,right,27
+s31110,warning,control,A,19,6,right,14
+s31110,warning,truncated,A,2,6,right,40
+s31110,warning,truncated,A,20,7,right,31
+s31110,warning,control,A,21,3,right,6
+s31110,warning,truncated,A,22,5,right,1
+s31110,warning,control,A,23,7,right,15
+s31110,warning,truncated,A,24,4,right,23
+s31110,warning,control,A,25,7,right,28
+s31110,warning,truncated,A,26,7,right,4
+s31110,warning,control,A,27,2,right,33
+s31110,warning,truncated,A,28,7,right,13
+s31110,warning,control,A,29,6,right,9
+s31110,warning,control,A,3,2,right,29
+s31110,warning,truncated,A,30,5,right,12
+s31110,warning,control,A,31,5,right,18
+s31110,warning,truncated,A,32,7,right,35
+s31110,warning,control,A,33,5,right,2
+s31110,warning,truncated,A,34,6,right,39
+s31110,warning,control,A,35,2,right,20
+s31110,warning,truncated,A,36,5,right,38
+s31110,warning,control,A,37,3,right,25
+s31110,warning,truncated,A,38,4,right,34
+s31110,warning,control,A,39,1,right,10
+s31110,warning,truncated,A,4,7,right,8
+s31110,warning,truncated,A,40,6,right,30
+s31110,warning,control,A,5,5,right,37
+s31110,warning,truncated,A,6,5,right,11
+s31110,warning,control,A,7,5,right,17
+s31110,warning,truncated,A,8,6,right,7
+s31110,warning,control,A,9,4,right,32
+s31111,no warning,control,A,1,3,NA,34
+s31111,no warning,truncated,A,10,2,NA,22
+s31111,no warning,control,A,11,2,NA,32
+s31111,no warning,truncated,A,12,5,NA,10
+s31111,no warning,control,A,13,5,NA,39
+s31111,no warning,truncated,A,14,4,NA,8
+s31111,no warning,control,A,15,6,NA,31
+s31111,no warning,truncated,A,16,4,NA,33
+s31111,no warning,control,A,17,2,NA,13
+s31111,no warning,truncated,A,18,2,NA,6
+s31111,no warning,control,A,19,3,NA,2
+s31111,no warning,truncated,A,2,4,NA,1
+s31111,no warning,truncated,A,20,5,NA,36
+s31111,no warning,control,A,21,3,NA,14
+s31111,no warning,truncated,A,22,5,NA,17
+s31111,no warning,control,A,23,7,NA,35
+s31111,no warning,truncated,A,24,3,NA,19
+s31111,no warning,control,A,25,5,NA,30
+s31111,no warning,truncated,A,26,5,NA,40
+s31111,no warning,control,A,27,1,NA,5
+s31111,no warning,truncated,A,28,4,NA,11
+s31111,no warning,control,A,29,5,NA,27
+s31111,no warning,control,A,3,1,NA,24
+s31111,no warning,truncated,A,30,2,NA,15
+s31111,no warning,control,A,31,4,NA,20
+s31111,no warning,truncated,A,32,7,NA,23
+s31111,no warning,control,A,33,4,NA,7
+s31111,no warning,truncated,A,34,3,NA,38
+s31111,no warning,control,A,35,4,NA,29
+s31111,no warning,truncated,A,36,4,NA,18
+s31111,no warning,control,A,37,2,NA,3
+s31111,no warning,truncated,A,38,6,NA,26
+s31111,no warning,control,A,39,1,NA,28
+s31111,no warning,truncated,A,4,4,NA,37
+s31111,no warning,truncated,A,40,2,NA,12
+s31111,no warning,control,A,5,5,NA,4
+s31111,no warning,truncated,A,6,3,NA,16
+s31111,no warning,control,A,7,4,NA,21
+s31111,no warning,truncated,A,8,2,NA,9
+s31111,no warning,control,A,9,5,NA,25
+s31112,no warning,truncated,B,1,4,NA,29
+s31112,no warning,control,B,10,2,NA,31
+s31112,no warning,truncated,B,11,3,NA,33
+s31112,no warning,control,B,12,5,NA,25
+s31112,no warning,truncated,B,13,7,NA,24
+s31112,no warning,control,B,14,7,NA,1
+s31112,no warning,truncated,B,15,7,NA,39
+s31112,no warning,control,B,16,7,NA,6
+s31112,no warning,truncated,B,17,2,NA,36
+s31112,no warning,control,B,18,1,NA,3
+s31112,no warning,truncated,B,19,4,NA,5
+s31112,no warning,control,B,2,5,NA,16
+s31112,no warning,control,B,20,4,NA,38
+s31112,no warning,truncated,B,21,2,NA,15
+s31112,no warning,control,B,22,2,NA,19
+s31112,no warning,truncated,B,23,7,NA,22
+s31112,no warning,control,B,24,5,NA,4
+s31112,no warning,truncated,B,25,7,NA,34
+s31112,no warning,control,B,26,4,NA,27
+s31112,no warning,truncated,B,27,2,NA,20
+s31112,no warning,control,B,28,5,NA,14
+s31112,no warning,truncated,B,29,7,NA,11
+s31112,no warning,truncated,B,3,2,NA,18
+s31112,no warning,control,B,30,3,NA,37
+s31112,no warning,truncated,B,31,5,NA,10
+s31112,no warning,control,B,32,6,NA,35
+s31112,no warning,truncated,B,33,7,NA,26
+s31112,no warning,control,B,34,5,NA,13
+s31112,no warning,truncated,B,35,7,NA,7
+s31112,no warning,control,B,36,2,NA,21
+s31112,no warning,truncated,B,37,5,NA,2
+s31112,no warning,control,B,38,5,NA,9
+s31112,no warning,truncated,B,39,1,NA,12
+s31112,no warning,control,B,4,6,NA,17
+s31112,no warning,control,B,40,2,NA,30
+s31112,no warning,truncated,B,5,5,NA,28
+s31112,no warning,control,B,6,5,NA,8
+s31112,no warning,truncated,B,7,7,NA,23
+s31112,no warning,control,B,8,2,NA,32
+s31112,no warning,truncated,B,9,5,NA,40
+s31113,no warning,truncated,B,1,4,NA,30
+s31113,no warning,control,B,10,3,NA,1
+s31113,no warning,truncated,B,11,7,NA,20
+s31113,no warning,control,B,12,3,NA,38
+s31113,no warning,truncated,B,13,2,NA,35
+s31113,no warning,control,B,14,2,NA,34
+s31113,no warning,truncated,B,15,3,NA,8
+s31113,no warning,control,B,16,4,NA,32
+s31113,no warning,truncated,B,17,5,NA,31
+s31113,no warning,control,B,18,5,NA,2
+s31113,no warning,truncated,B,19,5,NA,28
+s31113,no warning,control,B,2,4,NA,26
+s31113,no warning,control,B,20,5,NA,6
+s31113,no warning,truncated,B,21,5,NA,11
+s31113,no warning,control,B,22,2,NA,37
+s31113,no warning,truncated,B,23,6,NA,21
+s31113,no warning,control,B,24,4,NA,13
+s31113,no warning,truncated,B,25,4,NA,10
+s31113,no warning,control,B,26,3,NA,40
+s31113,no warning,truncated,B,27,5,NA,16
+s31113,no warning,control,B,28,5,NA,23
+s31113,no warning,truncated,B,29,3,NA,25
+s31113,no warning,truncated,B,3,5,NA,19
+s31113,no warning,control,B,30,3,NA,33
+s31113,no warning,truncated,B,31,5,NA,22
+s31113,no warning,control,B,32,3,NA,36
+s31113,no warning,truncated,B,33,6,NA,24
+s31113,no warning,control,B,34,5,NA,15
+s31113,no warning,truncated,B,35,6,NA,27
+s31113,no warning,control,B,36,6,NA,5
+s31113,no warning,truncated,B,37,5,NA,9
+s31113,no warning,control,B,38,4,NA,18
+s31113,no warning,truncated,B,39,5,NA,14
+s31113,no warning,control,B,4,5,NA,12
+s31113,no warning,control,B,40,2,NA,39
+s31113,no warning,truncated,B,5,6,NA,4
+s31113,no warning,control,B,6,4,NA,7
+s31113,no warning,truncated,B,7,4,NA,17
+s31113,no warning,control,B,8,2,NA,29
+s31113,no warning,truncated,B,9,5,NA,3
+s31114,warning,control,A,1,4,right,31
+s31114,warning,truncated,A,10,5,right,4
+s31114,warning,control,A,11,4,right,35
+s31114,warning,truncated,A,12,7,right,9
+s31114,warning,control,A,13,4,right,17
+s31114,warning,truncated,A,14,7,right,34
+s31114,warning,control,A,15,5,right,39
+s31114,warning,truncated,A,16,7,right,26
+s31114,warning,control,A,17,3,right,19
+s31114,warning,truncated,A,18,4,right,13
+s31114,warning,control,A,19,3,right,21
+s31114,warning,truncated,A,2,4,right,16
+s31114,warning,truncated,A,20,7,right,15
+s31114,warning,control,A,21,3,right,22
+s31114,warning,truncated,A,22,3,right,11
+s31114,warning,control,A,23,5,right,10
+s31114,warning,truncated,A,24,3,right,25
+s31114,warning,control,A,25,6,right,28
+s31114,warning,truncated,A,26,5,right,3
+s31114,warning,control,A,27,2,right,8
+s31114,warning,truncated,A,28,6,right,1
+s31114,warning,control,A,29,6,right,36
+s31114,warning,control,A,3,3,right,2
+s31114,warning,truncated,A,30,5,right,30
+s31114,warning,control,A,31,5,right,6
+s31114,warning,truncated,A,32,7,right,23
+s31114,warning,control,A,33,5,right,33
+s31114,warning,truncated,A,34,6,right,24
+s31114,warning,control,A,35,4,right,18
+s31114,warning,truncated,A,36,4,right,12
+s31114,warning,control,A,37,3,right,14
+s31114,warning,truncated,A,38,7,right,38
+s31114,warning,control,A,39,6,right,20
+s31114,warning,truncated,A,4,7,right,32
+s31114,warning,truncated,A,40,5,right,40
+s31114,warning,control,A,5,4,right,27
+s31114,warning,truncated,A,6,4,right,7
+s31114,warning,control,A,7,5,right,37
+s31114,warning,truncated,A,8,5,right,29
+s31114,warning,control,A,9,5,right,5
+s31115,warning,control,A,1,3,right,11
+s31115,warning,truncated,A,10,3,right,5
+s31115,warning,control,A,11,3,right,25
+s31115,warning,truncated,A,12,4,right,38
+s31115,warning,control,A,13,5,right,12
+s31115,warning,truncated,A,14,4,right,28
+s31115,warning,control,A,15,3,right,20
+s31115,warning,truncated,A,16,5,right,15
+s31115,warning,control,A,17,3,right,9
+s31115,warning,truncated,A,18,5,right,21
+s31115,warning,control,A,19,3,right,23
+s31115,warning,truncated,A,2,6,right,37
+s31115,warning,truncated,A,20,6,right,24
+s31115,warning,control,A,21,6,right,7
+s31115,warning,truncated,A,22,7,right,10
+s31115,warning,control,A,23,5,right,4
+s31115,warning,truncated,A,24,5,right,2
+s31115,warning,control,A,25,3,right,27
+s31115,warning,truncated,A,26,3,right,40
+s31115,warning,control,A,27,2,right,30
+s31115,warning,truncated,A,28,2,right,39
+s31115,warning,control,A,29,5,right,16
+s31115,warning,control,A,3,1,right,13
+s31115,warning,truncated,A,30,3,right,36
+s31115,warning,control,A,31,5,right,18
+s31115,warning,truncated,A,32,7,right,31
+s31115,warning,control,A,33,3,right,14
+s31115,warning,truncated,A,34,3,right,35
+s31115,warning,control,A,35,3,right,22
+s31115,warning,truncated,A,36,3,right,1
+s31115,warning,control,A,37,2,right,8
+s31115,warning,truncated,A,38,4,right,6
+s31115,warning,control,A,39,1,right,26
+s31115,warning,truncated,A,4,5,right,34
+s31115,warning,truncated,A,40,3,right,3
+s31115,warning,control,A,5,3,right,17
+s31115,warning,truncated,A,6,4,right,32
+s31115,warning,control,A,7,3,right,29
+s31115,warning,truncated,A,8,3,right,33
+s31115,warning,control,A,9,3,right,19
+s31116,no warning,truncated,B,1,7,NA,38
+s31116,no warning,control,B,10,1,NA,33
+s31116,no warning,truncated,B,11,7,NA,16
+s31116,no warning,control,B,12,4,NA,13
+s31116,no warning,truncated,B,13,7,NA,28
+s31116,no warning,control,B,14,7,NA,8
+s31116,no warning,truncated,B,15,7,NA,14
+s31116,no warning,control,B,16,7,NA,27
+s31116,no warning,truncated,B,17,3,NA,36
+s31116,no warning,control,B,18,1,NA,4
+s31116,no warning,truncated,B,19,7,NA,26
+s31116,no warning,control,B,2,4,NA,31
+s31116,no warning,control,B,20,5,NA,10
+s31116,no warning,truncated,B,21,4,NA,22
+s31116,no warning,control,B,22,1,NA,34
+s31116,no warning,truncated,B,23,7,NA,39
+s31116,no warning,control,B,24,2,NA,2
+s31116,no warning,truncated,B,25,7,NA,30
+s31116,no warning,control,B,26,4,NA,19
+s31116,no warning,truncated,B,27,3,NA,12
+s31116,no warning,control,B,28,4,NA,32
+s31116,no warning,truncated,B,29,7,NA,17
+s31116,no warning,truncated,B,3,4,NA,6
+s31116,no warning,control,B,30,3,NA,25
+s31116,no warning,truncated,B,31,5,NA,29
+s31116,no warning,control,B,32,7,NA,24
+s31116,no warning,truncated,B,33,7,NA,11
+s31116,no warning,control,B,34,3,NA,23
+s31116,no warning,truncated,B,35,7,NA,21
+s31116,no warning,control,B,36,3,NA,9
+s31116,no warning,truncated,B,37,5,NA,7
+s31116,no warning,control,B,38,7,NA,37
+s31116,no warning,truncated,B,39,1,NA,5
+s31116,no warning,control,B,4,4,NA,20
+s31116,no warning,control,B,40,3,NA,3
+s31116,no warning,truncated,B,5,7,NA,35
+s31116,no warning,control,B,6,3,NA,18
+s31116,no warning,truncated,B,7,7,NA,15
+s31116,no warning,control,B,8,3,NA,1
+s31116,no warning,truncated,B,9,7,NA,40
+s31117,no warning,control,A,1,2,NA,36
+s31117,no warning,truncated,A,10,1,NA,35
+s31117,no warning,control,A,11,3,NA,13
+s31117,no warning,truncated,A,12,5,NA,11
+s31117,no warning,control,A,13,5,NA,30
+s31117,no warning,truncated,A,14,3,NA,7
+s31117,no warning,control,A,15,6,NA,25
+s31117,no warning,truncated,A,16,2,NA,34
+s31117,no warning,control,A,17,3,NA,6
+s31117,no warning,truncated,A,18,2,NA,32
+s31117,no warning,control,A,19,3,NA,37
+s31117,no warning,truncated,A,2,5,NA,10
+s31117,no warning,truncated,A,20,2,NA,14
+s31117,no warning,control,A,21,2,NA,1
+s31117,no warning,truncated,A,22,4,NA,2
+s31117,no warning,control,A,23,4,NA,24
+s31117,no warning,truncated,A,24,1,NA,8
+s31117,no warning,control,A,25,3,NA,3
+s31117,no warning,truncated,A,26,3,NA,33
+s31117,no warning,control,A,27,1,NA,16
+s31117,no warning,truncated,A,28,4,NA,4
+s31117,no warning,control,A,29,6,NA,23
+s31117,no warning,control,A,3,1,NA,9
+s31117,no warning,truncated,A,30,6,NA,5
+s31117,no warning,control,A,31,3,NA,29
+s31117,no warning,truncated,A,32,7,NA,12
+s31117,no warning,control,A,33,2,NA,31
+s31117,no warning,truncated,A,34,3,NA,27
+s31117,no warning,control,A,35,3,NA,15
+s31117,no warning,truncated,A,36,2,NA,38
+s31117,no warning,control,A,37,2,NA,19
+s31117,no warning,truncated,A,38,6,NA,39
+s31117,no warning,control,A,39,1,NA,17
+s31117,no warning,truncated,A,4,7,NA,21
+s31117,no warning,truncated,A,40,2,NA,26
+s31117,no warning,control,A,5,5,NA,18
+s31117,no warning,truncated,A,6,4,NA,20
+s31117,no warning,control,A,7,3,NA,22
+s31117,no warning,truncated,A,8,3,NA,40
+s31117,no warning,control,A,9,3,NA,28
+s31118,no warning,control,A,1,2,NA,29
+s31118,no warning,truncated,A,10,3,NA,27
+s31118,no warning,control,A,11,3,NA,26
+s31118,no warning,truncated,A,12,6,NA,4
+s31118,no warning,control,A,13,6,NA,25
+s31118,no warning,truncated,A,14,7,NA,23
+s31118,no warning,control,A,15,4,NA,30
+s31118,no warning,truncated,A,16,7,NA,37
+s31118,no warning,control,A,17,2,NA,2
+s31118,no warning,truncated,A,18,4,NA,9
+s31118,no warning,control,A,19,4,NA,36
+s31118,no warning,truncated,A,2,3,NA,34
+s31118,no warning,truncated,A,20,5,NA,22
+s31118,no warning,control,A,21,3,NA,20
+s31118,no warning,truncated,A,22,3,NA,1
+s31118,no warning,control,A,23,7,NA,19
+s31118,no warning,truncated,A,24,2,NA,14
+s31118,no warning,control,A,25,5,NA,6
+s31118,no warning,truncated,A,26,5,NA,10
+s31118,no warning,control,A,27,2,NA,7
+s31118,no warning,truncated,A,28,5,NA,5
+s31118,no warning,control,A,29,7,NA,24
+s31118,no warning,control,A,3,2,NA,12
+s31118,no warning,truncated,A,30,4,NA,21
+s31118,no warning,control,A,31,4,NA,17
+s31118,no warning,truncated,A,32,7,NA,8
+s31118,no warning,control,A,33,3,NA,15
+s31118,no warning,truncated,A,34,4,NA,38
+s31118,no warning,control,A,35,2,NA,31
+s31118,no warning,truncated,A,36,5,NA,18
+s31118,no warning,control,A,37,3,NA,3
+s31118,no warning,truncated,A,38,6,NA,39
+s31118,no warning,control,A,39,1,NA,28
+s31118,no warning,truncated,A,4,3,NA,35
+s31118,no warning,truncated,A,40,3,NA,33
+s31118,no warning,control,A,5,4,NA,16
+s31118,no warning,truncated,A,6,4,NA,13
+s31118,no warning,control,A,7,4,NA,32
+s31118,no warning,truncated,A,8,5,NA,40
+s31118,no warning,control,A,9,3,NA,11
+s31119,warning,truncated,B,1,4,right,25
+s31119,warning,control,B,10,2,right,6
+s31119,warning,truncated,B,11,4,right,28
+s31119,warning,control,B,12,4,right,37
+s31119,warning,truncated,B,13,6,right,22
+s31119,warning,control,B,14,7,right,39
+s31119,warning,truncated,B,15,5,right,23
+s31119,warning,control,B,16,6,right,1
+s31119,warning,truncated,B,17,6,right,16
+s31119,warning,control,B,18,2,right,14
+s31119,warning,truncated,B,19,5,right,30
+s31119,warning,control,B,2,4,right,26
+s31119,warning,control,B,20,4,right,34
+s31119,warning,truncated,B,21,2,right,9
+s31119,warning,control,B,22,2,right,20
+s31119,warning,truncated,B,23,7,right,35
+s31119,warning,control,B,24,2,right,2
+s31119,warning,truncated,B,25,4,right,32
+s31119,warning,control,B,26,4,right,33
+s31119,warning,truncated,B,27,2,right,7
+s31119,warning,control,B,28,4,right,13
+s31119,warning,truncated,B,29,4,right,10
+s31119,warning,truncated,B,3,2,right,21
+s31119,warning,control,B,30,2,right,36
+s31119,warning,truncated,B,31,4,right,24
+s31119,warning,control,B,32,6,right,29
+s31119,warning,truncated,B,33,2,right,31
+s31119,warning,control,B,34,2,right,15
+s31119,warning,truncated,B,35,3,right,12
+s31119,warning,control,B,36,1,right,4
+s31119,warning,truncated,B,37,3,right,5
+s31119,warning,control,B,38,7,right,40
+s31119,warning,truncated,B,39,1,right,11
+s31119,warning,control,B,4,4,right,3
+s31119,warning,control,B,40,2,right,17
+s31119,warning,truncated,B,5,5,right,27
+s31119,warning,control,B,6,4,right,8
+s31119,warning,truncated,B,7,3,right,19
+s31119,warning,control,B,8,3,right,38
+s31119,warning,truncated,B,9,2,right,18

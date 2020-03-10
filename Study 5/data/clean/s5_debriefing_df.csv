@@ -1,0 +1,352 @@
+participantID,subject_condition,field,group,duration,check,DB_approach_select,DB_approach_select_1,DB_approach_select_2,DB_approach_select_3,DB_approach_select_4,DB_approach_select_5,DB_approach_select_6,DB_approach_other,DB_w_approach,DB_nw_notice,DB_misleading_estimate,db_misleading_estimate
+s51001,no warning,Quantitative,A,1239,NA,12,1,1,0,0,0,0,NA,NA,NA,50,50
+s51002,warning,Quantitative,A,1092,right,1,1,0,0,0,0,0,NA,NA,NA,50,50
+s51003,no warning,Quantitative,B,742,NA,245,0,1,0,1,1,0,NA,NA,NA,68,68
+s51004,warning,Quantitative,B,1634,right,13,1,0,1,0,0,0,NA,"Project mentally the graph on a scale starting from zero, plus re-state the difference in terms of absolute figures",NA,50,50
+s51005,warning,Quantitative,A,2218,right,12,1,1,0,0,0,0,NA,NA,NA,50,50
+s51006,no warning,Quantitative,A,682,NA,1,1,0,0,0,0,0,NA,NA,"Some of the graphs did not start at the origin (0,0) - for example, some of the y-axis values started at a non-zero value, which initially skewed my perception about how large the differences were between the bars of interest",70,70
+s51007,no warning,Quantitative,B,1111,NA,126,1,1,0,0,0,1,Comparing relative and absolute difference. Wishing their were SE marks.,NA,"Not really... Some values were unknown to me (e.g. growth rate... of what?). The comparisons would be easier if there were SE bars. I also noticed that the graphs differed regarding comparisons (e.g. lowest to highest vs. mid-low to high-low), if there was a bar with a very different height (e.g. comparing two similar bars in the presence of a much larger bar vs. no larger bar present), and if the measure was absolute or relative.",32,32
+s51008,warning,Quantitative,A,1010,right,12,1,1,0,0,0,0,NA,"Looking at the scale of the axis (e.g., where is the start point and what is the scale) and the units they were in (e.g., difference between 3 and 4 is judged greater if the unit is billions rather than percentage)",NA,70,70
+s51009,no warning,Quantitative,A,1181,NA,1,1,0,0,0,0,0,NA,NA,"The proportion of the graphs were sometimes misleading (i.e., two bars looked vastly different but their numerical difference was small). Graphs were also hard to judge when the numerical difference was depicted in small numbers (i.e., 2 or 3) but the small numbers represented millions.",40,40
+s51010,warning,Quantitative,A,1075,right,12,1,1,0,0,0,0,NA,NA,NA,70,70
+s51011,warning,Quantitative,B,1607,right,1,1,0,0,0,0,0,NA,"I think it is useful to get the scales straight. To compare two different bars, I try to intuitively approximate the relative difference. If a has value x, and b has value x+5, it is not the same that x= 2 than x=1000. Depending on that, I answer. That's what I usually try to do.",NA,30,30
+s51012,no warning,Quantitative,B,981,NA,2,0,1,0,0,0,0,NA,NA,"I went back and forth about taking into account the y-axis--on the one hand, differences in what was being graphed could make a big difference (10s versus millions and the difference in bars might matter more), but on the other hand, if the bars all are measured the same (e.g., are all in the millions), then relatively speaking, the difference should be the same.",50,50
+s51013,warning,Quantitative,B,2754,wrong,1,1,0,0,0,0,0,NA,How would you describe your approach to graphs that were misleading? I divided numbers and compared the ratio with 1.,NA,29,29
+s51014,warning,Quantitative,B,847,right,126,1,1,0,0,0,1,Look at % differences,NA,NA,51,51
+s51015,no warning,Quantitative,B,1896,NA,145,1,0,0,1,1,0,NA,NA,The size of the bars that were also present but not part of the question often influenced my answer because it gave me more of a sense of the range of the values. I found graphs that had percentages on the y axis easier to interpret,64,64
+s51016,no warning,Quantitative,A,1114,NA,12,1,1,0,0,0,0,NA,NA,NA,50,50
+s51017,warning,Quantitative,A,1104,right,46,0,0,0,1,0,1,I considered sample size and usual fluctuation of data,NA,NA,70,70
+s51018,no warning,Quantitative,B,1906,NA,1,1,0,0,0,0,0,NA,NA,NA,36,36
+s51019,no warning,Quantitative,B,1253,NA,156,1,0,0,0,1,1,"Background knowledge to form an idea of effect size that impacts importance of what the graph is trying to convey. All animals given in example of big animal graphs were heavy. Thus, maybe difference between brown bear and cow is moderately important. However, if it was a graph of al animals, cows, bears, and mice, then the difference between cows and bears is insignificant.",NA,I'm a PhD student who works with quantitative data. Hope this doesn't skew your results :) Good luck.,75,75
+s51020,warning,Quantitative,A,1774,right,1,1,0,0,0,0,0,NA,Tried to make an estimation of the percentage difference between bars based on the y-axis,NA,65,65
+s51021,warning,Quantitative,B,613,right,1,1,0,0,0,0,0,NA,NA,NA,50,50
+s51022,no warning,Quantitative,B,1285,NA,124,1,1,0,1,0,0,NA,NA,NA,80,80
+s51023,warning,Quantitative,A,1889,right,12,1,1,0,0,0,0,NA,I would always read the title of the y-axis to understand the units of the y-axis,NA,29,29
+s51024,warning,Quantitative,A,1354,right,2,0,1,0,0,0,0,NA,NA,NA,25,25
+s51025,warning,Quantitative,B,1451,right,14,1,0,0,1,0,0,NA,look at the scale on the y-axis and determine if the difference between ticks is a lot/little compared to lowest tick and 0,NA,34,34
+s51026,no warning,Quantitative,A,2154,NA,12,1,1,0,0,0,0,NA,NA,NA,70,70
+s51027,no warning,Quantitative,B,2734,NA,124,1,1,0,1,0,0,NA,NA,"Usually there were other differences that contextualized the difference being examined - for example, if there are 6 bars that look nearly identical and then one that is half a centimeter higher, that half centimeter looks more different than if it was with a bunch of similarly varying bars.",33,33
+s51028,warning,Quantitative,A,103503,right,12,1,1,0,0,0,0,NA,NA,NA,60,60
+s51029,warning,Quantitative,B,9381,right,15,1,0,0,0,1,0,NA,NA,NA,61,61
+s51030,no warning,Quantitative,A,884,NA,126,1,1,0,0,0,1,Comparing the distance between the top of the bars to the top of the graph,NA,"I frequently got annoyed when I saw the axes were some tiny difference and the bars were vastly different, as I usually compared bars first, and then had to reevaluate my idea of the difference between the bars. Also some of the percents over 80% seemed like it would have been better to look at the other way, i.e. Looking at percent of non-cremation rather than cremation.",48,48
+s51031,no warning,Quantitative,B,860,NA,15,1,0,0,0,1,0,NA,NA,NA,40,40
+s51032,warning,Quantitative,A,1490,right,135,1,0,1,0,1,0,NA,"assume that there's a flaw in potential conclusions that could be drawn from misleading graphs. mentally adjust the axis so that it starts at 0, for example. compare two bars by the proportion of change.",NA,50,50
+s51033,no warning,Quantitative,B,1293,NA,14,1,0,0,1,0,0,NA,NA,I really missed error bars or 95% CIs.,50,50
+s51034,warning,Quantitative,A,2149,right,146,1,0,0,1,0,1,"If applicable, calculate the % difference and applying some rough criteria (e.g., 1% - 15% =&gt; rating 2, 16% - 23% =&gt; rating 3). As you can tell, the criteria are not very principled.","If a difference ""feels"" or ""looks"" really big but the y-axis numbers tell me otherwise and I cannot resolve the two, I calculate the % of difference (if applicable) and apply a rough criterion, as mentioned previously (e.g., difference between 30% and 35% get a rating of 3, 36% to 40% get a rating of 4). I don't apply these criteria in a very principled manner, as you can tell. But in the case of graphs that I know are misleading, I just look away from the graph and focus on the % difference I calculated in my head.
+
+Sometimes I rely on the tip that you reminded me of at the beginning (look at where the y-axis starts) to remind myself that a difference looks big only because of scaling issues.",NA,50,50
+s51035,no warning,Quantitative,B,735,NA,1,1,0,0,0,0,0,NA,NA,The y-axis didn't start always start at 0 so looking at the scales was important.,61,61
+s51036,warning,Quantitative,A,606,right,12,1,1,0,0,0,0,NA,"Actually quantifying the numbers on the Y-AXIS and comparing values, as opposed to bars",NA,45,45
+s51037,no warning,Quantitative,A,1011,NA,1,1,0,0,0,0,0,NA,NA,NA,50,50
+s51038,no warning,Quantitative,B,1141,NA,1,1,0,0,0,0,0,NA,NA,They had very different scales,40,40
+s51039,warning,Quantitative,B,990,right,1,1,0,0,0,0,0,NA,NA,NA,30,30
+s51040,warning,Quantitative,A,1339,right,125,1,1,0,0,1,0,NA,"Checking the axes to see if they include zero/baseline, checking if axes have equivalent intervals between points, comparing corresponding numerical value of a bar's height to another bar to see how different they truly are despite the appearance of the bars, using contextual information to judge (for example, the difference of ten thousand dollars means something different when comparing two average Americans' incomes [$50,000 vs. $60,000] than does Vin Diesel and Jackie Chan's enormous salaries).",NA,40,40
+s51041,no warning,Quantitative,A,690,NA,24,0,1,0,1,0,0,NA,NA,NA,80,80
+s51042,warning,Quantitative,B,349,right,12345,1,1,1,1,1,0,NA,NA,NA,99,99
+s51043,no warning,Quantitative,A,970,NA,2,0,1,0,0,0,0,NA,NA,NA,51,51
+s51044,no warning,Quantitative,B,545,NA,2,0,1,0,0,0,0,NA,NA,NA,31,31
+s51045,no warning,Quantitative,A,1239,NA,124,1,1,0,1,0,0,NA,NA,NA,43,43
+s51046,warning,Quantitative,B,1031,right,1,1,0,0,0,0,0,NA,NA,NA,49,49
+s51047,warning,Quantitative,B,1307,right,1,1,0,0,0,0,0,NA,"I tried to get more information about the information presented, for example the variable presented on the y-axis, and what differences in this variable really mean. Billions of dollars vs. thousands of people certainly means something different when the same space is devoted to this variable.",NA,55,55
+s51048,warning,Quantitative,A,1149,right,14,1,0,0,1,0,0,NA,NA,NA,60,60
+s51049,no warning,Quantitative,A,3126,NA,1,1,0,0,0,0,0,NA,NA,"I noticed that the scaling of the y axis varied substantially across graphs. Depending on the scaling, this magnified or diminished the apparent visual difference between bars. To prevent the scaling from biasing my judgments too much, I tried to visually estimate the absolute value for the categories and mentally compute a ratio between them. I calibrated the rating scale to different ratio values, e.g. a value around 1.1X was rated a 2, 1.25X=3, 1.5X=4, 1.75X=5, 2X=6, and &gt;2X= 7. I generally didn't take into account the nature of the data being presented.",65,65
+s51050,warning,Quantitative,B,4048,right,1,1,0,0,0,0,0,NA,Misleading graphs are harder. I had to think first which was the right scale before answering the questions.,NA,31,31
+s51051,no warning,Quantitative,A,1532,NA,126,1,1,0,0,0,1,calculations based on values such as difference ratios,NA,the average bachelor's degree income (which i presume includes social science majors) was much higher than the starting wage of grad students in social sciences,60,60
+s51052,warning,Quantitative,B,1018,right,12,1,1,0,0,0,0,NA,NA,NA,95,95
+s51053,warning,Quantitative,A,3743,right,1,1,0,0,0,0,0,NA,Try to look at the y-axis and the units,NA,82,82
+s51054,no warning,Quantitative,A,1930,NA,1245,1,1,0,1,1,0,NA,NA,NA,0,0
+s51055,no warning,Quantitative,A,1013,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51056,no warning,Quantitative,B,3124,NA,12,1,1,0,0,0,0,NA,NA,"Yes, one interesting thing that I noticed is that units of measurement varied widely across graphs",70,70
+s51057,no warning,Quantitative,A,987,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51058,warning,Quantitative,B,2429,right,1,1,0,0,0,0,0,NA,I simply calculated the percent change and then picked the appropriate bin (0% being not much different to 100% being completely different).,NA,71,71
+s51059,warning,Quantitative,B,547,right,12,1,1,0,0,0,0,NA,NA,NA,41,41
+s51060,warning,Quantitative,A,1572,right,1256,1,1,0,0,1,1,calculating percentage differences,I looked at the percentage difference between the bars,NA,32,32
+s51061,no warning,Quantitative,B,1676,NA,124,1,1,0,1,0,0,NA,NA,NA,65,65
+s51062,no warning,Quantitative,A,6315,NA,124,1,1,0,1,0,0,NA,NA,NA,85,85
+s51063,warning,Quantitative,B,4068,right,12,1,1,0,0,0,0,NA,NA,NA,37,37
+s51064,no warning,Quantitative,B,903,NA,12,1,1,0,0,0,0,NA,NA,NA,48,48
+s51065,no warning,Quantitative,A,1027,NA,15,1,0,0,0,1,0,NA,NA,"Some graphs had axes manipulated to exaggerate small differences or downplay large differences. Another manipulation was include very large or small items to the set to downplay or exaggerate the difference between comparison items, respectfully",32,32
+s51066,warning,Quantitative,A,1397,right,126,1,1,0,0,0,1,"Trying to judge the info in context of the question's topic -- e.g., a difference of 1 million fewer visitors to a museum may not be a large difference relative to the overall rate of visitors at museums in general, but 1 million fewer per year may still be a large difference for that particular museum.","I tried to first note whether the values on the vertical axis were starting from the appropriate baseline, and then if not, considered the units on the graph (e.g., a difference in 1% is quite small; a difference of 1 billion is quite large even if the graphs do not start at the appropriate baseline).",NA,50,50
+s51067,no warning,Quantitative,B,2256,NA,156,1,0,0,0,1,1,Comparing the focal difference to the variance between bars in the chart,NA,"Some of the graphs had y-axes that began at zero, whereas others did not. I also assume that the experiment manipulated factors such as visual distance between bars, relative distance between bars (e.g., intentionally similar or dissimilar ""distractor"" bars), and the mapping of physical/relative distances to numerical values, but I certainly couldn't reverse-engineer the experimental design.",50,50
+s51068,no warning,Quantitative,A,1292,NA,12,1,1,0,0,0,0,NA,NA,NA,61,61
+s51069,warning,Quantitative,A,802,right,12,1,1,0,0,0,0,NA,NA,NA,40,40
+s51070,no warning,Quantitative,B,35171,NA,1,1,0,0,0,0,0,NA,NA,NA,20,20
+s51071,warning,Quantitative,B,1472,right,12,1,1,0,0,0,0,NA,NA,NA,51,51
+s51072,no warning,Quantitative,A,697,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51073,no warning,Quantitative,A,131314,NA,14,1,0,0,1,0,0,NA,NA,NA,50,50
+s51074,warning,Quantitative,A,1009,right,1,1,0,0,0,0,0,NA,I immediately checked the y-axis: not only the difference between units but also what the unit was (i.e. kilograms vs. percentage vs. millions) and tried the make a more accurate judgment with a fuller understanding of the graph.,NA,61,61
+s51075,warning,Quantitative,B,1105,right,15,1,0,0,0,1,0,NA,I looked at the number value based on the y-axis and compared those values to determine the difference,NA,43,43
+s51076,no warning,Quantitative,B,1019,NA,12,1,1,0,0,0,0,NA,NA,"no error bars -- makes it difficult to interpret small differences. so if the difference was only 2-5 units, i usually said the bars weren't different but it could be the case that the small difference is actually significant",41,41
+s51077,warning,Quantitative,B,158830,right,1256,1,1,0,0,1,1,wishing every second of the way there were error bars!!!!,"I tried to look at the numbers. This was super frustrating for me because it's hard to infer a difference without some understanding of what that ""normal"" range is for a given question. For example, what's the average length of a river and how much typical deviation is there from the average? How do the rivers shown differ from the average? It seems to me that the import of each value means much more in relation to these measures. If one river is above average and well outside of the typical deviation range, and another is below average and well outside of the typical deviation, that is meaningful, even if comparison of the actual numbers is tiny.",NA,56,56
+s51078,no warning,Quantitative,B,841,NA,12,1,1,0,0,0,0,NA,NA,NA,50,50
+s51079,warning,Quantitative,A,1557,right,16,1,0,0,0,0,1,"Judging the importance of the material (e.g. if was human lives), it was count data vs. ""percentage change"", estimating percent change in y axis and ignoring irrelevant bars.","I don't think I approached any of the graphs thinking they were misleading. I looked at the Y axis each time to figure out how big of a change it was and used other information such as the material being discussed to decide how big of a change it was. I think how important of a change it was got conflated in my answers. For instance, the change in people using a cell phone carrier didn't matter as much as number of people dying. Also, concrete numbers such as count data were easier/ preferable to interpret than abstract ys.",NA,45,45
+s51080,no warning,Quantitative,A,763,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51081,warning,Quantitative,B,921,right,1,1,0,0,0,0,0,NA,NA,NA,52,52
+s51082,no warning,Quantitative,A,73990,NA,4,0,0,0,1,0,0,NA,NA,I tried to measure the difference from other factors also. For example Russia is very cold than Thailand so I thought the environmental effect is there among people smoking cigarettes.,40,40
+s51083,no warning,Quantitative,B,752,NA,3,0,0,1,0,0,0,NA,NA,NA,39,39
+s51084,no warning,Quantitative,A,1116,NA,12,1,1,0,0,0,0,NA,NA,scaling seems off/truncated sometimes?,30,30
+s51085,warning,Quantitative,B,899,right,15,1,0,0,0,1,0,NA,NA,NA,51,51
+s51086,no warning,Quantitative,A,1449,NA,124,1,1,0,1,0,0,NA,NA,"The graphs varied in thickness, I think that will introduce a bias in my judgement. The scale on the y-axis was also rarely starting at zero, tricking me into thinking things are more different than they actually are. 
+Also, some extreme graphs about subjects I cared about were surprising until I realized that the y-axis scale didn't start at zero.",95,95
+s51087,warning,Quantitative,B,706,right,1,1,0,0,0,0,0,NA,NA,NA,35,35
+s51088,no warning,Quantitative,A,754,NA,1456,1,0,0,1,1,1,Always checking to see if y-axis starts at 0 or not. That's an easy way to decieve the reader.,NA,NA,50,50
+s51089,warning,Quantitative,B,1281,right,1,1,0,0,0,0,0,NA,"The same as not misleading graphs. In particular, judging differences as per their y-axis value. The fact that graphs could be misleading makes me first do a quick check of the y-axis values. But then I look at the graph and let in the ""visual information"" (specially when it comes to times series data)",NA,50,50
+s51090,no warning,Quantitative,A,740,NA,24,0,1,0,1,0,0,NA,NA,NA,37,37
+s51091,warning,Quantitative,B,999,right,1,1,0,0,0,0,0,NA,NA,NA,100,100
+s51092,no warning,Quantitative,A,2725,NA,124,1,1,0,1,0,0,NA,NA,I felt more precise when the information on the y axis is a relative metric.,36,36
+s51093,no warning,Quantitative,B,640,NA,15,1,0,0,0,1,0,NA,NA,NA,39,39
+s51094,warning,Quantitative,A,1149,right,1246,1,1,0,1,0,1,The categories had different weights as well. Weight seemed like a starker difference than runway length. Probably because I use weight more in daily life and understand it more than what runway length means to a pilot.,"Again, the categories had different affects on my perception as well. Weight seemed like a starker difference than runway length. Probably because I use weight more in daily life and understand it more than what runway length means to a pilot.
+
+I think some of the topics made me think “wow that is a big difference” than others.
+
+Before this survey I probably wouldn’t have paid as much attention to the y-axis starting point as I should have. Having the example in the beginning was helpful but the graphs were sometimes still misleading.",NA,45,45
+s51095,warning,Quantitative,B,735,right,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51096,no warning,Quantitative,A,1520,NA,1,1,0,0,0,0,0,NA,NA,NA,63,63
+s51097,warning,Quantitative,B,1254,right,124,1,1,0,1,0,0,NA,NA,NA,35,35
+s51098,no warning,Quantitative,A,2171,NA,4,0,0,0,1,0,0,NA,NA,NA,50,50
+s51099,warning,Quantitative,A,1239,right,124,1,1,0,1,0,0,NA,"Using the advice about the y axis truncation, when I was faced with a truncated graph I would typically consider the ratio of values I was asked to compare. If one category was nearly double the other, that likely indicated the values were quite different.",NA,60,60
+s51100,no warning,Quantitative,A,1718,NA,12,1,1,0,0,0,0,NA,NA,NA,40,40
+s51101,warning,Quantitative,B,1002,right,1,1,0,0,0,0,0,NA,When I see something misleading i do a more detailed analysis,NA,50,50
+s51102,warning,Quantitative,B,1188,right,2,0,1,0,0,0,0,NA,NA,NA,50,50
+s51103,no warning,Quantitative,A,433768,NA,1,1,0,0,0,0,0,NA,NA,NA,60,60
+s51104,no warning,Quantitative,A,1594,NA,1,1,0,0,0,0,0,NA,NA,NA,45,45
+s51105,no warning,Quantitative,A,258353,NA,1,1,0,0,0,0,0,NA,NA,The Y axis rarely started at 0,65,65
+s51106,warning,Quantitative,B,1132,right,1,1,0,0,0,0,0,NA,I tried to compute the ratio of the difference between the bars to the value of the smaller bar in all graphs. This is harder if the graph axis doesn't include 0 and made harder if there are fewer ticks on the y-axis.,NA,50,50
+s51107,warning,Quantitative,A,303541,right,1,1,0,0,0,0,0,NA,Forgetting about the apparent visual differences and seeing how different the numbers were,NA,52,52
+s51108,warning,Quantitative,A,710,right,1246,1,1,0,1,0,1,I tried to be less of a scientist,"I'd look at the axes. In the beginning I only looked at them visually, then I started to look at the y-axis. The prompt to ""not look at the graphs too long"" led me to believe you did not want me to look at the y-axis. I switched my strategy half-way in, though and started to consider that information on the y-axis.",NA,49,49
+s51109,no warning,Quantitative,B,2419,NA,16,1,0,0,0,0,1,Trying to figure out the percent difference,NA,Anchoring bias and the scale sometimes made differences look larger than they were,69,69
+s51110,warning,Quantitative,B,759,right,12,1,1,0,0,0,0,NA,NA,NA,40,40
+s51111,no warning,Quantitative,A,1483,NA,1,1,0,0,0,0,0,NA,NA,"There were no error bars, so comparing the difference was difficult. The y-axis of some graphs had a wider range and some had a narrower range.",40,40
+s51112,warning,Quantitative,B,325115,right,1,1,0,0,0,0,0,NA,NA,NA,35,35
+s51113,no warning,Quantitative,A,438066,NA,146,1,0,0,1,0,1,looking at the Y values,NA,NA,12,12
+s51114,no warning,Quantitative,B,1773,NA,1,1,0,0,0,0,0,NA,NA,Scaling of some of them was very misleading,50,50
+s51115,warning,Quantitative,A,1339,right,6,0,0,0,0,0,1,Intuiting standard deviation within the vague category and then gauging z-score of difference.,NA,NA,42,42
+s51116,no warning,Quantitative,B,5066,NA,15,1,0,0,0,1,0,NA,NA,NA,50,50
+s51117,warning,Quantitative,A,13549,right,1,1,0,0,0,0,0,NA,NA,NA,55,55
+s51118,no warning,Quantitative,B,2288,NA,156,1,0,0,0,1,1,"Using the scale of the value i.e. rate, dollar, others",NA,NA,35,35
+s51119,warning,Quantitative,A,912,right,24,0,1,0,1,0,0,NA,NA,NA,40,40
+s51120,no warning,Quantitative,B,1231,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51121,warning,Quantitative,A,3005,right,1,1,0,0,0,0,0,NA,NA,NA,30,30
+s51122,warning,Quantitative,A,1806,right,15,1,0,0,0,1,0,NA,"I think that without the sample of a misleading graph at the beginning, I would have relied a lot more on a strategy of answering the questions based on how different the bars ""feel"" from an overall perspective. The sample definitely motivated me to think more carefully about the axis of each graph.",NA,50,50
+s51123,warning,Quantitative,A,590,right,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51124,no warning,Quantitative,A,1186,NA,15,1,0,0,0,1,0,NA,NA,NA,35,35
+s51125,warning,Quantitative,B,1590,right,145,1,0,0,1,1,0,NA,It was easy to find misleading graphs.,NA,50,50
+s51126,no warning,Quantitative,A,1938,NA,1256,1,1,0,0,1,1,"I generally tried to approximate the percent difference, and base my ratings on these magnitudes. I also occasionally used the context (a ~6 state change from 1860-1880 is 12% of all states, etc.)",NA,"Late in the survey, I did wonder how much additional data points affected my judgment (i.e. cremations in Japan is 100%). Though this does seem like ""useful"" information for judging magnitudes.",80,80
+s51127,warning,Quantitative,B,1402,right,12,1,1,0,0,0,0,NA,"Reading values off of the y-axis
+
+In making my responses, I found myself taking into account real-world knowledge (if I had it) and displayed info (if I didn't have real-world knowledge) about the range of possible/likely values in order to decide how ""big"" a difference something was. I also thought about real-world consequences - a difference of $10,000 in personal income is ""bigger"" in some sense than a difference in 10,000 people attending a sports event.",NA,43,43
+s51128,no warning,Quantitative,B,856,NA,125,1,1,0,0,1,0,NA,NA,NA,30,30
+s51129,warning,Quantitative,A,1199,right,1,1,0,0,0,0,0,NA,NA,NA,44,44
+s51130,no warning,Quantitative,B,1710,NA,12,1,1,0,0,0,0,NA,NA,NA,30,30
+s51131,no warning,Quantitative,A,1146,NA,14,1,0,0,1,0,0,NA,NA,NA,60,60
+s51132,warning,Quantitative,A,1104,right,156,1,0,0,0,1,1,Converting numeric differences to % differences,"For misleading graphs, I revisualize a non-misleading version.",NA,60,60
+s51133,no warning,Quantitative,B,1532,NA,4,0,0,0,1,0,0,NA,NA,NA,39,39
+s51134,no warning,Quantitative,A,755,NA,14,1,0,0,1,0,0,NA,NA,"As the test went by, I took a deeper look into the values of y-axis. At first, I only cared about how I feel (the way the graph looked).",50,50
+s51135,warning,Quantitative,B,1948,right,1356,1,0,1,0,1,1,Use of error bars when present,I generally do not trust bars without any indication of sampling error (i.e- error bars). I tend to use the knowledge of the topic at hand (or the measurement in the Y-axis) to make better inferences.,NA,80,80
+s51136,warning,Quantitative,B,2025,right,125,1,1,0,0,1,0,NA,I pay more attention to the actual values than the visual appearance.,NA,60,60
+s51137,no warning,Quantitative,A,789,NA,1,1,0,0,0,0,0,NA,NA,NA,20,20
+s51138,warning,Quantitative,A,2400,right,145,1,0,0,1,1,0,NA,NA,NA,25,25
+s51139,warning,Quantitative,B,1103,right,12,1,1,0,0,0,0,NA,I was careful to look at the values on the y-axis and judge the difference between bars based on percent deviations rather than the visual appearance of the bar heights.,NA,45,45
+s51140,no warning,Quantitative,A,1162,NA,124,1,1,0,1,0,0,NA,NA,"The graphs had y-axes that were measured in various units (billions, thousands, percentages, etc.). Also, many of the graphs began from y = 0, but also many of them did not: some restricted the range of the y-axis to be within a range [a,b]",37,37
+s51141,warning,Quantitative,A,1217,right,1,1,0,0,0,0,0,NA,"Referring to the y-axis as a default helped a lot. However, it was difficult to know in general what a meaningful/practical difference was because I didn't know how the current totals differed historically, or in comparison to anything else except the 1-3ish other conditions.",NA,29,29
+s51142,warning,Quantitative,A,3167,right,6,0,0,0,0,0,1,Determining the actual percentage difference of measurements,"As I mentioned before, my approach consists of doing some mental math in order to determine the percentage difference between the two quantities I want to compare, and then assigning a number from 1 to 7 according to that percentage difference. For example, if the two quantities are more than 100% apart, I respond with 7. If they are about 10% apart, I respond with 2.",NA,33,33
+s51143,warning,Quantitative,B,1266,right,1,1,0,0,0,0,0,NA,I simply compare the absolute values.,NA,66,66
+s51144,no warning,Quantitative,B,854,NA,1245,1,1,0,1,1,0,NA,NA,"There were never standard error bars. On some graphs, the range of y-values was very large and on some it was very small.",60,60
+s51145,warning,Quantitative,A,841,right,1,1,0,0,0,0,0,NA,NA,NA,31,31
+s51146,no warning,Quantitative,B,961,NA,1,1,0,0,0,0,0,NA,NA,NA,50,50
+s51147,no warning,Quantitative,B,1051,NA,1,1,0,0,0,0,0,NA,NA,NA,36,36
+s51148,no warning,Quantitative,B,59993,NA,1,1,0,0,0,0,0,NA,NA,"Looked at scales on the graphs. I also will say that my responses were influenced by how important I thought the dependent variable was (for example, I weighed differences in mortality rate more heavily than differences in income for people who already make millions per year). 
+Also, one of the questions misspelled ""mother"".",61,61
+s51149,no warning,Quantitative,A,1805,NA,1,1,0,0,0,0,0,NA,NA,NA,80,80
+s51150,warning,Quantitative,A,1139,right,15,1,0,0,0,1,0,NA,NA,NA,40,40
+s51151,warning,Quantitative,B,2791,right,156,1,0,0,0,1,1,I tried to estimate the differences as a percent to make the answers comparable across graphs.,"I didn't find any of the graphs particularly misleading. They were all clearly labeled, even though some of them didn't include zero. I think the difficulty you're going to have is distinguishing between a graph being misleading and a context dependent definition of a ""big difference."" For example if I remember correctly, the cow question compared something like 750 kilo cows to 550 kilo bears. 200 kilos is a little less than 40% of the bears weight or about 30% of the cows weight  which is big difference, but since I'm not particularly interested in bears or cows I was more inclined to rate the difference as small or moderate. The water coverage question on the other hand, showed a difference of  a couple of percentage points. But I interpreted water coverage to be a description of access to drinking water, which I'm now realizing may not be what it was showing, but in any event, I care a lot more about people having access to clean drinking water. Since a couple of percentage points could be millions of people I'm more inclined to think the difference is large. I'm sure you've already thought about it, but that would be my concern if I was reading the results of your paper.",NA,50,50
+s51152,no warning,Quantitative,A,626,NA,124,1,1,0,1,0,0,NA,NA,NA,75,75
+s51153,no warning,Quantitative,B,1350,NA,1245,1,1,0,1,1,0,NA,NA,NA,30,30
+s51154,warning,Quantitative,B,1174,right,1,1,0,0,0,0,0,NA,"Step 1: Look at y axis, see values
+Step 2: make horizontal line in head
+Step 3: compare values of two things in question. One is 50% bigger than the other, that's a 4. 2xs as big is a 6, 3x or more is a 7. 15-25% bigger is 2-3, else a 1. That's how to approach in this.
+
+Generally just always look at the axes. Always also think about the question the data is trying to answer. Even if the graph were accurate and truthfully portrayed the data, the data itself could be suspect or misleading, perhaps showing spurious correlations to show relationships, perhaps it misses key confounding variables, etc.",NA,50,50
+s51155,warning,Quantitative,A,866,right,1,1,0,0,0,0,0,NA,Very confusing what the 1-7 scale was supposed to represent. Didn't know if it was whether the different was significant in context of the relevant matter or if it was some absolute number scale.,NA,70,70
+s51156,no warning,Quantitative,A,1048,NA,1,1,0,0,0,0,0,NA,NA,"Without error bars, I wasn't sure how to tell the difference. I tried to infer the within group variance from between, but wasn't quite confident.",51,51
+s51157,warning,Quantitative,B,1951,right,1,1,0,0,0,0,0,NA,"I try to always estimate the differences in terms of the the percentage of the taller bar.
+For example, if the value of bar A is 50, and the value of bar B is 40, I'll compute the difference as (50-40)/50 = 20%
+Then I choose the Likert scale based on this estimation.
+But I feel uneasy about applying this heuristics to some of the values. For instance, the difference between the heights of mountains shouldn't be estimated in this way. For two mountains, a difference in something like 1000 feet should be extremely different, regardless of the ratio of this difference to the actual height of any one of the mountains in question.",NA,42,42
+s51158,warning,Quantitative,B,1160,wrong,1,1,0,0,0,0,0,NA,I think the scale 1-5 seems a bit subjective,NA,NA,NA
+s51159,no warning,Quantitative,A,2499,NA,14,1,0,0,1,0,0,NA,NA,NA,40,40
+s51160,warning,Quantitative,B,376254,right,5,0,0,0,0,1,0,NA,NA,NA,51,51
+s51161,warning,Quantitative,A,1468,right,14,1,0,0,1,0,0,NA,"I feel like so much of this is context dependent that it's hard to quantify what ""different"" means in each graph. For example, if a budget is $100 million and you're asked about funding a $1 million project vs $2 million project, the difference isn't going to be that significant when considering the situation. However, if your budget is only $5 million, it would make a bigger difference. I found myself evaluating how different two bars were by comparing them to the other bars rather than the numbers. Bar graphs on their own with no quantification of error or background information are pretty useless. At that point, it's basically just asking, is the number 5 different from 4?",NA,NA,NA
+s51162,no warning,Quantitative,A,830,NA,124,1,1,0,1,0,0,NA,NA,NA,30,30
+s51163,warning,Quantitative,B,420646,right,14,1,0,0,1,0,0,NA,NA,NA,50,50
+s51164,warning,Quantitative,A,1103,right,1,1,0,0,0,0,0,NA,Bar graphs are difficult to quickly interpret without some measure of variance.,NA,NA,NA
+s51165,no warning,Quantitative,A,520207,NA,145,1,0,0,1,1,0,NA,NA,NA,20,20
+s51166,no warning,Humanities,B,885,NA,12,1,1,0,0,0,0,NA,NA,NA,81,81
+s51167,warning,Humanities,A,799,right,1,1,0,0,0,0,0,NA,NA,NA,68,68
+s51168,no warning,Humanities,A,1132,NA,125,1,1,0,0,1,0,NA,NA,"I mean, graphs can be tricky in that smaller increments on the y-axis will make a difference appear greater, whereas smaller increments will make a difference appear smaller. When I read graphs, I try to be attuned to that fact. I also pay attention to the ""in thousands"" or ""in millions"" and base my own judgments of the graphs partially off how great I think the difference would be in the larger scheme of things. So, context is a part of it for me. So in a lot of ways, I think graphs are very useful, but they should not stand alone; each one tells a story in the way that it is constructed, so it's important to not take them at face value and to pay attention to the framing.",50,50
+s51169,warning,Humanities,B,708,right,125,1,1,0,0,1,0,NA,NA,NA,39,39
+s51170,no warning,Humanities,A,758,NA,1,1,0,0,0,0,0,NA,NA,"In some charts, the discrepancy in bar size seemed a lot, but the discrepancy in quantity listed on the left seemed rather small. The bars seemed to magnify or exaggerate small differences in some cases.",30,30
+s51171,warning,Humanities,A,1243,right,1,1,0,0,0,0,0,NA,"i take it the graphs were misleading only on the basis of having a misleadingly truncated y axis; i tried to estimate (very roughly) the percentage difference between the bars to be compared. but it's difficult to answer qualitatively ""how different"" the difference really is, since these depends (to my mind) on the kind of data actually be selected - a 'slight' difference of 10% seems 'more different' if what's being measured is millions of dollars or Louvre-visitors etc, as opposed to a 10% difference in the number of indigenous languages spoken, between 190 and 210 say.",NA,30,30
+s51172,no warning,Humanities,B,1411,NA,1,1,0,0,0,0,0,NA,NA,NA,100,100
+s51173,warning,Humanities,B,957,right,1,1,0,0,0,0,0,NA,NA,NA,80,80
+s51174,no warning,Humanities,B,1664,NA,123,1,1,1,0,0,0,NA,NA,"The types of information they conveyed were quite varied and the difference between marks on the y-axis changed often. The word ""different"" changed drastically in meaning depending on the graph. For example, with regards to the graph about how many states were in the union, a difference of even one state is pretty significant. However, with regards to the graph about police killings, whether police kill 100 or 200 people doesn't make much of a difference to me.",50,50
+s51175,no warning,Humanities,A,1284,NA,124,1,1,0,1,0,0,NA,NA,NA,41,41
+s51176,warning,Humanities,B,728,right,12,1,1,0,0,0,0,NA,"Just tried to compare percentage difference, if a misleading y-axis made visual comparison problematic.",NA,30,30
+s51177,no warning,Humanities,A,1912,NA,125,1,1,0,0,1,0,NA,NA,NA,35,35
+s51178,warning,Humanities,B,1514,right,12456,1,1,0,1,1,1,reading the units on the vertical axis (millions vs. thousands vs. hundreds),"I don't take them as seriously.  I think that they are hiding something or trying to push a specific agenda.  I am very cautious of the graphs and then also the text in which they are located.  The text that incorporates the graphs is all of a sudden less credible to me because I think that it, too, might be trying to mislead me somehow.
+
+I worry about how others who do not read carefully (mind you, I did not always read that carefully when I was doing the study) could be easily swayed or mislead.",NA,70,70
+s51179,no warning,Humanities,A,1422,NA,6,0,0,0,0,0,1,"Compared numbers and tried to use a hasty percentage to answer ratio to remain consistent (ie differences of 25%-33% were a 4, roughly. Differences greater or equal to 100% would merit a 7).",NA,"It's possible that I was somewhat inconsistent when handling larger and smaller numbers, even if the percent difference was equivalent (ie I might have perceived the difference between 1000000/1300000 as larger than the difference between 10/13, even though the percent difference is equivalent).",56,56
+s51180,no warning,Humanities,A,2806,NA,1,1,0,0,0,0,0,NA,NA,NA,81,81
+s51181,warning,Humanities,A,943,right,2,0,1,0,0,0,0,NA,NA,NA,65,65
+s51182,no warning,Humanities,B,1140,NA,14,1,0,0,1,0,0,NA,NA,NA,42,42
+s51183,no warning,Humanities,A,708,NA,123,1,1,1,0,0,0,NA,NA,"I know enough about graphing data that it is extremely easy to manipulate, which was at the back of my mind as I was judging the graphs.",35,35
+s51184,no warning,Humanities,A,608,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51185,warning,Humanities,B,1751,right,1,1,0,0,0,0,0,NA,I spent more time analyzing the information presented on the graph and was more likely to question the validity of the statistics themselves.,NA,30,30
+s51186,warning,Humanities,B,793,right,1,1,0,0,0,0,0,NA,I check the y-axis to understand the scale and the origin of the graph.,NA,50,50
+s51187,no warning,Humanities,B,930,NA,124,1,1,0,1,0,0,NA,NA,It was harder to see the distinction between bars in a single chart because they were all the same color.,66,66
+s51188,warning,Humanities,A,798,right,12,1,1,0,0,0,0,NA,NA,NA,41,41
+s51189,no warning,Humanities,B,933,NA,124,1,1,0,1,0,0,NA,NA,NA,60,60
+s51190,no warning,Humanities,A,979,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51191,no warning,Humanities,B,997,NA,12,1,1,0,0,0,0,NA,NA,NA,84,84
+s51192,warning,Humanities,B,9525,right,12,1,1,0,0,0,0,NA,NA,NA,81,81
+s51193,no warning,Humanities,B,840,NA,12,1,1,0,0,0,0,NA,NA,Differences in starting points of y-axes,60,60
+s51194,warning,Humanities,A,1142,right,1,1,0,0,0,0,0,NA,It was tough because I felt like the numbers often played just as big a role as the visuals of the bar graph. 1.5 million cows vs 3 million bears (hypothetically) felt like a bigger difference than 1.5 cows and 3 bears.,NA,52,52
+s51195,no warning,Humanities,B,6508,NA,12,1,1,0,0,0,0,NA,NA,NA,52,52
+s51196,warning,Humanities,A,1003,right,1,1,0,0,0,0,0,NA,NA,NA,52,52
+s51197,no warning,Humanities,B,1344,NA,16,1,0,0,0,0,1,"Paying attention to the units (thousands, millions, billions)",NA,"I gradually became irritated by the bar graphs that showed very little visual difference (something about how the graphs *looked* bothered me). I found graphs with wide variation in bars more pleasing to look at, but those were often the most misleading.
+
+I also noticed that some of the data wasn't really appropriate for bar graphs (would have been more easily understood as a line graph, especially change over time graphs), and the units varied widely and were often deceptive/not equidistant.",30,30
+s51198,no warning,Humanities,A,824,NA,1,1,0,0,0,0,0,NA,NA,NA,43,43
+s51199,warning,Humanities,A,70522,wrong,12,1,1,0,0,0,0,NA,I am more critical because I am aware of its bias.,NA,40,40
+s51200,no warning,Humanities,A,730,NA,1,1,0,0,0,0,0,NA,NA,NA,60,60
+s51201,no warning,Humanities,B,749,NA,1,1,0,0,0,0,0,NA,NA,NA,65,65
+s51202,warning,Humanities,B,1029,right,1,1,0,0,0,0,0,NA,NA,NA,60,60
+s51203,warning,Humanities,B,1378,right,12,1,1,0,0,0,0,NA,"If I could tell that the graphs were misleading, I tried to pay closer attention to what the actual numbers were so I could get to a more accurate understand of the data. If I saw that the graph wasn’t misleading, I spent less time analyzing the numbers and more going off the visual aspect",NA,60,60
+s51204,no warning,Humanities,A,915,NA,124,1,1,0,1,0,0,NA,NA,NA,36,36
+s51205,no warning,Humanities,B,761,NA,12,1,1,0,0,0,0,NA,NA,NA,61,61
+s51206,no warning,Humanities,A,1440,NA,12,1,1,0,0,0,0,NA,NA,"I'm not sure what kind of participant background is assumed in the last questions. As a lay person, I often skip over graphs in news articles and popular literature. As a former linguist, I'm very familiar with graphs and am used to incorporating them into my work and interpreting them in the literature. As a college English instructor and in my research on poetry, graphs rarely figure.",40,40
+s51207,warning,Humanities,B,2427,right,14,1,0,0,1,0,0,NA,NA,NA,53,53
+s51208,no warning,Humanities,B,734,NA,5,0,0,0,0,1,0,NA,NA,NA,45,45
+s51209,no warning,Humanities,B,2651,NA,15,1,0,0,0,1,0,NA,NA,NA,50,50
+s51210,no warning,Humanities,A,868,NA,6,0,0,0,0,0,1,Comparing the numbers corresponding to the height of the bars,NA,NA,36,36
+s51211,warning,Humanities,A,1508,right,12,1,1,0,0,0,0,NA,"Misleading graphs are irritating and suggest to me an underhanded style of rhetoric, even malicious intent.",NA,35,35
+s51212,warning,Humanities,B,1202,right,1,1,0,0,0,0,0,NA,I never made a decision based solely on the visual size of the bars alone. I always looked at the values on the y-axis to determine the scale.,NA,30,30
+s51213,no warning,Humanities,A,1834,NA,2,0,1,0,0,0,0,NA,NA,More information would be helpful.,30,30
+s51214,warning,Humanities,A,1620,right,124,1,1,0,1,0,0,NA,I tried to estimate the actual numbers and compared them roughly in terms of percentages or proportions (this is about twice or three times as much more than that).,NA,34,34
+s51215,warning,Humanities,B,1333,right,1,1,0,0,0,0,0,NA,NA,NA,63,63
+s51216,no warning,Humanities,B,761,NA,125,1,1,0,0,1,0,NA,NA,NA,52,52
+s51217,no warning,Humanities,A,1569,NA,15,1,0,0,0,1,0,NA,NA,NA,34,34
+s51218,warning,Humanities,B,907,right,12,1,1,0,0,0,0,NA,NA,NA,60,60
+s51219,no warning,Humanities,B,851,NA,16,1,0,0,0,0,1,"The scale seemed to be the most important factor in determining ""difference""",NA,I found myself having an easier time wrapping my head around difference when percentages were used as the scale - it's easier to visualize.,63,63
+s51220,no warning,Humanities,A,638,NA,14,1,0,0,1,0,0,NA,NA,"I expected them to be often confusing or misleading, because of the study parameters: as a result I was on the lookout for misleading y axes",31,31
+s51221,warning,Humanities,A,1079,right,135,1,0,1,0,1,0,NA,NA,NA,70,70
+s51222,warning,Humanities,B,1125,right,6,0,0,0,0,0,1,assessing at what number the vertical axis begins and then comparing the values of the bars based on the vertical axis,"I would assess where the vertical axis began on the graph, then I would visually extend it and the lines downward toward a point that was zero before determining the outcome of the graph.",NA,70,70
+s51223,no warning,Humanities,A,867,NA,1,1,0,0,0,0,0,NA,NA,NA,30,30
+s51224,warning,Humanities,B,116620,right,1,1,0,0,0,0,0,NA,"My main problem is not the representation of the values but what values wereleft out of the graphs that seemed necessary. E.g what is the lowest figure possible on the graph (within a reasonably relevant timeframe)? What is the highest? There is so little context (one extra bar is not enough) given in the questions that I don’t know if a million or a billion is ‘average’ for a certain question or on the upper or lower limit, information which would inform me of “how different” certain values were.",NA,70,70
+s51225,no warning,Humanities,B,808,NA,2,0,1,0,0,0,0,NA,NA,NA,31,31
+s51226,warning,Humanities,A,1981,right,12,1,1,0,0,0,0,NA,"I tried to look at the numerical values for all of the graphs. I noted that on topics with numbers that were difficult to wrap my head around because of scale or unfamiliar units (dollars in billions, weight in kilograms, distance in thousands of miles) I relied more on comparisons between other bars to determine whether the differences were significant. The topic also mattered. The difference between 300 and 500 miles is not as significant to me as the difference between 300 and 500 deaths by police violence.",NA,38,38
+s51227,no warning,Humanities,A,14033,NA,125,1,1,0,0,1,0,NA,NA,NA,71,71
+s51228,warning,Humanities,B,89187,right,124,1,1,0,1,0,0,NA,I approach them with skepticism and more scrutiny and the topic discussed through the graph.,NA,14,14
+s51229,no warning,Humanities,B,1618,NA,16,1,0,0,0,0,1,"when measuring whether something is significantly different, how I felt about the topic also impacted my response. If a statistic surprised me or interested me, I probably rated it as more different.",NA,"There were definitely some visual tricks with them. It was hard to remember graph to graph how I had rated the previous one: so for some, twice the amount seemed like a really big difference, but it is harder to conceptualize billions of something. It is also hard to conceptualize percentages, especially when talking about 1 or 2% of something.",62,62
+s51230,warning,Humanities,B,2785,right,126,1,1,0,0,0,1,Inferring based on misleading representation what the motivation of the chart may have been,I tried to infer (based on how they went about skewing their information) what information they were trying to occlude.,NA,45,45
+s51231,no warning,Humanities,A,925,NA,125,1,1,0,0,1,0,NA,NA,NA,31,31
+s51232,warning,Humanities,B,849,right,1,1,0,0,0,0,0,NA,NA,NA,50,50
+s51233,no warning,Humanities,A,633,NA,24,0,1,0,1,0,0,NA,NA,I am more likely to skim graphs on a computer screen than in print,83,83
+s51234,warning,Humanities,B,990,wrong,124,1,1,0,1,0,0,NA,"I found my personal reactions to what type of measurement being discussed influenced whether I selected an extreme difference or not-- contextually, differences in pay for postgrads is perceived as a more ""extreme"" difference than the difference between a cow or a bear's weight.",NA,95,95
+s51235,no warning,Humanities,A,1455,NA,12,1,1,0,0,0,0,NA,NA,NA,40,40
+s51236,no warning,Humanities,B,915,NA,125,1,1,0,0,1,0,NA,NA,Without more knowledge of the subjects being presented it was difficult to judge whether the scales of the graphs were appropriate.,61,61
+s51237,no warning,Humanities,B,1491,NA,1,1,0,0,0,0,0,NA,NA,There is a typo on the graph about single mothers.,34,34
+s51238,no warning,Humanities,B,1046,NA,12,1,1,0,0,0,0,NA,NA,NA,35,35
+s51239,warning,Humanities,A,2219,right,126,1,1,0,0,0,1,Looking first at the y-axis metric was most useful in judging how different the bars were.,"It seemed obvious to me that in looking at these graphs, someone who only considered the relative sizes of the bars without consulting the guiding metric would end up with a skewed understanding of the data. At the same time, the other bars in the graph (the ones not indicated by the questions) played an important role in my answer.",NA,50,50
+s51240,no warning,Humanities,B,900,NA,124,1,1,0,1,0,0,NA,NA,NA,34,34
+s51241,warning,Humanities,A,1005,right,145,1,0,0,1,1,0,NA,"frequently did not notice the misleading graphs; was more likely to notice when i had previous experience with the subject of the graph, and then felt frustrated",NA,23,23
+s51242,no warning,Humanities,B,1489,NA,14,1,0,0,1,0,0,NA,NA,NA,66,66
+s51243,warning,Humanities,A,1219,right,15,1,0,0,0,1,0,NA,"For every graph I was trying to determine whether I thought the numerical difference between the compared categories was significant. For example, a difference in a billion visitors to a museum is pretty significant, even if it is just ""one"" more. The same monetary unit, however, might not be singificant when talking about GDP, for example",NA,45,45
+s51244,no warning,Humanities,B,2492,NA,12,1,1,0,0,0,0,NA,NA,"My impulse each time was to ""take in"" the visual relationship, but then I'd look at the amounts on the left column each time, and so often the visual variation felt meaningless or misleading after that. If this were data I'd need, I'd just prefer a list of amounts in increasing order in some cases. Also, for comparisons in populations, I wasn't sure how meaningful the amounts are. For instance, of for a given experience, if Japan is at 10 million ppl and India is at 7 million, there are so many additonal Qs I have when trying to decided how disparate the amounts are since the two nations' total pops are so different and what does that mean for their art-museum tastes or whatever. Also, I'm a humanist, and almost never have to deal with graphs, so grain of salt on all of the above I suppose.",50,50
+s51245,warning,Humanities,B,1270,right,12,1,1,0,0,0,0,NA,NA,NA,40,40
+s51246,warning,Humanities,B,5099,right,1,1,0,0,0,0,0,NA,NA,NA,41,41
+s51247,no warning,Humanities,A,1192,NA,2,0,1,0,0,0,0,NA,NA,NA,25,25
+s51248,warning,Humanities,A,1503,right,1,1,0,0,0,0,0,NA,"For misleading graphs, I tried to figure out why they were misleading and adjust my assessment accordingly.",NA,35,35
+s51249,no warning,Humanities,B,1113,NA,2,0,1,0,0,0,0,NA,NA,NA,35,35
+s51250,warning,Humanities,A,8198,right,124,1,1,0,1,0,0,NA,"It was easier to judge difference for measures I was more familiar with, like salaries. It was difficult for me to judge measures like kilograms, which are less familiar to me: knowing the number of kilograms between a bear’s weight and a cow’s doesn’t tell me much about how much heavier a cow is, in relation to my own experience. Similarly, if I don’t have a point of reference for what is a small or large share of GDP from travel bookings, for example, I think I’m more likely to take the graph at face value.",NA,50,50
+s51251,warning,Humanities,A,1278,right,6,0,0,0,0,0,1,Personal values in regards to certain subjects.,"I would look for the 0 and compare the two numbers after factoring in how little or big a range the subject dealt with. If the subject at hand had something to do with, say, McDonald's Yearly Burger Consumption, the differences didn't matter as much unless there was an obviously huge dip or rise. When the subject dealt with issues that mattered to me, I found myself landing on personal preferences.",NA,40,40
+s51252,warning,Humanities,A,1207,right,1,1,0,0,0,0,0,NA,NA,NA,41,41
+s51253,warning,Humanities,B,1556,right,12,1,1,0,0,0,0,NA,"I never really thought about how graphs may be misleading so I learned something and will apply that knowledge when looking at other graphs. I tried to convert the bars into numbers to see how different the ""gaps."" The misleading graphs looked like there was a big difference visually, which I think is how most people would read the graph, even though if they looked at the numbers closely they would see that the difference isn't as big as it may seem.",NA,62,62
+s51254,no warning,Humanities,B,1102,NA,1,1,0,0,0,0,0,NA,NA,NA,90,90
+s51255,no warning,Humanities,A,707,NA,1245,1,1,0,1,1,0,NA,NA,NA,75,75
+s51256,warning,Humanities,A,1521,right,1,1,0,0,0,0,0,NA,NA,NA,70,70
+s51257,no warning,Humanities,B,1419,NA,1,1,0,0,0,0,0,NA,NA,It appears to be a lot easier to make small differences look like large differences by fiddling with the y-axis than it is to make large differences look like small differences. All you have to do for the former is make the y-axis a very small range.,61,61
+s51258,warning,Humanities,B,1284,right,12,1,1,0,0,0,0,NA,It's important to note the segments delineated and how many of whatever is between those. Also noting a number versus a percentage or fraction impacts how data appears on a graph.,NA,45,45
+s51259,warning,Humanities,A,11066,right,1,1,0,0,0,0,0,NA,I would try to imagine what the graph would look like if it was set to zero. I also tried to think about if a change / difference would be significant (sometimes a small difference means a lot). This was easier when dealing with percentages than dealing with numbers alone since I didn't have mental reference points.,NA,40,40
+s51260,warning,Humanities,B,1451,right,14,1,0,0,1,0,0,NA,I would figure out what the scale was and how the bars were represented,NA,80,80
+s51261,no warning,Humanities,A,1070,NA,123,1,1,1,0,0,0,NA,NA,NA,40,40
+s51262,warning,Humanities,B,1800,right,124,1,1,0,1,0,0,NA,It was difficult to assess the scale of the y axis when 0 was not indicated. This survey has encouraged me to think more critically about visually arranged data in widely circulated media.,NA,60,60
+s51263,no warning,Humanities,A,1002,NA,124,1,1,0,1,0,0,NA,NA,NA,40,40
+s51264,no warning,Humanities,A,878,NA,2,0,1,0,0,0,0,NA,NA,NA,60,60
+s51265,warning,Humanities,B,1691,right,1,1,0,0,0,0,0,NA,NA,NA,85,85
+s51266,warning,Humanities,B,550,right,1,1,0,0,0,0,0,NA,I always look at the y-axis.,NA,42,42
+s51267,no warning,Humanities,A,847,NA,12,1,1,0,0,0,0,NA,NA,NA,41,41
+s51268,no warning,Humanities,A,711,NA,124,1,1,0,1,0,0,NA,NA,NA,67,67
+s51269,no warning,Humanities,B,1410,NA,124,1,1,0,1,0,0,NA,NA,NA,30,30
+s51270,warning,Humanities,B,938,right,1,1,0,0,0,0,0,NA,I estimated the numerical values and evaluated the difference between them,NA,50,50
+s51271,no warning,Humanities,A,1096,NA,14,1,0,0,1,0,0,NA,NA,"I noticed how widely the values on the y-axis changed and used that to mostly answer (ie is the difference split between 3 percentage points, or between hundreds of millions of dollars?). I also wondered whether I was unintentionally basing the difference between the assigned categories by comparing them to the un-assigned categories with bars too and whether the order and distance between the bars I was supposed to evaluate affected my choice.",50,50
+s51272,warning,Humanities,A,1517,right,125,1,1,0,0,1,0,NA,NA,NA,25,25
+s51273,warning,Humanities,B,1005,right,1,1,0,0,0,0,0,NA,There was too much gradation with the 1-7 scale and I was running out of steam answering the questions by the end,NA,64,64
+s51274,no warning,Humanities,A,447,NA,124,1,1,0,1,0,0,NA,NA,NA,35,35
+s51275,no warning,Humanities,B,863,NA,124,1,1,0,1,0,0,NA,NA,NA,30,30
+s51276,no warning,Humanities,B,692,NA,123,1,1,1,0,0,0,NA,NA,NA,81,81
+s51277,warning,Humanities,A,95198,right,1,1,0,0,0,0,0,NA,I would try to imagine how the graph would look different (how the ratio of different bars would look different) if the y-axis were set at 0.,NA,50,50
+s51278,warning,Humanities,A,1769,right,34,0,0,1,1,0,0,NA,"I always checked y axis, as I had been primed to do. I did find this quite tricky though, as I don't really have a standard for relative difference and it does seem to matter what the subject is, a bit, i.e. what is being measured.",NA,40,40
+s51279,no warning,Humanities,B,2304,NA,13,1,0,1,0,0,0,NA,NA,NA,65,65
+s51280,warning,Humanities,A,1009,right,1,1,0,0,0,0,0,NA,NA,NA,30,30
+s51281,no warning,Humanities,B,10818,NA,16,1,0,0,0,0,1,"Judging between (1) the difference between A and B and (2) the percentile difference of A and that of B in the whole group...there has to be some discretion which renders answers not always consistent...but really, if one is to be tricked intuitively by the 'feeling' of these graphs and numbers...it is absurd and he or she had better go back to do high school math. The problem is not graphs and numbers, but your discretion in thinking of the social reality and the relations between samples and the whole group.",NA,"Well these are basic things to handle really...if two bars look extremely different but the y axis begins with 7 (rather than 0) and ends with 8, one should never ever be tricked by these visual niceties.........................................................................................lol.",65,65
+s51282,warning,Humanities,A,682,right,1245,1,1,0,1,1,0,NA,read legend / labels,NA,40,40
+s51283,no warning,Humanities,B,1233,NA,12,1,1,0,0,0,0,NA,NA,NA,65,65
+s51284,warning,Humanities,B,2477,right,12,1,1,0,0,0,0,NA,It was a bit difficult to answer because the answers seemed very subjective.,NA,61,61
+s51285,warning,Humanities,A,323217,right,13,1,0,1,0,0,0,NA,I tried to imagine what the graph would look like if they were more accurately / appropriately scaled.,NA,30,30
+s51286,no warning,Humanities,A,1065,NA,124,1,1,0,1,0,0,NA,NA,The bars looked quite bigger and wider than what I was used to.,70,70
+s51287,no warning,Humanities,B,1128,NA,123,1,1,1,0,0,0,NA,NA,NA,46,46
+s51288,no warning,Humanities,A,982,NA,12345,1,1,1,1,1,0,NA,NA,NA,35,35
+s51289,warning,Humanities,B,984,right,124,1,1,0,1,0,0,NA,NA,NA,50,50
+s51290,warning,Humanities,A,1773,right,12345,1,1,1,1,1,0,NA,I tried to figure out the rough numbers and compare those (as opposed to the visuals),NA,43,43
+s51291,warning,Humanities,A,863,right,15,1,0,0,0,1,0,NA,NA,NA,53,53
+s51292,no warning,Humanities,B,791,NA,15,1,0,0,0,1,0,NA,NA,NA,52,52
+s51293,no warning,Humanities,A,3783,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51294,warning,Humanities,B,894,right,1,1,0,0,0,0,0,NA,NA,NA,61,61
+s51295,warning,Humanities,A,898,right,1,1,0,0,0,0,0,NA,Felt like this was intentional. It seemed less about conveying accurate information but more about making a  convincing argument.,NA,60,60
+s51296,warning,Humanities,A,983,right,124,1,1,0,1,0,0,NA,NA,NA,40,40
+s51297,no warning,Humanities,B,8246,NA,15,1,0,0,0,1,0,NA,NA,NA,NA,NA
+s51298,no warning,Humanities,A,849,NA,1,1,0,0,0,0,0,NA,NA,NA,40,40
+s51299,warning,Humanities,A,964,right,14,1,0,0,1,0,0,NA,NA,NA,51,51
+s51300,no warning,Humanities,B,271716,NA,5,0,0,0,0,1,0,NA,NA,"I often answered the question based not so much on the actual visual difference but rather according to what is being compared, i.e sometimes implying a subjective judgment",39,39
+s51301,warning,Humanities,B,1130,right,2,0,1,0,0,0,0,NA,NA,NA,17,17
+s51302,no warning,Humanities,B,1538,NA,12345,1,1,1,1,1,0,NA,NA,NA,45,45
+s51303,warning,Humanities,B,1512,right,125,1,1,0,0,1,0,NA,"making my reaction to what i saw less extreme, imagining wha it would look like if the missing y axis numbers were included in the bar",NA,50,50
+s51304,warning,Humanities,A,1034,right,1256,1,1,0,0,1,1,"It also depended on the content of the graph -- for money, I saw less difference between 3 million and 5 million, but for human deaths by police killings, I saw a greater difference between 300 deaths and 500 deaths, for example.","I found that going into this survey knowing that the graphs were misleading, I was more cautious. I do not usually pay attention to the y-axis of graphs, but in this survey I made sure to.",NA,50,50
+s51305,no warning,Humanities,A,771,NA,1,1,0,0,0,0,0,NA,NA,NA,100,100
+s51306,warning,Humanities,B,1429,right,14,1,0,0,1,0,0,NA,Knowing that some of the graphs were misleading prompted me to think more critically about them and to look more closely at the y axis values than I might have if I were encountering the information in a different context (e.g. skimming an article on the web).,NA,50,50
+s51307,no warning,Humanities,B,881,NA,124,1,1,0,1,0,0,NA,NA,NA,51,51
+s51308,warning,Humanities,A,238734,right,124,1,1,0,1,0,0,NA,"I tried to assess the number each represented and approximately how different (1/3? 1/10?) that number was from the next. But I also thought about what it meant– like, the number of police deaths felt more important because any escalation means more lives lost, whereas I don't much care about how much a cow weighs.",NA,39,39
+s51309,warning,Humanities,A,10606,right,123,1,1,1,0,0,0,NA,NA,NA,46,46
+s51310,no warning,Humanities,B,2012,NA,1,1,0,0,0,0,0,NA,NA,NA,45,45
+s51311,warning,Humanities,B,2252,right,15,1,0,0,0,1,0,NA,"I tried to distance my opinion of the figures from the image presented; i.e. if a bar chart were representing percentages, and the y axis began at 50, it was misleading, but then I would need to make a determination as to whether, say, 60% vs. 90% constituted a significant difference anyway. I tried to make determinations reflective of those differences (60% is quite importantly different from 90%) even after recognizing that the graph was trying to misrepresent the scope of the difference.",NA,60,60
+s51312,no warning,Humanities,A,2104,NA,6,0,0,0,0,0,1,converting the charts to number differences,NA,they definitely aren't standardized across - it can be hard to define difference because of relative values,30,30
+s51313,no warning,Humanities,A,8525,NA,1,1,0,0,0,0,0,NA,NA,NA,70,70
+s51314,warning,Humanities,B,53338,right,125,1,1,0,0,1,0,NA,"If they were misleading, I thought more about the intent of the graph - what was the designer possibly trying to exaggerate? But my answer in these cases had mostly to do with the topic of the graph rather than just the area of the bars. I stopped looking at the bars and thought instead, abstractly, about the numbers themselves and what would constitute statistical significance given the topic at hand.",NA,50,50
+s51315,warning,Humanities,B,414054,right,124,1,1,0,1,0,0,NA,"I relied mostly on the y-axis to determine how misleading they were, as well as the size in bars.",NA,71,71
+s51316,no warning,Humanities,A,862,NA,124,1,1,0,1,0,0,NA,NA,"The color of the graph (jet black with a white background) made it difficult to read at times, especially after looking at so many in succession",60,60
+s51317,warning,Humanities,B,3579,right,123,1,1,1,0,0,0,NA,"It's all about the y-axis. The difference between a 1.4 and a 2.1 can look huge depending on the scale. Removing 0 from the y-axis also matters a lot. Throughout the exercise I began to constantly look for a 0 and then to see what the metric was before heading on to the questions themselves. Also, in order to compare bars that were not next to one another, I definitely used an index finger and thumb approach.",NA,43,43
+s51318,warning,Humanities,A,302439,right,1246,1,1,0,1,0,1,"using my mouse to estimate where the ""0"" on the y-axis should be and visualize the accurate proportions","I tried to visualize how far down the ""0"" on the y-axis should be to help me accurately view the data, but I was less sure of my answers for those questions.",NA,40,40
+s51319,no warning,Humanities,B,78840,NA,1,1,0,0,0,0,0,NA,NA,NA,75,75
+s51320,no warning,Humanities,A,601,NA,124,1,1,0,1,0,0,NA,NA,NA,13,13
+s51321,warning,Humanities,B,1850,right,23,0,1,1,0,0,0,NA,"The misleading graphs made me angry -- i.e. graphs that made the difference between a $35,000 salary and a $65,000 look insignificant, when that difference has a tremendous difference on quality of life.  I would rather have read the numbers in words than been shown a misleading image.",NA,35,35
+s51322,warning,Humanities,A,3639,right,1,1,0,0,0,0,0,NA,NA,NA,33,33
+s51323,no warning,Humanities,B,1121,NA,5,0,0,0,0,1,0,NA,NA,NA,NA,NA
+s51324,warning,Humanities,B,1271,right,1234,1,1,1,1,0,0,NA,I looked at the actual numbers and subtracted the difference.,NA,67,67
+s51325,warning,Humanities,A,1726,right,126,1,1,0,0,0,1,"Determining what percent difference between values corresponded to ""not at all different"" and ""extremely different""","I was frustrated with the response options since I wasn't sure what ""not at all different"" and ""extremely different signified."" I assumed that this referred to the percent by which different values varied to one another, but I developed my own system of classification in a somewhat ad hoc manner. """,NA,51,51
+s51326,no warning,Humanities,A,709,NA,1245,1,1,0,1,1,0,NA,NA,NA,30,30
+s51327,no warning,Humanities,B,653,NA,1,1,0,0,0,0,0,NA,NA,"The question of 'extremely' and 'relatively' different seems rather vague, i.e. in sheer numbers or in relative change.",NA,NA
+s51328,warning,Humanities,B,1287,right,1,1,0,0,0,0,0,NA,I looked to see if the space between the values on the Y axis were dramatized to show a greater change than it would otherwise appear.,NA,75,75
+s51329,warning,Humanities,A,28093,right,1,1,0,0,0,0,0,NA,It was the same--looked at the y axis first to see the units and range and then compared heights.,NA,71,71
+s51330,no warning,Humanities,A,8163,NA,124,1,1,0,1,0,0,NA,NA,The bars asked to compare were generally close to each other.,37,37

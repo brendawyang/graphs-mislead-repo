@@ -1,0 +1,827 @@
+---
+title: "Data Analysis for Study 5"
+output: 
+  html_document:
+    df_print: paged
+    toc: true
+    toc_depth: 4
+    toc_float: FALSE
+---
+
+
+# Study 5 Introduction
+
+This Markdown documents the process to analyze the data for Study 5 which looked at the difference between those who received and those who did not receive a warning at the beginning of the study for a new population: experts. Experts were PhD students from humanities and quantitative fields. 
+
+Data was collected using qualtrics between October 23 and November 25th, 2018 using Amazon's Mechanical Turk for ditribution and Qualtrics as a survey platform. 
+
+This HTML was last knitted on: `r Sys.time()`
+
+## Set Up
+
+### Packages and Libraries
+
+You must run this section before you can run any other chunks.
+
+
+```{r packages, echo = FALSE}
+#Make sure all packages are installed
+
+list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "shiny", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+```
+
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+#turn off scientific notation
+options(scipen=999)
+```
+
+
+```{r libraries}
+#Load all libraries
+library(readr)
+library(tidyr)
+library(dplyr)
+library(magrittr)
+library(effsize)
+library(lme4) # for mixed effects models
+library(lmerTest)
+library(kableExtra)
+library(knitr)#kable
+library(pwr)
+
+##Raincloud Plot Libraries
+source("../R_rainclouds.R")
+library(cowplot)
+library(ggthemes)
+library(ggplot2)
+
+```
+
+
+```{r raincloud plot}
+#raincloud plot theme
+raincloud_theme <- theme(
+  text = element_text(size = 10),
+  axis.title.x = element_text(size = 16),
+  axis.title.y = element_text(size = 16, margin = margin(r = 20)),
+  axis.text = element_text(size = 14),
+  legend.title=element_blank(),
+  legend.text=element_text(size=16),
+  legend.position = "right",
+  plot.title = element_text(lineheight=.8, face="bold", size = 16),
+  panel.border = element_blank(),
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.grid.major.y = element_line(colour = 'light gray', size=0.5, linetype='solid'),
+  axis.line = element_blank(), 
+  axis.ticks.y = element_blank())
+```
+
+
+### Data Import
+
+```{r data import}
+rating_df <- read_csv("data/clean/s5_rating_df.csv")
+demographic_df <- read_csv("data/clean/s5_demographic_df.csv")
+graphliteracy_df <- read_csv("data/clean/s5_graphliteracy_df.csv")
+debriefing_df <- read_csv("data/clean/s5_debriefing_df.csv")
+timing_df <- read_csv("data/clean/s5_timing_df.csv")
+```
+
+
+### Exclusions
+
+You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 97) to TRUE. The next time you run all the code, these participants will be excluded. 
+
+```{r}
+Exclude_Exercise_Check <- FALSE
+
+
+participants_excluded <- demographic_df %>% 
+  filter(check == "wrong") %>% 
+  group_by(check) %>% 
+  summarise(n = n())
+
+if(Exclude_Exercise_Check == TRUE){rating_df <- rating_df %>% 
+  filter(check == "right" | subject_condition == "no warning")
+} else{rating_df <- rating_df}
+
+if(Exclude_Exercise_Check == TRUE){demographic_df <- demographic_df %>% 
+  filter(check == "right"| subject_condition == "no warning")
+} else{demographic_df <- demographic_df}
+
+```
+
+
+For this report, **`r if(Exclude_Exercise_Check == FALSE){paste("no")} else{paste(participants_excluded$n)}`** participants are being excluded from analysis. 
+
+#### Spontaneously noticed manipulation
+
+To exclude participants who spontaneously noticed the manipulation, set the following chunk to TRUE.
+
+```{r}
+Exclude_Notice <- FALSE
+
+```
+
+
+```{r import notice_df}
+
+# import
+notice_df <- read_csv("data/clean/s5_notice_df.csv")
+
+# merge
+rating_df <- left_join(rating_df, notice_df)
+demographic_df <- left_join(demographic_df, notice_df)
+#graphliteracy_df <- left_join(graphliteracy_df, notice_df)
+
+```
+
+
+```{r}
+
+# How many people are we potentially excluding?
+notice_df %>% 
+  filter(noticed == 1) %>% 
+  group_by(noticed) %>% 
+  summarise(n = n())
+
+# How do the numbers break down by field?
+notice_df %>% 
+  filter(noticed == 1) %>% 
+  group_by(field) %>% 
+  summarise(n = n())
+
+# Do the exclusions from datasets
+if(Exclude_Notice == TRUE){rating_df <- rating_df %>% 
+  filter(noticed != 1)
+} else{rating_df <- rating_df}
+
+if(Exclude_Notice == TRUE){demographic_df <- demographic_df %>% 
+  filter(noticed != 1)
+} else{demographic_df <- demographic_df}
+
+if(Exclude_Notice == TRUE){graphliteracy_df <- graphliteracy_df %>% 
+  filter(noticed != 1)
+} else{graphliteracy_df <- graphliteracy_df}
+
+```
+
+```{r QA, eval=FALSE, include=FALSE}
+
+nrow(rating_df)
+
+```
+
+
+```{r addtional data frames, eval = TRUE}
+#Create data frames that will be used throughout
+
+#Calculate subject means by condition 
+##(mean rating for truncated and mean rating for non-truncated graphs)
+subject_mean_df <- rating_df %>% 
+  group_by(participantID, field, subject_condition, graph_condition) %>% 
+  summarise(subject_mean_rating = mean(rating, na.rm = TRUE)) %>% 
+  arrange(participantID)
+
+
+#Calculate subject difference rating
+##(non-truncated mean rating - truncated mean rating)
+subject_difference_df <- subject_mean_df %>% 
+  spread(graph_condition, subject_mean_rating) %>% 
+  mutate(difference =  truncated - control)
+
+
+#Calculate subject overall graph literacy score
+##(sum of graph literacy items)
+subject_graphliteracy_df <- graphliteracy_df %>%
+  group_by(participantID, field, subject_condition) %>%
+  summarise(graphliteracy_sum_rating = sum(rating)) 
+
+
+#Create mixed effects df
+##(combination of ratings, overall graph literacy scores and some demographic questions --- education, gender and age)
+models_df <- full_join(full_join(subject_graphliteracy_df, demographic_df[, c("participantID", "dem_ed", "dem_gender", "dem_age")]), rating_df)
+
+
+##Create mixed effects difference df
+##(df with subject truncation effect scores (difference between truncated and control) + all demographics and graph literacy scores) 
+models_difference_df <- left_join(left_join(subject_difference_df,subject_graphliteracy_df), demographic_df[, c("participantID", "dem_ed", "dem_gender", "dem_age")])
+
+#Create trimmed timing df
+##(trims anything past 2 standard deviations from each participant's individual mean for each condition)
+trimmed_timing_df <- timing_df %>% 
+  group_by(participantID, subject_condition, graph_condition) %>% 
+  mutate(avg = mean(time), stdev = sd(time)) %>%
+  filter(time <= 2*stdev+avg) %>%
+  as.data.frame()
+
+```
+
+
+
+--------------
+
+## Methods
+
+### Participants
+
+
+```{r general participant information}
+n <- demographic_df %>%
+  group_by(field) %>% 
+  summarise(n = n())
+```
+
+
+```{r general participant information gender}
+gender <- demographic_df %>% 
+  group_by(field, dem_gender) %>% 
+  summarise(n = n())
+
+gender
+  
+```
+
+
+```{r general participant information age}
+age <- demographic_df %>% 
+  group_by(field) %>% 
+  summarise(mean_age = mean(dem_age,na.rm = TRUE), sd_age = sd(dem_age,na.rm = TRUE), 
+            median_age = median(dem_age, na.rm = TRUE), min_age= min(dem_age, na.rm = TRUE), 
+            max_age = max(dem_age, na.rm = TRUE), range_age = max(dem_age, na.rm = TRUE)-min(dem_age, na.rm = TRUE))
+
+age
+
+#Note na.rm is TRUE because some participants (n=4) did not give their age information. 
+# demographic_df %>%
+#   filter(is.na(dem_age))
+```
+
+`r text_spec(n[n$field == "Quantitative",]$n, bold = T)` PhD students (`r text_spec(gender[gender$field == "Quantitative" & gender$dem_gender == "female",]$n, bold = T)` women, `r text_spec(gender[gender$field == "Quantitative" & gender$dem_gender == "non-binary",]$n, bold = T)` non-binary gender; M~age~ = `r text_spec(round(age[age$field == "Quantitative",]$mean_age, 2), bold = T)` years, SD~age~ = `r text_spec(round(age[age$field == "Quantitative",]$sd_age, 2), bold = T)`)  in the departments of Statistics, Psychology, and Economics and `r text_spec(n[n$field == "Humanities",]$n, bold = T)`  (`r text_spec(gender[gender$field == "Humanities" & gender$dem_gender == "female",]$n, bold = T)` women, `r text_spec(gender[gender$field == "Humanities" & gender$dem_gender == "non-binary",]$n, bold = T)` non-binary gender; M~age~ = `r text_spec(round(age[age$field == "Humanities",]$mean_age, 2), bold = T)` years, SD~age~ = `r text_spec(round(age[age$field == "Humanities",]$sd_age, 2), bold = T)`) in the departments of History and English participated in Study 5. 
+
+
+Using publicly available email addresses, and after consulting with the universities’ review boards, we recruited PhD students from the top programs in these fields. A list of schools we recruited from is available in our Supplemental Information. 
+
+```{r summary statistics for graph literacy}
+#Cronbach's Alpha
+library(psych)
+
+alpha <- graphliteracy_df %>% 
+  spread(graphliteracy_question, rating) %>% 
+  select(-group) %>% 
+  psych::alpha()
+
+#Data Summary
+subject_graphliteracy_summary <- subject_graphliteracy_df %>%
+  ungroup() %>% 
+  group_by(field) %>% 
+  summarise(n = n(), 
+            mean = mean(graphliteracy_sum_rating, na.rm = TRUE), 
+            sd = sd(graphliteracy_sum_rating, na.rm = TRUE), 
+            median = median(graphliteracy_sum_rating, na.rm = TRUE),
+            min= min(graphliteracy_sum_rating, na.rm = TRUE), 
+            max = max(graphliteracy_sum_rating, na.rm = TRUE), 
+            range=max(graphliteracy_sum_rating, na.rm = TRUE)-min(graphliteracy_sum_rating, na.rm = TRUE)) %>% 
+  mutate(alpha = round(alpha$total$std.alpha,2))
+
+subject_graphliteracy_summary
+
+#Note na.rm is TRUE because one participant (n=1) did not give their graph literacy information. 
+# subject_graphliteracy_df %>% 
+#   filter(is.na(graphliteracy_sum_rating))
+```
+
+
+Both reports of formal statistical training and the graph literacy scale scores support our assumptions about the two populations: Participants from the quantitative sample scored higher on the graph literacy measure (M = `r text_spec(round(subject_graphliteracy_summary[subject_graphliteracy_summary$field == "Quantitative",]$mean,2), bold = T)`, SD~graph literacy~= `r text_spec(round(subject_graphliteracy_summary[subject_graphliteracy_summary$field == "Quantitative",]$sd,2), bold = T)`) than did  participants from the humanities (M = `r text_spec(round(subject_graphliteracy_summary[subject_graphliteracy_summary$field == "Humanities",]$mean, 2), bold = T)`, SD~graph literacy~= `r text_spec(round(subject_graphliteracy_summary[subject_graphliteracy_summary$field == "Humanities",]$sd,2), bold = T)`).
+
+
+```{r}
+t_test <- t.test(graphliteracy_sum_rating ~ field, subject_graphliteracy_df, paired = FALSE, var.equal = TRUE)
+
+t_test
+```
+
+```{r effect size for graph literacy}
+cohen_d <- effsize::cohen.d(graphliteracy_sum_rating ~ field, subject_graphliteracy_df, paired = FALSE, var.equal = TRUE)
+
+cohen_d
+```
+
+
+The difference in graph literacy between these samples is statistically significant with a large effect size: t(`r text_spec(round(t_test$parameter,2), bold = T)`) = `r text_spec(abs(round(t_test$statistic,2)), bold = T)`, p < `r text_spec(format(round(t_test$p.value,3), nsmall= 2), bold = T)`, d = `r text_spec(abs(round(cohen_d$estimate,2)), bold = T)`
+
+
+
+
+```{r}
+stat_training <- demographic_df %>% 
+  group_by(field, dem_stat_formal) %>% 
+  summarise(n = n()) %>%
+  mutate(percentage = round(n / sum(n)*100, 2))
+  
+```
+
+
+We use a sample of PhD students from the fields of psychology, statistics, and economics with the rationale that these fields require that students regularly read and produce graphs. `r text_spec(stat_training[stat_training$field == "Quantitative" & stat_training$dem_stat_formal == 1,]$percentage, bold = T)`% of the participants from this sample reported having formal statistical training. We also used a sample of PhD students from English and History departments, assuming that these students have a lower exposure to graphs. In fitting with our recruitment strategy, only `r text_spec(stat_training[stat_training$field == "Humanities" & stat_training$dem_stat_formal == 1,]$percentage, bold = T)`% of the participants from this sample reported having formal statistical training. 
+
+```{r}
+chisq.test(demographic_df$field, demographic_df$dem_stat_formal, correct=FALSE)
+```
+
+
+### Exercise Check
+
+```{r}
+exercise_check <- rating_df %>% 
+  filter(subject_condition == "warning") %>% 
+  group_by(participantID, check, field) %>% 
+  summarise(n()) %>% 
+  group_by(field, check) %>% 
+  summarise(n = n()) %>% 
+  mutate(percentage = n / sum(n)*100)
+```
+
+`r text_spec(round(mean(exercise_check[exercise_check$check == "right",]$percentage),2), bold = T)`% of all participants in the warning condition answered the training exercise question correctly.
+
+`r text_spec(round(exercise_check[exercise_check$field == "Humanities" & exercise_check$check == "right",]$percentage,2), bold = T)`% of the Humanities participants in the warning condition answered the training exercise question correctly.
+
+`r text_spec(round(exercise_check[exercise_check$field == "Quantitative" & exercise_check$check == "right",]$percentage,2), bold = T)`% of the Quantitative participants in the warning condition answered the training exercise question correctly.
+
+
+For this report, `r if(Exclude_Exercise_Check == FALSE){paste("no")} else{paste(participants_excluded$n)}` participants are being excluded from analysis. If you want to see results when participants who got the exercise wrong are excluded/included, you can go to the section called Exclusions (at the top of this file) and change **Exclude_Exercise_Check <- TRUE**
+
+---------------------------------
+
+## Results
+
+### The truncation effect
+
+We first replicated the truncation effect found in Studies 1 through 4. 
+
+```{r subject_mean_main}
+subject_mean_main <- subject_mean_df %>% 
+group_by(graph_condition) %>% 
+summarise(n = n(), mean = mean(subject_mean_rating), 
+            sd = sd(subject_mean_rating), 
+            median = median(subject_mean_rating),
+            min= min(subject_mean_rating), max = max(subject_mean_rating), 
+            range =max(subject_mean_rating)-min(subject_mean_rating))
+
+subject_mean_main
+```
+
+We found that average ratings of differences for truncated graphs was higher than ratings for control graphs:  M~control~ = `r text_spec(round(subject_mean_main$mean[subject_mean_main$graph_condition=="control"],2), bold =T)`, SD = `r text_spec(round(subject_mean_main$sd[subject_mean_main$graph_condition=="control"],2), bold =T)`; M~truncated~ = `r text_spec(round(subject_mean_main$mean[subject_mean_main$graph_condition=="truncated"],2), bold =T)`, SD = `r text_spec(round(subject_mean_main$sd[subject_mean_main$graph_condition=="truncated"],2), bold =T)`. 
+
+```{r}
+subject_mean_main_df <- subject_mean_df %>% 
+  group_by(participantID, subject_condition, graph_condition) %>% 
+  summarise(subject_mean_rating = mean(subject_mean_rating))
+```
+
+```{r effect size for main effect}
+cohen_d <- effsize::cohen.d(subject_mean_main_df$subject_mean_rating, subject_mean_main_df$graph_condition, paired = TRUE, na.rm = TRUE)
+
+cohen_d
+```
+
+```{r t test for main effect}
+t_test <- t.test(subject_mean_rating ~ graph_condition, subject_mean_main_df, paired = TRUE)
+
+t_test
+```
+
+This main effect was statistically significant: t(`r text_spec(round(t_test$parameter,2), bold = T)`) = `r text_spec(abs(round(t_test$statistic,2)), bold = T)`, p < `r text_spec(format(t_test$p.value,scientific = T), bold = T)`, 95% CI of difference = [0.37, 0.50],  d = `r text_spec(abs(round(cohen_d$estimate,2)), bold = T)`. . 
+
+```{r truncation effect direction}
+truncation_effect_direction <- subject_difference_df %>% 
+  mutate(direction = ifelse(difference > 0, "expected", "unexpected")) %>%
+  group_by(field, direction) %>% 
+  summarise(n= n()) %>% 
+  mutate(percentage = n / sum(n)*100)
+
+truncation_effect_direction           
+```
+
+As before, most participants from both fields showed an overall truncation effect:`r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected" & truncation_effect_direction$field == "Humanities",]$percentage, 2), bold = T)`% of participants from the humanities group, and `r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected" & truncation_effect_direction$field == "Quantitative",]$percentage, 2), bold = T)`% in the quantitative group. 
+
+
+Next, we computed a linear mixed effects model with graph type (0 = control, 1 = truncated), warning condition (0 = no warning, 1 = warning), and field (0 = humanities, 1 = quantitative) as binary fixed factors. The outcome variable was graph ratings, and participant and item were modeled as random effects. 
+
+```{r mixed effect model}
+model_1 <- lmer(rating ~  graph_condition * subject_condition * field + (1 | participantID) +  (1 | question), models_df)
+summary_model_1 <- summary(model_1)
+summary_model_1<- as.data.frame(summary_model_1$coefficients)
+summary_model_1
+```
+
+We found statistically significant main effects of graph type (t = `r text_spec(round(summary_model_1[2,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_1[2,]$"Pr(>|t|)", scientific = T), bold = T)`), warning condition (t = `r text_spec(round(summary_model_1[3,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_1[3,]$"Pr(>|t|)", scientific = T), bold = T)`), and field (t = `r text_spec(round(summary_model_1[4,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_1[4,]$"Pr(>|t|)", scientific = T), bold = T)`).
+
+We also found statistically significant interactions between graph type and warning condition (t = `r text_spec(round(summary_model_1[5,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_1[5,]$"Pr(>|t|)", scientific = T), bold = T)`), graph type and field (t = `r text_spec(round(summary_model_1[6,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_1[6,]$"Pr(>|t|)", scientific = T), bold = T)`), and field and warning condition (t = `r text_spec(round(summary_model_1[7,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_1[7,]$"Pr(>|t|)", scientific = T), bold = T)`). 
+
+To preview, Figure 7 summarizes our primary results of interest: we replicate the finding that an explanatory warning reduces but not eliminate the truncation effect, and find a smaller truncation effect in participants from quantitative fields when no warning is given, compared to participants from the humanities.
+
+
+```{r figure 10 prep}
+#Flat Violin Set Up
+
+errbar_lims <- subject_mean_df %>% 
+  group_by(field, graph_condition, subject_condition) %>% 
+  summarise(mean=mean(subject_mean_rating), se=sd(subject_mean_rating)/sqrt(n()), 
+                        upper=mean+(2*se), lower=mean-(2*se))
+
+subject_mean_df %<>% 
+  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
+
+```
+
+
+```{r figure 10.2}
+#Flat Violin Pink and Blue
+
+ggplot(subject_mean_df, aes(x = as.character(field), y = subject_mean_rating, fill = graph_condition)) +
+  geom_flat_violin(position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .7, colour = NA)+
+   facet_grid(~subject_condition)+
+  geom_point(aes(color = graph_condition), position = position_jitter(0.1), size = 2, shape = 20,  alpha =0.7)+
+  geom_point(data=errbar_lims, aes(x=field, y=mean, color = graph_condition), position = position_nudge(x = -0.28, y = 0))+
+  geom_errorbar(data=errbar_lims, aes(x=field, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.15, position = position_nudge(x = -0.28, y = 0))+
+  #Color
+  scale_colour_manual(values = c("#000A77", "#FF6171"))+
+  scale_fill_manual(values = c("#000A77", "#FF6171"))+
+  #Axis
+  coord_cartesian(ylim=c(1, 7)) + 
+  scale_y_continuous(breaks=seq(1, 7, 1))+
+  ylab("mean rating")+
+  xlab("field")+
+  #Theme
+  raincloud_theme+
+  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
+  theme(strip.text = element_text(size=15, margin = margin(.3,0,.3,0, "cm")), strip.background = element_rect(fill="white"))+
+  ggtitle("Figure 7")
+
+ggsave('../figures/figure7.png', plot = last_plot(), width = 8, height = 5)
+ggsave('../figures/figure7.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
+```
+
+
+### Effect of field: humanities versus quantitative
+
+We computed models for each warning condition separately. In these two models, graph type (0 = control, 1 = truncated) and field (0 = humanities, 1 = quantitative) served as binary fixed factors, with graph ratings as the outcome variable and participants included as a random effect . Table 3 shows these model parameters.
+
+#### No Warning
+```{r mixed effect model no warning}
+no_warning_df <-  models_df %>% 
+  filter(subject_condition == "no warning")
+  
+model_no_warning <- lmer(rating ~  graph_condition * field + (1 | participantID), no_warning_df)
+summary_model_no_warning <- summary(model_no_warning)
+summary_model_no_warning <- as.data.frame(summary_model_no_warning$coefficients)
+
+
+##Confidence Intervals
+ci_model_no_warning <- confint(model_no_warning, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+ci_model_no_warning <- as.data.frame(ci_model_no_warning)
+
+
+## Create and Clean Table
+table3 <- merge(summary_model_no_warning, ci_model_no_warning, by = "row.names")
+numVars <- sapply(table3, is.numeric) 
+table3[numVars] <- lapply(table3[numVars], round, digits = 2) 
+
+table3 %<>% 
+  mutate("95% CI of Estimate" =  paste("[", `2.5 %`, ",", `97.5 %`, "]", sep = "")) %>% select(Row.names, Estimate, `95% CI of Estimate`, `Std. Error`, `t value`, `Pr(>|t|)`)
+
+table3
+```
+
+#### Warning
+```{r mixed effect model warning}
+warning_df <-  models_df %>% 
+  filter(subject_condition == "warning")
+  
+model_warning <- lmer(rating ~  graph_condition * field + (1 | participantID), warning_df)
+summary_model_warning <- summary(model_warning)
+summary_model_warning <- as.data.frame(summary_model_warning$coefficients)
+
+
+##Confidence Intervals
+ci_model_warning <- confint(model_warning, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+ci_model_warning <- as.data.frame(ci_model_warning)
+
+
+## Create and Clean Table
+table3_2 <- merge(summary_model_warning, ci_model_warning, by = "row.names")
+numVars <- sapply(table3_2, is.numeric) 
+table3_2[numVars] <- lapply(table3_2[numVars], round, digits = 2) 
+
+table3_2 %<>% 
+  mutate("95% CI of Estimate" =  paste("[", `2.5 %`, ",", `97.5 %`, "]", sep = "")) %>% select(Row.names, Estimate, `95% CI of Estimate`, `Std. Error`, `t value`, `Pr(>|t|)`)
+
+table3_2
+```
+
+
+When no warning was given, participants from quantitative fields showed a smaller truncation effect compared to participants from the humanities. This was revealed by a significant interaction between graph type and field: b = `r text_spec(round(table3[4,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(table3[4,]$"Std. Error", 2), bold = T)` (Table 4). The main effect of field was not significant, suggesting that participants from quantitative fields were not rating all bar graphs lower. We note that this study is not powered to detect differences between quantitative programs (i.e., psychology versus statistics versus economics PhDs), and we refrain from providing such comparisons.
+
+When a warning was given, we did not find effects that were qualified by field. In other words, the advantage for quantitative fields fades with a warning. This was revealed by a statistically significant effect of graph type ( b = `r text_spec(round(table3_2[3,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(table3_2[3,]$"Std. Error", 2), bold = T)`; Table 4). We did not find statistically significant effects of field or an interaction between graph type or field. This difference from the no warning condition was primarily driven by participants in the Humanities condition exhibiting smaller truncation effects, rather than participants in the Quantitative condition exhibiting larger truncation effects, as illustrated in Figure 6.
+
+## Supplemental Information
+
+### Methods (Supplemental Information)
+
+#### Participants (Supplemental Information)
+
+```{r supplemental participant informatinon language}
+langauge <- demographic_df %>% 
+  group_by(dem_language) %>% 
+  summarise(n = n())
+
+other_language <- demographic_df %>% 
+  filter(!is.na(dem_language_other)) %>% 
+  group_by(dem_language_other) %>% 
+  summarise(n = n())
+
+  
+```
+
+`r text_spec(langauge[1,]$n, bold = T)` participants reported English as their first language, `r text_spec(sum(other_language$n), bold = T)` reported a different first language. Below is a list of all the languages that were reported.
+
+```{r}
+other_language
+```
+
+
+```{r supplemental participant information education}
+education <- demographic_df %>% 
+  group_by(dem_ed) %>% 
+  summarise (n = n()) %>%
+  mutate(percentage = n / sum(n)*100)
+
+education
+   
+```
+
+As expected `r text_spec(round(sum(education[education$dem_ed >= 6,]$percentage)), bold = T)`% of participants reported having at least a Bachelor’s degree and `r text_spec(round(sum(education[education$dem_ed >= 7,]$percentage)), bold = T)`% reported Completion of some graduate school courses or holding a Graduate degree. 
+
+
+We recruited from PhD students from these schools:
+
+```{r}
+schools <- demographic_df %>% 
+  group_by(dem_school) %>% 
+  summarise(n())
+
+schools
+```
+
+
+```{r}
+schools_field <- demographic_df %>% 
+  group_by(dem_school, field) %>% 
+  summarise(n())
+
+schools_field
+```
+
+
+```{r general participant information duration}
+duration <- demographic_df %>% 
+  group_by(field) %>% 
+  summarise(mean_duration = mean(duration_min), 
+            sd_duration = sd(duration_min), 
+            median_duration = median(duration_min), 
+            min_duration= min(duration_min), 
+            max_duration = max(duration_min), 
+            range_duration = max(duration_min)-min(duration_min))
+
+duration
+```
+
+The experiment took participants from the humanities fields an average of M~duration~ = `r text_spec(round(duration[duration$field == "Humanities",]$mean_duration, 2), bold = T)` minutes, (SD~duration~ = `r text_spec(round(duration[duration$field == "Humanities",]$sd_duration, 2), bold = T)` minutes). 
+
+The experiment took participants from the quantitative fields an average of M~duration~ = `r text_spec(round(duration[duration$field == "Quantitative",]$mean_duration, 2), bold = T)` minutes, (SD~duration~ = `r text_spec(round(duration[duration$field == "Quantitative",]$sd_duration, 2), bold = T)` minutes). 
+
+#### Statistical Training (Supplemental Information)
+
+```{r}
+
+#Code to have program
+demographic_df$dem_department <- "other"
+demographic_df[grep("econ", demographic_df$dem_program, ignore.case = TRUE),]$dem_department <- "economics"
+demographic_df[grep("psy|neur", demographic_df$dem_program, ignore.case = TRUE),]$dem_department <- "psychology"
+demographic_df[grep("stat", demographic_df$dem_program, ignore.case = TRUE),]$dem_department <- "statistics"
+demographic_df[grep("eng|lit|writing|fiction", demographic_df$dem_program, ignore.case = TRUE),]$dem_department <- "english"
+demographic_df[grep("his", demographic_df$dem_program, ignore.case = TRUE),]$dem_department <- "history"
+
+training_program <- demographic_df %>% 
+  group_by(field, dem_department) %>% 
+  summarise(formal = sum(dem_stat_formal), informal = sum(dem_stat_informal), workshop = sum(dem_stat_workshop), other= sum(dem_stat_other), none = sum(dem_stat_none)) %>% 
+  gather(training, counted, formal:none)
+
+ggplot(training_program)+
+  geom_bar(aes(x = dem_department, y = counted, fill = training), stat = "identity", position = "dodge")+
+  facet_wrap(~field)
+
+```
+
+
+### Results (Supplemental Information)
+
+#### The effect of truncation and explanatory warnings (Supplemental Information)
+
+```{r mixed effects model S}
+model1<- lmer(rating ~ subject_condition*graph_condition + (1 | participantID), models_df)
+summary_model1 <- summary(model1)
+summary_model1 <- as.data.frame(summary_model1$coefficients)
+```
+
+```{r S Table N}
+
+##Confidence Intervals
+ci_model1 <- confint(model1, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+ci_model1 <- as.data.frame(ci_model1)
+
+
+## Create and Clean Table
+thetable <- merge(summary_model1, ci_model1, by = "row.names")
+numVars <- sapply(thetable, is.numeric) 
+thetable[numVars] <- lapply(thetable[numVars], round, digits = 3) 
+
+thetable %<>% 
+  mutate("95% CI of Estimate" =  paste("[", `2.5 %`, ",", `97.5 %`, "]", sep = "")) %>% select(Row.names, Estimate, `95% CI of Estimate`, `Std. Error`, `t value`, `Pr(>|t|)`)
+
+thetable
+```
+
+```{r mixed effects model full S}
+model_full<- lmer(rating ~ subject_condition*graph_condition*field + (1 | participantID), models_df)
+summary_model_full <- summary(model_full)
+summary_model_full <- as.data.frame(summary_model_full$coefficients)
+```
+
+```{r Table N}
+
+##Confidence Intervals
+ci_model_full <- confint(model_full, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+ci_model_full <- as.data.frame(ci_model_full)
+
+
+## Create and Clean Table
+thetable_full <- merge(summary_model_full, ci_model1, by = "row.names")
+numVars <- sapply(thetable_full, is.numeric) 
+thetable_full[numVars] <- lapply(thetable_full[numVars], round, digits = 3) 
+
+thetable_full %<>% 
+  mutate("95% CI of Estimate" =  paste("[", `2.5 %`, ",", `97.5 %`, "]", sep = "")) %>% select(Row.names, Estimate, `95% CI of Estimate`, `Std. Error`, `t value`, `Pr(>|t|)`)
+
+thetable_full
+```
+
+
+#### Graph literacy
+
+##### Main Effect
+Graph literacy does not explain the size of the truncation effect:
+  
+```{r graph literacy model}
+graphliteracymodel <- lm(difference ~ graphliteracy_sum_rating, models_difference_df)
+summary_graphliteracymodel <- summary(graphliteracymodel)
+summary_graphliteracymodel
+```
+
+
+```{r graph literacy model plot}
+ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference))+
+  geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("graph literacy score")+
+  ggtitle("Figure SI5 Graph Literacy")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+ggsave('../figures/figureSI5_graphliteracy.png', plot = last_plot(), width = 6, height = 4)
+```
+
+
+##### Interaction with warning and field
+
+```{r graph literacy model complete}
+graphliteracymodel_complete <- lm(difference ~ graphliteracy_sum_rating * field * subject_condition, models_difference_df)
+summary_graphliteracymodel_complete <- summary(graphliteracymodel_complete)
+summary_graphliteracymodel_complete
+```
+
+
+```{r graph literacy model complete plot}
+ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference, color = field))+
+  geom_smooth(method = lm) +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("graph literacy score")+
+  ggtitle("Figure SI5 Graph Literacy")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+ggsave('../figures/figureSI5_graphliteracy.png', plot = last_plot(), width = 6, height = 4)
+```
+
+#### Age (Supplemental Information)
+
+```{r}
+
+df <- left_join(subject_difference_df, demographic_df, by = "participantID")
+
+# age
+
+summary(
+  lm(difference ~ dem_age, df)
+)
+
+summary(
+  lm(difference ~ dem_age + field.x + subject_condition.x, df)
+)
+
+
+```
+
+
+#### Timing (Supplemental Information)
+
+```{r supplemental information timing}
+Trimming <- TRUE
+if(Trimming == TRUE){timing_t_df = trimmed_timing_df
+} else{timing_t_df = timing_df}
+```
+
+
+Timing information is in seconds. 
+
+You can choose to trim or not timing data. By default any timing that is 2 standard deviations away from the mean (for each participant for each condition) is trimmed. 
+
+For this report, any timing that is 2 standard deviations away from the mean (for each participant for each condition) `r if(Trimming == TRUE){paste("WAS")} else{paste("WAS NOT")}` trimmed.  If you want to see results when participants who got the exercise wrong are excluded/included, you can go to the section called Exclusions (at the top of this file) and change **Trimming <- FALSE**
+  
+  
+```{r timing interaction}
+subject_timing <-  timing_t_df %>%
+  group_by(participantID, graph_condition, subject_condition, field) %>%
+  summarise(subject_mean_timing = mean(time))
+
+
+#Data Summary
+subject_timing_interaction_summary <- subject_timing %>% 
+  group_by(field, subject_condition, graph_condition) %>% 
+  summarise(n = n(), mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_interaction_summary
+```
+
+```{r timing by graph condition}
+#Data Summary
+subject_timing_graph_summary <- subject_timing %>% 
+  group_by(graph_condition) %>% 
+  summarise(n = n(), mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_graph_summary
+
+```
+
+
+```{r timing by warning condition}
+#Data Summary
+subject_timing_warning_summary <- subject_timing %>% 
+  group_by(subject_condition) %>% 
+  summarise(n = n()/2, mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_warning_summary
+```
+
+```{r timing by field}
+#Data Summary
+subject_timing_field_summary <- subject_timing %>% 
+  group_by(field) %>% 
+  summarise(n = n()/2, mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_field_summary
+```

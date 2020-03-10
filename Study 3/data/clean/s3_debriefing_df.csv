@@ -1,0 +1,122 @@
+participantID,subject_condition,group,DB_approach_select,DB_approach_other,DB_w_approach,DB_nw_notice,DB_misleading_estimate,DB_approach_select_1,DB_approach_select_2,DB_approach_select_3,DB_approach_select_4,DB_approach_select_5,DB_approach_select_6
+s31001,no warning,B,24,NA,NA,NA,60,0,1,0,1,0,0
+s31002,no warning,A,1,NA,NA,none,72,1,0,0,0,0,0
+s31003,no warning,A,2,NA,NA,Thank you,30,0,1,0,0,0,0
+s31004,warning,A,124,NA,"I tried to imagine if they had extended down to the zero mark, would they look that much different? probably not, so i just weighed them as less different because they were designed to show a wider gap. so i suppose i was much more skeptical",NA,39,1,1,0,1,0,0
+s31005,warning,B,124,NA,NA,NA,30,1,1,0,1,0,0
+s31006,no warning,B,2,NA,NA,some were very close,19,0,1,0,0,0,0
+s31007,no warning,A,2,NA,NA,NA,39,0,1,0,0,0,0
+s31008,no warning,B,12,NA,NA,The use of other data points influenced how different I said choices are.,35,1,1,0,0,0,0
+s31009,no warning,B,12,NA,NA,NA,25,1,1,0,0,0,0
+s31010,warning,A,2,NA,With misleading graphs I thought about the percentage difference.,NA,52,0,1,0,0,0,0
+s31011,warning,A,24,NA,NA,NA,46,0,1,0,1,0,0
+s31012,no warning,B,12,NA,NA,thank you for the fun survey.,51,1,1,0,0,0,0
+s31013,warning,B,124,NA,Try to determine what the actual differences were based on the values on the y-axis,NA,42,1,1,0,1,0,0
+s31014,no warning,B,3,NA,NA,NA,10,0,0,1,0,0,0
+s31015,no warning,B,45,NA,NA,no comments,83,0,0,0,1,1,0
+s31016,no warning,A,1,NA,NA,NA,31,1,0,0,0,0,0
+s31017,warning,A,124,NA,NA,NA,60,1,1,0,1,0,0
+s31018,no warning,B,4,NA,NA,very good,80,0,0,0,1,0,0
+s31019,warning,B,124,NA,"My strategy may have been a little single-minded. I completely forgot that the numbers should still be compared to gauge a better difference. I mostly counted graphs with misleading content to be ""extremely different"".",NA,40,1,1,0,1,0,0
+s31020,warning,A,1,NA,I used the y-axis to judge whether the distances between the bars was actually large or not.,NA,40,1,0,0,0,0,0
+s31021,no warning,B,1,NA,NA,Meaningful interpretation of differences depended quite a bit on what was being measured and the range given.,30,1,0,0,0,0,0
+s31022,no warning,A,26,calculating numerical difference then roughly estimating percentage difference (ie 2 vs 5 = 3 difference = 60% differnce vs not using the 250% difference between them,NA,no,80,0,1,0,0,0,1
+s31023,no warning,B,126,comparing relative differences as bar scale can often be manipulated to get a certain feel.,NA,some cases graphs were zoomed in to a very high resolution so it appeared to have very big differences. While some cases were say 100% greater than another case in absolute terms they were only the difference of 1 to 2%,52,1,1,0,0,0,1
+s31024,no warning,B,14,NA,NA,NA,73,1,0,0,1,0,0
+s31025,warning,B,4,NA,NA,NA,25,0,0,0,1,0,0
+s31026,warning,A,12,NA,I would always check the y-axis to make sure I wasn't misreading the information.,NA,70,1,1,0,0,0,0
+s31027,no warning,B,2,NA,NA,NA,37,0,1,0,0,0,0
+s31028,warning,A,1,NA,I compared the numbers on the y-axis.,NA,30,1,0,0,0,0,0
+s31029,no warning,A,12,NA,NA,"I tried to look at the values on the y axis. If it was 22 and 23, that's not very far apart to me If the numbers were in billions, I tried to take that into account too. 22 and 23 billion are farther apart.",50,1,1,0,0,0,0
+s31030,warning,A,12,NA,I approached the graphs that were misleading in the same way as any other graph. I took the information that I knew from the vertical axis and then compared the bars which the question was asking about. I still tried to gather a numerical difference between the bars for the misleading graphs.,NA,30,1,1,0,0,0,0
+s31031,warning,B,12,NA,I compared it with the detailed numbers on the Y axis to see how much of a change there actually was.,NA,51,1,1,0,0,0,0
+s31032,warning,B,12,NA,NA,NA,62,1,1,0,0,0,0
+s31033,warning,B,124,NA,By looking at where the y axis starts,NA,34,1,1,0,1,0,0
+s31034,no warning,A,2,NA,NA,nice work,52,0,1,0,0,0,0
+s31035,no warning,A,2,NA,NA,they just looked like graphs to me,20,0,1,0,0,0,0
+s31036,warning,A,125,NA,NA,NA,29,1,1,0,0,1,0
+s31037,warning,A,1,NA,"When I came across graphs that were misleading I would lower my estimate of the differences between the graphs, and I would try to visualize new graphs in my head where the y-axis started 0.",NA,30,1,0,0,0,0,0
+s31038,warning,B,2,NA,I tried to think that the misleading starts at the axis and from there you have to interpret the data as such. I looked for drastic differences in size.,NA,50,0,1,0,0,0,0
+s31039,warning,A,12345,NA,good,NA,84,1,1,1,1,1,0
+s31040,warning,A,1,NA,NA,NA,58,1,0,0,0,0,0
+s31041,warning,B,1,NA,I look at the different amount of measures and the numbers to see how misleading they may be.,NA,35,1,0,0,0,0,0
+s31042,warning,A,1,NA,i tried to base it on the percentage difference in values and  not just the size difference,NA,41,1,0,0,0,0,0
+s31043,warning,B,123,NA,"I tried to look at everything and use it to judge my answers
+
+Thank you for letting me take your survey!",NA,40,1,1,1,0,0,0
+s31044,no warning,A,12,NA,NA,"Were they all accurate? Some of the values seemed surprising to me, but I am no expert in any of the topics.",60,1,1,0,0,0,0
+s31045,no warning,B,1,NA,NA,NA,70,1,0,0,0,0,0
+s31046,no warning,B,1,NA,NA,Graphs can be deceiving. You really have to pay attention to the numerical value of the x and y axis and how they are incrementally spaced out.,82,1,0,0,0,0,0
+s31047,warning,A,5,NA,GOOD,NA,50,0,0,0,0,1,0
+s31048,no warning,B,4,NA,NA,ALL GRAPH IS GOOD,51,0,0,0,1,0,0
+s31049,warning,B,12,NA,none,NA,60,1,1,0,0,0,0
+s31050,no warning,A,45,NA,NA,NA,47,0,0,0,1,1,0
+s31051,warning,A,1,NA,"Trying to figure out the values of the bars, then how far apart they were in value, then how much that difference value related to their actual values. So if 2 bars were 100 apart, but they were 30000 and 30100 then they are pretty close and its not much of a change compared to 2 bars being 100 apart but values were 100 and  200",NA,60,1,0,0,0,0,0
+s31052,no warning,B,2,NA,NA,THIS SURVEY IS REALLY VERY NICE,68,0,1,0,0,0,0
+s31053,warning,A,12,NA,none to add,NA,59,1,1,0,0,0,0
+s31054,no warning,B,124,NA,NA,NA,60,1,1,0,1,0,0
+s31055,no warning,B,2,NA,NA,n/a,31,0,1,0,0,0,0
+s31056,no warning,A,1,NA,NA,NICE WORK,84,1,0,0,0,0,0
+s31057,warning,B,15,NA,"If I felt the graph was misleading, I would see the values for each category and try to think about the true difference in my head.",NA,50,1,0,0,0,1,0
+s31058,warning,A,12,NA,none,NA,80,1,1,0,0,0,0
+s31059,no warning,A,25,NA,NA,Such great and unique about this study.,60,0,1,0,0,1,0
+s31060,no warning,B,24,NA,NA,Very nice survey,67,0,1,0,1,0,0
+s31061,warning,A,1,NA,none,NA,73,1,0,0,0,0,0
+s31062,no warning,B,123,NA,NA,GOOD SURVEY,65,1,1,1,0,0,0
+s31063,warning,B,345,NA,VERY NICE,NA,67,0,0,1,1,1,0
+s31064,no warning,A,2,NA,NA,good,84,0,1,0,0,0,0
+s31065,warning,B,123,NA,this is good and graphs are very well and well,NA,79,1,1,1,0,0,0
+s31066,no warning,B,234,NA,NA,GOOD SURVEY,69,0,1,1,1,0,0
+s31067,warning,B,12,NA,NA,NA,83,1,1,0,0,0,0
+s31068,warning,A,2,NA,good survey,NA,92,0,1,0,0,0,0
+s31069,no warning,A,125,NA,NA,this survey very interesting nice.,78,1,1,0,0,1,0
+s31070,warning,A,1,NA,"With misleading graphs, one must determine the values represented, rather than comparing the size of the bars.",NA,50,1,0,0,0,0,0
+s31071,warning,A,124,NA,i would look and the type of data on the X and Y and try to see the difference from a numbers perspective and try not to be mislead by the bars on the graph,NA,42,1,1,0,1,0,0
+s31072,no warning,B,1,NA,NA,i did not,72,1,0,0,0,0,0
+s31073,warning,B,2,NA,I would check the numbers as wells as the bars,NA,20,0,1,0,0,0,0
+s31074,warning,A,12,NA,"I wanted to take my time and make sure I knew what the scales where and where the plot started so I wasn't fooled, as much :)",NA,70,1,1,0,0,0,0
+s31075,warning,B,2,NA,nil,NA,80,0,1,0,0,0,0
+s31076,warning,B,1,NA,"I would check the y-axis to see what the height represents first, then tried to get an absolute number for the difference as a percentage. I used that percentage difference to choose a bubble on the scale.",NA,25,1,0,0,0,0,0
+s31077,warning,A,1,NA,this survey was really very nice,NA,67,1,0,0,0,0,0
+s31078,warning,B,124,NA,"I did look to see if the graph was misleading, and I looked at the numbers on the side to try to mentally calculate the true difference rather than looking at the bar on those that seemed misleading.",NA,18,1,1,0,1,0,0
+s31079,no warning,A,3,NA,NA,well,77,0,0,1,0,0,0
+s31080,warning,A,1,NA,"for graphs that were misleading, i tried paying more attention to the y axis. i think that was about it.",NA,50,1,0,0,0,0,0
+s31081,warning,A,1,NA,NA,NA,29,1,0,0,0,0,0
+s31082,no warning,B,136,"initially i judged tge physical heights at the bars but then I started to judge the content in the vertical axis and how relevant and significant the differences were ie. 40 million people vs 80 million is a big difference, but 20% percentage and 40% is dramatic but not as significant in scale when you consider billions are involved",NA,I think I got better with the graphs as i progressed,15,1,0,1,0,0,1
+s31083,warning,A,1245,NA,NA,NA,30,1,1,0,1,1,0
+s31084,warning,B,1,NA,I tried to keep in mind the scaling of the graphs when I compared the amounts they represented.,NA,50,1,0,0,0,0,0
+s31085,warning,A,4,NA,I tried to approach them similarly to accurate ones for the purpose of answering the questions.,NA,30,0,0,0,1,0,0
+s31086,no warning,B,1,NA,NA,NA,58,1,0,0,0,0,0
+s31087,warning,A,1,NA,I paid attention to the y axis and what its value ranges were and what that correlated to for the visual aspect of the graph. This helped prevent me from being visually fooled by graphs with bars that seemed like there was a much bigger difference between them than there actually was.,NA,40,1,0,0,0,0,0
+s31088,no warning,B,124,NA,NA,NA,31,1,1,0,1,0,0
+s31089,warning,B,12,NA,I took into consideration how much the y-axis numbers scaled with the bar size and tried to make estimations based off of that.,NA,65,1,1,0,0,0,0
+s31090,no warning,A,2,NA,NA,No,82,0,1,0,0,0,0
+s31091,no warning,A,23,NA,NA,NA,50,0,1,1,0,0,0
+s31092,warning,B,124,NA,I tried to read the y chart,NA,21,1,1,0,1,0,0
+s31093,warning,B,12,NA,"If I believed they were misleading by looking at the value, I would go by bar size.",NA,24,1,1,0,0,0,0
+s31094,no warning,B,1234,NA,NA,NA,16,1,1,1,1,0,0
+s31095,no warning,A,1,NA,NA,NA,50,1,0,0,0,0,0
+s31096,warning,A,45,NA,They're misleading depending on the data represented by the Y axis.,NA,35,0,0,0,1,1,0
+s31097,warning,A,4,NA,NA,NA,61,0,0,0,1,0,0
+s31098,warning,A,14,NA,I would research further.,NA,82,1,0,0,1,0,0
+s31099,no warning,B,24,NA,NA,NA,20,0,1,0,1,0,0
+s31100,warning,B,1,NA,With graphics that are misleading I check the gap in the number markers.,NA,31,1,0,0,0,0,0
+s31101,warning,B,4,NA,"I looked to see if the number made sense to me,",NA,90,0,0,0,1,0,0
+s31102,warning,A,1,NA,I tried to visualize what a graph would look like if it extended to zero.,NA,35,1,0,0,0,0,0
+s31103,warning,A,2,NA,The graphs that were misleading I tried to look at the values and compare from there.,NA,45,0,1,0,0,0,0
+s31104,warning,A,1,NA,"I tried to look at the Y axis and infer the difference between the values, rather than the size of the bars",NA,57,1,0,0,0,0,0
+s31105,no warning,A,123,NA,NA,NA,76,1,1,1,0,0,0
+s31106,warning,B,14,NA,"I approached misleading graphs in much the same way as accurate graphs, taking into account the numbers on the y-axis to compare different bars.",NA,70,1,0,0,1,0,0
+s31107,warning,A,4,NA,Basically I tried to red the numbers even if there appeared to be a huge disparity in the size of the blocks.,NA,52,0,0,0,1,0,0
+s31108,warning,B,235,NA,"I measured misleading graphs as if the numbers were closer together rather than far apart. Also, trying to read these graphs was tough. How do other people do it?",NA,60,0,1,1,0,1,0
+s31109,no warning,B,1,NA,NA,no,35,1,0,0,0,0,0
+s31110,warning,A,2,NA,stimulate attention,NA,27,0,1,0,0,0,0
+s31111,no warning,A,1,NA,NA,The unit sizes were quite different which can make them visually deceptive.,45,1,0,0,0,0,0
+s31112,no warning,B,46,I also baised on what the topic was as how severe the difference was,NA,NA,37,0,0,0,1,0,1
+s31113,no warning,B,2,NA,NA,NA,45,0,1,0,0,0,0
+s31114,warning,A,5,NA,NA,NA,75,0,0,0,0,1,0
+s31115,warning,A,14,NA,NA,NA,29,1,0,0,1,0,0
+s31116,no warning,B,2,NA,NA,None,40,0,1,0,0,0,0
+s31117,no warning,A,1,NA,NA,NA,62,1,0,0,0,0,0
+s31118,no warning,A,2,NA,NA,No further comments. Thanks!,35,0,1,0,0,0,0
+s31119,warning,B,1,NA,I focused on the proportional difference between the numbers.,NA,50,1,0,0,0,0,0

@@ -1,0 +1,25 @@
+participantID,group,duration,duration_min,dem_age,dem_gender,dem_ed,dem_language,dem_browser_Browser,dem_browser_Version,dem_browser_Operating System,dem_browser_Resolution
+s11001,A,413,6.883333333333334,26,male,6,English,Edge,16.16299,Windows NT 10.0,1278x1326
+s11002,A,417,6.95,21,male,5,English,Chrome,61.0.3163.100,Windows NT 10.0,1920x1080
+s11003,B,428,7.133333333333334,26,female,3,English,Chrome,61.0.3163.100,Macintosh,1440x900
+s11004,B,390,6.5,29,male,3,English,Chrome,61.0.3163.100,Macintosh,2048x1152
+s11005,A,977,16.283333333333335,28,male,6,English,Chrome,61.0.3163.100,Windows NT 6.1,2048x1152
+s11006,A,880,14.666666666666666,40,male,3,English,Chrome,61.0.3163.100,Windows NT 10.0,1600x900
+s11007,B,1942,32.36666666666667,33,male,6,English,Chrome,61.0.3163.100,Windows NT 10.0,1920x1080
+s11008,B,910,15.166666666666666,52,female,5,English,Chrome,61.0.3163.100,Windows NT 10.0,1366x768
+s11009,A,1562,26.033333333333335,26,female,6,English,Chrome,61.0.3163.100,Windows NT 10.0,1680x1050
+s11010,A,465,7.75,24,female,7,English,Chrome,61.0.3163.100,Windows NT 6.1,1920x1080
+s11011,B,480,8,28,male,6,English,Chrome,60.0.3112.114,CrOS x86_64 9592.96.0,1366x768
+s11012,A,1199,19.983333333333334,19,non-binary,2,English,Chrome,61.0.3163.100,Windows NT 10.0,1920x1080
+s11013,B,484,8.066666666666666,27,male,6,English,Chrome,61.0.3163.100,Windows NT 6.3,1600x900
+s11014,B,2992,49.86666666666667,30,male,6,English,Chrome,61.0.3163.100,Macintosh,1440x900
+s11015,A,1032,17.2,59,male,2,English,Chrome,59.0.3071.86,Windows NT 6.3,1920x1080
+s11016,A,1408,23.466666666666665,38,female,8,English,Firefox,55.2.2,Windows NT 6.3,1600x900
+s11017,B,687,11.45,38,male,2,English,Chrome,61.0.3163.100,Macintosh,1920x1080
+s11018,A,899,14.983333333333333,36,female,3,English,Chrome,61.0.3163.100,Macintosh,1440x900
+s11019,B,1370,22.833333333333332,24,male,6,English,Chrome,61.0.3163.100,Windows NT 6.1,1280x1024
+s11020,B,1052,17.533333333333335,42,female,3,English,Chrome,61.0.3163.100,Windows NT 10.0,1920x1080
+s11021,A,942,15.7,35,male,2,English,Chrome,61.0.3163.100,Windows NT 10.0,1280x720
+s11022,B,5149,85.81666666666666,33,female,6,English,Chrome,61.0.3163.100,Windows NT 10.0,1536x864
+s11023,A,1990,33.166666666666664,28,male,6,English,Chrome,61.0.3163.100,Windows NT 10.0,1600x900
+s11024,A,2133,35.55,24,female,5,English,Chrome,61.0.3163.100,Windows NT 10.0,1600x900

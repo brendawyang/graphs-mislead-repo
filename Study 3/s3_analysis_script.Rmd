@@ -1,0 +1,830 @@
+---
+title: "Data Analysis for Study 3"
+output: 
+  html_document:
+    df_print: paged
+    toc: true
+    toc_depth: 4
+    toc_float: FALSE
+---
+
+
+# Study 3 Introduction
+
+This Markdown documents the process to analyze the data for Study 3 which looked at the difference between those who received and those who did not receive a warning at the beginning of the study. 
+
+Data was collected on July 19, 2018 by using Amazon's Mechanical Turk for ditribution and Qualtrics as a survey platform. 
+
+This HTML was last knitted on: `r Sys.time()`
+
+## Set Up
+
+### Packages and Libraries
+
+You must run this section before you can run any other chunks.
+
+```{r packages, echo = FALSE}
+#Make sure all packages are installed
+
+list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "shiny", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+```
+
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+#turn off scientific notation
+options(scipen=999)
+```
+
+```{r libraries}
+#Load all libraries
+library(readr)
+library(tidyr)
+library(dplyr)
+library(magrittr)
+library(effsize)
+library(lme4) # for mixed effects models
+library(lmerTest)
+library(kableExtra)
+library(knitr)#kable
+library(pwr)
+
+##Raincloud Plot Libraries
+source("../R_rainclouds.R")
+library(cowplot)
+library(ggthemes)
+library(ggplot2)
+
+```
+
+
+```{r raincloud plot}
+#raincloud plot theme
+raincloud_theme <- theme(
+  text = element_text(size = 10),
+  axis.title.x = element_text(size = 16),
+  axis.title.y = element_text(size = 16, margin = margin(r = 20)),
+  axis.text = element_text(size = 14),
+  legend.title=element_blank(),
+  legend.text=element_text(size=16),
+  legend.position = "right",
+  plot.title = element_text(lineheight=.8, face="bold", size = 16),
+  panel.border = element_blank(),
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.grid.major.y = element_line(colour = 'light gray', size=0.5, linetype='solid'),
+  axis.line = element_blank(), 
+  axis.ticks.y = element_blank())
+```
+
+
+### Data Import
+
+```{r data import}
+rating_df <- read_csv("data/clean/s3_rating_df.csv")
+demographic_df <- read_csv("data/clean/s3_demographic_df.csv")
+graphliteracy_df <- read_csv("data/clean/s3_graphliteracy_df.csv")
+debriefing_df <- read_csv("data/clean/s3_debriefing_df.csv")
+timing_df <- read_csv("data/clean/s3_timing_df.csv")
+```
+
+
+### Exclusions
+
+You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 97) to TRUE. The next time you run all the code, these participants will be excluded. 
+
+```{r}
+Exclude_Exercise_Check <- FALSE
+
+participants_excluded <- demographic_df %>% 
+  filter(check == "wrong") %>% 
+  group_by(check) %>% 
+  summarise(n = n())
+
+if(Exclude_Exercise_Check == TRUE){rating_df <- rating_df %>% 
+  filter(check == "right" | subject_condition == "no warning")
+} else{rating_df <- rating_df}
+
+if(Exclude_Exercise_Check == TRUE){demographic_df <- demographic_df %>% 
+  filter(check == "right"| subject_condition == "no warning")
+} else{demographic_df <- demographic_df}
+
+```
+
+For this report, **`r if(Exclude_Exercise_Check == FALSE){paste("no")} else{paste(participants_excluded$n)}`** participants are being excluded from analysis. 
+
+
+```{r addtional data frames, eval = TRUE}
+#Create data frames that will be used throughout
+
+#Calculate subject means by condition 
+##(mean rating for truncated and mean rating for non-truncated graphs)
+subject_mean_df <- rating_df %>% 
+  group_by(participantID, subject_condition, graph_condition) %>% 
+  summarise(subject_mean_rating = mean(rating)) %>% 
+  arrange(participantID)
+
+
+#Calculate subject difference rating
+##(non-truncated mean rating - truncated mean rating)
+subject_difference_df <- subject_mean_df %>% 
+  spread(graph_condition, subject_mean_rating) %>% 
+  mutate(difference =  truncated - control)
+
+
+#Calculate subject overall graph literacy score
+##(sum of graph literacy items)
+subject_graphliteracy_df <- graphliteracy_df %>%
+  group_by(participantID,subject_condition) %>%
+  summarise(graphliteracy_sum_rating = sum(rating)) 
+
+
+#Create mixed effects df
+##(combination of ratings, overall graph literacy scores and some demographic questions --- education, gender and age)
+models_df <- full_join(full_join(subject_graphliteracy_df, demographic_df[, c("participantID", "dem_ed", "dem_gender", "dem_age")]), rating_df)
+
+
+##Create lm difference df
+##(df with subject truncation effect scores (difference between truncated and control) + all demographics and graph literacy scores) 
+models_difference_df <- left_join(left_join(subject_difference_df,subject_graphliteracy_df), demographic_df[, c("participantID", "dem_ed", "dem_gender", "dem_age")])
+
+#Create trimmed timing df
+##(trims anything past 2 standard deviations from each participant's individual mean for each condition)
+trimmed_timing_df <- timing_df %>% 
+  group_by(participantID, subject_condition, graph_condition) %>% 
+  mutate(avg = mean(time), stdev = sd(time)) %>%
+  filter(time <= 2*stdev+avg) %>%
+  as.data.frame()
+
+```
+
+
+
+--------------
+
+## Methods
+
+### Participants
+
+```{r general participant information}
+n <- demographic_df %>% 
+  summarise(n())
+```
+
+```{r general participant information gender}
+gender <- demographic_df %>% 
+  group_by(dem_gender) %>% 
+  summarise(n = n())
+
+gender
+  
+```
+
+```{r general participant information age}
+age <- demographic_df %>% 
+  summarise(mean_age = mean(dem_age), sd_age = sd(dem_age), 
+            median_age = median(dem_age), min_age= min(dem_age), 
+            max_age = max(dem_age), range_age = max(dem_age)-min(dem_age))
+
+age
+```
+
+We recruited `r text_spec(n, bold = T)` Mturk workers (`r text_spec(gender[gender$dem_gender == "female",]$n, bold = T)` women, `r text_spec(gender[gender$dem_gender == "other",]$n, bold = T)` non-binary gender; M~age~ = `r text_spec(round(age$mean_age, 2), bold = T)` years, SD~age~ = `r text_spec(round(age$sd_age, 2), bold = T)`) participated in Study 3. All participants reported the United States as their location and had a previous task approval rate that was equal to or exceeded 85%. 
+
+```{r general participant information education}
+education <- demographic_df %>% 
+  group_by(dem_ed) %>% 
+  summarise (n = n()) %>%
+  mutate(percentage = n / sum(n)*100)
+
+education
+```
+
+`r text_spec(round(sum(education[education$dem_ed >= 5,]$percentage)), bold = T)`% of participants reported having at least Bachelor’s degree. The samples also exhibited a range of graph literacy.
+
+
+```{r summary statistics for graph literacy}
+#Cronbach's Alpha
+library(psych)
+
+alpha <- graphliteracy_df %>% 
+  spread(graphliteracy_question, rating) %>% 
+  select(-group) %>% 
+  psych::alpha()
+
+#Data Summary
+subject_graphliteracy_summary <- subject_graphliteracy_df %>%
+  ungroup() %>% 
+  summarise(n = n(), 
+            mean = mean(graphliteracy_sum_rating), 
+            sd = sd(graphliteracy_sum_rating), 
+            median = median(graphliteracy_sum_rating),
+            min= min(graphliteracy_sum_rating), 
+            max = max(graphliteracy_sum_rating), 
+            range=max(graphliteracy_sum_rating)-min(graphliteracy_sum_rating)) %>% 
+  mutate(alpha = round(alpha$total$std.alpha,2))
+
+subject_graphliteracy_summary
+```
+
+### Exercise Check
+
+```{r}
+exercise_check <- rating_df %>% 
+  filter(subject_condition == "warning") %>% 
+  group_by(participantID, check) %>% 
+  summarise(n()) %>% 
+  group_by(check) %>% 
+  summarise(n = n()) %>% 
+  mutate(percentage = n / sum(n)*100)
+```
+
+`r text_spec(exercise_check[exercise_check$check == "wrong",]$n, bold = T)` did not get the manipulation check question right. `r text_spec(round(exercise_check[exercise_check$check == "right",]$percentage,2), bold = T)`% of the participants in the warning condition answered the training exercise question correctly.
+
+For this report, **`r if(Exclude_Exercise_Check == FALSE){paste("no")} else{paste(participants_excluded$n)}`** participants are being excluded from analysis. If you want to see results when participants who got the exercise wrong are excluded/included, you can go to the section called Exclusions (at the top of this file) and change **Exclude_Exercise_Check <- TRUE**
+
+
+## Results
+
+To preview, Figure 5 summarizes our primary results of interest: we replicate a truncation effect, and find that it is reduced but still present when an explanatory warning is given.
+
+### Figure 5
+```{r figure 5 prep}
+#Flat Violin Set Up
+
+errbar_lims <- subject_mean_df %>% 
+  group_by(graph_condition, subject_condition) %>% 
+  summarise(mean=mean(subject_mean_rating), se=sd(subject_mean_rating)/sqrt(n()), 
+                        upper=mean+(2*se), lower=mean-(2*se))
+
+subject_mean_df %<>% 
+  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
+
+```
+
+```{r figure 5}
+#Flat Violin Pink and Blue
+
+#95% Confidence Interval Only
+ggplot(subject_mean_df, aes(x = subject_condition, y = subject_mean_rating, fill = graph_condition)) +
+  geom_flat_violin(aes(fill = graph_condition),position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .7, colour = NA)+
+  
+  geom_point(aes(x = as.numeric(subject_condition_2), y = subject_mean_rating, colour = graph_condition),position = position_jitter(0.05), size = 2, shape = 20,  alpha =0.7)+
+  
+  geom_point(data=errbar_lims, aes(x=subject_condition, y=mean, color = graph_condition), position = position_nudge(x = -0.2, y = 0))+
+  
+  geom_errorbar(data=errbar_lims, aes(x=subject_condition, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.065, position = position_nudge(x = -0.2, y = 0))+
+  #Color
+  scale_colour_manual(values = c("#000A77", "#FF6171"))+
+  scale_fill_manual(values = c("#000A77", "#FF6171"))+
+  #Axis
+  coord_cartesian(ylim=c(1, 7)) + 
+  scale_y_continuous(breaks=seq(1, 7, 1))+
+  ylab("mean rating")+
+  xlab("")+
+  #Theme
+  raincloud_theme+
+  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
+  ggtitle("Figure 5")
+
+ggsave('../figures/figure5.png', plot = last_plot(), width = 8, height = 5)
+ggsave('../figures/figure5.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
+```
+
+
+### Truncation effect
+
+
+```{r summary statistics for graph ratings}
+#Summarize Accross Subjects
+subject_mean_summary <- subject_mean_df %>% 
+  group_by(graph_condition) %>% 
+  summarise(n = n(), mean = mean(subject_mean_rating), 
+            sd = sd(subject_mean_rating), 
+            median = median(subject_mean_rating),
+            min= min(subject_mean_rating), max = max(subject_mean_rating), 
+            range =max(subject_mean_rating)-min(subject_mean_rating))
+
+subject_mean_summary
+  
+```
+
+We first replicated our central effect of interest: the truncation effect. As in Studies 1 and 2, we found that truncated bar graphs exaggerated ratings of differences, compared to control bar graphs: M~control~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$graph_condition == "control",]$mean,2), bold = T)`, SD~control~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$graph_condition == "control",]$sd,2), bold = T)`); M~truncated~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$graph_condition == "truncated",]$mean,2), bold = T)`, SD~truncated~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$graph_condition == "truncated",]$sd,2), bold = T)`.  
+
+```{r effect size for graph ratings}
+cohen_d <- effsize::cohen.d(subject_mean_df$subject_mean_rating, subject_mean_df$graph_condition, paired = TRUE, na.rm = TRUE)
+
+cohen_d
+```
+
+```{r t test for graph ratings}
+t_test <- t.test(subject_mean_rating ~ graph_condition, subject_mean_df, paired = TRUE)
+
+t_test
+
+```
+
+This main effect was statistically significant (equal variances not assumed): t(`r text_spec(round(t_test$parameter,2), bold = T)`) = `r text_spec(abs(round(t_test$statistic,2)), bold = T)`, p < `r text_spec(format(t_test$p.value, scientific = T), bold = T)`, 95% CI of difference = [0.57, 0.83],  d = `r text_spec(abs(round(cohen_d$estimate,2)), bold = T)`. 
+
+```{r}
+subject_difference_summary <- subject_difference_df %>%
+  ungroup() %>% 
+  summarise(n = n(), mean = mean(difference), 
+            sd = sd(difference), 
+            median = median(difference),
+            min= min(difference), max = max(difference), 
+            range =max(difference)-min(difference))
+```
+
+
+M~difference~ = `r text_spec(round(subject_difference_summary$mean,2), bold = T)`. 
+
+
+```{r truncation effect direction}
+truncation_effect_direction <- subject_difference_df %>% 
+  mutate(direction = ifelse(difference > 0, "expected", "unexpected")) %>%
+  group_by(direction) %>% 
+  summarise(n= n()) %>% 
+  mutate(percentage = n / sum(n)*100)
+
+truncation_effect_direction           
+```
+
+This effect was consistent: `r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected",]$percentage), bold = T)`% (`r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected",]$n), bold = T)` of `r text_spec(n, bold = T)`) participants showed a truncated effect in the expected direction.
+
+Next, we computed a linear mixed effects model with graph type (0 = control, 1 = truncated) and warning condition (0 = no warning, 1 = warning) as binary fixed factors. Participants' ratings of the differences depicted by bar graphs was the outcome variable, and participant was included a random effect.There was a statistically significant main effect of graph type and a statistically significant interaction between graph type and warning (Table 2).
+
+```{r general models}
+# predicting rating with subject and graph condition
+model1 <- lmer(rating ~ subject_condition * graph_condition + (1 | participantID), models_df)
+
+summary(model1)
+
+##Model
+summary_model1 <- summary(model1)
+summary_model1 <- as.data.frame(summary_model1$coefficients)
+```
+
+
+We note that the intercept in this model (`r text_spec(round(summary_model1[1,1],2), bold = T)`) corresponds to ratings for control graphs with no explanatory warning given, acting as a theoretical and practical baseline for ratings on a 7-point scale.
+
+
+### Table 2
+```{r Table 2}
+#Table 2
+##Confidence Intervals
+ci_model1 <- confint(model1, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+ci_model1 <- as.data.frame(ci_model1)
+
+
+## Create and Clean Table
+table2 <- merge(summary_model1, ci_model1, by = "row.names")
+numVars <- sapply(table2, is.numeric)
+table2[numVars][,-c(5)] <- lapply(table2[numVars][,-c(5)], round, digits = 2)
+table2[c(6)] <- lapply(table2[c(6)], round, digits = 5)
+
+table2 %<>% 
+  mutate("95% CI of Estimate" =  paste("[", `2.5 %`, ",", `97.5 %`, "]", sep = "")) %>% select(Row.names, Estimate, `95% CI of Estimate`, `Std. Error`, `t value`, `Pr(>|t|)`)
+
+table2
+```
+
+
+### Effect of an explanatory warning. 
+
+Critically, we found that a warning reduces the size of the truncation effect by lowering ratings of truncated graphs selectively. This was revealed by a statistically significant interaction between graph type and warning condition (b = `r text_spec(table2$Estimate[4], bold = T)`; Table 2), such that participants who received an explanatory warning judged differences to be smaller for truncated graphs.
+
+
+```{r table 2 excluding}
+#Exclude participants
+excluding_df <- rating_df %>% 
+  filter(check == "right" | subject_condition == "no warning")
+
+# predicting rating with subject and graph condition
+model1_excluding <- lmer(rating ~ subject_condition * graph_condition + (1 | participantID), excluding_df)
+
+##Model
+summary_model1_excluding <- summary(model1_excluding)
+summary_model1_excluding <- as.data.frame(summary_model1_excluding$coefficients)
+
+#Table 2 Excluding
+##Confidence Intervals Excluding
+ci_model1_excluding <- confint(model1_excluding, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+ci_model1_excluding <- as.data.frame(ci_model1_excluding)
+
+
+## Create and Clean Table Excluding
+table2_excluding <- merge(summary_model1_excluding, ci_model1_excluding, by = "row.names")
+numVars <- sapply(table2_excluding, is.numeric)
+table2_excluding[numVars][,-c(5)] <- lapply(table2_excluding[numVars][,-c(5)], round, digits = 3)
+table2_excluding[c(6)] <- lapply(table2_excluding[c(6)], round, digits = 5)
+
+table2_excluding %<>% 
+  mutate("95% CI of Estimate" =  paste("[", `2.5 %`, ",", `97.5 %`, "]", sep = "")) %>% select(Row.names, Estimate, `95% CI of Estimate`, `Std. Error`, `t value`, `Pr(>|t|)`)
+
+```
+
+
+We found mixed evidence for a global decrease in judgments following a warning, which would be revealed as a main effect for warning condition. This main effect is not statistically significant in Table 2. However, when we exclude 10 participants who did not initially answer our instructional item correctly (before feedback) from analyses, we do find a statistically significant main effect of Warning Condition, such that participants are globally more conservative for all graph types (b = `r text_spec(table2_excluding$Estimate[3],  bold = T)`, SE = `r text_spec(table2_excluding$"Std. Error"[3], bold = T)`, t = `r text_spec(table2_excluding$"t value"[3],  bold = T)`, p = `r text_spec(format(table2_excluding$"Pr(>|t|)"[3],scientific = T), bold = T)`). 
+
+#### Table 2 excluding 10 participants who incorrectly answered the instructional item. 
+```{r}
+table2_excluding
+```
+
+
+Overall, we find mixed evidence that our explanatory warning decreases graph ratings for all judgments of differences, and strong evidence that an explanatory warning selectively decreases graph ratings for truncated graphs.
+
+
+## Supplemental Information
+
+### Methods (Supplemental Information)
+
+#### Participants (Supplemental Information)
+
+```{r supplemental participant information language}
+langauge <- demographic_df %>% 
+  group_by(dem_language) %>% 
+  summarise(n = n())
+
+other_language <- demographic_df %>% 
+  group_by(dem_language_2_TEXT) %>% 
+  summarise(n = n())
+```
+
+
+`r text_spec(langauge[1,]$n, bold = T)` participants reported English as their first language, and `r text_spec(other_language[2,]$n, bold = T)` reported `r text_spec(other_language[2,]$dem_language_2_TEXT, bold = T)` as their first language. 
+
+
+```{r supplemental participant information education}
+education <- demographic_df %>% 
+  group_by(dem_ed) %>% 
+  summarise (n = n()) %>%
+  mutate(percentage = n / sum(n)*100)
+
+education
+   
+```
+
+`r text_spec(round(sum(education[education$dem_ed >= 5,]$percentage)), bold = T)`% of participants reported having at least a Bachelor’s degree. 
+
+
+```{r supplemental participant information duration}
+duration <- demographic_df %>% 
+  summarise(mean_duration = mean(duration_min), 
+            sd_duration = sd(duration_min), 
+            median_duration = median(duration_min), 
+            min_duration= min(duration_min), 
+            max_duration = max(duration_min), 
+            range_duration = max(duration_min)-min(duration_min))
+
+duration
+  
+```
+
+
+The experiment took participants an average of M~duration~ = `r text_spec(round(duration$mean_duration, 2), bold = T)` minutes, (SD~duration~ = `r text_spec(round(duration$sd_duration, 2), bold = T)` minutes). 
+
+
+
+### Results (Supplemental Information)
+
+#### Graph Literacy (Supplemental Information)
+
+##### Main Effect
+
+
+```{r graphliteracy model}
+graphliteracymodel <- lm(difference ~ graphliteracy_sum_rating, models_difference_df)
+summary_graphliteracymodel <- summary(graphliteracymodel)
+summary_graphliteracymodel
+```
+
+Truncation effect is mean rating for truncated graphs - mean rating for control graphs. 
+
+```{r}
+ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference))+
+  geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("graph literacy score")+
+  ggtitle("Figure SI3 Graph Literacy")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+ggsave('../figures/figureSI3_graphliteracy.png', plot = last_plot(), width = 6, height = 4)
+```
+
+##### Including item as a random effect
+
+```{r LMER, eval=FALSE, include=FALSE}
+# predicting rating with subject and graph condition + participant AND item as random effects (random intercepts only)
+
+model1.0 <- lmer(rating ~ subject_condition * graph_condition + (1 | participantID) + (1 | question), models_df)
+summary_model1.0 <- summary(model1.0)
+
+```
+
+Estimating 95% CIs for betas below This estimation fails to converge, so we reverted back to including only participant as a random effect. This does not alter the conclusions from this model.
+
+```{r}
+
+# ci_model1.0 <- confint(model1, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+
+```
+
+##### Interaction with warning
+
+```{r graph literacy and subject condition}
+# graph literacy and subject condition 
+
+model_literacy_warning<- lm(difference ~ graphliteracy_sum_rating * subject_condition, models_difference_df)
+
+##Model
+summary_model_literacy_warning <- summary(model_literacy_warning)
+
+summary_model_literacy_warning
+```
+
+Truncation effect is mean rating for truncated graphs - mean rating for control graphs. 
+
+```{r}
+ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference, color = subject_condition, fill = subject_condition))+
+  geom_smooth(method = lm) +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("graph literacy score")+
+  ggtitle("Figure SI3 Graph Literacy by Warning Condition")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))+
+  scale_colour_brewer(type = "div", palette = "Dark2")+
+  scale_fill_brewer(type = "div", palette = "Dark2")
+
+ggsave('../figures/figureSI3_graphliteracy_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
+```
+
+#### Education (Supplemental Information)
+
+##### Main Effect
+
+```{r education model}
+
+models_difference_df$dem_ed <- as.numeric(models_difference_df$dem_ed )
+
+educationOnly <- lm(difference ~ dem_ed, models_difference_df)
+educationOnly <- summary(educationOnly)
+educationOnly
+```
+
+Truncation effect is mean rating for truncated graphs - mean rating for control graphs. 
+
+```{r}
+ggplot(models_difference_df, aes(x = dem_ed, y = difference))+
+  geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("education")+
+  ggtitle("Figure SI3 Education")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+ggsave('../figures/figureSI3_education.png', plot = last_plot(), width = 6, height = 4)
+```
+
+##### Interaction with warning
+
+```{r education and subject condition}
+# education and subject condition 
+
+model_ed_warning<- lm(difference ~ dem_ed * subject_condition, models_difference_df)
+
+##Model
+summary_model_ed_warning <- summary(model_ed_warning)
+
+summary_model_ed_warning
+```
+
+
+Truncation effect is mean rating for truncated graphs - mean rating for control graphs. 
+
+```{r}
+ggplot(models_difference_df, aes(x = dem_ed, y = difference, color = subject_condition, fill = subject_condition))+
+  geom_smooth(method = lm) +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("education")+
+  ggtitle("Figure SI3 Education by Warning Condition")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))+
+  scale_colour_brewer(type = "div", palette = "Dark2")+
+  scale_fill_brewer(type = "div", palette = "Dark2")
+
+ggsave('../figures/figureSI3_eductaton_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
+```
+
+
+##### Education and graph literacy 
+```{r}
+models_difference_df$dem_ed <- as.numeric(models_difference_df$dem_ed)
+
+education_graphliteracy <- lm(graphliteracy_sum_rating ~ dem_ed, models_difference_df)
+summary(education_graphliteracy)
+```
+
+
+#### Age (Supplemental Information)
+
+##### Main Effect
+
+
+```{r age model}
+agemodel <- lm(difference ~ dem_age, models_difference_df)
+summary_agemodel <- summary(agemodel)
+summary_agemodel
+```
+
+
+Truncation effect is mean rating for truncated graphs - mean rating for control graphs. 
+
+```{r}
+ggplot(models_difference_df, aes(x = dem_age, y = difference))+
+  geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("age")+
+  ggtitle("Figure SI3 Age")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+ggsave('../figures/figureSI3_age.png', plot = last_plot(), width = 6, height = 4)
+```
+
+##### Interaction with warning
+
+
+```{r age and subject condition}
+# age and subject condition 
+age_subjectcondition <- lm(difference ~ dem_age * subject_condition, models_difference_df)
+summary(age_subjectcondition)
+```
+
+
+Truncation effect is mean rating for truncated graphs - mean rating for control graphs. 
+
+```{r}
+ggplot(models_difference_df, aes(x = dem_age, y = difference, color = subject_condition, fill = subject_condition))+
+  geom_smooth(method = lm) +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("age")+
+  ggtitle("Figure SI3 Age by Warning Condition")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))+
+  scale_colour_brewer(type = "div", palette = "Dark2")+
+  scale_fill_brewer(type = "div", palette = "Dark2")
+
+ggsave('../figures/figureSI3_age_subjectcondition.png', plot = last_plot(), width = 8, height = 4)
+```
+
+
+#### Item Analysis (Supplemental Information)
+
+##### Main Effect of Warning
+Here we summarise the data for each item. This is helpful to identify if the effect is driven by a few graphs or if it is seen across all graphs in the materials. 
+
+```{r item analysis}
+item_mean_df <- rating_df %>% 
+  group_by(question,subject_condition) %>% 
+  summarise(item_mean_rating = mean(rating)) %>% 
+  arrange(question)
+```
+
+```{r}
+item_mean_df %>% 
+  spread(subject_condition, item_mean_rating) %>%
+  mutate(diff=`no warning`- warning)
+```
+
+```{r}
+item_mean_summary <- item_mean_df %>% 
+  spread(subject_condition, item_mean_rating) %>%
+  mutate(diff=`no warning`- warning) %>% 
+  ungroup() %>% 
+  summarise(n = n(), mean = mean(diff), sd = sd(diff), 
+            median = median(diff), min= min(abs(diff)), 
+            max = max(abs(diff)), 
+            range = max(abs(diff))-min(abs(diff)))
+
+item_mean_summary
+```
+
+
+```{r}
+ggplot(rating_df, aes(x = subject_condition, y = rating, group = subject_condition, color = subject_condition))+
+  geom_jitter(width = 0.23, alpha = 0.5)+
+  stat_summary(fun.y = mean, geom = "point", color = "black") + 
+  stat_summary(fun.y=mean, color="black", geom="line", aes(group = 1))+
+  facet_wrap(~as.factor(question))+
+  scale_colour_brewer(palette = "Dark2", direction=-1)
+
+ggsave("../figures/figureSI3_item_analysis.png", device = "png", width = 16, height = 8, plot = last_plot(),scale = 1)
+```
+
+```{r}
+item_mean_df %>% 
+  spread(subject_condition, item_mean_rating) %>%
+  mutate(diff=`no warning`- warning) %>% 
+  filter(diff <0)
+```
+
+
+The effect of warning was observed for all graphs except graph 2, 12 and 40. On average, the 7-point ratings were `r text_spec(round(item_mean_summary$mean,2), bold = T)` (SD = `r text_spec(round(item_mean_summary$sd,2), bold = T)`) higher when graphs were seen in the no warning condition than when they were seen in the warning condition. The maximum average absolute difference between the no warning and the warningconditions was for graph 7 M = `r text_spec(round(item_mean_summary$max,2), bold = T)`. The minimum average absolute difference was for graph 2 where M = `r text_spec(round(item_mean_summary$min,2), bold = T)`.
+
+
+##### Warning interaction with graph type 
+
+```{r}
+rating_df %<>% 
+  mutate(subject_graph = paste(subject_condition, graph_condition))
+```
+
+```{r}
+ggplot(rating_df, aes(x = graph_condition, y = rating, group = subject_condition, color = subject_condition))+
+  geom_jitter(width = 0.23, alpha = 0.5)+
+  stat_summary(fun.y = mean, geom = "point", color = "black", aes(group = subject_condition)) + 
+  stat_summary(fun.y=mean, geom="line", aes(group = subject_condition))+
+  facet_wrap(~as.factor(question))+
+  scale_colour_brewer(palette = "Dark2", direction=-1)
+
+ggsave("../figures/figureSI3_item_analysis_warning.png", device = "png", width = 16, height = 8, plot = last_plot(),scale = 1)
+```
+
+#### Timing (Supplemental Information)
+
+```{r supplemental information timing}
+
+Trimming <- FALSE
+
+if(Trimming == TRUE){timing_t_df = trimmed_timing_df
+} else{timing_t_df = timing_df}
+```
+
+
+Timing information is in seconds. 
+
+You can choose to trim or not timing data. By default any timing that is 2 standard deviations away from the mean (for each participant for each condition) is trimmed. 
+
+For this report, any timing that is 2 standard deviations away from the mean (for each participant for each condition) `r if(Trimming == TRUE){paste("WAS")} else{paste("WAS NOT")}` trimmed.  If you want to see results when participants who got the exercise wrong are excluded/included, you can go to the section called Exclusions (at the top of this file) and change **Trimming <- FALSE**
+
+
+```{r timing interaction}
+subject_timing <-  timing_t_df %>%
+  filter(question != "instructions") %>% 
+  group_by(participantID, graph_condition, subject_condition) %>%
+  summarise(n = n(), subject_mean_timing = mean(time))
+
+
+#Data Summary
+subject_timing_interaction_summary <- subject_timing %>% 
+  group_by(subject_condition, graph_condition) %>% 
+  summarise(n = n(), mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_interaction_summary
+```
+
+```{r timing by graph condition}
+#Data Summary
+subject_timing_graph_summary <- subject_timing %>% 
+  group_by(graph_condition) %>% 
+  summarise(n = n(), mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_graph_summary
+  
+```
+
+
+```{r timing by warning condition}
+#Data Summary
+subject_timing_warning_summary <- subject_timing %>% 
+  group_by(subject_condition) %>% 
+  summarise(n = n()/2, mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_warning_summary
+```
+
+

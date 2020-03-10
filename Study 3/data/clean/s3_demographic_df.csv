@@ -1,0 +1,120 @@
+duration,check,dem_browser_Browser,dem_browser_Version,dem_browser_Operating System,dem_browser_Resolution,dem_age,dem_gender,dem_ed,dem_ed_4_TEXT,dem_ed_string,dem_language,dem_language_2_TEXT,dem_language_string,group,participantID,subject_condition,duration_min
+382,NA,Chrome,68.0.3440.68,Macintosh,1440x900,22,female,3,NA,NA,1,NA,NA,B,s31001,no warning,6.366666666666666
+276,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,71,male,6,NA,NA,1,NA,NA,A,s31002,no warning,4.6
+501,NA,MSIE,11.0,Windows NT 6.1,1745x982,32,female,2,NA,NA,1,NA,NA,A,s31003,no warning,8.35
+694,right,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,29,female,3,NA,NA,1,NA,NA,A,s31004,warning,11.566666666666666
+628,right,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,22,male,2,NA,NA,1,NA,NA,B,s31005,warning,10.466666666666667
+625,NA,Chrome,67.0.3396.99,Windows NT 6.1,1120x700,50,female,8,NA,biology,1,NA,NA,B,s31006,no warning,10.416666666666666
+398,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,27,other,2,NA,NA,1,NA,NA,A,s31007,no warning,6.633333333333334
+873,NA,Chrome,67.0.3396.99,Macintosh,1680x1050,30,male,6,NA,NA,1,NA,NA,B,s31008,no warning,14.55
+856,NA,Firefox,61.0,Windows NT 6.1,1413x795,36,male,6,NA,NA,1,NA,NA,B,s31009,no warning,14.266666666666667
+947,right,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,21,male,4,4,NA,1,NA,NA,A,s31010,warning,15.783333333333333
+319,wrong,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,25,female,5,NA,NA,1,NA,NA,A,s31011,warning,5.316666666666666
+928,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,24,male,6,NA,NA,1,NA,NA,B,s31012,no warning,15.466666666666667
+954,right,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,31,male,6,NA,NA,1,NA,NA,B,s31013,warning,15.9
+603,NA,Chrome,67.0.3396.99,Windows NT 6.3,1920x1080,27,female,6,NA,NA,1,NA,NA,B,s31014,no warning,10.05
+934,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,25,male,6,NA,NA,1,NA,NA,B,s31015,no warning,15.566666666666666
+970,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,28,male,2,NA,NA,1,NA,NA,A,s31016,no warning,16.166666666666668
+428,wrong,Firefox,61.0,Windows NT 10.0,1920x1080,30,male,6,NA,NA,1,NA,NA,A,s31017,warning,7.133333333333334
+494,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,30,male,8,NA,NA,1,NA,29,B,s31018,no warning,8.233333333333333
+708,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,27,female,3,NA,NA,1,NA,NA,B,s31019,warning,11.8
+1206,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,40,female,6,NA,NA,1,NA,NA,A,s31020,warning,20.1
+1108,NA,Chrome,67.0.3396.99,Windows NT 6.3,1600x900,47,male,6,NA,NA,1,NA,NA,B,s31021,no warning,18.466666666666665
+1341,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,47,male,6,NA,NA,1,NA,NA,A,s31022,no warning,22.35
+842,NA,Chrome,67.0.3396.99,Windows NT 6.1,1920x1200,37,male,3,NA,NA,1,NA,NA,B,s31023,no warning,14.033333333333333
+1115,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,29,female,6,NA,NA,1,NA,NA,B,s31024,no warning,18.583333333333332
+1385,wrong,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,29,male,3,NA,NA,1,NA,NA,B,s31025,warning,23.083333333333332
+978,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,31,male,2,NA,NA,1,NA,NA,A,s31026,warning,16.3
+734,NA,Chrome,67.0.3396.99,Windows NT 6.1,1280x800,29,female,3,NA,NA,1,NA,NA,B,s31027,no warning,12.233333333333333
+1015,right,Chrome,67.0.3396.99,Windows NT 10.0,1440x900,35,male,8,NA,Psychology,1,NA,NA,A,s31028,warning,16.916666666666668
+1333,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,31,male,6,NA,NA,1,NA,NA,A,s31029,no warning,22.216666666666665
+1776,right,Chrome,67.0.3396.99,Windows NT 10.0,1440x900,45,male,2,NA,NA,1,NA,NA,A,s31030,warning,29.6
+1408,wrong,Chrome,67.0.3396.99,Windows NT 10.0,1600x900,25,male,6,NA,NA,1,NA,NA,B,s31031,warning,23.466666666666665
+472,right,Chrome,67.0.3396.99,Macintosh,1440x900,25,male,6,NA,NA,1,NA,NA,B,s31032,warning,7.866666666666666
+1652,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,30,male,3,NA,NA,1,NA,NA,B,s31033,warning,27.533333333333335
+639,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,30,male,6,NA,NA,1,NA,20,A,s31034,no warning,10.65
+1639,NA,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,59,female,6,NA,NA,1,NA,NA,A,s31035,no warning,27.316666666666666
+1608,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,25,male,6,NA,NA,1,NA,NA,A,s31036,warning,26.8
+1863,right,Chrome,67.0.3396.99,Windows NT 10.0,1536x960,31,male,5,NA,NA,2,Vietnamese,26,A,s31037,warning,31.05
+220,right,Chrome,67.0.3396.99,CrOS x86_64 10575.58.0,1366x768,33,male,3,NA,NA,1,NA,NA,B,s31038,warning,3.6666666666666665
+344,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,30,male,6,NA,NA,1,NA,NA,A,s31039,warning,5.733333333333333
+391,right,Chrome,67.0.3396.99,Macintosh,1920x1080,28,female,8,NA,MS,1,NA,NA,A,s31040,warning,6.516666666666667
+1294,right,Chrome,67.0.3396.99,Windows NT 10.0,1600x900,45,female,5,NA,NA,1,NA,NA,B,s31041,warning,21.566666666666666
+2348,right,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,31,male,5,NA,NA,1,NA,NA,A,s31042,warning,39.13333333333333
+2250,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,27,female,3,NA,NA,1,NA,NA,B,s31043,warning,37.5
+1039,NA,Firefox,61.0,Windows NT 6.1,1920x1080,43,female,6,NA,NA,1,NA,NA,A,s31044,no warning,17.316666666666666
+254,NA,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,35,male,3,NA,NA,1,NA,NA,B,s31045,no warning,4.233333333333333
+2182,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,54,female,6,NA,NA,1,NA,NA,B,s31046,no warning,36.36666666666667
+2430,right,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,32,male,6,NA,NA,1,NA,NA,A,s31047,warning,40.5
+671,NA,Chrome,67.0.3396.99,Windows NT 6.3,1920x1080,29,female,6,NA,NA,1,NA,NA,B,s31048,no warning,11.183333333333334
+1587,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,30,male,6,NA,NA,1,NA,NA,B,s31049,warning,26.45
+387,NA,Chrome,67.0.3396.99,Windows NT 10.0,1600x900,31,female,6,NA,NA,1,NA,NA,A,s31050,no warning,6.45
+1112,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,31,male,8,NA,MA,1,NA,NA,A,s31051,warning,18.533333333333335
+856,NA,Chrome,67.0.3396.99,Windows NT 6.3,1366x768,30,male,6,NA,NA,1,NA,NA,B,s31052,no warning,14.266666666666667
+2213,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,29,female,6,NA,NA,1,NA,NA,A,s31053,warning,36.88333333333333
+393,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,36,female,2,NA,NA,1,NA,NA,B,s31054,no warning,6.55
+357,NA,Chrome,67.0.3396.99,Windows NT 10.0,1600x900,32,female,6,NA,NA,1,NA,n/a,B,s31055,no warning,5.95
+529,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,30,male,6,NA,NA,1,NA,25,A,s31056,no warning,8.816666666666666
+853,right,Chrome,67.0.3396.99,Windows NT 6.1,1536x864,28,female,8,NA,Masters in Human Resource Management,1,NA,NA,B,s31057,warning,14.216666666666667
+643,right,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,34,male,8,NA,M.A. in economics,1,NA,NA,A,s31058,warning,10.716666666666667
+729,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,29,female,6,NA,NA,1,NA,NA,A,s31059,no warning,12.15
+803,NA,Chrome,67.0.3396.99,Windows NT 6.3,1366x768,35,male,6,NA,NA,1,NA,NA,B,s31060,no warning,13.383333333333333
+841,wrong,Chrome,67.0.3396.99,Windows NT 6.1,1600x900,26,male,8,NA,NA,1,NA,NA,A,s31061,warning,14.016666666666667
+239,NA,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,30,male,6,NA,NA,1,NA,NA,B,s31062,no warning,3.9833333333333334
+323,wrong,Chrome,67.0.3396.99,Windows NT 10.0,1364x768,30,male,6,NA,NA,1,NA,NA,B,s31063,warning,5.383333333333334
+215,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,25,female,6,NA,NA,1,NA,NA,A,s31064,no warning,3.5833333333333335
+2697,right,Chrome,67.0.3396.99,Windows NT 6.1,1024x768,28,female,6,NA,NA,1,NA,NA,B,s31065,warning,44.95
+240,NA,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,30,male,6,NA,NA,1,NA,NA,B,s31066,no warning,4
+464,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,31,female,6,NA,NA,1,NA,NA,B,s31067,warning,7.733333333333333
+1383,wrong,Chrome,67.0.3396.99,Windows NT 6.3,1366x768,28,male,7,NA,NA,1,NA,8,A,s31068,warning,23.05
+827,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,29,female,6,NA,NA,1,NA,NA,A,s31069,no warning,13.783333333333333
+1077,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,36,male,5,NA,NA,1,NA,NA,A,s31070,warning,17.95
+1290,right,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,34,male,3,NA,NA,1,NA,NA,A,s31071,warning,21.5
+5546,NA,Chrome,49.0.2623.112,Windows NT 6.0,1280x1024,37,female,5,NA,NA,1,NA,NA,B,s31072,no warning,92.43333333333334
+380,wrong,Firefox,61.0,Windows NT 10.0,1920x1080,33,male,5,NA,NA,1,NA,NA,B,s31073,warning,6.333333333333333
+1733,right,Chrome,67.0.3396.99,CrOS x86_64 10575.58.0,1366x768,37,female,6,NA,NA,1,NA,NA,A,s31074,warning,28.883333333333333
+1080,wrong,Chrome,67.0.3396.99,Windows NT 6.1,1280x800,26,male,6,NA,NA,1,NA,NA,B,s31075,warning,18
+813,right,Chrome,64.0.3282.189,Windows NT 6.1,1920x1080,39,female,3,NA,NA,1,NA,NA,B,s31076,warning,13.55
+308,right,Chrome,67.0.3396.99,Windows NT 6.3,1364x768,30,male,7,NA,NA,1,NA,NA,A,s31077,warning,5.133333333333334
+3722,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,50,female,3,NA,NA,1,NA,NA,B,s31078,warning,62.03333333333333
+3582,NA,Chrome,67.0.3396.99,Windows NT 6.1,1280x1024,25,female,6,NA,NA,1,NA,25,A,s31079,no warning,59.7
+1171,right,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,30,male,6,NA,NA,1,NA,NA,A,s31080,warning,19.516666666666666
+1122,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,30,female,6,NA,NA,1,NA,NA,A,s31081,warning,18.7
+2271,NA,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,34,female,8,NA,NA,1,NA,n/a,B,s31082,no warning,37.85
+2857,wrong,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,28,female,3,NA,NA,1,NA,NA,A,s31083,warning,47.61666666666667
+572,right,Chrome,67.0.3396.99,Windows NT 10.0,2048x1152,33,male,3,NA,NA,1,NA,NA,B,s31084,warning,9.533333333333333
+610,right,Chrome,63.0.3239.109,Windows NT 10.0,1680x1050,31,female,3,NA,NA,1,NA,NA,A,s31085,warning,10.166666666666666
+837,NA,Firefox,61.0,Windows NT 6.1,1920x1080,37,female,3,NA,NA,1,NA,NA,B,s31086,no warning,13.95
+733,right,Chrome,63.0.3239.109,Windows NT 10.0,2560x1440,26,male,3,NA,NA,1,NA,NA,A,s31087,warning,12.216666666666667
+2870,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,41,male,2,NA,NA,1,NA,NA,B,s31088,no warning,47.833333333333336
+1311,right,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,31,male,6,NA,NA,1,NA,NA,B,s31089,warning,21.85
+1771,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,31,female,7,NA,NA,1,NA,NA,A,s31090,no warning,29.516666666666666
+832,NA,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,38,female,3,NA,NA,1,NA,NA,A,s31091,no warning,13.866666666666667
+500,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,30,female,3,NA,NA,1,NA,NA,B,s31092,warning,8.333333333333334
+628,right,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,22,male,2,NA,NA,1,NA,NA,B,s31093,warning,10.466666666666667
+761,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,28,male,3,NA,NA,1,NA,NA,B,s31094,no warning,12.683333333333334
+747,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,31,female,6,NA,NA,1,NA,NA,A,s31095,no warning,12.45
+718,right,Chrome,67.0.3396.99,Windows NT 10.0,2560x1440,23,male,3,NA,NA,1,NA,NA,A,s31096,warning,11.966666666666667
+1983,right,Chrome,67.0.3396.99,Windows NT 6.1,1280x800,28,male,6,NA,NA,1,NA,NA,A,s31097,warning,33.05
+3522,right,Chrome,67.0.3396.99,Macintosh,2560x1440,25,male,6,NA,NA,1,NA,NA,A,s31098,warning,58.7
+646,NA,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,39,male,2,NA,NA,1,NA,NA,B,s31099,no warning,10.766666666666667
+436,right,Chrome,67.0.3396.99,Windows NT 6.1,1920x1080,24,male,6,NA,NA,1,NA,NA,B,s31100,warning,7.266666666666667
+3882,right,Chrome,67.0.3396.99,Macintosh,2304x1296,27,male,6,NA,NA,1,NA,NA,B,s31101,warning,64.7
+493,right,Chrome,67.0.3396.99,Macintosh,1440x900,24,female,6,NA,NA,1,NA,NA,A,s31102,warning,8.216666666666667
+623,right,Chrome,67.0.3396.99,Windows NT 10.0,1536x864,37,female,6,NA,NA,1,NA,NA,A,s31103,warning,10.383333333333333
+923,right,Chrome,67.0.3396.99,Windows NT 6.1,1600x900,31,male,6,NA,NA,1,NA,NA,A,s31104,warning,15.383333333333333
+1065,NA,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,45,female,8,NA,MS,1,NA,NA,A,s31105,no warning,17.75
+1446,right,Firefox,61.0,Windows NT 10.0,1600x900,21,male,2,NA,NA,1,NA,NA,B,s31106,warning,24.1
+1648,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,37,female,6,NA,NA,1,NA,NA,A,s31107,warning,27.466666666666665
+1735,right,Chrome,66.0.3359.170,Windows NT 6.3,1920x1080,36,female,3,NA,NA,1,NA,NA,B,s31108,warning,28.916666666666668
+1108,NA,Chrome,63.0.3239.109,Windows NT 10.0,1366x768,34,female,6,NA,NA,1,NA,NA,B,s31109,no warning,18.466666666666665
+2479,right,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,31,male,6,NA,NA,1,NA,NA,A,s31110,warning,41.31666666666667
+849,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,38,male,6,NA,NA,1,NA,NA,A,s31111,no warning,14.15
+1528,NA,Chrome,67.0.3396.99,Windows NT 10.0,1920x1080,26,male,3,NA,NA,1,NA,NA,B,s31112,no warning,25.466666666666665
+631,NA,Chrome,67.0.3396.99,Windows NT 6.1,1366x768,30,male,6,NA,NA,1,NA,NA,B,s31113,no warning,10.516666666666667
+1353,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,28,male,6,NA,NA,1,NA,Spanish,A,s31114,warning,22.55
+801,right,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,36,male,8,NA,MBA,1,NA,NA,A,s31115,warning,13.35
+844,NA,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,50,male,8,NA,MS,1,NA,NA,B,s31116,no warning,14.066666666666666
+1590,NA,Chrome,67.0.3396.99,Macintosh,1440x900,26,female,8,NA,MA media studies,1,NA,NA,A,s31117,no warning,26.5
+4123,NA,Chrome,67.0.3396.99,Windows NT 10.0,1366x768,29,female,5,NA,NA,1,NA,NA,A,s31118,no warning,68.71666666666667
+13171,right,Chrome,67.0.3396.99,Windows NT 10.0,1600x900,36,male,5,NA,NA,1,NA,NA,B,s31119,warning,219.51666666666668

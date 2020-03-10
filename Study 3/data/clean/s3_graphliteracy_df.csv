@@ -1,0 +1,1191 @@
+participantID,subject_condition,group,graphliteracy_question,rating
+s31001,no warning,B,1,6
+s31001,no warning,B,2,6
+s31001,no warning,B,3,6
+s31001,no warning,B,4,6
+s31001,no warning,B,5,6
+s31001,no warning,B,6,6
+s31001,no warning,B,7,2
+s31001,no warning,B,8,5
+s31001,no warning,B,9,4
+s31001,no warning,B,10,3
+s31002,no warning,A,1,6
+s31002,no warning,A,2,5
+s31002,no warning,A,3,4
+s31002,no warning,A,4,5
+s31002,no warning,A,5,4
+s31002,no warning,A,6,5
+s31002,no warning,A,7,5
+s31002,no warning,A,8,5
+s31002,no warning,A,9,5
+s31002,no warning,A,10,4
+s31003,no warning,A,1,5
+s31003,no warning,A,2,4
+s31003,no warning,A,3,4
+s31003,no warning,A,4,5
+s31003,no warning,A,5,5
+s31003,no warning,A,6,4
+s31003,no warning,A,7,5
+s31003,no warning,A,8,5
+s31003,no warning,A,9,4
+s31003,no warning,A,10,5
+s31004,warning,A,1,5
+s31004,warning,A,2,4
+s31004,warning,A,3,5
+s31004,warning,A,4,5
+s31004,warning,A,5,5
+s31004,warning,A,6,5
+s31004,warning,A,7,6
+s31004,warning,A,8,6
+s31004,warning,A,9,5
+s31004,warning,A,10,6
+s31005,warning,B,1,6
+s31005,warning,B,2,6
+s31005,warning,B,3,6
+s31005,warning,B,4,6
+s31005,warning,B,5,6
+s31005,warning,B,6,6
+s31005,warning,B,7,5
+s31005,warning,B,8,5
+s31005,warning,B,9,2
+s31005,warning,B,10,5
+s31006,no warning,B,1,6
+s31006,no warning,B,2,6
+s31006,no warning,B,3,6
+s31006,no warning,B,4,6
+s31006,no warning,B,5,5
+s31006,no warning,B,6,5
+s31006,no warning,B,7,5
+s31006,no warning,B,8,6
+s31006,no warning,B,9,6
+s31006,no warning,B,10,6
+s31007,no warning,A,1,3
+s31007,no warning,A,2,3
+s31007,no warning,A,3,3
+s31007,no warning,A,4,3
+s31007,no warning,A,5,4
+s31007,no warning,A,6,2
+s31007,no warning,A,7,5
+s31007,no warning,A,8,2
+s31007,no warning,A,9,4
+s31007,no warning,A,10,5
+s31008,no warning,B,1,5
+s31008,no warning,B,2,4
+s31008,no warning,B,3,5
+s31008,no warning,B,4,5
+s31008,no warning,B,5,5
+s31008,no warning,B,6,5
+s31008,no warning,B,7,5
+s31008,no warning,B,8,5
+s31008,no warning,B,9,5
+s31008,no warning,B,10,5
+s31009,no warning,B,1,3
+s31009,no warning,B,2,2
+s31009,no warning,B,3,4
+s31009,no warning,B,4,2
+s31009,no warning,B,5,3
+s31009,no warning,B,6,3
+s31009,no warning,B,7,4
+s31009,no warning,B,8,3
+s31009,no warning,B,9,3
+s31009,no warning,B,10,3
+s31010,warning,A,1,6
+s31010,warning,A,2,6
+s31010,warning,A,3,6
+s31010,warning,A,4,6
+s31010,warning,A,5,6
+s31010,warning,A,6,6
+s31010,warning,A,7,6
+s31010,warning,A,8,6
+s31010,warning,A,9,6
+s31010,warning,A,10,6
+s31011,warning,A,1,4
+s31011,warning,A,2,3
+s31011,warning,A,3,4
+s31011,warning,A,4,3
+s31011,warning,A,5,4
+s31011,warning,A,6,4
+s31011,warning,A,7,4
+s31011,warning,A,8,4
+s31011,warning,A,9,5
+s31011,warning,A,10,4
+s31012,no warning,B,1,4
+s31012,no warning,B,2,4
+s31012,no warning,B,3,5
+s31012,no warning,B,4,4
+s31012,no warning,B,5,4
+s31012,no warning,B,6,5
+s31012,no warning,B,7,6
+s31012,no warning,B,8,4
+s31012,no warning,B,9,4
+s31012,no warning,B,10,5
+s31013,warning,B,1,5
+s31013,warning,B,2,5
+s31013,warning,B,3,4
+s31013,warning,B,4,5
+s31013,warning,B,5,5
+s31013,warning,B,6,4
+s31013,warning,B,7,4
+s31013,warning,B,8,4
+s31013,warning,B,9,4
+s31013,warning,B,10,4
+s31014,no warning,B,1,6
+s31014,no warning,B,2,4
+s31014,no warning,B,3,6
+s31014,no warning,B,4,4
+s31014,no warning,B,5,6
+s31014,no warning,B,6,1
+s31014,no warning,B,7,6
+s31014,no warning,B,8,6
+s31014,no warning,B,9,6
+s31014,no warning,B,10,5
+s31015,no warning,B,1,5
+s31015,no warning,B,2,4
+s31015,no warning,B,3,6
+s31015,no warning,B,4,3
+s31015,no warning,B,5,5
+s31015,no warning,B,6,4
+s31015,no warning,B,7,5
+s31015,no warning,B,8,4
+s31015,no warning,B,9,6
+s31015,no warning,B,10,3
+s31016,no warning,A,1,6
+s31016,no warning,A,2,4
+s31016,no warning,A,3,4
+s31016,no warning,A,4,5
+s31016,no warning,A,5,5
+s31016,no warning,A,6,6
+s31016,no warning,A,7,4
+s31016,no warning,A,8,6
+s31016,no warning,A,9,6
+s31016,no warning,A,10,4
+s31017,warning,A,1,5
+s31017,warning,A,2,5
+s31017,warning,A,3,5
+s31017,warning,A,4,5
+s31017,warning,A,5,5
+s31017,warning,A,6,5
+s31017,warning,A,7,5
+s31017,warning,A,8,5
+s31017,warning,A,9,5
+s31017,warning,A,10,5
+s31018,no warning,B,1,4
+s31018,no warning,B,2,5
+s31018,no warning,B,3,6
+s31018,no warning,B,4,4
+s31018,no warning,B,5,5
+s31018,no warning,B,6,4
+s31018,no warning,B,7,5
+s31018,no warning,B,8,4
+s31018,no warning,B,9,4
+s31018,no warning,B,10,5
+s31019,warning,B,1,4
+s31019,warning,B,2,5
+s31019,warning,B,3,3
+s31019,warning,B,4,3
+s31019,warning,B,5,4
+s31019,warning,B,6,4
+s31019,warning,B,7,6
+s31019,warning,B,8,5
+s31019,warning,B,9,5
+s31019,warning,B,10,5
+s31020,warning,A,1,4
+s31020,warning,A,2,5
+s31020,warning,A,3,5
+s31020,warning,A,4,5
+s31020,warning,A,5,5
+s31020,warning,A,6,4
+s31020,warning,A,7,4
+s31020,warning,A,8,5
+s31020,warning,A,9,6
+s31020,warning,A,10,5
+s31021,no warning,B,1,5
+s31021,no warning,B,2,5
+s31021,no warning,B,3,5
+s31021,no warning,B,4,5
+s31021,no warning,B,5,5
+s31021,no warning,B,6,4
+s31021,no warning,B,7,3
+s31021,no warning,B,8,5
+s31021,no warning,B,9,3
+s31021,no warning,B,10,5
+s31022,no warning,A,1,6
+s31022,no warning,A,2,6
+s31022,no warning,A,3,6
+s31022,no warning,A,4,6
+s31022,no warning,A,5,6
+s31022,no warning,A,6,5
+s31022,no warning,A,7,1
+s31022,no warning,A,8,3
+s31022,no warning,A,9,4
+s31022,no warning,A,10,2
+s31023,no warning,B,1,4
+s31023,no warning,B,2,4
+s31023,no warning,B,3,4
+s31023,no warning,B,4,4
+s31023,no warning,B,5,4
+s31023,no warning,B,6,3
+s31023,no warning,B,7,4
+s31023,no warning,B,8,4
+s31023,no warning,B,9,4
+s31023,no warning,B,10,4
+s31024,no warning,B,1,5
+s31024,no warning,B,2,5
+s31024,no warning,B,3,5
+s31024,no warning,B,4,5
+s31024,no warning,B,5,6
+s31024,no warning,B,6,4
+s31024,no warning,B,7,6
+s31024,no warning,B,8,6
+s31024,no warning,B,9,4
+s31024,no warning,B,10,5
+s31025,warning,B,1,5
+s31025,warning,B,2,4
+s31025,warning,B,3,6
+s31025,warning,B,4,4
+s31025,warning,B,5,5
+s31025,warning,B,6,6
+s31025,warning,B,7,3
+s31025,warning,B,8,4
+s31025,warning,B,9,5
+s31025,warning,B,10,4
+s31026,warning,A,1,3
+s31026,warning,A,2,2
+s31026,warning,A,3,1
+s31026,warning,A,4,4
+s31026,warning,A,5,4
+s31026,warning,A,6,3
+s31026,warning,A,7,5
+s31026,warning,A,8,5
+s31026,warning,A,9,4
+s31026,warning,A,10,4
+s31027,no warning,B,1,3
+s31027,no warning,B,2,3
+s31027,no warning,B,3,2
+s31027,no warning,B,4,3
+s31027,no warning,B,5,4
+s31027,no warning,B,6,3
+s31027,no warning,B,7,4
+s31027,no warning,B,8,4
+s31027,no warning,B,9,5
+s31027,no warning,B,10,5
+s31028,warning,A,1,5
+s31028,warning,A,2,5
+s31028,warning,A,3,5
+s31028,warning,A,4,6
+s31028,warning,A,5,6
+s31028,warning,A,6,4
+s31028,warning,A,7,4
+s31028,warning,A,8,4
+s31028,warning,A,9,4
+s31028,warning,A,10,4
+s31029,no warning,A,1,3
+s31029,no warning,A,2,2
+s31029,no warning,A,3,3
+s31029,no warning,A,4,3
+s31029,no warning,A,5,3
+s31029,no warning,A,6,2
+s31029,no warning,A,7,3
+s31029,no warning,A,8,4
+s31029,no warning,A,9,3
+s31029,no warning,A,10,4
+s31030,warning,A,1,4
+s31030,warning,A,2,3
+s31030,warning,A,3,5
+s31030,warning,A,4,4
+s31030,warning,A,5,4
+s31030,warning,A,6,2
+s31030,warning,A,7,2
+s31030,warning,A,8,4
+s31030,warning,A,9,5
+s31030,warning,A,10,4
+s31031,warning,B,1,4
+s31031,warning,B,2,5
+s31031,warning,B,3,5
+s31031,warning,B,4,4
+s31031,warning,B,5,3
+s31031,warning,B,6,5
+s31031,warning,B,7,6
+s31031,warning,B,8,6
+s31031,warning,B,9,1
+s31031,warning,B,10,6
+s31032,warning,B,1,4
+s31032,warning,B,2,5
+s31032,warning,B,3,3
+s31032,warning,B,4,4
+s31032,warning,B,5,5
+s31032,warning,B,6,5
+s31032,warning,B,7,3
+s31032,warning,B,8,5
+s31032,warning,B,9,4
+s31032,warning,B,10,5
+s31033,warning,B,1,3
+s31033,warning,B,2,2
+s31033,warning,B,3,2
+s31033,warning,B,4,2
+s31033,warning,B,5,3
+s31033,warning,B,6,2
+s31033,warning,B,7,2
+s31033,warning,B,8,2
+s31033,warning,B,9,4
+s31033,warning,B,10,2
+s31034,no warning,A,1,3
+s31034,no warning,A,2,4
+s31034,no warning,A,3,3
+s31034,no warning,A,4,4
+s31034,no warning,A,5,3
+s31034,no warning,A,6,4
+s31034,no warning,A,7,5
+s31034,no warning,A,8,5
+s31034,no warning,A,9,5
+s31034,no warning,A,10,6
+s31035,no warning,A,1,6
+s31035,no warning,A,2,6
+s31035,no warning,A,3,6
+s31035,no warning,A,4,6
+s31035,no warning,A,5,6
+s31035,no warning,A,6,6
+s31035,no warning,A,7,4
+s31035,no warning,A,8,6
+s31035,no warning,A,9,5
+s31035,no warning,A,10,5
+s31036,warning,A,1,6
+s31036,warning,A,2,6
+s31036,warning,A,3,6
+s31036,warning,A,4,6
+s31036,warning,A,5,6
+s31036,warning,A,6,6
+s31036,warning,A,7,6
+s31036,warning,A,8,6
+s31036,warning,A,9,6
+s31036,warning,A,10,6
+s31037,warning,A,1,4
+s31037,warning,A,2,3
+s31037,warning,A,3,4
+s31037,warning,A,4,3
+s31037,warning,A,5,4
+s31037,warning,A,6,4
+s31037,warning,A,7,5
+s31037,warning,A,8,5
+s31037,warning,A,9,5
+s31037,warning,A,10,5
+s31038,warning,B,1,4
+s31038,warning,B,2,4
+s31038,warning,B,3,5
+s31038,warning,B,4,4
+s31038,warning,B,5,5
+s31038,warning,B,6,3
+s31038,warning,B,7,4
+s31038,warning,B,8,3
+s31038,warning,B,9,4
+s31038,warning,B,10,4
+s31039,warning,A,1,5
+s31039,warning,A,2,6
+s31039,warning,A,3,5
+s31039,warning,A,4,6
+s31039,warning,A,5,5
+s31039,warning,A,6,6
+s31039,warning,A,7,5
+s31039,warning,A,8,5
+s31039,warning,A,9,5
+s31039,warning,A,10,6
+s31040,warning,A,1,5
+s31040,warning,A,2,5
+s31040,warning,A,3,5
+s31040,warning,A,4,5
+s31040,warning,A,5,5
+s31040,warning,A,6,5
+s31040,warning,A,7,6
+s31040,warning,A,8,6
+s31040,warning,A,9,5
+s31040,warning,A,10,5
+s31041,warning,B,1,4
+s31041,warning,B,2,4
+s31041,warning,B,3,4
+s31041,warning,B,4,4
+s31041,warning,B,5,5
+s31041,warning,B,6,3
+s31041,warning,B,7,5
+s31041,warning,B,8,6
+s31041,warning,B,9,6
+s31041,warning,B,10,6
+s31042,warning,A,1,5
+s31042,warning,A,2,3
+s31042,warning,A,3,5
+s31042,warning,A,4,4
+s31042,warning,A,5,4
+s31042,warning,A,6,3
+s31042,warning,A,7,4
+s31042,warning,A,8,4
+s31042,warning,A,9,4
+s31042,warning,A,10,3
+s31043,warning,B,1,2
+s31043,warning,B,2,2
+s31043,warning,B,3,2
+s31043,warning,B,4,2
+s31043,warning,B,5,1
+s31043,warning,B,6,1
+s31043,warning,B,7,2
+s31043,warning,B,8,2
+s31043,warning,B,9,4
+s31043,warning,B,10,2
+s31044,no warning,A,1,4
+s31044,no warning,A,2,3
+s31044,no warning,A,3,5
+s31044,no warning,A,4,4
+s31044,no warning,A,5,4
+s31044,no warning,A,6,4
+s31044,no warning,A,7,4
+s31044,no warning,A,8,5
+s31044,no warning,A,9,2
+s31044,no warning,A,10,5
+s31045,no warning,B,1,4
+s31045,no warning,B,2,6
+s31045,no warning,B,3,5
+s31045,no warning,B,4,4
+s31045,no warning,B,5,4
+s31045,no warning,B,6,5
+s31045,no warning,B,7,4
+s31045,no warning,B,8,5
+s31045,no warning,B,9,5
+s31045,no warning,B,10,4
+s31046,no warning,B,1,5
+s31046,no warning,B,2,5
+s31046,no warning,B,3,5
+s31046,no warning,B,4,5
+s31046,no warning,B,5,5
+s31046,no warning,B,6,4
+s31046,no warning,B,7,1
+s31046,no warning,B,8,4
+s31046,no warning,B,9,4
+s31046,no warning,B,10,3
+s31047,warning,A,1,5
+s31047,warning,A,2,4
+s31047,warning,A,3,3
+s31047,warning,A,4,4
+s31047,warning,A,5,5
+s31047,warning,A,6,4
+s31047,warning,A,7,4
+s31047,warning,A,8,5
+s31047,warning,A,9,4
+s31047,warning,A,10,4
+s31048,no warning,B,1,5
+s31048,no warning,B,2,5
+s31048,no warning,B,3,5
+s31048,no warning,B,4,5
+s31048,no warning,B,5,4
+s31048,no warning,B,6,5
+s31048,no warning,B,7,5
+s31048,no warning,B,8,5
+s31048,no warning,B,9,5
+s31048,no warning,B,10,5
+s31049,warning,B,1,4
+s31049,warning,B,2,4
+s31049,warning,B,3,4
+s31049,warning,B,4,4
+s31049,warning,B,5,4
+s31049,warning,B,6,4
+s31049,warning,B,7,5
+s31049,warning,B,8,5
+s31049,warning,B,9,5
+s31049,warning,B,10,5
+s31050,no warning,A,1,5
+s31050,no warning,A,2,2
+s31050,no warning,A,3,1
+s31050,no warning,A,4,3
+s31050,no warning,A,5,4
+s31050,no warning,A,6,4
+s31050,no warning,A,7,5
+s31050,no warning,A,8,6
+s31050,no warning,A,9,5
+s31050,no warning,A,10,4
+s31051,warning,A,1,5
+s31051,warning,A,2,4
+s31051,warning,A,3,4
+s31051,warning,A,4,5
+s31051,warning,A,5,5
+s31051,warning,A,6,5
+s31051,warning,A,7,3
+s31051,warning,A,8,5
+s31051,warning,A,9,2
+s31051,warning,A,10,4
+s31052,no warning,B,1,4
+s31052,no warning,B,2,5
+s31052,no warning,B,3,4
+s31052,no warning,B,4,6
+s31052,no warning,B,5,5
+s31052,no warning,B,6,5
+s31052,no warning,B,7,6
+s31052,no warning,B,8,6
+s31052,no warning,B,9,5
+s31052,no warning,B,10,5
+s31053,warning,A,1,3
+s31053,warning,A,2,2
+s31053,warning,A,3,3
+s31053,warning,A,4,3
+s31053,warning,A,5,4
+s31053,warning,A,6,4
+s31053,warning,A,7,3
+s31053,warning,A,8,5
+s31053,warning,A,9,3
+s31053,warning,A,10,4
+s31054,no warning,B,1,4
+s31054,no warning,B,2,4
+s31054,no warning,B,3,5
+s31054,no warning,B,4,4
+s31054,no warning,B,5,5
+s31054,no warning,B,6,4
+s31054,no warning,B,7,5
+s31054,no warning,B,8,5
+s31054,no warning,B,9,6
+s31054,no warning,B,10,5
+s31055,no warning,B,1,5
+s31055,no warning,B,2,3
+s31055,no warning,B,3,3
+s31055,no warning,B,4,5
+s31055,no warning,B,5,4
+s31055,no warning,B,6,4
+s31055,no warning,B,7,3
+s31055,no warning,B,8,2
+s31055,no warning,B,9,4
+s31055,no warning,B,10,3
+s31056,no warning,A,1,4
+s31056,no warning,A,2,4
+s31056,no warning,A,3,4
+s31056,no warning,A,4,6
+s31056,no warning,A,5,2
+s31056,no warning,A,6,5
+s31056,no warning,A,7,4
+s31056,no warning,A,8,4
+s31056,no warning,A,9,4
+s31056,no warning,A,10,4
+s31057,warning,B,1,4
+s31057,warning,B,2,4
+s31057,warning,B,3,4
+s31057,warning,B,4,4
+s31057,warning,B,5,4
+s31057,warning,B,6,4
+s31057,warning,B,7,5
+s31057,warning,B,8,4
+s31057,warning,B,9,4
+s31057,warning,B,10,4
+s31058,warning,A,1,5
+s31058,warning,A,2,4
+s31058,warning,A,3,5
+s31058,warning,A,4,4
+s31058,warning,A,5,4
+s31058,warning,A,6,4
+s31058,warning,A,7,5
+s31058,warning,A,8,4
+s31058,warning,A,9,5
+s31058,warning,A,10,5
+s31059,no warning,A,1,5
+s31059,no warning,A,2,6
+s31059,no warning,A,3,5
+s31059,no warning,A,4,4
+s31059,no warning,A,5,5
+s31059,no warning,A,6,4
+s31059,no warning,A,7,5
+s31059,no warning,A,8,6
+s31059,no warning,A,9,4
+s31059,no warning,A,10,5
+s31060,no warning,B,1,5
+s31060,no warning,B,2,4
+s31060,no warning,B,3,5
+s31060,no warning,B,4,4
+s31060,no warning,B,5,4
+s31060,no warning,B,6,5
+s31060,no warning,B,7,4
+s31060,no warning,B,8,4
+s31060,no warning,B,9,3
+s31060,no warning,B,10,4
+s31061,warning,A,1,5
+s31061,warning,A,2,4
+s31061,warning,A,3,5
+s31061,warning,A,4,5
+s31061,warning,A,5,6
+s31061,warning,A,6,5
+s31061,warning,A,7,5
+s31061,warning,A,8,5
+s31061,warning,A,9,5
+s31061,warning,A,10,4
+s31062,no warning,B,1,5
+s31062,no warning,B,2,4
+s31062,no warning,B,3,5
+s31062,no warning,B,4,6
+s31062,no warning,B,5,5
+s31062,no warning,B,6,4
+s31062,no warning,B,7,5
+s31062,no warning,B,8,5
+s31062,no warning,B,9,4
+s31062,no warning,B,10,6
+s31063,warning,B,1,5
+s31063,warning,B,2,6
+s31063,warning,B,3,5
+s31063,warning,B,4,4
+s31063,warning,B,5,5
+s31063,warning,B,6,6
+s31063,warning,B,7,5
+s31063,warning,B,8,5
+s31063,warning,B,9,6
+s31063,warning,B,10,5
+s31064,no warning,A,1,4
+s31064,no warning,A,2,3
+s31064,no warning,A,3,3
+s31064,no warning,A,4,1
+s31064,no warning,A,5,3
+s31064,no warning,A,6,2
+s31064,no warning,A,7,4
+s31064,no warning,A,8,4
+s31064,no warning,A,9,3
+s31064,no warning,A,10,3
+s31065,warning,B,1,5
+s31065,warning,B,2,6
+s31065,warning,B,3,6
+s31065,warning,B,4,4
+s31065,warning,B,5,5
+s31065,warning,B,6,6
+s31065,warning,B,7,5
+s31065,warning,B,8,6
+s31065,warning,B,9,4
+s31065,warning,B,10,5
+s31066,no warning,B,1,4
+s31066,no warning,B,2,5
+s31066,no warning,B,3,6
+s31066,no warning,B,4,5
+s31066,no warning,B,5,4
+s31066,no warning,B,6,5
+s31066,no warning,B,7,5
+s31066,no warning,B,8,6
+s31066,no warning,B,9,4
+s31066,no warning,B,10,5
+s31067,warning,B,1,5
+s31067,warning,B,2,5
+s31067,warning,B,3,6
+s31067,warning,B,4,5
+s31067,warning,B,5,5
+s31067,warning,B,6,5
+s31067,warning,B,7,4
+s31067,warning,B,8,5
+s31067,warning,B,9,5
+s31067,warning,B,10,3
+s31068,warning,A,1,6
+s31068,warning,A,2,5
+s31068,warning,A,3,6
+s31068,warning,A,4,5
+s31068,warning,A,5,2
+s31068,warning,A,6,6
+s31068,warning,A,7,5
+s31068,warning,A,8,6
+s31068,warning,A,9,6
+s31068,warning,A,10,5
+s31069,no warning,A,1,6
+s31069,no warning,A,2,5
+s31069,no warning,A,3,6
+s31069,no warning,A,4,5
+s31069,no warning,A,5,6
+s31069,no warning,A,6,5
+s31069,no warning,A,7,6
+s31069,no warning,A,8,6
+s31069,no warning,A,9,5
+s31069,no warning,A,10,4
+s31070,warning,A,1,4
+s31070,warning,A,2,4
+s31070,warning,A,3,4
+s31070,warning,A,4,4
+s31070,warning,A,5,4
+s31070,warning,A,6,4
+s31070,warning,A,7,3
+s31070,warning,A,8,3
+s31070,warning,A,9,3
+s31070,warning,A,10,3
+s31071,warning,A,1,2
+s31071,warning,A,2,3
+s31071,warning,A,3,3
+s31071,warning,A,4,2
+s31071,warning,A,5,2
+s31071,warning,A,6,2
+s31071,warning,A,7,3
+s31071,warning,A,8,5
+s31071,warning,A,9,4
+s31071,warning,A,10,5
+s31072,no warning,B,1,4
+s31072,no warning,B,2,4
+s31072,no warning,B,3,4
+s31072,no warning,B,4,3
+s31072,no warning,B,5,3
+s31072,no warning,B,6,4
+s31072,no warning,B,7,4
+s31072,no warning,B,8,6
+s31072,no warning,B,9,5
+s31072,no warning,B,10,6
+s31073,warning,B,1,4
+s31073,warning,B,2,6
+s31073,warning,B,3,6
+s31073,warning,B,4,5
+s31073,warning,B,5,5
+s31073,warning,B,6,4
+s31073,warning,B,7,6
+s31073,warning,B,8,6
+s31073,warning,B,9,6
+s31073,warning,B,10,6
+s31074,warning,A,1,4
+s31074,warning,A,2,4
+s31074,warning,A,3,4
+s31074,warning,A,4,4
+s31074,warning,A,5,4
+s31074,warning,A,6,4
+s31074,warning,A,7,2
+s31074,warning,A,8,4
+s31074,warning,A,9,4
+s31074,warning,A,10,4
+s31075,warning,B,1,5
+s31075,warning,B,2,6
+s31075,warning,B,3,4
+s31075,warning,B,4,5
+s31075,warning,B,5,6
+s31075,warning,B,6,4
+s31075,warning,B,7,5
+s31075,warning,B,8,5
+s31075,warning,B,9,5
+s31075,warning,B,10,4
+s31076,warning,B,1,5
+s31076,warning,B,2,6
+s31076,warning,B,3,4
+s31076,warning,B,4,5
+s31076,warning,B,5,5
+s31076,warning,B,6,4
+s31076,warning,B,7,4
+s31076,warning,B,8,3
+s31076,warning,B,9,2
+s31076,warning,B,10,3
+s31077,warning,A,1,5
+s31077,warning,A,2,5
+s31077,warning,A,3,6
+s31077,warning,A,4,6
+s31077,warning,A,5,5
+s31077,warning,A,6,6
+s31077,warning,A,7,6
+s31077,warning,A,8,6
+s31077,warning,A,9,4
+s31077,warning,A,10,5
+s31078,warning,B,1,4
+s31078,warning,B,2,4
+s31078,warning,B,3,5
+s31078,warning,B,4,4
+s31078,warning,B,5,5
+s31078,warning,B,6,3
+s31078,warning,B,7,2
+s31078,warning,B,8,4
+s31078,warning,B,9,3
+s31078,warning,B,10,5
+s31079,no warning,A,1,4
+s31079,no warning,A,2,4
+s31079,no warning,A,3,6
+s31079,no warning,A,4,3
+s31079,no warning,A,5,4
+s31079,no warning,A,6,6
+s31079,no warning,A,7,4
+s31079,no warning,A,8,4
+s31079,no warning,A,9,4
+s31079,no warning,A,10,6
+s31080,warning,A,1,4
+s31080,warning,A,2,5
+s31080,warning,A,3,3
+s31080,warning,A,4,4
+s31080,warning,A,5,4
+s31080,warning,A,6,3
+s31080,warning,A,7,5
+s31080,warning,A,8,5
+s31080,warning,A,9,4
+s31080,warning,A,10,4
+s31081,warning,A,1,5
+s31081,warning,A,2,4
+s31081,warning,A,3,5
+s31081,warning,A,4,4
+s31081,warning,A,5,5
+s31081,warning,A,6,5
+s31081,warning,A,7,5
+s31081,warning,A,8,6
+s31081,warning,A,9,4
+s31081,warning,A,10,6
+s31082,no warning,B,1,5
+s31082,no warning,B,2,5
+s31082,no warning,B,3,5
+s31082,no warning,B,4,5
+s31082,no warning,B,5,5
+s31082,no warning,B,6,5
+s31082,no warning,B,7,3
+s31082,no warning,B,8,5
+s31082,no warning,B,9,5
+s31082,no warning,B,10,5
+s31083,warning,A,1,5
+s31083,warning,A,2,4
+s31083,warning,A,3,5
+s31083,warning,A,4,5
+s31083,warning,A,5,5
+s31083,warning,A,6,4
+s31083,warning,A,7,6
+s31083,warning,A,8,6
+s31083,warning,A,9,6
+s31083,warning,A,10,6
+s31084,warning,B,1,4
+s31084,warning,B,2,4
+s31084,warning,B,3,4
+s31084,warning,B,4,4
+s31084,warning,B,5,4
+s31084,warning,B,6,4
+s31084,warning,B,7,3
+s31084,warning,B,8,4
+s31084,warning,B,9,3
+s31084,warning,B,10,3
+s31085,warning,A,1,5
+s31085,warning,A,2,5
+s31085,warning,A,3,5
+s31085,warning,A,4,4
+s31085,warning,A,5,5
+s31085,warning,A,6,5
+s31085,warning,A,7,4
+s31085,warning,A,8,4
+s31085,warning,A,9,5
+s31085,warning,A,10,5
+s31086,no warning,B,1,3
+s31086,no warning,B,2,3
+s31086,no warning,B,3,3
+s31086,no warning,B,4,3
+s31086,no warning,B,5,3
+s31086,no warning,B,6,3
+s31086,no warning,B,7,3
+s31086,no warning,B,8,3
+s31086,no warning,B,9,3
+s31086,no warning,B,10,3
+s31087,warning,A,1,5
+s31087,warning,A,2,5
+s31087,warning,A,3,4
+s31087,warning,A,4,5
+s31087,warning,A,5,4
+s31087,warning,A,6,4
+s31087,warning,A,7,4
+s31087,warning,A,8,5
+s31087,warning,A,9,4
+s31087,warning,A,10,5
+s31088,no warning,B,1,3
+s31088,no warning,B,2,2
+s31088,no warning,B,3,3
+s31088,no warning,B,4,4
+s31088,no warning,B,5,5
+s31088,no warning,B,6,4
+s31088,no warning,B,7,3
+s31088,no warning,B,8,4
+s31088,no warning,B,9,6
+s31088,no warning,B,10,6
+s31089,warning,B,1,3
+s31089,warning,B,2,3
+s31089,warning,B,3,4
+s31089,warning,B,4,3
+s31089,warning,B,5,3
+s31089,warning,B,6,3
+s31089,warning,B,7,4
+s31089,warning,B,8,4
+s31089,warning,B,9,4
+s31089,warning,B,10,4
+s31090,no warning,A,1,1
+s31090,no warning,A,2,5
+s31090,no warning,A,3,5
+s31090,no warning,A,4,2
+s31090,no warning,A,5,5
+s31090,no warning,A,6,1
+s31090,no warning,A,7,1
+s31090,no warning,A,8,3
+s31090,no warning,A,9,6
+s31090,no warning,A,10,5
+s31091,no warning,A,1,4
+s31091,no warning,A,2,3
+s31091,no warning,A,3,5
+s31091,no warning,A,4,4
+s31091,no warning,A,5,5
+s31091,no warning,A,6,4
+s31091,no warning,A,7,5
+s31091,no warning,A,8,5
+s31091,no warning,A,9,4
+s31091,no warning,A,10,5
+s31092,warning,B,1,4
+s31092,warning,B,2,4
+s31092,warning,B,3,4
+s31092,warning,B,4,4
+s31092,warning,B,5,4
+s31092,warning,B,6,4
+s31092,warning,B,7,1
+s31092,warning,B,8,3
+s31092,warning,B,9,4
+s31092,warning,B,10,4
+s31093,warning,B,1,5
+s31093,warning,B,2,5
+s31093,warning,B,3,6
+s31093,warning,B,4,5
+s31093,warning,B,5,5
+s31093,warning,B,6,6
+s31093,warning,B,7,6
+s31093,warning,B,8,6
+s31093,warning,B,9,6
+s31093,warning,B,10,6
+s31094,no warning,B,1,4
+s31094,no warning,B,2,4
+s31094,no warning,B,3,4
+s31094,no warning,B,4,4
+s31094,no warning,B,5,3
+s31094,no warning,B,6,3
+s31094,no warning,B,7,3
+s31094,no warning,B,8,4
+s31094,no warning,B,9,4
+s31094,no warning,B,10,5
+s31095,no warning,A,1,3
+s31095,no warning,A,2,2
+s31095,no warning,A,3,2
+s31095,no warning,A,4,4
+s31095,no warning,A,5,3
+s31095,no warning,A,6,2
+s31095,no warning,A,7,5
+s31095,no warning,A,8,6
+s31095,no warning,A,9,5
+s31095,no warning,A,10,6
+s31096,warning,A,1,4
+s31096,warning,A,2,4
+s31096,warning,A,3,5
+s31096,warning,A,4,5
+s31096,warning,A,5,4
+s31096,warning,A,6,3
+s31096,warning,A,7,3
+s31096,warning,A,8,4
+s31096,warning,A,9,4
+s31096,warning,A,10,4
+s31097,warning,A,1,1
+s31097,warning,A,2,2
+s31097,warning,A,3,1
+s31097,warning,A,4,1
+s31097,warning,A,5,3
+s31097,warning,A,6,2
+s31097,warning,A,7,1
+s31097,warning,A,8,4
+s31097,warning,A,9,4
+s31097,warning,A,10,5
+s31098,warning,A,1,4
+s31098,warning,A,2,2
+s31098,warning,A,3,4
+s31098,warning,A,4,4
+s31098,warning,A,5,5
+s31098,warning,A,6,5
+s31098,warning,A,7,4
+s31098,warning,A,8,3
+s31098,warning,A,9,3
+s31098,warning,A,10,4
+s31099,no warning,B,1,5
+s31099,no warning,B,2,5
+s31099,no warning,B,3,6
+s31099,no warning,B,4,5
+s31099,no warning,B,5,5
+s31099,no warning,B,6,4
+s31099,no warning,B,7,3
+s31099,no warning,B,8,5
+s31099,no warning,B,9,4
+s31099,no warning,B,10,5
+s31100,warning,B,1,6
+s31100,warning,B,2,6
+s31100,warning,B,3,6
+s31100,warning,B,4,6
+s31100,warning,B,5,6
+s31100,warning,B,6,6
+s31100,warning,B,7,6
+s31100,warning,B,8,6
+s31100,warning,B,9,6
+s31100,warning,B,10,6
+s31101,warning,B,1,6
+s31101,warning,B,2,6
+s31101,warning,B,3,3
+s31101,warning,B,4,2
+s31101,warning,B,5,4
+s31101,warning,B,6,2
+s31101,warning,B,7,5
+s31101,warning,B,8,2
+s31101,warning,B,9,6
+s31101,warning,B,10,2
+s31102,warning,A,1,4
+s31102,warning,A,2,3
+s31102,warning,A,3,5
+s31102,warning,A,4,4
+s31102,warning,A,5,5
+s31102,warning,A,6,4
+s31102,warning,A,7,4
+s31102,warning,A,8,5
+s31102,warning,A,9,5
+s31102,warning,A,10,5
+s31103,warning,A,1,5
+s31103,warning,A,2,5
+s31103,warning,A,3,6
+s31103,warning,A,4,3
+s31103,warning,A,5,5
+s31103,warning,A,6,4
+s31103,warning,A,7,6
+s31103,warning,A,8,5
+s31103,warning,A,9,6
+s31103,warning,A,10,6
+s31104,warning,A,1,5
+s31104,warning,A,2,4
+s31104,warning,A,3,5
+s31104,warning,A,4,5
+s31104,warning,A,5,4
+s31104,warning,A,6,4
+s31104,warning,A,7,3
+s31104,warning,A,8,5
+s31104,warning,A,9,4
+s31104,warning,A,10,5
+s31105,no warning,A,1,6
+s31105,no warning,A,2,5
+s31105,no warning,A,3,6
+s31105,no warning,A,4,6
+s31105,no warning,A,5,6
+s31105,no warning,A,6,3
+s31105,no warning,A,7,2
+s31105,no warning,A,8,4
+s31105,no warning,A,9,5
+s31105,no warning,A,10,5
+s31106,warning,B,1,4
+s31106,warning,B,2,4
+s31106,warning,B,3,4
+s31106,warning,B,4,3
+s31106,warning,B,5,3
+s31106,warning,B,6,4
+s31106,warning,B,7,2
+s31106,warning,B,8,4
+s31106,warning,B,9,3
+s31106,warning,B,10,4
+s31107,warning,A,1,4
+s31107,warning,A,2,4
+s31107,warning,A,3,5
+s31107,warning,A,4,4
+s31107,warning,A,5,3
+s31107,warning,A,6,3
+s31107,warning,A,7,4
+s31107,warning,A,8,5
+s31107,warning,A,9,6
+s31107,warning,A,10,5
+s31108,warning,B,1,2
+s31108,warning,B,2,5
+s31108,warning,B,3,4
+s31108,warning,B,4,2
+s31108,warning,B,5,2
+s31108,warning,B,6,4
+s31108,warning,B,7,2
+s31108,warning,B,8,2
+s31108,warning,B,9,4
+s31108,warning,B,10,3
+s31109,no warning,B,1,5
+s31109,no warning,B,2,6
+s31109,no warning,B,3,6
+s31109,no warning,B,4,5
+s31109,no warning,B,5,5
+s31109,no warning,B,6,4
+s31109,no warning,B,7,6
+s31109,no warning,B,8,6
+s31109,no warning,B,9,6
+s31109,no warning,B,10,6
+s31110,warning,A,1,5
+s31110,warning,A,2,4
+s31110,warning,A,3,3
+s31110,warning,A,4,4
+s31110,warning,A,5,4
+s31110,warning,A,6,4
+s31110,warning,A,7,6
+s31110,warning,A,8,5
+s31110,warning,A,9,5
+s31110,warning,A,10,5
+s31111,no warning,A,1,6
+s31111,no warning,A,2,6
+s31111,no warning,A,3,4
+s31111,no warning,A,4,6
+s31111,no warning,A,5,6
+s31111,no warning,A,6,6
+s31111,no warning,A,7,4
+s31111,no warning,A,8,6
+s31111,no warning,A,9,5
+s31111,no warning,A,10,6
+s31112,no warning,B,1,6
+s31112,no warning,B,2,6
+s31112,no warning,B,3,6
+s31112,no warning,B,4,6
+s31112,no warning,B,5,6
+s31112,no warning,B,6,6
+s31112,no warning,B,7,6
+s31112,no warning,B,8,4
+s31112,no warning,B,9,5
+s31112,no warning,B,10,5
+s31113,no warning,B,1,1
+s31113,no warning,B,2,2
+s31113,no warning,B,3,3
+s31113,no warning,B,4,2
+s31113,no warning,B,5,3
+s31113,no warning,B,6,1
+s31113,no warning,B,7,2
+s31113,no warning,B,8,2
+s31113,no warning,B,9,3
+s31113,no warning,B,10,4
+s31114,warning,A,1,6
+s31114,warning,A,2,5
+s31114,warning,A,3,5
+s31114,warning,A,4,6
+s31114,warning,A,5,6
+s31114,warning,A,6,6
+s31114,warning,A,7,6
+s31114,warning,A,8,6
+s31114,warning,A,9,6
+s31114,warning,A,10,5
+s31115,warning,A,1,5
+s31115,warning,A,2,5
+s31115,warning,A,3,4
+s31115,warning,A,4,1
+s31115,warning,A,5,6
+s31115,warning,A,6,3
+s31115,warning,A,7,1
+s31115,warning,A,8,1
+s31115,warning,A,9,1
+s31115,warning,A,10,1
+s31116,no warning,B,1,6
+s31116,no warning,B,2,5
+s31116,no warning,B,3,6
+s31116,no warning,B,4,5
+s31116,no warning,B,5,6
+s31116,no warning,B,6,6
+s31116,no warning,B,7,6
+s31116,no warning,B,8,6
+s31116,no warning,B,9,6
+s31116,no warning,B,10,6
+s31117,no warning,A,1,5
+s31117,no warning,A,2,4
+s31117,no warning,A,3,5
+s31117,no warning,A,4,2
+s31117,no warning,A,5,5
+s31117,no warning,A,6,1
+s31117,no warning,A,7,4
+s31117,no warning,A,8,5
+s31117,no warning,A,9,4
+s31117,no warning,A,10,4
+s31118,no warning,A,1,5
+s31118,no warning,A,2,5
+s31118,no warning,A,3,3
+s31118,no warning,A,4,4
+s31118,no warning,A,5,6
+s31118,no warning,A,6,3
+s31118,no warning,A,7,5
+s31118,no warning,A,8,4
+s31118,no warning,A,9,6
+s31118,no warning,A,10,5
+s31119,warning,B,1,4
+s31119,warning,B,2,2
+s31119,warning,B,3,3
+s31119,warning,B,4,4
+s31119,warning,B,5,4
+s31119,warning,B,6,2
+s31119,warning,B,7,3
+s31119,warning,B,8,4
+s31119,warning,B,9,2
+s31119,warning,B,10,4

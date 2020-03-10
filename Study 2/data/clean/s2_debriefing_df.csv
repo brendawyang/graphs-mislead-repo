@@ -1,0 +1,110 @@
+participantID,group,DB_approach_select,DB_approach_other,DB_misleading_estimate,DB_w_approach,DB_approach_select_1,DB_approach_select_2,DB_approach_select_3,DB_approach_select_4,DB_approach_select_5,DB_approach_select_6
+s21001,B,2,NA,50,NA,0,1,0,0,0,0
+s21002,A,12,NA,60,focus on the number difference not the visual,1,1,0,0,0,0
+s21003,B,1,NA,51,NA,1,0,0,0,0,0
+s21004,B,5,NA,44,just went with my gut instinct,0,0,0,0,1,0
+s21005,B,12,NA,51,I looked at how far away the numbers were on the Y axis and made an estimate,1,1,0,0,0,0
+s21006,B,124,NA,50,I looked first at the axis to see how the numbers were spaced and then I looked at the 2 variables being compared and compared them to each other and the other data on the chart.,1,1,0,1,0,0
+s21007,B,12,NA,70,I looked at the numbers more carefully and inferred whether there was a large difference between the two data sets.,1,1,0,0,0,0
+s21008,B,14,NA,41,NA,1,0,0,1,0,0
+s21009,A,13,NA,71,I had to really look at the numbers versus what the graph was showing,1,0,1,0,0,0
+s21010,A,12,NA,60,I paid more attention to the values on the x axis and tried to think of the values in terms of percents or increments of a whole.,1,1,0,0,0,0
+s21011,B,123,NA,50,NA,1,1,1,0,0,0
+s21012,A,1,NA,65,I had to consider the difference between the actual numbers rather just the visual representation shown on the graph.,1,0,0,0,0,0
+s21013,A,1,NA,60,"I double checked the values to see exactly what each was, and then compared the two to see how big (or small) the difference actually was.",1,0,0,0,0,0
+s21014,A,12,NA,20,Carefully examine each graph although I feel I may have missed some.,1,1,0,0,0,0
+s21015,B,1,NA,33,I think about the numbers and compare that rather than the size of the bars.,1,0,0,0,0,0
+s21016,B,12,NA,15,Use the data on the Y-axis,1,1,0,0,0,0
+s21017,A,1,NA,30,Looked at how much the actual amount was since it didnt start with 0.,1,0,0,0,0,0
+s21018,B,1,NA,51,If it didn't start with a zero,1,0,0,0,0,0
+s21019,A,12,NA,39,i looked for a large or small in percentages,1,1,0,0,0,0
+s21020,A,1,NA,50,"I looked at the Y Axis numbers and saw where it started, how different the numbers were in value, like 1.2 and 1.4 aren't all that different but the bars are vastly different sizes because of the scaling of them.",1,0,0,0,0,0
+s21021,A,1,NA,35,"I tried to only determine on the Y axis legend and whether it represented single numbers, millions, billions, etc... Then I took the two numbers that I was comparing from the bars and adjusted their difference importance based on the Y axis legend.",1,0,0,0,0,0
+s21022,A,12,NA,30,I didn't look at the numbers really. I just concentrated on the bar lengths themselves.,1,1,0,0,0,0
+s21023,B,1,NA,67,"I looked at the y-axis and what the numbers were saying, then I tried to figure out about where the bars were falling on that axis to see how far the numbers really were.",1,0,0,0,0,0
+s21024,A,14,NA,40,just tried to make the best judgement with what information i was given.,1,0,0,1,0,0
+s21025,A,24,NA,49,I tried to look at the difference taking into account that the graph was starting off with a misleading information,0,1,0,1,0,0
+s21026,B,124,NA,80,I compared the numbers to see how far apart they were.,1,1,0,1,0,0
+s21027,A,1,NA,60,I just tried to compare actual values to determine estimate of difference i.e. the bars were close in length but the scale was large so the difference was in billions then I would put that they were quite different.,1,0,0,0,0,0
+s21028,B,12,NA,40,"I compared the true values, often by considering what multiple one was of another to determine rough percentage difference between the two.",1,1,0,0,0,0
+s21029,B,24,NA,20,I usually tried to underestimate the difference to compensate for the deception.,0,1,0,1,0,0
+s21030,A,1,NA,31,Nothing,1,0,0,0,0,0
+s21031,A,24,NA,40,I guess I'd just judge them to be not similar. I don't fully understand the question.,0,1,0,1,0,0
+s21032,A,3,NA,57,0,0,0,1,0,0,0
+s21033,B,2,NA,52,NA,0,1,0,0,0,0
+s21034,B,2,NA,40,Do my best to decide if the difference in numbers is great or not.,0,1,0,0,0,0
+s21035,A,1,NA,61,"I had to do more math in my mind to figure true difference, I also had to take the units into account more.",1,0,0,0,0,0
+s21036,A,12,NA,35,"Numbers are easy to be understood, I focused on them, and I would be surprised and almost ashamed if I got any graph wrong for more than a couple step (but I think I've been mostly not more than 1 step away).",1,1,0,0,0,0
+s21037,B,24,NA,32,use the instructions provided,0,1,0,1,0,0
+s21038,A,12,NA,56,I would visualize and look at the axis number,1,1,0,0,0,0
+s21039,B,12,NA,93,"Based on the instructions given at beginning of the survey,I decided my approaches",1,1,0,0,0,0
+s21040,A,123,NA,40,i looked closely at the measurement- y axis,1,1,1,0,0,0
+s21041,B,12,NA,78,I looked at the range that the graph represented.,1,1,0,0,0,0
+s21042,B,1,NA,62,"My approach was to look at the values that the bars represented, and not the size of the bar in relation to others in the graph. This gave me a more solid foundation with which to evaluate the true similarity/difference between two bars.",1,0,0,0,0,0
+s21043,A,12,NA,40,I tried to mentally determine an approximate percentage difference and based my answers on that.  I did that with the non-misleading graphs as well.,1,1,0,0,0,0
+s21044,B,1,NA,63,"I approached them all the same, in each one I tried to understand the values on the y-axis and then proceeded.",1,0,0,0,0,0
+s21045,A,1,NA,40,"I tried to imagine the entire scale on all of the graphs, regardless of the segment illustrated in the misleading graphs.",1,0,0,0,0,0
+s21046,A,124,NA,30,I would think about the increments of the numbers on the y axis and how the graphs would look if it started at zero and think about how different the numbers actually were.,1,1,0,1,0,0
+s21047,A,15,NA,20,I read all the info presented and then tried to decide on my approach,1,0,0,0,1,0
+s21048,B,15,NA,80,Just looked at the ranges on the Y axis and what those represented then judged how big of a difference the two results I were comparing really were in proportion to the Y axis and how that data set as a whole would be spread out,1,0,0,0,1,0
+s21049,A,16,"a big part was basing it on what was being measured, on some graphs, even a small difference could be more based on what is being measured.  Like when thinking about the difference in lengths of rivers I considered all rivers and not just the ones shown on the graph, so when comparing two very long rivers, even though on the graph there may be a pretty big difference, if a very short river was shown on the graph it would completely change the look of the graph.",42,"By first identifying where the numbers started and ended and then looking at the number the bar indicated and applying that to what was being measured, so I was going by the actual number measured and not so much how the height of the graphs compared, more the number of the measurement and what was being measured.",1,0,0,0,0,1
+s21050,B,12,NA,60,I looked at the specific numbers the bars correlated to.,1,1,0,0,0,0
+s21051,B,1,NA,70,Try to make inferences about the units and the number of units,1,0,0,0,0,0
+s21052,B,3,NA,81,they have a different,0,0,1,0,0,0
+s21053,A,124,NA,30,I looked at how different the two values displayed on the graph were.,1,1,0,1,0,0
+s21054,A,2,NA,69,different,0,1,0,0,0,0
+s21055,B,12,NA,14,went with gut instinct.,1,1,0,0,0,0
+s21056,B,124,NA,36,I was particularly prone to ignore visual data in graphs with a misleading axis; in those cases I tried to extrapolate the actual numbers and compared those.,1,1,0,1,0,0
+s21057,B,2,NA,71,Just looking at the difference f numbers that were actually on there.,0,1,0,0,0,0
+s21058,A,12,NA,50,"I tried to assess the axis and the numbers, how close or far they were numerically",1,1,0,0,0,0
+s21059,B,14,NA,42,They had that larger part comparative to other parts,1,0,0,1,0,0
+s21060,A,124,NA,36,"I’d try to imagine the o on the line, assuming they would fill up to that point but mostly I’d try to estimate the end number for both bars and determine that way.",1,1,0,1,0,0
+s21061,A,12,NA,52,I did the math based on the y axis values to see if there was a significant difference instead of relying on heights.,1,1,0,0,0,0
+s21062,A,1,NA,39,"I looked at the numbers and some started at 0, some larger.",1,0,0,0,0,0
+s21063,B,23,NA,41,Took the fact that they didn't start at 0 into account.,0,1,1,0,0,0
+s21064,A,2,NA,51,I always checked for the 0 first and then i would try to figure out the amount based on the difference in lengths of the bars.  It was very deceiving when there wasn't a 0 on the graph.,0,1,0,0,0,0
+s21065,B,12,NA,51,looked at the numbers and compared the difference between them.,1,1,0,0,0,0
+s21066,B,4,NA,25,"I didn't noticed too many of them really, but just judged them the same as any other",0,0,0,1,0,0
+s21067,A,124,NA,25,I looked at the difference in value instead of relying on the bar's length.,1,1,0,1,0,0
+s21068,B,1,NA,54,On both I just compared the number totals against each other.,1,0,0,0,0,0
+s21069,B,14,NA,60,I tried to look at the scale to see how big a difference it made.,1,0,0,1,0,0
+s21070,B,124,NA,40,No Answer,1,1,0,1,0,0
+s21071,A,12,NA,54,I imagine what they would look like with a complete y-axis,1,1,0,0,0,0
+s21072,A,1,NA,27,I ranked what I perceived to be the *actual* difference when the Y-axis was truncated.,1,0,0,0,0,0
+s21073,A,2,NA,27,Closely paying attention to the graphs,0,1,0,0,0,0
+s21074,B,124,NA,60,"I would try to look at the graph and say okay - they're both starting out at say, 50 and that this one is ""a little "" longer than the other so, I would usually try to say that it was moderately different, or not different. But sometimes I would say they were very different because sometimes even with the them ""starting"" at the same number, it looked like they were extremely different, but I guess that is the whole point of the misleading concept and why I may have felt that they were so different at times.",1,1,0,1,0,0
+s21075,B,1,NA,30,Read my email,1,0,0,0,0,0
+s21076,A,4,NA,60,Basing the difference on the numbers provided,0,0,0,1,0,0
+s21077,B,1,NA,50,"I guess I just paid attention to the numbers so I could tell what they were showing me. If I didn't look at the numbers, the imagery would have been misleading, but taking the numbers into consideration, you could read the information as it was being presented.",1,0,0,0,0,0
+s21078,B,1,NA,72,I would look at the total amount between the two bars and  judge them,1,0,0,0,0,0
+s21079,A,12,NA,50,"It was hard to judge how misleading the misleading graphs were, so I just did my best at judging the graphs visually and using the y-axis. It wasn't easy and I'm pretty sure I did not do well on those.",1,1,0,0,0,0
+s21080,B,45,NA,30,If it wasn't displayed in the way you'd expect without analyzing the graph itself.,0,0,0,1,1,0
+s21081,A,12,NA,10,It did not matter if they were misleading because that is not what I was judging.,1,1,0,0,0,0
+s21082,A,2,NA,75,The same as ones that were not misleading. I could use the same approach because of the questions asked.,0,1,0,0,0,0
+s21083,A,1,NA,40,I compared the scale of the bars compared to the degree that the bottom part of the data was truncated.,1,0,0,0,0,0
+s21084,A,1,NA,60,Just looking at the numbers on the Y axis and comparing the numbers instead of the visual depiction,1,0,0,0,0,0
+s21085,B,4,NA,20,A bit hard to judge.,0,0,0,1,0,0
+s21086,A,2,NA,56,educated guess,0,1,0,0,0,0
+s21087,B,12,NA,70,I would need to look carefully at the values the graphs represented and compare the actual numbers more thoroughly in my head.,1,1,0,0,0,0
+s21088,B,2,NA,65,NA,0,1,0,0,0,0
+s21089,B,1,NA,20,"I translated the bars to real numbers and compared the numbers, not the bars.",1,0,0,0,0,0
+s21090,A,5,NA,1,NA,0,0,0,0,1,0
+s21091,A,124,NA,40,I try to just estimate how much of the graph should be there to make up for what's not available.,1,1,0,1,0,0
+s21092,B,1,NA,20,I really wasn't sure what was and wasn't misleading. I had a lot of trouble telling the difference and had no strategy to be honest.,1,0,0,0,0,0
+s21093,A,245,NA,43,"I gave my best guess as to how different the bars were regardless of whether the chart was misleading or not. I noticed many of them were, but (and maybe I'm wrong about this) the same amount of bar would have been below the line where the axis started on each bar, anyway, so I don't think it would have affected my judgment on how different the height of the bars were overall. Again, I could totally be wrong about that... but I'm not sure.",0,1,0,1,1,0
+s21094,B,1,NA,60,I would compare the actual values on the y-axis.,1,0,0,0,0,0
+s21095,A,124,NA,40,I estimated their values to the best of my abilities.,1,1,0,1,0,0
+s21096,B,15,NA,33,"Look at the numbers, calculate a rough percentage difference, think about the topic to analyze how important a small or large percentage difference is",1,0,0,0,1,0
+s21097,B,14,NA,40,I tried to look at the actual numbers/values being represented and make my judgments based on those rather than relying on the visual of the bars themselves.,1,0,0,1,0,0
+s21098,A,2,NA,62,graphs about a range of issues.,0,1,0,0,0,0
+s21099,A,2,NA,18,THEY WERE PLACED TO MISLEAD. SOMETIMES HARD TO CATCH.,0,1,0,0,0,0
+s21100,B,124,NA,44,I tried to guess at the percent difference,1,1,0,1,0,0
+s21101,A,12,NA,35,It made me look more carefully at the actual stats to tell the difference.,1,1,0,0,0,0
+s21102,A,124,NA,48,If there was a huge difference in the bars as well as the number starting at not zero,1,1,0,1,0,0
+s21103,B,1,NA,42,always consider the starting point as 0,1,0,0,0,0,0
+s21104,B,125,NA,46,I,1,1,0,0,1,0
+s21105,A,12,NA,39,"Wow,  after seeing that last graph I am really wondering how off I was.  Very misleading.  I looked at the bars and numbers and differences in the numbers.",1,1,0,0,0,0
+s21106,A,14,NA,34,"I looked at the scale, estimated the required values and compared them.",1,0,0,1,0,0
+s21107,A,12,NA,30,i tried to look at the actual number the graph represented when that info was given,1,1,0,0,0,0
+s21108,B,2,NA,21,I tried to look at all angles and numbers. Then I picked my answering determined on what I felt was correct.,0,1,0,0,0,0
+s21109,B,2,NA,38,Graphs should always start at 0,0,1,0,0,0,0

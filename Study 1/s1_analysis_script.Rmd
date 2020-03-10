@@ -1,0 +1,566 @@
+---
+title: "Data Analysis for Study 1"
+output: 
+  html_document:
+    df_print: paged
+    toc: TRUE
+    toc_depth: 4
+    toc_float: FALSE
+---
+
+
+# Study 1 Introduction
+
+This Markdown documents the process to analyze the data for Study 1. 
+
+Data was collected on October 20th, 2017 by using Amazon's Mechanical Turk for ditribution and Qualtrics as a survey platform. 
+
+This HTML was last knitted on: `r Sys.time()`
+
+## Set Up
+
+### Packages and Libraries
+
+You must run this section before you can run any other chunks.
+
+```{r packages, echo = FALSE}
+#Make sure all packages are installed
+
+list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+```
+
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+#turn off scientific notation
+options(scipen=999)
+```
+
+
+```{r libraries}
+#Load all libraries
+library(readr)
+library(tidyr)
+library(dplyr)
+library(magrittr)
+library(effsize)
+library(lme4) # for mixed effects models
+library(lmerTest)
+library(kableExtra)
+library(knitr)#kable
+library(pwr)
+
+##Raincloud Plot Libraries
+source("../R_rainclouds.R")
+library(cowplot)
+library(ggthemes)
+library(ggplot2)
+
+```
+
+
+```{r raincloud plot}
+#raincloud plot theme
+raincloud_theme <- theme(
+  text = element_text(size = 10),
+  axis.title.x = element_text(size = 16),
+  axis.title.y = element_text(size = 16, margin = margin(r = 20)),
+  axis.text = element_text(size = 14),
+  legend.title=element_blank(),
+  legend.text=element_text(size=16),
+  legend.position = "right",
+  plot.title = element_text(lineheight=.8, face="bold", size = 16),
+  panel.border = element_blank(),
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.grid.major.y = element_line(colour = 'light gray', size=0.5, linetype='solid'),
+  axis.line = element_blank(), 
+  axis.ticks.y = element_blank())
+```
+
+
+### Data Import
+
+You must run this section before you can run any other chunks.
+
+```{r data import}
+rating_df <- read_csv("data/clean/s1_rating_df.csv")
+demographic_df <- read_csv("data/clean/s1_demographic_df.csv")
+graphliteracy_df <- read_csv("data/clean/s1_graphliteracy_df.csv")
+debriefing_df <- read_csv("data/clean/s1_debriefing_df.csv")
+timing_df <- read_csv("data/clean/s1_timing_df.csv")
+```
+
+
+```{r addtional data frames}
+#Create data frames that will be used throughout
+
+#Calculate subject means by condition 
+##(mean rating for truncated and mean rating for non-truncated graphs)
+subject_mean_df <- rating_df %>% 
+  group_by(condition, participantID) %>% 
+  summarise(subject_mean_rating = mean(rating)) %>% 
+  arrange(participantID)
+
+
+#Calculate subject difference rating
+##(non-truncated mean rating - truncated mean rating)
+subject_difference_df <- subject_mean_df %>% 
+  spread(condition, subject_mean_rating) %>% 
+  mutate(difference =  truncated - control)
+
+
+#Calculate subject overall graph literacy score
+##(sum of graph literacy items)
+subject_graphliteracy_df <- graphliteracy_df %>%
+  group_by(participantID) %>%
+  summarise(graphliteracy_sum_rating = sum(rating)) %>% 
+  mutate(subject_condition = 1)
+
+
+#Create mixed effects df
+##(combination of ratings, overall graph literacy scores and some demographic questions --- education, gender and age)
+models_df <- full_join(full_join(subject_graphliteracy_df, demographic_df[, c("participantID", "dem_ed", "dem_gender", "dem_age")]), rating_df)
+
+##Create mixed effects difference df
+##(df with subject truncation effect scores (difference between truncated and control) + all demographics and graph literacy scores) 
+models_difference_df <- left_join(left_join(subject_difference_df,subject_graphliteracy_df), demographic_df[, c("participantID", "dem_ed", "dem_gender", "dem_age")])
+models_difference_df$dem_ed <- as.factor(models_difference_df$dem_ed)
+
+#Create trimmed timing df
+##(trims anything past 2 standard deviations from each participant's individual mean for each condition)
+trimmed_timing_df <- timing_df %>% 
+  group_by(participantID, condition) %>% 
+  mutate(avg = mean(time), stdev = sd(time)) %>%
+  filter(time <= 2*stdev+avg) %>%
+  as.data.frame()
+```
+
+
+--------------
+
+
+## Methods
+
+### Participants
+
+```{r general participant information}
+
+n <- demographic_df %>% 
+  summarise(n = n())
+```
+
+```{r general participant information gender}
+gender <- demographic_df %>% 
+  group_by(dem_gender) %>% 
+  summarise(n = n())
+
+gender
+  
+```
+
+
+```{r general participant information age}
+age <- demographic_df %>% 
+  summarise(mean_age = mean(dem_age), sd_age = sd(dem_age), 
+            median_age = median(dem_age), min_age= min(dem_age), 
+            max_age = max(dem_age), range_age = max(dem_age)-min(dem_age))
+
+age
+   
+```
+
+
+The study was conducted using Amazon Mechanical Turk (MTurk). We recruited `r text_spec(n, bold = T)` participants (`r text_spec(gender[gender$dem_gender == "female",]$n, bold = T)` women, `r text_spec(gender[gender$dem_gender == "other",]$n, bold = T)` non-binary; M~age~ = `r text_spec(round(age$mean_age, 2), bold = T)` years, SD~age~ = `r text_spec(round(age$sd_age, 2), bold = T)`) who self-reported a United States location and whose previous task approval rate was equal to or exceeded 85%. 
+
+
+
+```{r supplemental participant information education}
+education <- demographic_df %>% 
+  group_by(dem_ed) %>% 
+  summarise (n = n()) %>%
+  mutate(percentage = n / sum(n)*100)
+
+education
+   
+```
+
+`r text_spec(round(sum(education[education$dem_ed >= 5,]$percentage)), bold = T)`% of participants reported having at least a Bachelor’s degree. 
+
+### Power
+```{r power analysis}
+power <- pwr.t.test(n= 24, sig.level = 0.05, power = 0.90,  type = c("paired"))
+```
+
+
+Our post-hoc power analysis showed that this sample size is powered to detect a two-tailed effect size of `r text_spec(round(power$d,2), bold = T)` with an α of `r text_spec(power$sig.level, bold = T)` and `r text_spec(power$power, bold = T)` power in a within-subjects design (Faul, Erdfelder, Lang, & Buchner, 2007). Procedures in this and all following studies were approved by the Duke University IRB.
+
+
+## Results
+
+### The effect of axis truncation on qualitative judgment: truncation effect
+
+```{r summary statistics for graph ratings}
+
+#Summarize Accross Subjects
+subject_mean_summary <- subject_mean_df %>% 
+  group_by(condition) %>% 
+  summarise(n = n(), mean = mean(subject_mean_rating), sd = sd(subject_mean_rating), 
+            median = median(subject_mean_rating),
+            min= min(subject_mean_rating), max = max(subject_mean_rating), 
+            range =max(subject_mean_rating)-min(subject_mean_rating))
+
+subject_mean_summary
+  
+```
+
+
+First, we examined how the control versus truncated bar graph manipulation affected participant ratings of how different two quantities are (i.e. graph ratings). As hypothesized, we found that people rated the differences depicted by truncated graphs as larger than those depicted by control graphs:  M~control~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$condition == "control",]$mean,2), bold = T)` (SD~control~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$condition == "control",]$sd,2), bold = T)`); M~truncated~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$condition == "truncated",]$mean,2), bold = T)` (SD~truncated~ = `r text_spec(round(subject_mean_summary[subject_mean_summary$condition == "truncated",]$sd,2), bold = T)`).
+
+```{r mean difference}
+M_difference <- subject_difference_df %>% 
+  summarise(mean = mean(difference))
+```
+
+
+```{r t test for graph ratings}
+t_test <- t.test(subject_mean_rating ~ condition, subject_mean_df, paired = TRUE)
+
+t_test
+```
+
+```{r effect size for graph ratings}
+cohen_d <- effsize::cohen.d(subject_mean_df$subject_mean_rating, subject_mean_df$condition, paired = TRUE, na.rm = TRUE)
+
+cohen_d
+```
+
+
+
+A paired t-test revealed that this difference was statistically significant with a `r text_spec(as.character(cohen_d$magnitude), bold = T)` effect size, t(`r text_spec(round(t_test$parameter,2), bold = T)`) = `r text_spec(abs(round(t_test$statistic,2)), bold = T)`, p < `r text_spec(format(round(t_test$p.value,3), nsmall= 3), bold = T)`, M~difference~ = `r text_spec(round(M_difference$mean,2), bold = T)`, d = `r text_spec(abs(round(cohen_d$estimate,2)), bold = T)`. *Figure 3A* illustrates these results, depicting means with 95% confidence intervals, individual participants, and distributions for both conditions
+
+
+
+
+```{r figure 5 prep}
+#Flat Violin Set Up
+subject_mean_df %<>% 
+  mutate(subject_condition = 1)
+
+errbar_lims <- subject_mean_df %>% 
+  group_by(condition, subject_condition) %>% 
+  summarise(mean=mean(subject_mean_rating), se=sd(subject_mean_rating)/sqrt(n()),
+                        upper=mean+(2*se), lower=mean-(2*se))
+```
+
+```{r figure 5}
+#Flat Violin Pink and Blue
+ggplot(subject_mean_df, aes(x = subject_condition, y = subject_mean_rating, fill = condition)) +
+  geom_flat_violin(aes(fill = condition),position = position_nudge(x = .1, y = 0), adjust = 1.5, trim = FALSE, alpha = .8,colour = NA) +
+  geom_point(aes(x = as.numeric(subject_condition), y = subject_mean_rating, fill = condition, colour = condition), position = position_jitter(0.05), size = 2, shape = 20, alpha = 0.7)+
+  geom_errorbar(data=errbar_lims, aes(x=subject_condition, y=mean, ymax=upper, ymin=lower, color = condition),stat='identity', size = 1, width=.06, position = position_nudge(x = -0.15, y = 0))+
+   geom_point(data=errbar_lims, aes(x=subject_condition, y=mean, color = condition), position = position_nudge(x = -0.15, y = 0))+
+  #Color
+  scale_colour_manual(values = c("#000A77", "#FF6171"))+
+  scale_fill_manual(values = c("#000A77", "#FF6171"))+
+  #Axis
+  coord_cartesian(ylim=c(1, 7), xlim =c(0.75,1.7)) + 
+  scale_y_continuous(breaks=seq(1, 7, 1))+
+  ylab("mean rating")+
+  xlab("")+
+  #Theme
+  raincloud_theme+
+  theme(axis.ticks.x = element_blank(), axis.text.x = element_blank())+
+  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
+  ggtitle("Figure 3A")
+
+ggsave('../figures/figure3_A.png', plot = last_plot(), width = 6, height = 5)
+ggsave('../figures/figure3_A.tiff', plot = last_plot(), width = 6, height = 5, device = "tiff", dpi=300, limitsize = FALSE)
+```
+
+
+
+
+```{r summary statistics for truncation effect}
+#Summarize
+subject_difference_summary <- subject_difference_df %>% 
+  summarise(n = n(), mean_difference = mean(difference), sd = sd(difference), 
+            median = median(difference),
+            min= min(difference), max = max(difference), 
+            range =max(difference)-min(difference))
+
+subject_difference_summary
+  
+
+```
+
+
+Thus, when presented with truncated y-axes rather than y-axes that begin at 0, participants judge differences to be larger. This effect was consistent across participants: all `r text_spec(n, bold = T)` participants rated differences depicted by truncated graphs as larger than those depicted by control graphs, with the size of that difference ranging from `r text_spec(round(subject_difference_summary$min,2), bold = T)` to `r text_spec(round(subject_difference_summary$max,2), bold = T)`. We call this effect of axis truncation on qualitative judgments of differences the *truncation effect*.
+
+
+### Graph literacy
+
+```{r summary statistics for graph literacy, error= FALSE}
+#Cronbach's Alpha
+library(psych)
+
+alpha <- graphliteracy_df %>% 
+  spread(graphliteracy_question, rating) %>% 
+  select(-group) %>% 
+  psych::alpha()
+
+#Data Summary
+subject_graphliteracy_summary <- subject_graphliteracy_df %>% 
+  summarise(n = n(), 
+            mean = mean(graphliteracy_sum_rating), 
+            sd = sd(graphliteracy_sum_rating), 
+            median = median(graphliteracy_sum_rating),
+            min= min(graphliteracy_sum_rating), 
+            max = max(graphliteracy_sum_rating), 
+            range=max(graphliteracy_sum_rating)-min(graphliteracy_sum_rating)) %>% 
+  mutate(alpha = round(alpha$total$std.alpha,2))
+
+subject_graphliteracy_summary
+```
+
+Next, we investigated the role of graph literacy in predicting people’s graph ratings. Graph literacy scores ranged from `r text_spec(round(subject_graphliteracy_summary$min,2), bold = T)` to `r text_spec(round(subject_graphliteracy_summary$max,2), bold = T)` in Study 1 (M = `r text_spec(round(subject_graphliteracy_summary$mean,2), bold = T)`, SD = `r text_spec(round(subject_graphliteracy_summary$sd,2), bold = T)`). 
+
+
+```{r graphliteracy model}
+graphliteracymodel <- lm(difference ~ graphliteracy_sum_rating, models_difference_df)
+summary_graphliteracymodel <- summary(graphliteracymodel)
+
+summary_graphliteracymodel
+```
+
+
+A linear model predicting the difference between control and truncated graphs for each participant was not predictive: F(1, 22) = `r text_spec(round(summary_graphliteracymodel$fstatistic[1],2), bold = T)`, p = `r text_spec(round(summary_graphliteracymodel$coefficient[2,4],2), bold = T)`, adjusted R2 = `r text_spec(round(summary_graphliteracymodel$adj.r.squared,2), bold = T)`. 
+
+Figure 6 depicts this null relationship. Thus, contrary to our hypothesis, graph literacy did not affect the size of the truncation effect.
+
+```{r figure 6}
+ggplot(models_difference_df, aes(x = graphliteracy_sum_rating, y = difference))+
+  geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
+  geom_jitter(alpha = 0.7)+
+  ylab("truncation effect")+
+  xlab("graph literacy score")+
+  ggtitle("Figure 4")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+ggsave('../figures/figure4.png', plot = last_plot(), width = 6, height = 4)
+ggsave('../figures/figure4.tiff', plot = last_plot(), width = 6, height = 4, device = "tiff")
+
+```
+
+
+
+
+
+## Supplemental Information
+
+### Methods (Supplemental Information)
+
+#### Participants (Supplemental Information)
+
+```{r supplemental participant information language}
+language <- demographic_df %>%
+  group_by(dem_language) %>% 
+  summarise(n=n())
+
+language
+   
+```
+
+
+`r text_spec(language$n, bold = T)` participants reported English as their first language. 
+
+
+
+```{r supplemental participant information duration}
+duration <- demographic_df %>% 
+  summarise(mean_duration = mean(duration_min), 
+            sd_duration = sd(duration_min), 
+            median_duration = median(duration_min), 
+            min_duration= min(duration_min), 
+            max_duration = max(duration_min), 
+            range_duration = max(duration_min)-min(duration_min))
+
+duration
+  
+```
+
+
+The experiment took participants an average of M~duration~ = `r text_spec(round(duration$mean_duration, 2), bold = T)` minutes, (SD~duration~ = `r text_spec(round(duration$sd_duration, 2), bold = T)` minutes). Participants were paid US $3.50 for participating.
+
+
+
+### Results (Supplemental Information)
+
+#### Education (Supplemental Information)
+
+Education Anova
+```{r}
+# education Only
+educationOnly <- aov(difference ~ dem_ed, models_difference_df)
+summary(educationOnly)
+```
+
+Education and graph literacy 
+```{r}
+models_difference_df$dem_ed <- as.numeric(models_difference_df$dem_ed)
+
+education_graphliteracy <- lm(graphliteracy_sum_rating ~ dem_ed, models_difference_df)
+summary(education_graphliteracy)
+```
+
+
+#### Age (Supplemental Information)
+
+Age Linear Regression
+```{r}
+#age Only
+ageOnly<- lm(difference ~ dem_age, models_difference_df)
+summary(ageOnly)
+```
+
+
+Figure depicts this null relationship (age)
+
+```{r figure SI age}
+ggplot(models_difference_df, aes(x = dem_age, y = difference))+
+  geom_smooth(method = lm, color = "#510D73", fill = "#510D73") +
+  geom_jitter(alpha = 0.7)+
+  #ylab("truncation effect")+
+  #xlab("age")+
+  #ggtitle("Figure S")+
+  raincloud_theme+
+  theme(axis.line.x = element_line(colour = 'black', size=0.5, linetype='solid'))
+
+```
+
+#### Item Analysis (Supplemental Information)
+
+Here we summarise the data for each item. This is helpful to identify if the effect is driven by a few graphs or if it is seen across all graphs in the materials. 
+
+```{r item analysis}
+item_mean_df <- rating_df %>% 
+  group_by(question,condition) %>% 
+  summarise(item_mean_rating = mean(rating)) %>% 
+  arrange(question)
+```
+
+```{r}
+item_mean_df %>% 
+  spread(condition, item_mean_rating) %>%
+  mutate(diff=truncated - control)
+```
+
+```{r}
+item_mean_summary<- item_mean_df %>% 
+  spread(condition, item_mean_rating) %>%
+  mutate(diff=truncated - control) %>% 
+  ungroup() %>% 
+  summarise(n = n(), mean = mean(diff), sd = sd(diff), 
+            median = median(diff), min= min(abs(diff)), 
+            max = max(abs(diff)), 
+            range = max(abs(diff))-min(abs(diff)))
+
+item_mean_summary
+```
+
+
+```{r}
+ggplot(rating_df, aes(x = condition, y = rating, group = condition, color = condition))+
+  geom_jitter(width = 0.23, alpha = 0.5)+
+  stat_summary(fun.y = mean, geom = "point", color = "black") + 
+  stat_summary(fun.y=mean, color="black", geom="line", aes(group = 1))+
+  facet_wrap(~as.factor(question)) + 
+  scale_colour_brewer(palette = "Set1", direction=-1)
+
+ggsave("../figures/figureSI1_item_analysis.png", device = "png", width = 14, height = 8, plot = last_plot(),scale = 1)
+
+
+```
+
+```{r}
+item_mean_df %>% 
+  spread(condition, item_mean_rating) %>%
+  mutate(diff=truncated - control)%>% 
+  filter(diff <0)
+```
+
+
+The truncation effect was observed for all graphs except graph 14, 23. On average, the 7-point ratings were `r text_spec(round(item_mean_summary$mean,2), bold = T)` (SD = `r text_spec(round(item_mean_summary$sd,2), bold = T)`) higher when graphs were seen in the truncated condition than when they were seen in the control condition. The maximum average absolute difference between the truncated and control conditions was for graph 7 M = `r text_spec(round(item_mean_summary$max,2), bold = T)`. The minimum average absolute difference was for graph 23 where M = `r text_spec(round(item_mean_summary$min,2), bold = T)`.
+
+
+
+#### Timing (Supplemental Information)
+
+```{r supplemental information timing}
+Trimming <- TRUE
+
+if(Trimming == TRUE){timing_t_df = trimmed_timing_df
+} else{timing_t_df = timing_df}
+```
+
+Timing information is in seconds. 
+
+You can choose to trim or not timing data. By default any timing that is 2 standard deviations away from the mean (for each participant for each condition) is trimmed. 
+
+For this report, any timing that is 2 standard deviations away from the mean (for each participant for each condition) `r if(Trimming == TRUE){paste("WAS")} else{paste("WAS NOT")}` trimmed.  If you want to see results when participants who got the exercise wrong are excluded/included, you can go to the section called Exclusions (at the top of this file) and change **Trimming <- FALSE**
+
+
+```{r}
+subject_timing <-  timing_t_df %>%
+  group_by(participantID, condition) %>%
+  summarise(subject_mean_timing = mean(time))
+
+#Data Summary
+subject_timing_summary <- subject_timing %>% 
+  group_by(condition) %>% 
+  summarise(n = n(), mean = mean(subject_mean_timing), 
+            sd = sd(subject_mean_timing), 
+            median = median(subject_mean_timing), min= min(subject_mean_timing), 
+            max = max(subject_mean_timing), 
+            range = max(subject_mean_timing)-min(subject_mean_timing))
+
+subject_timing_summary
+  
+```
+
+
+
+Item Analysis for Timing
+```{r}
+item_timing_df <- timing_t_df %>%
+  group_by(question, condition) %>%
+  summarise(item_mean_timing = mean(time))
+
+
+#Data Summary
+item_timing_summary <- item_timing_df %>% 
+  group_by(condition) %>% 
+  summarise(n = n(), mean = mean(item_mean_timing), sd = sd(item_mean_timing), 
+            median = median(item_mean_timing), min= min(item_mean_timing), 
+            max = max(item_mean_timing), 
+            range = max(item_mean_timing)-min(item_mean_timing))
+
+item_timing_summary
+  
+```
+
+
+```{r}
+ggplot(timing_t_df, aes(x = condition, y = time, group = condition, color = condition))+
+  geom_jitter(width = 0.23, alpha = 0.5)+
+  stat_summary(fun.y = mean, geom = "point", color = "black") + 
+  stat_summary(fun.y=mean, color="black", geom="line", aes(group = 1))+
+  facet_wrap(~as.factor(question))+
+  scale_colour_brewer(palette = "Set1", direction=-1)
+```
+
+
