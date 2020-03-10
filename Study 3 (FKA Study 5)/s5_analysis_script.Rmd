@@ -13,7 +13,7 @@ output:
 
 This Markdown documents the process to analyze the data for Study 5 which looked at the difference between those who received and those who did not receive a warning at the beginning of the study for a new population: experts. Experts were PhD students from humanities and quantitative fields. 
 
-Data was collected using qualtrics between October 23 and November 25th, 2018 using Amazon's Mechanical Turk for ditribution and Qualtrics as a survey platform. 
+Data was collected using qualtrics between October 23 and November 25th, 2018 using Amazon's Mechanical Turk for distribution and Qualtrics as a survey platform. 
 
 This HTML was last knitted on: `r Sys.time()`
 

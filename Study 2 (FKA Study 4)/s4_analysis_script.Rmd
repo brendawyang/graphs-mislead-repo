@@ -95,10 +95,10 @@ timing_df <- read_csv("data/clean/s4_timing_df.csv")
 
 ### Exclusions
 
-You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 99) to TRUE. The next time you run all the code, these participants will be excluded. 
+You can exclude subjects who did not get the correct answer in the exercise by changing Exclude_Exercise_Check (line 101) to TRUE. The next time you run all the code, these participants will be excluded. 
 
 ```{r}
-Exclude_Exercise_Check <- TRUE
+Exclude_Exercise_Check <- FALSE
 
 participants_excluded <- demographic_df %>% 
   filter(check == "wrong") %>% 
@@ -117,10 +117,9 @@ if(Exclude_Exercise_Check == TRUE){demographic_df <- demographic_df %>%
 
 For this report, **`r if(Exclude_Exercise_Check == FALSE){paste("no")} else{paste(participants_excluded$n)}`** participants are being excluded from analysis. 
 
+# Create data frames that will be used throughout
 
 ```{r addtional data frames, eval = TRUE}
-#Create data frames that will be used throughout
-
 #Calculate subject means by condition for session 1
 ##(mean rating for truncated and mean rating for non-truncated graphs)
 #NOTE: na.rm = TRUE otherwise any participant who doesn't answer 1 of the questions will have an NA for as a mean. 
@@ -160,8 +159,6 @@ models_df <- full_join(full_join(subject_graphliteracy_df, demographic_df[, c("p
 ##(df with subject truncation effect scores (difference between truncated and control) + all demographics and graph literacy scores) 
 models_difference_df <- left_join(left_join(subject_difference_df,subject_graphliteracy_df), demographic_df[, c("participantid", "dem_ed", "dem_gender", "dem_age")])
 
-
-
 #Create trimmed timing df
 ##(trims anything past 2 standard deviations from each participant's individual mean for each condition)
 trimmed_timing_df <- timing_df %>%
@@ -169,6 +166,13 @@ trimmed_timing_df <- timing_df %>%
   mutate(avg = mean(time), stdev = sd(time)) %>%
   filter(time <= 2*stdev+avg) %>%
   as.data.frame()
+
+```
+
+```{r}
+
+# export `models_difference_df` for cross-experimental analysis
+# write_csv(models_difference_df, path = "s4_models_difference_df.csv")
 
 ```
 
