@@ -1,0 +1,207 @@
+"graphcode","Graph.Title","Y.axis.label","X.axis.label","X.axis.order","Variable","Value","Source"
+1,"River Lengths","miles","River","none","Missouri River",2341,NA
+1,"River Lengths","miles","River","none","Yukon River",1979,NA
+2,"Percentage Of Nations From Each Continent In the UN","percentage","Regional Group","none","The Latin American and Caribbean States",17,NA
+2,"Percentage Of Nations From Each Continent In the UN","percentage","Regional Group","none","Asia Pacific",27.5,NA
+3,"How Many Days Each Planet Takes To Orbit The Sun","days","Planet","none","Earth",365.26,NA
+3,"How Many Days Each Planet Takes To Orbit The Sun","days","Planet","none","Mars",686.98,NA
+4,"Number Of States That Were Part Of The Union On A Given Year","number of states","Year","ordered","1900",45,NA
+4,"Number Of States That Were Part Of The Union On A Given Year","number of states","Year","ordered","1860",33,NA
+5,"Average Salary Grads Make Right Out Of College","average salary in US dollars","Bachelor's Degree Major","none","Computer Science",61321,NA
+5,"Average Salary Grads Make Right Out Of College","average salary in US dollars","Bachelor's Degree Major","none","Engineering",64891,NA
+6,"Time Spent Engaging In Everyday Activities","hours per day","Activity","none","Watching television",2.48,NA
+6,"Time Spent Engaging In Everyday Activities","hours per day","Activity","none","Leisure",5.13,NA
+7,"Marital Birth Rates In The US","rate per 1000 women","Year","ordered","2015",89,NA
+7,"Marital Birth Rates In The US","rate per 1000 women","Year","ordered","2013",86.9,NA
+8,"Gestation Period Of Different Animals","days","Animal","none","Human",270,NA
+8,"Gestation Period Of Different Animals","days","Animal","none","Alpaca",345,NA
+9,"Animal Weight","weight in kilograms","Animal","none","Giraffe",900,NA
+9,"Animal Weight","weight in kilograms","Animal","none","Cow",800,NA
+10,"Airport Runway Lengths","feet","Airport","none","Paris (CDG)",13829,NA
+10,"Airport Runway Lengths","feet","Airport","none","Singapore (SIN)",13123,NA
+11,"Post Presidency Life-Span","days","President","none","Richard Nixon",7196,NA
+11,"Post Presidency Life-Span","days","President","none","Thomas Jefferson",6331,NA
+12,"Cremations As A Percentage Of All Deaths","percentage","countries","none","Britain",75,"massviz targets"
+12,"Cremations As A Percentage Of All Deaths","percentage","countries","none","Japan",100,"massviz targets"
+13,"Cigarette Use: Percentage Of Women Who Smoke Daily","percentage","countries","none","Russia",55,"massviz targets"
+13,"Cigarette Use: Percentage Of Women Who Smoke Daily","percentage","countries","none","China",43,"massviz targets"
+14,"Theme Park Attendance Worldwide","millions of people","theme park","none","Tokyo Disneyland",14,"massviz targets"
+14,"Theme Park Attendance Worldwide","millions of people","theme park","none","Universal Studios Japan",8,"massviz targets"
+15,"Cost Of Sending Domestic Mail","price in US dollars","Service Title","none","First-Class Package Service",2.61,"https://www.usps.com/business/prices.htm"
+15,"Cost Of Sending Domestic Mail","price in US dollars","Service Title","none","Priority Mail",6.65,"https://www.usps.com/business/prices.htm"
+16,"Deceased Organ Donor Rates Per Million Population","donors per million population","countries","none","Portugal",30,"massviz targets"
+16,"Deceased Organ Donor Rates Per Million Population","donors per million population","countries","none","Germany",16,"massviz targets"
+17,"Language Diversity","Greenberg's Diversity Index","countries","none","India",0.95,"massviz targets"
+17,"Language Diversity","Greenberg's Diversity Index","countries","none","South Africa",0.87,"massviz targets"
+18,"Language Diversity","number of indigenous languages spoken","countries","none","Mexico",291,"massviz targets"
+18,"Language Diversity","number of indigenous languages spoken","countries","none","United States",188,"massviz targets"
+19,"Chinese Outside Of Mainland China","millions of Chinese","countries","none","United States",3.46,"massviz targets"
+19,"Chinese Outside Of Mainland China","millions of Chinese","countries","none","Indonesia",7.67,"massviz targets"
+20,"Price of Book Titles Sold At Auction","millions of dollars","book","none","The Birds of America by John James Audubon",10.3,"massviz targets"
+20,"Price of Book Titles Sold At Auction","millions of dollars","book","none","First Folio by William Shakespeare",6.4,"massviz targets"
+21,"Brazil's Agriculture","percentage of world share","Production of product","none","Sugar",22,"massviz targets"
+21,"Brazil's Agriculture","percentage of world share","Production of product","none","Coffee",40,"massviz targets"
+22,"Mandatory Employment Leave","number of calendar days","countries","none","France",31,"massviz targets"
+22,"Mandatory Employment Leave","number of calendar days","countries","none","Brazil",30,"massviz targets"
+23,"Earnings By Education Level","mean earnings","level of education completed","none","Professional Degree",121212,"massviz targets"
+23,"Earnings By Education Level","mean earnings","level of education completed","none","Master's Degree",84448,"massviz targets"
+24,"Disease Fatality Rates","fatality rate","disease","none","HIV (treated)",20,"massviz targets"
+24,"Disease Fatality Rates","fatality rate","disease","none","Tubercolosis",45.5,"massviz targets"
+25,"Percentage Of People Who Commute By Bike","percentage","city","none","Portland",3.9,"massviz targets"
+25,"Percentage Of People Who Commute By Bike","percentage","city","none","San Francisco",2.5,"massviz targets"
+26,"Elevation Of The World's Highest Peaks","feet","Mountain","none","Kilimanjaro",19340,"massviz targets"
+26,"Elevation Of The World's Highest Peaks","feet","Mountain","none","Mt McKinley",20320,"massviz targets"
+27,"Deaths In Women by Leading Risk Factors","percentage of deaths","Risk factor","none","Unmet Contraceptive Need",5,"massviz targets"
+27,"Deaths In Women by Leading Risk Factors","percentage of deaths","Risk factor","none","Iron Deficiency",4,"massviz targets"
+28,"Government Expenditure On Health","percentage of GDP","Country","none","Lesotho",8.4,"massviz targets"
+28,"Government Expenditure On Health","percentage of GDP","Country","none","Panama",6.1,"massviz targets"
+29,"Drinking Water Coverage in 2018","coverage percentage","Regional Group","none","Latin America and the Caribbean",94,"massviz targets"
+29,"Drinking Water Coverage in 2016","coverage percentage","Regional Group","none","Eastern Asia",91,"massviz targets"
+30,"Deaths Attributable To Tobacco","percentage of dealths","Regional Group","none","Americas",16,"massviz targets"
+30,"Deaths Attributable To Tobacco","percentage of dealths","Regional Group","none","Western Pacific Region",13,"massviz targets"
+31,"Prevalence Of Alcohol Abstention","percentage of lifetime absteiners","Regional Group","none","Eastern Mediterranean Region",87.8,"massviz targets"
+31,"Prevalence Of Alcohol Abstention","percentage of lifetime absteiners","Regional Group","none","African Region",57.3,"massviz targets"
+32,"Global Alcohol-Attributable Deaths By Disease And Injury","percentage of alcohol attributable deaths","Disorder or injury","none","Liver cancer",8.2,"massviz targets"
+32,"Global Alcohol-Attributable Deaths By Disease And Injury","percentage of alcohol attributable deaths","Disorder or injury","none","Road traffic accidents",11.9,"massviz targets"
+33,"Blood Alcohol Concentration (BAC) Limits For Commercial Drivers","number of countries","BAC limit for commercial drivers (%)","ordered","0",26,"massviz targets"
+33,"Blood Alcohol Concentration (BAC) Limits For Commercial Drivers","number of countries","BAC limit for commercial drivers (%)","ordered","0.08",43,"massviz targets"
+34,"Deaths Attributable To Diet-Related Risks And Physical Inactivity","percentage of deaths","Risk factor","none","High cholesterol",4.5,"massviz targets"
+34,"Deaths Attributable To Diet-Related Risks And Physical Inactivity","percentage of deaths","Risk factor","none","Overweight and obesity",4.8,"massviz targets"
+35,"Home-Loan Purchases","millions of home purchases","Year","ordered","2011",2.4,"massviz targets"
+35,"Home-Loan Purchases","millions of home purchases","Year","ordered","2010",2.5,"massviz targets"
+36,"People Who Have Died As A Result Of Police Action In South Africa","number of people","Year","ordered","2009",580,"massviz targets"
+36,"People Who Have Died As A Result Of Police Action In South Africa","number of people","Year","ordered","2011",800,"massviz targets"
+37,"Calories By Product","calories","Product","none","Burger King Whopper",600,"massviz targets"
+37,"Calories By Product","calories","Product","none","Big Mac",550,"massviz targets"
+38,"Travel Bookings As A Percentage Of GDP","percentage of GDP","country","none","Cyprus",17.7,"massviz targets"
+38,"Travel Bookings As A Percentage Of GDP","percentage of GDP","country","none","Greece",16.5,"massviz targets"
+39,"Adults Listening To Music By Platform","percentage of adults","Platform","none","Pandora",32,"massviz targets"
+39,"Adults Listening To Music By Platform","percentage of adults","Platform","none","CDs",62,"massviz targets"
+40,"American Customer Satisfaction Index Scores of McDonald's Restaurants","American Customer Satisfaction Index scores","Year","ordered","2013",74,"https://www.statista.com/statistics/216696/mcdonalds--customer-satisfaction-in-the-us/"
+40,"American Customer Satisfaction Index Scores of McDonald's Restaurants","American Customer Satisfaction Index scores","Year","ordered","2015",67,"https://www.statista.com/statistics/216696/mcdonalds--customer-satisfaction-in-the-us/"
+41,"Computer Game Sales by Genre","percentage of units sold","Genre","none","Role-playing",18.7,"https://www.statista.com/statistics/189660/breakdown-of-us-computer-game-sales-2009-by-genre/"
+41,"Computer Game Sales by Genre","percentage of units sold","Genre","none","Strategy",36.4,"https://www.statista.com/statistics/189660/breakdown-of-us-computer-game-sales-2009-by-genre/"
+42,"Distribution Of Beauty Content Videos On YouTube","percentage of videos","Category","none","Other",7,"https://www.statista.com/statistics/521374/beauty-video-content-youtube-category/"
+42,"Distribution Of Beauty Content Videos On YouTube","percentage of videos","Category","none","Routine",7.2,"https://www.statista.com/statistics/521374/beauty-video-content-youtube-category/"
+43,"Online Pet Products Sales In The United States","sales in billions of dollars","Year","ordered","2012",1.32,"https://www.statista.com/statistics/297267/us-pet-products-online-sales/"
+43,"Online Pet Products Sales In The United States","sales in billions of dollars","Year","ordered","2013",1.48,"https://www.statista.com/statistics/297267/us-pet-products-online-sales/"
+44,"Global Smartphone Shipments","shipments in million units","Year","ordered","2015",1437.2,"https://www.statista.com/statistics/271491/worldwide-shipments-of-smartphones-since-2009/"
+44,"Global Smartphone Shipments","shipments in million units","Year","ordered","2014",1301.7,"https://www.statista.com/statistics/271491/worldwide-shipments-of-smartphones-since-2009/"
+45,"Best-Paid Actors Worldwide In 2018","annual income in million U.S. dollars","actor","none","Dwayne Johnson",65,"https://www.statista.com/statistics/451516/best-paid-actors/"
+45,"Best-Paid Actors Worldwide In 2019","annual income in million U.S. dollars","actor","none","Vin Diesel",54.5,"https://www.statista.com/statistics/451516/best-paid-actors/"
+46,"Number Of 3D Cinema Screens Worldwide","number of screens","Year","ordered","2013",53069,"https://www.statista.com/statistics/271863/number-of-3d-cinema-screens-worldwide/"
+46,"Number Of 3D Cinema Screens Worldwide","number of screens","Year","ordered","2014",64788,"https://www.statista.com/statistics/271863/number-of-3d-cinema-screens-worldwide/"
+47,"Net Profit Of Airlines Worldwide","billion U.S. dollars","Year","ordered","2014",13.7,"https://www.statista.com/statistics/268330/profit-of-airlines-worldwide/"
+47,"Net Profit Of Airlines Worldwide","billion U.S. dollars","Year","ordered","2016",34.8,"https://www.statista.com/statistics/268330/profit-of-airlines-worldwide/"
+48,"Which Type Of Yoga Do You Do?","percentage of respondents","type of yoga","none","Anusara Yoga",14,"https://www.statista.com/statistics/639286/popular-types-of-yoga-in-us/"
+48,"Which Type Of Yoga Do You Do?","percentage of respondents","type of yoga","none","Power Yoga",17,"https://www.statista.com/statistics/639286/popular-types-of-yoga-in-us/"
+49,"Brand Value Of Beer Brands Worldwide","value in million US dollars","Beer brand","none","Skol",6743,"https://www.statista.com/statistics/267937/brand-value-of-the-leading-10-beer-brands-worldwide/"
+49,"Brand Value Of Beer Brands Worldwide","value in million US dollars","Beer brand","none","Bud Light",13198,"https://www.statista.com/statistics/267937/brand-value-of-the-leading-10-beer-brands-worldwide/"
+50,"Which Flavors Of Bubble Gum Does The US Population Chew Most Often?","number of consumers in millions","Flavor","none","Fruit flavors",42.7,"https://www.statista.com/statistics/276032/us-households-most-chewed-flavors-of-chewing-gum--bubble-gum-2013/"
+50,"Which Flavors Of Bubble Gum Does The US Population Chew Most Often?","number of consumers in millions","Flavor","none","Wintergreen",53.74,"https://www.statista.com/statistics/276032/us-households-most-chewed-flavors-of-chewing-gum--bubble-gum-2013/"
+51,"Total Paid Attendance At NCAA College Basketball Tournament Games","paid attendance in thousands","Year","ordered","2009",697,"https://www.statista.com/statistics/219650/ncaa-basketball-tournament-games-total-attendance/"
+51,"Total Paid Attendance At NCAA College Basketball Tournament Games","paid attendance in thousands","Year","ordered","2012",780,"https://www.statista.com/statistics/219650/ncaa-basketball-tournament-games-total-attendance/"
+52,"Most Visited Art Museums Worldwide In 2016","attendance in millions","museum","none","British Museum, London",6.42,"https://www.statista.com/statistics/246293/art-museums-by-total-attendance-worldwide/"
+52,"Most Visited Art Museums Worldwide In 2016","attendance in millions","museum","none","Metropolitan Museum of Art, New York",7.01,"https://www.statista.com/statistics/246293/art-museums-by-total-attendance-worldwide/"
+53,"Number Of Visitors To The Louvre In Paris","number of visitors in millions","Year","ordered","2014",9.26,"https://www.statista.com/statistics/247419/Yearly-visitors-to-the-louvre-in-paris/"
+53,"Number Of Visitors To The Louvre In Paris","number of visitors in millions","Year","ordered","2016",7.3,"https://www.statista.com/statistics/247419/Yearly-visitors-to-the-louvre-in-paris/"
+54,"Number Of Atomic Reactors In Operation Worldwide In 2016 By Age","number of reactors","age","ordered","45",8,"https://www.statista.com/statistics/272133/number-of-atomic-reactors-in-operation-worldwide-by-age/"
+54,"Number Of Atomic Reactors In Operation Worldwide In 2016 By Age","number of reactors","age","ordered","46",3,"https://www.statista.com/statistics/272133/number-of-atomic-reactors-in-operation-worldwide-by-age/"
+55,"Growth Rate Of Organic Farmland","percentage growth rate","Year","ordered","2013",3.3,"https://www.statista.com/statistics/669414/organic-farmland-growth-north-america/"
+55,"Growth Rate Of Organic Farmland","percentage growth rate","Year","ordered","2011",3.2,"https://www.statista.com/statistics/669414/organic-farmland-growth-north-america/"
+56,"Number Of Sports At The Summer Olympic Games","number of sports played","Year","ordered","1948",20,"https://www.statista.com/statistics/280419/summer-olympics-number-of-sports-played/"
+56,"Number Of Sports At The Summer Olympic Games","number of sports played","Year","ordered","1928",17,"https://www.statista.com/statistics/280419/summer-olympics-number-of-sports-played/"
+57,"Opinion On Whether The Olympics In Rio Will Be a Success Or Not","percentage of respondents","success scale","none","Somewhat Successful",30,"https://www.statista.com/statistics/578946/success-of-the-2016-olympics-in-rio/"
+57,"Opinion On Whether The Olympics In Rio Will Be a Success Or Not","percentage of respondents","success scale","none","Somewhat Unsuccessful",27,"https://www.statista.com/statistics/578946/success-of-the-2016-olympics-in-rio/"
+58,"Number Of Pets In The United States","number of pets in millions","pet","none","Bird",20.3,"https://www.statista.com/statistics/198095/pets-in-the-united-states-by-type-in-2008/"
+58,"Number Of Pets In The United States","number of pets in millions","pet","none","Small animal",14,"https://www.statista.com/statistics/198095/pets-in-the-united-states-by-type-in-2008/"
+59,"Leading Quick Service Restaurant Chains In The United States","number of units","quick service restaurant","none","McDonald's",14155,"https://www.statista.com/statistics/242883/quick-service-restaurant-chains-by-number-of-restaurants/"
+59,"Leading Quick Service Restaurant Chains In The United States","number of units","quick service restaurant","none","Subway",26744,"https://www.statista.com/statistics/242883/quick-service-restaurant-chains-by-number-of-restaurants/"
+60,"Number Of Families With A Single Mother In The U.S","number of families in thousands","Year","ordered","2015",15630,"https://www.statista.com/statistics/205000/number-of-families-with-a-single-mother-in-the-us/"
+60,"Number Of Families With A Single Mother In The U.S","number of families in thousands","Year","ordered","2014",15553,"https://www.statista.com/statistics/205000/number-of-families-with-a-single-mother-in-the-us/"
+61,"Smoking Rates Among Adults In 2015 By U.S. States","percentage of adults who smoke","State","none","Kentucky",25.9,"https://www.statista.com/statistics/261595/us-states-with-highest-smoking-rates-among-adults/"
+61,"Smoking Rates Among Adults In 2015 By U.S. States","percentage of adults who smoke","State","none","Arkansas",24.9,"https://www.statista.com/statistics/261595/us-states-with-highest-smoking-rates-among-adults/"
+62,"Instagram Accounts With The Most Followers","millions of followers","Account","none","Ariana Grande",116.88,NA
+62,"Instagram Accounts With The Most Followers","millions of followers","Account","none","Beyonc<e9>",110.03,NA
+63,"Leading Adblockers Used By Consumers","percentage of consumers","Ad Blocker","none","Adguard",7,NA
+63,"Leading Adblockers Used By Consumers","percentage of consumers","Ad Blocker","none","Adblock Plus",31,NA
+64,"Most Popular Cloud Storage Service Providers","percentage of consumers","Could Storage Service","none","Google Drive",45,NA
+64,"Most Popular Cloud Storage Service Providers","percentage of consumers","Could Storage Service","none","Dropbox",53,NA
+65,"Ipad Users In The United States","millions of users","Year","ordered","2016",79.7,NA
+65,"Ipad Users In The United States","millions of users","Year","ordered","2015",78.3,NA
+66,"Internet Of Things (Iot) Connected Devices","billions of devices","Year","ordered","2019",26.66,NA
+66,"Internet Of Things (Iot) Connected Devices","billions of devices","Year","ordered","2017",20.35,NA
+67,"Number Of Active Users Of Fitbit","millions of users","Year","ordered","2015",16.9,NA
+67,"Number Of Active Users Of Fitbit","millions of users","Year","ordered","2013",2.57,NA
+68,"Most Commonly Owned Smart Home Features","percentage of consumers","Feature","none","Lighting automation",5,NA
+68,"Most Commonly Owned Smart Home Features","percentage of consumers","Feature","none","Security system",10,NA
+69,"NBA All-Time Points Scored","number of points scored","NBA player","none","Kareem Abdul-Jabbar",38387,NA
+69,"NBA All-Time Points Scored","number of points scored","NBA player","none","Karl Malone",36928,NA
+70,"Participation In Running Events","millions of participants","Year","ordered","2013",54.19,NA
+70,"Participation In Running Events","millions of participants","Year","ordered","2012",53.2,NA
+71,"Attendance At Performing Arts Events","attendance in millions","Year","ordered","2008",76.68,NA
+71,"Attendance At Performing Arts Events","attendance in millions","Year","ordered","2011",77.33,NA
+72,"Electric Vehicles In The World","thousands of vehicles","Year","ordered","2014",420,NA
+72,"Electric Vehicles In The World","thousands of vehicles","Year","ordered","2015",746,NA
+73,"Countries With The Most Airbnb Listings","thousands of listings","Country","none","Spain",245,NA
+73,"Countries With The Most Airbnb Listings","thousands of listings","Country","none","France",485,NA
+74,"Nike's Revenue Worldwide","millions of dollars","Year","ordered","2013",25313,NA
+74,"Nike's Revenue Worldwide","millions of dollars","Year","ordered","2011",20117,NA
+75,"Magazines In The United States","number of magazines","Year","ordered","2004",7188,NA
+75,"Magazines In The United States","number of magazines","Year","ordered","2005",6325,NA
+76,"Percentage Of Female Film Directors In Hollywood","percentage","Year","ordered","2015",7.5,NA
+76,"Percentage Of Female Film Directors In Hollywood","percentage","Year","ordered","2017",7.3,NA
+77,"Per Capita Consumption Of Bottled Water","gallons per capita","Country","none","Mexico",67.2,NA
+77,"Per Capita Consumption Of Bottled Water","gallons per capita","Country","none","United States",39.3,NA
+78,"Percentage Of Individuals Who Wear Contact Lenses","percentage","Country","none","United Kingdom",6,NA
+78,"Percentage Of Individuals Who Wear Contact Lenses","percentage","Country","none","Austria",10,NA
+79,"Percentage Of Public Libraries Offering Electronic Resources","percentage","Electronic Resource","none","Colour printers",78,NA
+79,"Percentage Of Public Libraries Offering Electronic Resources","percentage","Electronic Resource","none","Early learning technologies",45,NA
+80,"Leading Book Genres","percentage of consumers","Book Genres","none","Mystery, thriller and crime",47,NA
+80,"Leading Book Genres","percentage of consumers","Book Genres","none","Biographies/memoir",31,NA
+81,"Player Salaries In The NFL By Team","millions of dollars","NFL Team","none","Philadelphia Eagles",249,NA
+81,"Player Salaries In The NFL By Team","millions of dollars","NFL Team","none","New York Jets",210,NA
+82,"Full Time Daily Newspaper Journalists","number of journalists","Year","ordered","2013",38000,NA
+82,"Full Time Daily Newspaper Journalists","number of journalists","Year","ordered","2012",40600,NA
+83,"Gross Revenue For Music Tours In North America","millions of dollars","Music Tour","none","Garth Brooks",101.4,NA
+83,"Gross Revenue For Music Tours In North America","millions of dollars","Music Tour","none","Bruno Mars",112.4,NA
+84,"Smart Meter Installations In The U.S.","thousands of smart meters","State","none","Texas",9371,NA
+84,"Smart Meter Installations In The U.S.","thousands of smart meters","State","none","Pennsylvania",6843,NA
+85,"Plans For Halloween Celebrations","percentage of respondents","Plans","none","Take children trick-or-treating",25,NA
+85,"Plans For Halloween Celebrations","percentage of respondents","Plans","none","Hand out candy",53,NA
+86,"Retail Sales By American Retailers","billions of dollars","Retailer","none","The Kroger Co.",110.22,NA
+86,"Retail Sales By American Retailers","billions of dollars","Retailer","none","The Home Depot",85.09,NA
+87,"Target Stores In North America","number of stores","Year","ordered","2010",1750,NA
+87,"Target Stores In North America","number of stores","Year","ordered","2008",1682,NA
+88,"U.S. Pumpkin Production","thousands of cwt","Year","ordered","2015",7538,NA
+88,"U.S. Pumpkin Production","thousands of cwt","Year","ordered","2014",13143,NA
+89,"Enrollment Of U.S. Medical Schools","number of medical school students","School","none","University of Washington",1022,NA
+89,"Enrollment Of U.S. Medical Schools","number of medical school students","School","none","University of North Carolina",834,NA
+90,"Factors Considered In Deciding Upon A Specific College","percentage of respondents","Factors","none","Availability of financial aid",49,NA
+90,"Factors Considered In Deciding Upon A Specific College","percentage of respondents","Factors","none","The offered majors and programs",56,NA
+91,"Body Areas Tattooed In The U.S.","percentage of respondents","Body Areas","none","Upper arm",45,NA
+91,"Body Areas Tattooed In The U.S.","percentage of respondents","Body Areas","none","Back",34,NA
+92,"Retail Price Of Chicken Legs","dollars per pound","Year","ordered","2017",1.46,NA
+92,"Retail Price Of Chicken Legs","dollars per pound","Year","ordered","2014",1.61,NA
+93,"Attendance To Amusement Park Chains Worldwide","millions of people","Amusement Park","none","Fantawild",31.64,NA
+93,"Attendance To Amusement Park Chains Worldwide","millions of people","Amusement Park","none","Six Flags Inc.",30.11,NA
+94,"Disney's Lobbying Expenses","millions of dollars","Year","ordered","2010",3.89,NA
+94,"Disney's Lobbying Expenses","millions of dollars","Year","ordered","2008",5.91,NA
+95,"Sales Of Digital Music Albums","thousands of units sold","Album","none","Kendrick Lamar, DAMN.",551,NA
+95,"Sales Of Digital Music Albums","thousands of units sold","Album","none","Ed Sheeran, <f7> (Divide)",592,NA
+96,"Flowers Americans Like To Receive On Valentines Day","percentage of respondents","Flower","none","Roses (other colors)",9,NA
+96,"Flowers Americans Like To Receive On Valentines Day","percentage of respondents","Flower","none","Mixed flowers",10,NA
+97,"U.S. Online Dating Apps","share of respondents","Dating App","none","eHarmony",0.091,NA
+97,"U.S. Online Dating Apps","share of respondents","Dating App","none","PlentyOfFish",0.194,NA
+98,"Running Accessories","percentage of respondents","Accessory","none","Smart phone",59,NA
+98,"Running Accessories","percentage of respondents","Accessory","none","GPS item",44,NA
+99,"Podcast Publishers in the United States","monthly audience in millions","Podcast Publishers","none","HowStuffWorks",6.24,NA
+99,"Podcast Publishers in the United States","monthly audience in millions","Podcast Publishers","none","NPR",16.37,NA
+100,"Programs Used to Play Podcasts","percentage of respondents","Programs","none","SoundCloud",25,NA
+100,"Programs Used to Play Podcasts","percentage of respondents","Programs","none","TuneIn Radio",13,NA
+101,"FIFA World Ranking","ranking points","Country","none","Germany",1602,NA
+101,"FIFA World Ranking","ranking points","Country","none","Portugal",1358,NA
+102,"Average Back-To-College Expenditure","average expenditure in US dollars","Class year","none","Senior",838,NA
+102,"Average Back-To-College Expenditure","average expenditure in US dollars","Class year","none","Freshmen",1452,NA
+103,"Cancellations By Major U.S. Air Carriers","thousands of cancellations","Year","ordered","2012",78.86,NA
+103,"Cancellations By Major U.S. Air Carriers","thousands of cancellations","Year","ordered","2010",113.26,NA
