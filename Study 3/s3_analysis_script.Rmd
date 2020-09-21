@@ -26,7 +26,7 @@ You must run this section before you can run any other chunks.
 ```{r packages, echo = FALSE}
 #Make sure all packages are installed
 
-list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "shiny", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych")
+list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "shiny", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych", "emmeans", "broom")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 ```
@@ -51,6 +51,8 @@ library(lmerTest)
 library(kableExtra)
 library(knitr)#kable
 library(pwr)
+library(emmeans)
+library(broom)
 
 ##Raincloud Plot Libraries
 source("../R_rainclouds.R")
@@ -60,14 +62,16 @@ library(ggplot2)
 
 ```
 
-
+### ggplot theme
 ```{r raincloud plot}
 #raincloud plot theme
 raincloud_theme <- theme(
-  text = element_text(size = 10),
-  axis.title.x = element_text(size = 16),
-  axis.title.y = element_text(size = 16, margin = margin(r = 20)),
-  axis.text = element_text(size = 14),
+  text = element_text(size = 10, color = "black"),
+  axis.title.x = element_text(size = 16, color = "black"),
+  axis.title.y = element_text(size = 16, color = "black", margin = margin(r = 20)),
+  axis.text = element_text(size = 14, color = "black"),
+  #axis.text.x = element_text(color = "black"),
+  #axis.text.y = element_text(color = "black"),
   legend.title=element_blank(),
   legend.text=element_text(size=16),
   legend.position = "right",
@@ -76,15 +80,24 @@ raincloud_theme <- theme(
   panel.grid.minor = element_blank(),
   panel.grid.major = element_blank(),
   panel.grid.major.y = element_line(colour = 'light gray', size=0.5, linetype='solid'),
+  panel.background = element_blank(),
   axis.line = element_blank(), 
-  axis.ticks.y = element_blank())
+  axis.ticks.y = element_blank(),
+  strip.text = element_text(size=15, margin = margin(.3,0,.3,0, "cm")),
+  strip.background = element_rect(fill="white")
+  )
+
 ```
 
 
 ### Data Import
 
 ```{r data import}
-rating_df <- read_csv("data/clean/s3_rating_df.csv")
+rating_df <- read_csv("data/clean/s3_rating_df.csv", 
+    col_types = cols(graph_condition = col_factor(levels = c("control", 
+        "truncated")), subject_condition = col_factor(levels = c("no warning", 
+        "warning"))))
+
 demographic_df <- read_csv("data/clean/s3_demographic_df.csv")
 graphliteracy_df <- read_csv("data/clean/s3_graphliteracy_df.csv")
 debriefing_df <- read_csv("data/clean/s3_debriefing_df.csv")
@@ -160,8 +173,6 @@ trimmed_timing_df <- timing_df %>%
   as.data.frame()
 
 ```
-
-
 
 --------------
 
@@ -251,49 +262,6 @@ For this report, **`r if(Exclude_Exercise_Check == FALSE){paste("no")} else{past
 
 To preview, Figure 5 summarizes our primary results of interest: we replicate a truncation effect, and find that it is reduced but still present when an explanatory warning is given.
 
-### Figure 5
-```{r figure 5 prep}
-#Flat Violin Set Up
-
-errbar_lims <- subject_mean_df %>% 
-  group_by(graph_condition, subject_condition) %>% 
-  summarise(mean=mean(subject_mean_rating), se=sd(subject_mean_rating)/sqrt(n()), 
-                        upper=mean+(2*se), lower=mean-(2*se))
-
-subject_mean_df %<>% 
-  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
-
-```
-
-```{r figure 5}
-#Flat Violin Pink and Blue
-
-#95% Confidence Interval Only
-ggplot(subject_mean_df, aes(x = subject_condition, y = subject_mean_rating, fill = graph_condition)) +
-  geom_flat_violin(aes(fill = graph_condition),position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .7, colour = NA)+
-  
-  geom_point(aes(x = as.numeric(subject_condition_2), y = subject_mean_rating, colour = graph_condition),position = position_jitter(0.05), size = 2, shape = 20,  alpha =0.7)+
-  
-  geom_point(data=errbar_lims, aes(x=subject_condition, y=mean, color = graph_condition), position = position_nudge(x = -0.2, y = 0))+
-  
-  geom_errorbar(data=errbar_lims, aes(x=subject_condition, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.065, position = position_nudge(x = -0.2, y = 0))+
-  #Color
-  scale_colour_manual(values = c("#000A77", "#FF6171"))+
-  scale_fill_manual(values = c("#000A77", "#FF6171"))+
-  #Axis
-  coord_cartesian(ylim=c(1, 7)) + 
-  scale_y_continuous(breaks=seq(1, 7, 1))+
-  ylab("mean rating")+
-  xlab("")+
-  #Theme
-  raincloud_theme+
-  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
-  ggtitle("Figure 5")
-
-ggsave('../figures/figure5.png', plot = last_plot(), width = 8, height = 5)
-ggsave('../figures/figure5.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
-```
-
 
 ### Truncation effect
 
@@ -357,28 +325,64 @@ This effect was consistent: `r text_spec(round(truncation_effect_direction[trunc
 
 Next, we computed a linear mixed effects model with graph type (0 = control, 1 = truncated) and warning condition (0 = no warning, 1 = warning) as binary fixed factors. Participants' ratings of the differences depicted by bar graphs was the outcome variable, and participant was included a random effect.There was a statistically significant main effect of graph type and a statistically significant interaction between graph type and warning (Table 2).
 
-```{r general models}
+## 2 x 2 Linear Mixed Effects Model
+
+```{r}
 # predicting rating with subject and graph condition
-model1 <- lmer(rating ~ subject_condition * graph_condition + (1 | participantID), models_df)
+model1 <- lmer(rating ~ subject_condition * graph_condition + (1 | participantID) * (1 | question), models_df)
 
 summary(model1)
 
 ##Model
 summary_model1 <- summary(model1)
 summary_model1 <- as.data.frame(summary_model1$coefficients)
+
 ```
 
+### Check model assumptions
+```{r echo=FALSE}
+
+# Predicted versus Data
+plot(predict(model1), models_df$rating)
+
+model1 %>% augment() %>% 
+  ggplot()  + 
+  geom_point(aes(.fitted, rating), alpha = .1) + 
+  geom_smooth(aes(.fitted, rating), method = "lm", se = FALSE, color = "lightgrey") + 
+labs(x = "Actual", y = "Fitted") + 
+  coord_cartesian(ylim=c(1, 7), xlim = c(1,7)) + 
+  scale_y_continuous(breaks=seq(1, 7, 1)) +
+  scale_x_continuous(breaks=seq(1, 7, 1)) +
+  theme_bw() +
+  facet_grid(subject_condition~graph_condition)
+
+# Homogeneity of Variance
+boxplot(residuals(model1) ~ models_df$graph_condition)
+boxplot(residuals(model1) ~ models_df$subject_condition)
+
+# Residuals are ~normally distributed
+library(lattice)
+qqmath(model1)
+
+```
 
 We note that the intercept in this model (`r text_spec(round(summary_model1[1,1],2), bold = T)`) corresponds to ratings for control graphs with no explanatory warning given, acting as a theoretical and practical baseline for ratings on a 7-point scale.
 
 
-### Table 2
-```{r Table 2}
-#Table 2
-##Confidence Intervals
-ci_model1 <- confint(model1, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+### Table 1
+
+```{r}
+# confidence intervals
+# https://rdrr.io/cran/lme4/man/confint.merMod.html
+
+# old
+ci_model1 <- confint(model1, "beta_", level = 0.95, method = c("boot"), nsim = 1000,seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE, .progress = "txt")
 ci_model1 <- as.data.frame(ci_model1)
 
+```
+
+```{r Table 1}
+#Table 1 (fka table2)
 
 ## Create and Clean Table
 table2 <- merge(summary_model1, ci_model1, by = "row.names")
@@ -390,6 +394,105 @@ table2 %<>%
   mutate("95% CI of Estimate" =  paste("[", `2.5 %`, ",", `97.5 %`, "]", sep = "")) %>% select(Row.names, Estimate, `95% CI of Estimate`, `Std. Error`, `t value`, `Pr(>|t|)`)
 
 table2
+```
+
+## Follow-up analyses
+
+First, visualize the interaction:
+```{r}
+
+emmip(model1, graph_condition ~ subject_condition)
+
+```
+
+To further examine the interaction between graph type and warning, we computed pairwise contrasts of graph type and warning condition from estimated marginal means derived from the linear mixed effects model described in Table 1. We implemented these analyses using the R package `emmeans` with Satterthwaite approximations to degrees of freedom (to be consistent with the approach implemented in the linear model) for Study 3 and the studies that follow (Lenth, 2019).
+
+```{r}
+
+# within each level
+g_s <- emmeans(model1, pairwise ~ graph_condition | subject_condition, lmer.df = "satterthwaite")
+g_s
+confint(g_s$contrasts)
+
+s_g <- emmeans(model1, pairwise ~ subject_condition | graph_condition, lmer.df = "satterthwaite")
+s_g
+confint(s_g$contrasts)
+
+# difference in truncation effect
+emm2 <- pairs(pairs(emmeans(model1, ~ subject_condition|graph_condition)), by = NULL)
+emm2
+confint(emm2)
+
+```
+
+We first computed contrasts of graph type for each level of warning condition (no warning and warning), followed by contrasts of warning condition for each level of graph type (control and truncated). We found that in both no warning (estimate of the difference = 0.79 [0.69, 0.88], SE = 0.05, p < .0001) and warning (estimatediff = 0.63 [0.54, 0.72], SE = 0.05, p < .0001) conditions, truncated graphs were rated higher than control graphs. That is, there was a robust truncation effect in both warning and no warning conditions. We also found that an explanatory warning lowered ratings for both control (estimatediff = 0.32 [0.04, 0.60], SE = 0.14, p = .03) and truncated (estimatediff  = 0.48 [0.19, 0.76], SE = .14, p = .0009) graphs. Finally, we compared these contrasts statistically to quantify the interaction found in Table 1. We found that a warning reduced graph ratings for truncated graphs more than for control graphs by an estimate of 0.16 (7-point scale; 95% CI: [0.02, 0.29], SE = 0.07, p = .02).
+
+Plot the comparisons graphically. Blue bars are CIs for the EMMs, which should not be used for comparisons. Red arrows are for comparisons among them. However, this plot shows a discrepancy between the model and the arrows.
+
+```{r}
+
+emm1 <- emmeans(model1, pairwise ~ subject_condition:graph_condition)
+emm1$contrasts
+
+# https://cran.r-project.org/web/packages/emmeans/vignettes/comparisons.html
+# https://cran.r-project.org/web/packages/emmeans/vignettes/xplanations.html
+
+plot(emm1, comparisons = TRUE, adjust = "tukey")
+
+```
+
+### Figure 6
+```{r figure 6 prep, echo=FALSE}
+
+# calculating r for the correlation- and difference-adjusted CIs of the means
+df <- subject_mean_df %>%
+  pivot_wider(
+    names_from = graph_condition,
+    values_from = subject_mean_rating
+  )
+
+r = cor(df$control, df$truncated)
+
+#Flat Violin Set Up
+
+errbar_lims <- subject_mean_df %>% 
+  group_by(graph_condition, subject_condition) %>% 
+  summarise(mean=mean(subject_mean_rating), 
+            se = sd(subject_mean_rating)/sqrt(n()), 
+           upper = mean + (2 * sqrt(1 - r) * sqrt(2) * se),
+           lower = mean - (2 * sqrt(1 - r) * sqrt(2) * se))
+
+subject_mean_df %<>% 
+  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
+
+```
+
+```{r figure 6}
+#Flat Violin Pink and Blue
+
+ggplot(subject_mean_df, aes(x = subject_condition, y = subject_mean_rating, fill = graph_condition)) +
+  geom_flat_violin(aes(fill = graph_condition),position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .7, colour = NA)+
+  
+  geom_point(aes(x = as.numeric(subject_condition_2), y = subject_mean_rating, colour = graph_condition),position = position_jitter(0.05), size = 2, shape = 20,  alpha =0.9)+
+  
+  geom_point(data=errbar_lims, aes(x=subject_condition, y=mean, color = graph_condition), position = position_nudge(x = -0.2, y = 0))+
+  
+  geom_errorbar(data=errbar_lims, aes(x=subject_condition, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.065, position = position_nudge(x = -0.2, y = 0))+
+  #Color
+  scale_colour_manual(values = c("#000064", "#FC5167"))+
+  scale_fill_manual(values = c("#000064", "#FC5167"))+
+  #Axis
+  coord_cartesian(ylim=c(1, 7)) + 
+  scale_y_continuous(breaks=seq(1, 7, 1))+
+  ylab("mean rating")+
+  xlab("")+
+  #Theme
+  raincloud_theme+
+  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
+  ggtitle("Study 3. correlation- and difference-adjusted")
+
+#ggsave('../figures/figure6.png', plot = last_plot(), width = 8, height = 5)
+#gsave('../figures/figure6.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
 ```
 
 
@@ -491,6 +594,53 @@ The experiment took participants an average of M~duration~ = `r text_spec(round(
 
 
 ### Results (Supplemental Information)
+
+#### Plotting Difference / Truncation Effect 
+
+```{r figure 5 prep}
+#Flat Violin Set Up
+
+subject_mean_difference_df <- subject_mean_df %>% 
+  group_by(participantID) %>% 
+  mutate(effect = subject_mean_rating - lag(subject_mean_rating))%>% 
+  drop_na() %>% 
+  mutate(graph_condition = "difference")
+
+errbar_lims <- subject_mean_difference_df %>% 
+  group_by(graph_condition, subject_condition) %>% 
+  summarise(mean=mean(effect), se=sd(effect)/sqrt(n()), 
+                        upper=mean+(2*se), lower=mean-(2*se))
+
+subject_mean_difference_df %<>% 
+  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
+
+```
+
+```{r figure 5}
+#Flat Violin Pink and Blue
+
+#95% Confidence Interval Only
+ggplot(subject_mean_difference_df, aes(x = subject_condition, y = effect, fill = graph_condition)) +
+  geom_flat_violin(aes(fill = graph_condition),position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .7, colour = NA)+
+  
+  geom_point(aes(x = as.numeric(subject_condition_2), y = effect, colour = graph_condition),position = position_jitter(0.05), size = 2, shape = 20,  alpha =0.7)+
+  
+  geom_point(data=errbar_lims, aes(x=subject_condition, y=mean, color = graph_condition), position = position_nudge(x = -0.2, y = 0))+
+  
+  geom_errorbar(data=errbar_lims, aes(x=subject_condition, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.065, position = position_nudge(x = -0.2, y = 0))+
+  #Color
+  scale_colour_manual(values = c("#000A77", "#FF6171"))+
+  scale_fill_manual(values = c("#000A77", "#FF6171"))+
+  #Axis
+  xlab("")+
+  #Theme
+  raincloud_theme+
+  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))
+
+#ggsave('../figures/figure5.png', plot = last_plot(), width = 8, height = 5)
+#ggsave('../figures/figure5.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
+```
+
 
 #### Graph Literacy (Supplemental Information)
 
