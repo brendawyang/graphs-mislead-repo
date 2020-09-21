@@ -26,7 +26,7 @@ You must run this section before you can run any other chunks.
 ```{r packages, echo = FALSE}
 #Make sure all packages are installed
 
-list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "shiny", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych", "emmeans")
+list.of.packages <- c("readr", "tidyr", "dplyr", "magrittr", "psych", "stringr", "effsize", "shiny", "readr", "lme4", "lmerTest", "kableExtra", "knitr", "ggplot2", "ggthemes", "cowplot", "pwr", "psych", "emmeans", "broom")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 ```
@@ -51,6 +51,7 @@ library(kableExtra)
 library(knitr)#kable
 library(pwr)
 library(emmeans)
+library(broom)
 
 ##Raincloud Plot Libraries
 source("../R_rainclouds.R")
@@ -384,65 +385,62 @@ truncation_effect_direction
 
 Most participants in both sessions showed an overall truncation effect: `r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected" & truncation_effect_direction$session == "1",]$percentage, 2), bold = T)`% of participants in Session 1 (`r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected"& truncation_effect_direction$session == "1",]$n), bold = T)` of `r text_spec(n, bold = T)`) and `r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected" & truncation_effect_direction$session == "2",]$percentage,2), bold = T)`% of participants in Session 2 (`r text_spec(round(truncation_effect_direction[truncation_effect_direction$direction == "expected"& truncation_effect_direction$session == "1",]$n), bold = T)` of `r text_spec(n, bold = T)`) .
 
-## Figure 7
-```{r}
-
-#Flat Violin Set Up
-
-errbar_lims <- subject_mean_df %>% 
-  group_by(session, graph_condition, subject_condition) %>% 
-  summarise(mean=mean(subject_mean_rating), se=sd(subject_mean_rating)/sqrt(n()), 
-                        upper=mean+(2*se), lower=mean-(2*se))
-
-subject_mean_df %<>% 
-  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
-
-
-```
-
-```{r figure 6}
-
-#Flat Violin Pink and Blue
-ggplot(subject_mean_df, aes(x = session, y = subject_mean_rating, fill = graph_condition)) +
-  geom_flat_violin(position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .7, colour = NA) +
-   facet_grid(~as.character(subject_condition)) +
-  geom_point(aes(color = graph_condition), position = position_jitter(0.1), size = 2, shape = 20,  alpha =0.7) +
-  geom_point(data=errbar_lims, aes(x=session, y=mean, color = graph_condition), position = position_nudge(x = -0.28, y = 0)) +
-  geom_errorbar(data=errbar_lims, aes(x=session, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.15, position = position_nudge(x = -0.28, y = 0)) +
-  #Color
-  scale_colour_manual(values = c("#000A77", "#FF6171")) +
-  scale_fill_manual(values = c("#000A77", "#FF6171")) +
-  #Axis
-  coord_cartesian(ylim=c(1, 7)) + 
-  scale_y_continuous(breaks=seq(1, 7, 1)) +
-  #Theme
-  raincloud_theme +
-  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
-  ylab("mean rating") +
-  xlab("session") +
-  ggtitle("Figure 7. study 4 results")
-
-#ggsave('../figures/figure7.png', plot = last_plot(), width = 8, height = 5)
-#ggsave('../figures/figure7.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
-
-```
-
-## Revision: Full model
+## 2 x 2 x 2 LMEM
 
 Next, we computed a linear mixed-effects model with graph type (0 = control, 1 = truncated), warning condition (0 = no warning, 1 = warning), and timepoint (session 1 or 2) as binary fixed factors, with the first listed condition as the reference group for each factor. The outcome variable was graph ratings, and participant was modeled as a random effect. Full model parameters are available in Table S2 . Consistent with the results above, we found a statistically significant and large simple effect of graph type (b = 1.16, t = 20.66, p < .0001) and a statistically significant interaction between graph type and warning condition (b = -0.54, t = 6.39, p < .0001), such that participants given an explanatory warning selectively rated truncated graphs lower.
 
 ```{r echo=TRUE}
 
-model_full <- lmer(rating ~ subject_condition * graph_condition * session + (1 | participantid), models_df) # CI bootstrapping doesn't converge item is added as a random effect
+model_full <- lmer(rating ~ subject_condition * graph_condition * session + (1 | participantid) * (1 | question), models_df)
 summary_model_full <- summary(model_full)
 summary_model_full <- as.data.frame(summary_model_full$coefficients)
 
 ``` 
 
-### Table S2
+### Check model assumptions
+```{r echo=FALSE}
+
+# Predicted versus Data
+predictions <- predict(model_full)
+
+model_full %>% augment() %>% 
+  ggplot()  + 
+  geom_point(aes(.fitted, rating), alpha = .1) + 
+  geom_smooth(aes(.fitted, rating), method = "lm", se = FALSE, color = "lightgrey") + 
+labs(x = "Actual", y = "Fitted") + 
+  coord_cartesian(ylim=c(1, 7), xlim = c(1,7)) + 
+  scale_y_continuous(breaks=seq(1, 7, 1)) +
+  scale_x_continuous(breaks=seq(1, 7, 1)) +
+  #facet_grid(subject_condition~graph_condition) +
+  theme_bw()
+  
+# Residuals versus Fitted
+residuals <- residuals(model_full)
+
+model_full %>% augment() %>% 
+  ggplot()  + 
+  geom_point(aes(.fitted, residuals), alpha = .1) + 
+  geom_smooth(aes(.fitted, residuals), se = FALSE, color = "lightgrey") + 
+  scale_x_continuous(breaks=seq(1, 7, 1)) +
+  #facet_grid(subject_condition~graph_condition) +
+  theme_bw()
+
+# Residuals are ~normally distributed
+library(lattice)
+qqmath(model_full)
+
+```
+
+### Table 2
+https://rstudio-pubs-static.s3.amazonaws.com/33653_57fc7b8e5d484c909b615d8633c01d51.html
 ```{r echo=FALSE}
 ##Confidence Intervals
-ci_model_full <- confint(model_full, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE)
+
+# works
+ci_model_full <- confint(model_full, "beta_", level = 0.95, method = c("boot"), nsim = 1000,  seed = 833, boot.type = c("perc"), FUN=NULL, quiet=FALSE, oldNames = TRUE, .progress = "txt")
+
+###
+
 ci_model_full <- as.data.frame(ci_model_full)
 
 
@@ -459,7 +457,124 @@ table_full %<>%
 table_full
 ```
 
-We did not find evidence for our hypothesis that the protective effect of an explanatory warning would fade by the second session. The 3-way interaction between timepoint, warning condition, and graph type was not statistically significant (t = 1.43, p = .15). A model comparison between the linear effects model described above and one that did not include timepoint and its associated interactions did not reveal statistically significant differences i.e., the main effect of timepoint was not significant. However, Figure 7 and statistically significant 2-way interactions from this linear model suggest that timepoint may have affected participant ratings in unanticipated ways. However, our results were not definitive, and it is possible we are under-powered to fully examine these smaller effects. We report post-hoc analyses relating to the effects of timepoint in Supplemental Information due to their exploratory nature.
+We did not find evidence for our hypothesis that the protective effect of an explanatory warning would fade by the second session. The 3-way interaction between timepoint, warning condition, and graph type was not statistically significant (t = 1.43, p = .15).
+
+## Figure 7
+```{r}
+
+# calculating r for the correlation- and difference-adjusted CIs of the means
+df <- subject_mean_df %>%
+  pivot_wider(
+    names_from = graph_condition,
+    values_from = subject_mean_rating
+  )
+
+r = cor(df$control, df$truncated)
+
+#Flat Violin Set Up
+
+errbar_lims <- subject_mean_df %>% 
+  group_by(graph_condition, subject_condition, session) %>% 
+  summarise(mean=mean(subject_mean_rating), 
+            se = sd(subject_mean_rating)/sqrt(n()), 
+           upper = mean + (2 * sqrt(1 - r) * sqrt(2) * se),
+           lower = mean - (2 * sqrt(1 - r) * sqrt(2) * se))
+
+
+subject_mean_df %<>% 
+  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
+
+
+```
+
+```{r figure 7}
+#Flat Violin Pink and Blue
+ggplot(subject_mean_df, aes(x = session, y = subject_mean_rating, fill = graph_condition)) +
+  geom_flat_violin(position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .9, colour = NA) +
+   facet_grid(~as.character(subject_condition)) +
+  geom_point(aes(color = graph_condition), position = position_jitter(0.1), size = 2, shape = 20,  alpha =0.7) +
+  geom_point(data=errbar_lims, aes(x=session, y=mean, color = graph_condition), position = position_nudge(x = -0.28, y = 0)) +
+  geom_errorbar(data=errbar_lims, aes(x=session, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.15, position = position_nudge(x = -0.28, y = 0)) +
+  #Color
+  scale_colour_manual(values = c("#000064", "#FC5167")) +
+  scale_fill_manual(values = c("#000064", "#FC5167")) +
+  #Axis
+  coord_cartesian(ylim=c(1, 7)) + 
+  scale_y_continuous(breaks=seq(1, 7, 1)) +
+  #Theme
+  raincloud_theme +
+  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
+  ylab("mean rating") +
+  xlab("session") +
+  ggtitle("Study 4. correlation- and difference-adjusted CIs")
+
+# ggsave('../figures/figure7.png', plot = last_plot(), width = 8, height = 5)
+# ggsave('../figures/figure7.tiff', plot = last_plot(), width = 8, height = 5, device = "tiff")
+
+```
+
+## Follow-up analyses
+
+First, visualize the interaction:
+```{r echo=FALSE}
+
+model_full <- lmer(rating ~ subject_condition * graph_condition * session + (1 | participantid) * (1 | question), models_df)
+
+# 2-way
+emmip(model_full, graph_condition ~ subject_condition) # interaction
+emmip(model_full, subject_condition ~ session) # interaction?
+emmip(model_full, graph_condition ~ session) # looks parallel
+
+# 3-ways
+emmip(model_full, graph_condition ~ session | subject_condition)
+# emmip(model_full, graph_condition ~ subject_condition | session )
+# emmip(model_full, subject_condition ~ session | graph_condition)
+# emmip(model_full, subject_condition ~  graph_condition | session)
+# emmip(model_full, session ~ subject_condition | graph_condition)
+# emmip(model_full, session ~ graph_condition | subject_condition)
+
+```
+
+The, compute conditional contrasts. We estimate degrees of freedom uses the Satterthwaite method, to be consistent with the approach used in `lmerTest`.
+
+```{r}
+
+#emm1 <- emmeans(model_full, pairwise ~ subject_condition:graph_condition:session)
+#emm1$contrasts
+
+# graph type x session
+s_g <- emmeans(model_full, pairwise ~ session | graph_condition, lmer.df = "satterthwaite")
+s_g
+confint(s_g$contrasts)
+
+compare <- pairs(pairs(emmeans(model_full, ~ session|graph_condition)), by = NULL)
+compare
+confint(compare)
+
+# session x warning
+se_su <- emmeans(model_full, pairwise ~ session | subject_condition, lmer.df = "satterthwaite")
+se_su
+confint(se_su)
+
+compare <- pairs(pairs(emmeans(model_full, ~ subject_condition|session)), by = NULL)
+compare
+confint(compare)
+
+# graph type x warning
+
+g_s <- emmeans(model_full, pairwise ~ graph_condition | subject_condition, lmer.df = "satterthwaite")
+g_s
+confint(g_s)
+
+s_g <- emmeans(model_full, pairwise ~ subject_condition | graph_condition, lmer.df = "satterthwaite")
+s_g
+confint(s_g)
+
+compare <- pairs(pairs(emmeans(model_full, ~ subject_condition|graph_condition)), by = NULL)
+confint(compare)
+
+
+```
 
 # Supplemental Information
 
@@ -527,6 +642,9 @@ To clarify the effects of timepoint on people's ratings with graphs, we estimate
 
 ```{r echo=TRUE}
 
+#model
+model_full <- lmer(rating ~ subject_condition * graph_condition * session + (1 | participantid), models_df)
+
 # estimated marginal means pair-wise comparisons for all combinations of IVs
 emm1 = emmeans(model_full, specs = pairwise ~ graph_condition + session + subject_condition, lmer.df = "satterthwaite")
 
@@ -552,9 +670,39 @@ emm1 = emmeans(model_full, specs = pairwise ~ graph_condition + session + subjec
      facet_grid(~subject_condition) +
      theme_minimal() +
      ylab("estimated marginal means") +
-     ylim(2,6)
+     ylim(3,5.5) +
+     ggtitle("study 4 EMMs") +
+     guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))
 
 ```
+
+Compare with descriptive means
+```{r}
+  
+df <- models_df %>%
+  group_by(graph_condition, session, subject_condition) %>%
+  summarise(
+    mean = mean(rating, na.rm = TRUE),
+    sd = sd(rating, na.rm = TRUE),
+    num = n(),
+    se = sd / sqrt(num)
+  ) %>%
+  mutate(lower = mean - se, upper = mean + se)
+
+df
+
+df %>% ggplot(aes(session, mean, ymin=lower, ymax=upper)) +
+    geom_point(aes(color = graph_condition)) +
+    geom_linerange(aes(color = graph_condition)) +
+     facet_grid(~subject_condition) +
+     theme_minimal() +
+     ylab("mean graph ratings") +
+     ylim(3,5.5) +
+     ggtitle("study 4") + 
+  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))
+
+```
+
 
 ### Timepoint and Graph Type
 First, we compared timepoints for control and truncated graphs (averaging over warning condition). We found that participants' ratings tended to be lower on the second session for both control and truncated graphs The estimated difference between session 1 and session 2 for control graphs was 0.16 (EMM1 = 3.73, EMM2 = 3.57;  p = .0002); the estimated difference between session 1 and session 2 for truncated graphs was 0.23 (EMM1 = 3.73, EMM2 = 3.57;  p = .0002; p < .0001).
@@ -618,8 +766,8 @@ emmip(model_full, subject_condition ~ session) +
   interaction_theme +
   scale_colour_manual(values = c("#009B9F", "#C75DAA"))+ #Color
   scale_fill_manual(values = c("#009B9F", "#C75DAA"))+
-  coord_cartesian(ylim=c(2, 6)) + #Axis
-  scale_y_continuous(breaks=seq(2, 6, .5))
+  coord_cartesian(ylim=c(3.5, 5)) + #Axis
+  scale_y_continuous(breaks=seq(3.5, 5, .5))
 
 #plot 3. session and graph type
 
@@ -628,8 +776,8 @@ emmip(model_full, graph_condition ~ session) +
   interaction_theme +
   scale_colour_manual(values = c("#000A77", "#FF6171"))+ #Color
   scale_fill_manual(values = c("#000A77", "#FF6171"))+
-  coord_cartesian(ylim=c(2, 6)) + #Axis
-  scale_y_continuous(breaks=seq(2, 6, .5))
+  coord_cartesian(ylim=c(3, 5)) + #Axis
+  scale_y_continuous(breaks=seq(3, 5, .5))
 
   
 # exploratory plot 4: session*graph type*warning condition
@@ -1056,131 +1204,3 @@ subject_timing_warning_summary <- subject_timing %>%
 
 subject_timing_warning_summary
 ```
-
-# Previous submission
-The analyses below were removed for a manuscript revision.
-
-#### Figure 7
-```{r eval=FALSE, include=FALSE}
-
-#subject_mean_df$session <- factor(subject_mean_df$session, levels = c(1, 2), labels = c("Session 1", "Session 2"))
-
-#Flat Violin Set Up
-
-errbar_lims <- subject_mean_df %>% 
-  group_by(session, graph_condition, subject_condition) %>% 
-  summarise(mean=mean(subject_mean_rating), se=sd(subject_mean_rating)/sqrt(n()), 
-                        upper=mean+(2*se), lower=mean-(2*se))
-
-subject_mean_df %<>% 
-  mutate(subject_condition_2 =ifelse(subject_condition == "no warning", 1, 2))
-
-
-```
-
-```{r eval=FALSE, include=FALSE}
-
-#Flat Violin Pink and Blue
-ggplot(subject_mean_df, aes(x = subject_condition, y = subject_mean_rating, fill = graph_condition)) +
-  geom_flat_violin(position = position_nudge(x = .15, y = 0), adjust = 1.5, trim = FALSE, alpha = .7, colour = NA)+
-   facet_grid(~as.character(session))+
-  
-  geom_point(aes(color = graph_condition), position = position_jitter(0.1), size = 2, shape = 20,  alpha =0.7)+
-  
-  geom_point(data=errbar_lims, aes(x=subject_condition, y=mean, color = graph_condition), position = position_nudge(x = -0.28, y = 0))+
-  
-  geom_errorbar(data=errbar_lims, aes(x=subject_condition, y=mean, ymax=upper, ymin=lower, color = graph_condition),stat='identity', size = 1, width=.15, position = position_nudge(x = -0.28, y = 0))+
-  
-  #Color
-  scale_colour_manual(values = c("#000A77", "#FF6171"))+
-  scale_fill_manual(values = c("#000A77", "#FF6171"))+
-  #Axis
-  coord_cartesian(ylim=c(1, 7)) + 
-  scale_y_continuous(breaks=seq(1, 7, 1))+
-  ylab("mean rating")+
-  xlab("warning condition")+
-  #Theme
-  raincloud_theme+
-  guides(fill = guide_legend(reverse=TRUE), color = guide_legend(reverse=TRUE))+
-  theme(strip.text = element_text(size=15, margin = margin(.4,0,.4,0, "cm")), strip.background = element_rect(fill="white"))+
-  ggtitle("Figure 6")
-
-```
-
-### The truncation effect across warning conditions
-
-Does an explanatory warning reduce the size of the truncation effect, as seen in previous studies? To interrogate an observed interaction between graph condition and warning condition , we computed models for each warning condition separately. In these two models, graph type (0 = control, 1 = truncated) served as a binary fixed factor, and the judged difference between bars was the outcome variable. Participant and item were included as random effects. 
-
-
-#### No warning
-
-```{r eval=FALSE, include=FALSE}
-no_warning_df <-  models_df %>% 
-  filter(subject_condition == "no warning")
-  
-model_no_warning <- lmer(rating ~  graph_condition + (1 | participantid) +  (1 | question), no_warning_df)
-summary_model_no_warning <- summary(model_no_warning)
-summary_model_no_warning <- as.data.frame(summary_model_no_warning$coefficients)
-
-summary(model_no_warning)
-```
-
-```{r eval=FALSE, include=FALSE}
-In the no warning condition, we found a significant difference between control and truncated graphs (b = `r text_spec(round(summary_model_no_warning[2,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(summary_model_no_warning[2,]$"Std. Error", 2), bold = T)`, t = `r text_spec(round(summary_model_no_warning[2,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_no_warning[2,]$"Pr(>|t|)", scientific = T), bold = T)`) such that truncated graphs, relative to control graphs, exaggerated the judged difference between bars. In the warning condition, 
-
-```
-
-
-#### Warning condition
-
-```{r eval=FALSE, include=FALSE}
-warning_df <-  models_df %>% 
-  filter(subject_condition == "warning")
-  
-model_warning <- lmer(rating ~  graph_condition + (1 | participantid) +  (1 | question), warning_df)
-summary_model_warning <- summary(model_warning)
-  summary_model_warning <- as.data.frame(summary_model_warning$coefficients)
-  
-summary(model_warning)
-
-# removed from space below
-In the warning condition, we also found a significant difference between control and truncated graphs (b = `r text_spec(round(summary_model_warning[2,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(summary_model_warning[2,]$"Std. Error", 2), bold = T)`, t = `r text_spec(round(summary_model_warning[2,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_warning[2,]$"Pr(>|t|)", scientific = T), bold = T)`)  such that truncated graphs, relative to control graphs, exaggerated the judged difference between bars. Nevertheless, the magnitude of the judged difference between bars is larger in the no warning condition than in the warning condition.
-
-
-```
-
-### Is an explanatory warning still protective 24 hours later?
-
-To answer this, we computed linear models for Session 1 and Session. In these two models, graph type (0 = control, 1 = truncated) and warning condition (0 = no warning, 1 = warning) served as binary fixed factors, and the judged difference between bars was the outcome variable. Participant and item were modeled as random effects. 
-
-```{r eval=FALSE, include=FALSE}
-session_1_df <-  models_df %>% 
-  filter(session == "1")
-  
-model_session_1 <- lmer(rating ~  graph_condition * subject_condition + (1 | participantid) +  (1 | question), session_1_df)
-summary_model_session_1 <- summary(model_session_1)
-summary_model_session_1 <- as.data.frame(summary_model_session_1$coefficients)
-
-summary_model_session_1
-
-# removed from space below
-In session 1, we found a statistically significant main effect of graph type (b = `r text_spec(round(summary_model_session_1[2,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(summary_model_session_1[2,]$"Std. Error", 2), bold = T)`, t = `r text_spec(round(summary_model_session_1[2,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_session_1[2,]$"Pr(>|t|)", scientific = T), bold = T)`) and a statistically significant interaction between graph type and warning condition (b = `r text_spec(round(summary_model_session_1[4,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(summary_model_session_1[4,]$"Std. Error", 2), bold = T)`, t = `r text_spec(round(summary_model_session_1[4,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_session_1[4,]$"Pr(>|t|)", scientific = T), bold = T)`). 
-```
-
-
-```{r eval=FALSE, include=FALSE}
-session_2_df <-  models_df %>% 
-  filter(session == "2")
-  
-model_session_2 <- lmer(rating ~  graph_condition * subject_condition + (1 | participantid) +  (1 | question), session_2_df)
-summary_model_session_2 <- summary(model_session_2)
-summary_model_session_2 <- as.data.frame(summary_model_session_2$coefficients)
-
-summary_model_session_2
-
-# removed from space below
-Critically, we saw a similar pattern of results in session 2: we found a statistically significant main effect of graph type (b = `r text_spec(round(summary_model_session_2[2,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(summary_model_session_2[2,]$"Std. Error", 2), bold = T)`, t = `r text_spec(round(summary_model_session_2[2,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_session_2[2,]$"Pr(>|t|)", scientific = T), bold = T)`) and a statistically significant interaction between graph type and warning condition (b = `r text_spec(round(summary_model_session_2[4,]$Estimate, 2), bold = T)`, SE = `r text_spec(round(summary_model_session_2[4,]$"Std. Error", 2), bold = T)`, t = `r text_spec(round(summary_model_session_2[4,]$"t value", 2), bold = T)`, p < `r text_spec(format(summary_model_session_2[4,]$"Pr(>|t|)", scientific = T), bold = T)`). 
-```
-
-
-Overall, these results (summarized in Figure 6) show that an explanatory warning results in a smaller truncation effect, and that this protective effect is still present 24 hours later.
